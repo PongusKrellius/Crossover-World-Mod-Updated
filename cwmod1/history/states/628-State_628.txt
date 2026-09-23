@@ -1,0 +1,17 @@
+state={
+	id=628
+	name="STATE_628"
+	provinces={
+		93 2417 8937 8971 8977 9010 9087 
+	}
+	state_category = rural
+	manpower=400000
+	buildings_max_level_factor=1.000
+	history = {
+		owner = MOR
+		add_core_of = MOR
+		buildings = {
+			infrastructure = 2
+		}
+	}
+}

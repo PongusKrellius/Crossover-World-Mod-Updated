@@ -1,0 +1,362 @@
+soundeffect = {
+    name = jachas_vote
+    sounds = {
+        sound = jachas_vote_sound
+    }
+    volume = 1
+}
+soundeffect = {
+    name = kuj_vote
+    sounds = {
+        sound = kuj_vote_sound
+    }
+    volume = 1
+}
+soundeffect = {
+    name = brother_vote
+    sounds = {
+        sound = brother_vote_sound
+    }
+    volume = 1
+}
+soundeffect = {
+    name = my_swamp
+    sounds = {
+        sound = my_swamp
+    }
+    volume = 1
+}
+soundeffect = {
+    name = time_stops
+    sounds = {
+        sound = time_stops
+    }
+    volume = 1
+}
+soundeffect = {
+    name = time_resumes
+    sounds = {
+        sound = time_resumes
+    }
+    volume = 1
+}
+soundeffect = {
+    name = time_reversal
+    sounds = {
+        sound = time_reversal
+    }
+    volume = 1
+}
+soundeffect = {
+    name = biteszadasuto
+    sounds = {
+        sound = biteszadasuto
+    }
+    volume = 1
+}
+
+####### BIG EVENTS
+
+soundeffect = {
+    name = cr_bigevent_jotaro_vs_dio_sound
+    sounds = {
+        sound = cr_bigevent_jotaro_vs_dio_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_stephen_death_sound
+    sounds = {
+        sound = cr_bigevent_stephen_death_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_stephen_death_new_sound
+    sounds = {
+        sound = cr_bigevent_stephen_death_new_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_sioux_liberation_sound
+    sounds = {
+        sound = cr_bigevent_sioux_liberation_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_arktos_triumphs_sound
+    sounds = {
+        sound = cr_bigevent_arktos_triumphs_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_central_civil_war_beginning_sound
+    sounds = {
+        sound = cr_bigevent_central_civil_war_beginning_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_central_civil_war_m_wins_sound
+    sounds = {
+        sound = cr_bigevent_central_civil_war_m_wins_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_central_civil_war_general_wins_sound
+    sounds = {
+        sound = cr_bigevent_central_civil_war_general_wins_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_children_revolution_sound
+    sounds = {
+        sound = cr_bigevent_children_revolution_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_enchancian_civil_war_sound
+    sounds = {
+        sound = cr_bigevent_enchancian_civil_war_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_enchancian_civil_war_cedric_sound
+    sounds = {
+        sound = cr_bigevent_enchancian_civil_war_cedric_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_enchancian_civil_war_equalists_sound
+    sounds = {
+        sound = cr_bigevent_enchancian_civil_war_equalists_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_enchancian_civil_war_monarchist_sound
+    sounds = {
+        sound = cr_bigevent_enchancian_civil_war_monarchist_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_flensburg_declares_independence_sound
+    sounds = {
+        sound = cr_bigevent_flensburg_declares_independence_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_victory_over_hartmut_sound
+    sounds = {
+        sound = cr_bigevent_victory_over_hartmut_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_flower_hill_united_sound
+    sounds = {
+        sound = cr_bigevent_flower_hill_united_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_hartmut_wins_sound
+    sounds = {
+        sound = cr_bigevent_hartmut_wins_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_liberation_of_enchancia_sound
+    sounds = {
+        sound = cr_bigevent_liberation_of_enchancia_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_the_young_king_dies_sound
+    sounds = {
+        sound = cr_bigevent_the_young_king_dies_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_dio_fucking_dies_sound
+    sounds = {
+        sound = cr_bigevent_dio_fucking_dies_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_coronation_of_last_dragon_sound
+    sounds = {
+        sound = cr_bigevent_coronation_of_last_dragon_sound
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = cr_bigevent_shrekophone_sound
+    sounds = {
+        sound = cr_bigevent_shrekophone_sound
+    }
+    volume = 0.75
+}
+soundeffect = {
+    name = cr_bigevent_krosh_uni
+    sounds = {
+        sound = cr_bigevent_krosh_uni
+    }
+    volume = 0.75
+}
+soundeffect = {
+    name = cr_bigevent_longdong_wins_sound
+    sounds = {
+        sound = cr_bigevent_longdong_wins_sound
+    }
+    volume = 0.75
+}
+
+####### STANDS
+
+soundeffect = {
+    name = StarPlatinumOra
+    sounds = {
+        sound = StarPlatinumOra
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = SPZW
+    sounds = {
+        sound = SPZW
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = RodoRollada
+    sounds = {
+        sound = RodoRollada
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = TheWorldMuda
+    sounds = {
+        sound = TheWorldMuda
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = ZaWarudoTimeStop
+    sounds = {
+        sound = ZaWarudoTimeStop
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = SunlightYellowOverdrive
+    sounds = {
+        sound = SunlightYellowOverdrive
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = StoneFreeOra
+    sounds = {
+        sound = StoneFreeOra
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = SilverChariotHora
+    sounds = {
+        sound = SilverChariotHora
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = GoldExperienceMuda
+    sounds = {
+        sound = GoldExperienceMuda
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = KissOsha
+    sounds = {
+        sound = KissOsha
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = volare_via
+    sounds = {
+        sound = volare_via
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = SexPistolsPassPassPass
+    sounds = {
+        sound = SexPistolsPassPassPass
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = StickyFingersAriariari
+    sounds = {
+        sound = StickyFingersAriariari
+    }
+    volume = 0.75
+}
+
+soundeffect = {
+    name = Thunder_Cross_Split_Attack
+    sounds = {
+        sound = Thunder_Cross_Split_Attack
+    }
+    volume = 0.75
+}

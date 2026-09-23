@@ -1,0 +1,18 @@
+state={
+	id=541
+	name="STATE_541"
+	provinces={
+		304 2418 2831 8394 8455 8456 8478 8511 8522 
+	}
+	state_category = rural
+	manpower=200000
+	buildings_max_level_factor=1.000
+	history = {
+		owner = JOJ
+		add_core_of = JOJ
+		add_core_of = PAS
+	buildings = {
+		infrastructure = 2
+	}
+	}
+}

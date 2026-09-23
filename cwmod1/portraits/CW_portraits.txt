@@ -1,0 +1,644 @@
+continent = {
+	name = europe
+	political = {
+		monarchism = {
+			male = {
+				"gfx/leaders/Europe/Portrait_Europe_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_Generic_6.dds"
+			}
+		}
+	}
+}
+
+continent = {
+	name = north_america
+	political = {
+		monarchism = {
+			male = {
+				"gfx/leaders/Europe/Portrait_Europe_Generic_4.dds"
+				"gfx/leaders/Europe/Portrait_Europe_Generic_6.dds"
+			}
+		}
+	}
+}
+
+continent = {
+	name = south_america
+	political = {
+		monarchism = {
+			male = {
+				"gfx/leaders/South America/Portrait_South_America_Generic_4.dds"
+				"gfx/leaders/South America/Portrait_South_America_Generic_6.dds"
+			}
+		}
+	}
+}
+
+FRI = {
+	army = {
+		male = {
+			"GFX_Portrait_Germany_Generic_land_1"
+			"GFX_Portrait_Germany_Generic_land_2"
+			"GFX_Portrait_Germany_Generic_land_3"
+			"GFX_Portrait_Germany_Generic_land_4"
+			"GFX_Portrait_Germany_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Germany_Generic_navy_1"
+			"GFX_Portrait_Germany_Generic_navy_2"
+			"GFX_Portrait_Germany_Generic_navy_3"
+		}
+	}
+}
+
+FLE = {
+	army = {
+		male = {
+			"GFX_Portrait_Germany_Generic_land_1"
+			"GFX_Portrait_Germany_Generic_land_2"
+			"GFX_Portrait_Germany_Generic_land_3"
+			"GFX_Portrait_Germany_Generic_land_4"
+			"GFX_Portrait_Germany_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Germany_Generic_navy_1"
+			"GFX_Portrait_Germany_Generic_navy_2"
+			"GFX_Portrait_Germany_Generic_navy_3"
+		}
+	}
+}
+
+ENC = {
+	army = {
+		male = {
+			"GFX_Portrait_Britain_Generic_land_1"
+			"GFX_Portrait_Britain_Generic_land_2"
+			"GFX_Portrait_Britain_Generic_land_3"
+			"GFX_Portrait_Britain_Generic_land_4"
+			"GFX_Portrait_Britain_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Britain_Generic_navy_1"
+			"GFX_Portrait_Britain_Generic_navy_2"
+			"GFX_Portrait_Britain_Generic_navy_3"
+		}
+	}
+}
+
+EN1 = {
+	army = {
+		male = {
+			"GFX_Portrait_Britain_Generic_land_1"
+			"GFX_Portrait_Britain_Generic_land_2"
+			"GFX_Portrait_Britain_Generic_land_3"
+			"GFX_Portrait_Britain_Generic_land_4"
+			"GFX_Portrait_Britain_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Britain_Generic_navy_1"
+			"GFX_Portrait_Britain_Generic_navy_2"
+			"GFX_Portrait_Britain_Generic_navy_3"
+		}
+	}
+}
+
+EN2 = {
+	army = {
+		male = {
+			"GFX_Portrait_Britain_Generic_land_1"
+			"GFX_Portrait_Britain_Generic_land_2"
+			"GFX_Portrait_Britain_Generic_land_3"
+			"GFX_Portrait_Britain_Generic_land_4"
+			"GFX_Portrait_Britain_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Britain_Generic_navy_1"
+			"GFX_Portrait_Britain_Generic_navy_2"
+			"GFX_Portrait_Britain_Generic_navy_3"
+		}
+	}
+}
+
+EN3 = {
+	army = {
+		male = {
+			"GFX_Portrait_Britain_Generic_land_1"
+			"GFX_Portrait_Britain_Generic_land_2"
+			"GFX_Portrait_Britain_Generic_land_3"
+			"GFX_Portrait_Britain_Generic_land_4"
+			"GFX_Portrait_Britain_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Britain_Generic_navy_1"
+			"GFX_Portrait_Britain_Generic_navy_2"
+			"GFX_Portrait_Britain_Generic_navy_3"
+		}
+	}
+}
+
+EN4 = {
+	army = {
+		male = {
+			"GFX_Portrait_Britain_Generic_land_1"
+			"GFX_Portrait_Britain_Generic_land_2"
+			"GFX_Portrait_Britain_Generic_land_3"
+			"GFX_Portrait_Britain_Generic_land_4"
+			"GFX_Portrait_Britain_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Britain_Generic_navy_1"
+			"GFX_Portrait_Britain_Generic_navy_2"
+			"GFX_Portrait_Britain_Generic_navy_3"
+		}
+	}
+}
+
+AVA = {
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+}
+
+JPN = {
+	army = {
+		male = {
+			"GFX_Portrait_Japan_Generic_land_1"
+			"GFX_Portrait_Japan_Generic_land_2"
+			"GFX_Portrait_Japan_Generic_land_3"
+			"GFX_Portrait_Japan_Generic_land_4"
+			"GFX_Portrait_Japan_Generic_land_5"
+			"GFX_Portrait_USA_Generic_land_1"
+			"GFX_Portrait_USA_Generic_land_2"
+			"GFX_Portrait_USA_Generic_land_3"
+			"GFX_Portrait_USA_Generic_land_4"
+			"GFX_Portrait_USA_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Japan_Generic_navy_1"
+			"GFX_Portrait_Japan_Generic_navy_2"
+			"GFX_Portrait_Japan_Generic_navy_3"
+			"GFX_Portrait_USA_Generic_navy_1"
+			"GFX_Portrait_USA_Generic_navy_2"
+			"GFX_Portrait_USA_Generic_navy_3"
+		}
+	}
+}
+
+GRN = {
+	army = {
+		male = {
+			"gfx/leaders/GRN/GRN_dragon_1.dds"
+			"gfx/leaders/GRN/GRN_dragon_2.dds"
+			"gfx/leaders/GRN/GRN_dragon_3.dds"
+			"gfx/leaders/GRN/GRN_dragon_4.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/GRN/GRN_dragon_1.dds"
+			"gfx/leaders/GRN/GRN_dragon_2.dds"
+			"gfx/leaders/GRN/GRN_dragon_3.dds"
+		}
+	}
+
+	operative = {
+		male = {
+			"gfx/leaders/GRN/GRN_dragon_1.dds"
+			"gfx/leaders/GRN/GRN_dragon_2.dds"
+			"gfx/leaders/GRN/GRN_dragon_3.dds"
+			"gfx/leaders/GRN/GRN_dragon_4.dds"
+		}
+
+		female = {
+			"gfx/leaders/GRN/GRN_dragon_1.dds"
+			"gfx/leaders/GRN/GRN_dragon_2.dds"
+			"gfx/leaders/GRN/GRN_dragon_3.dds"
+			"gfx/leaders/GRN/GRN_dragon_4.dds"
+		}
+	}
+}
+
+DRG = {
+	army = {
+		male = {
+			"gfx/leaders/GRN/GRN_dragon_1.dds"
+			"gfx/leaders/GRN/GRN_dragon_2.dds"
+			"gfx/leaders/GRN/GRN_dragon_3.dds"
+			"gfx/leaders/GRN/GRN_dragon_4.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/GRN/GRN_dragon_1.dds"
+			"gfx/leaders/GRN/GRN_dragon_2.dds"
+			"gfx/leaders/GRN/GRN_dragon_3.dds"
+		}
+	}
+
+	operative = {
+		male = {
+			"gfx/leaders/GRN/GRN_dragon_1.dds"
+			"gfx/leaders/GRN/GRN_dragon_2.dds"
+			"gfx/leaders/GRN/GRN_dragon_3.dds"
+			"gfx/leaders/GRN/GRN_dragon_4.dds"
+		}
+
+		female = {
+			"gfx/leaders/GRN/GRN_dragon_1.dds"
+			"gfx/leaders/GRN/GRN_dragon_2.dds"
+			"gfx/leaders/GRN/GRN_dragon_3.dds"
+			"gfx/leaders/GRN/GRN_dragon_4.dds"
+		}
+	}
+}
+
+FLO = {
+	army = {
+		male = {
+			"gfx/leaders/FLO/FLO_1.dds"
+			"gfx/leaders/FLO/FLO_2.dds"
+			"gfx/leaders/FLO/FLO_3.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/FLO/murori.dds"
+			"gfx/leaders/FLO/murori_2.dds"
+		}
+	}
+
+	operative = {
+		male = {
+			"gfx/leaders/FLO/FLO_1.dds"
+			"gfx/leaders/FLO/FLO_2.dds"
+		}
+		female = {
+			"gfx/leaders/FLO/FLO_3.dds"
+		}
+	}
+
+	political = {
+		communism = {
+			male = {
+				"gfx/leaders/FLO/FLO_1.dds"
+				"gfx/leaders/FLO/FLO_2.dds"
+			}
+		}
+	}
+}
+
+OFL = {
+	army = {
+		male = {
+			"gfx/leaders/FLO/FLO_1.dds"
+			"gfx/leaders/FLO/FLO_2.dds"
+			"gfx/leaders/FLO/FLO_3.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/FLO/FLO_1.dds"
+			"gfx/leaders/FLO/FLO_2.dds"
+			"gfx/leaders/FLO/FLO_3.dds"
+		}
+	}
+
+	political = {
+		communism = {
+			male = {
+				"gfx/leaders/FLO/FLO_1.dds"
+				"gfx/leaders/FLO/FLO_2.dds"
+			}
+		}
+
+		democratic = {
+			male = {
+				"gfx/leaders/FLO/FLO_1.dds"
+				"gfx/leaders/FLO/FLO_2.dds"
+			}
+		}
+
+		fascism = {
+			male = {
+				"gfx/leaders/FLO/FLO_1.dds"
+				"gfx/leaders/FLO/FLO_2.dds"
+			}
+		}
+
+		monarchism = {
+			male = {
+				"gfx/leaders/FLO/FLO_1.dds"
+				"gfx/leaders/FLO/FLO_2.dds"
+			}
+		}
+	}
+}
+
+ICW = {
+	army = {
+		male = {
+			"gfx/leaders/ICW/bear_1.dds"
+			"gfx/leaders/ICW/ox.dds"
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/ICW/seal.dds"
+		}
+	}
+}
+
+DES = {
+	army = {
+		male = {
+			"gfx/leaders/DES/DES_1.dds"
+			"gfx/leaders/DES/DES_2.dds"
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/DES/DES_1.dds"
+			"gfx/leaders/DES/DES_2.dds"
+		}
+	}
+	operative = {
+		male = {
+			"gfx/leaders/DES/DES_1.dds"
+			"gfx/leaders/DES/DES_2.dds"
+		}
+		female = {
+			"gfx/leaders/DES/DES_2.dds"
+		}
+	}
+}
+
+SKO = {
+	army = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+	operative = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+		female = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+}
+
+SKA = {
+	army = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+	operative = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+		female = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+}
+
+SKD = {
+	army = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+	operative = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+		female = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+}
+
+SKJ = {
+	army = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+	operative = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+		female = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+}
+
+SKK = {
+	army = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+	operative = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+		female = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+}
+
+SKL = {
+	army = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+	operative = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+		female = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+}
+
+SKM = {
+	army = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+	operative = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+		female = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+}
+
+SKP = {
+	army = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+	operative = {
+		male = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+		female = {
+			"gfx/leaders/SKO/kurvinox.dds"
+			"gfx/leaders/SKO/skurwol.dds"
+		}
+	}
+}
+
+APS = {
+	army = {
+		male = {
+			"gfx/leaders/APS/glados.dds"
+		}
+		female = {
+			"gfx/leaders/APS/glados.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/APS/glados.dds"
+		}
+		female = {
+			"gfx/leaders/APS/glados.dds"
+		}
+	}
+
+	operative = {
+		male = {
+			"gfx/leaders/APS/glados.dds"
+		}
+		female = {
+			"gfx/leaders/APS/glados.dds"
+		}
+	}
+}

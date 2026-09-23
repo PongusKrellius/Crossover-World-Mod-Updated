@@ -1,0 +1,18 @@
+state={
+	id=559
+	name="STATE_559"
+	provinces={
+		2078 2637 2693 2822 2878 3116 5397 5662 8413 8464 8548 8597 8619 8631 8695 8725 8732 
+	}
+	manpower=356538
+	buildings_max_level_factor=1.000
+	history = {
+		owner = LIN
+		add_core_of = LIN
+		add_claim_by = NCA
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	state_category = rural
+}

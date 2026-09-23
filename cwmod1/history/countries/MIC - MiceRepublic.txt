@@ -1,0 +1,39 @@
+﻿capital = 429
+
+oob = "MIC_1936"
+
+# Starting tech
+set_technology = {
+	horse_drawn_carriage = 1
+	infantry_weapons_med = 1
+}
+
+add_ideas = {
+	middleage_tech
+}
+
+set_convoys = 50
+
+set_popularities = {
+	democratic = 100
+
+	fascism = 0
+		
+	communism = 0
+		
+	monarchism = 0
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1930.7.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+set_stability = 0.85
+
+recruit_character = MIC_placeholder
+recruit_character = MIC_die_maus
+recruit_character = MIC_obsolete_technology
+recruit_character = MIC_lucas_taylor

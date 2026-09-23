@@ -1,0 +1,18 @@
+
+state={
+	id=461
+	name="STATE_461"
+
+	history={
+		owner = GLO
+		add_core_of = GLO
+
+	}
+
+	provinces={
+		1336 2415 2785 2816 3045 3450 3730 3836 4077 4891 5531 7713 7781 7820 7875 7947 8112 
+	}
+	manpower=600000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

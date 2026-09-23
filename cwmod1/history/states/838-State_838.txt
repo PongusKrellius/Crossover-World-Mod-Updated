@@ -1,0 +1,24 @@
+
+state={
+	id=838
+	name="STATE_838"
+
+	history={
+		add_core_of = FRI
+		owner = FRI
+		buildings = {
+			infrastructure = 4
+			5256 = {
+				naval_base = 3
+			}
+		}
+
+	}
+
+	provinces={
+		1240 1457 1515 4298 5256 10260 10270 10281 10283 10298 10328 
+	}
+	manpower=750000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

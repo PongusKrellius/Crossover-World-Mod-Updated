@@ -1,0 +1,33 @@
+state={
+	id=563
+	name="STATE_563"
+	provinces={
+		8592 8625 
+	}
+	state_category = city
+	manpower=1200000
+	buildings_max_level_factor=1.000
+	history = {
+		owner = JOJ
+		add_core_of = JOJ
+		add_core_of = PAS
+	buildings = {
+		infrastructure = 2
+		industrial_complex = 3
+		arms_factory = 4
+		air_base = 4
+		dockyard = 3
+		8592 = {
+			naval_base = 3
+		}
+	}
+		victory_points = {
+			8592 25
+		}
+}
+		resources = {
+			steel = 30
+			aluminium = 20
+		}
+	}
+

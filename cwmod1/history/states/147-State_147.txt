@@ -1,0 +1,22 @@
+state={
+	id=147
+	name="STATE_147"
+	provinces={
+		224 234 556 1770 4042 6110 6122 6136 6150 6175 
+	}
+	history = {
+		owner = NTR
+		add_core_of = NTR
+		victory_points = {
+			1770 15
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 4
+			industrial_complex = 3
+		}
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

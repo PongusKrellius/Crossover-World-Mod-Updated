@@ -1,0 +1,31 @@
+state={
+	id=689
+	name="STATE_689"
+	state_category = city
+	history = {
+		add_core_of = SLD
+		owner = SLD
+		buildings = {
+			arms_factory = 4
+			industrial_complex = 3
+			dockyard = 3
+			infrastructure = 4
+			air_base = 3
+			9379 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+            9379 15
+        }
+	}
+	provinces={
+		54 3055 4545 4666 4866 5496 9379 9406 9477 9478 9524 
+	}
+	manpower=750327
+	buildings_max_level_factor=1.000
+	resources = {
+		steel = 25
+		aluminium = 12
+	}
+}

@@ -1,0 +1,135 @@
+needs_cheap_infantry = {
+	OR = {
+		has_civil_war = yes
+		AND = {
+			tag = DES
+			has_war_with = GRN
+		}
+		AND = {
+			tag = FLO
+			has_war_with = SQU
+		}
+		AND = {
+			tag = FLO
+			has_war_with = DUC
+		}
+		AND = {
+			tag = FLO
+			has_war_with = WOL
+		}
+		AND = {
+			tag = JPN
+			has_war_with = LEC
+		}
+		AND = {
+			tag = LEC
+			has_war_with = JPN
+		}
+		AND = {
+			tag = MAI
+			has_war_with = FRI
+		}
+		AND = {
+			tag = FRI
+			has_war_with = MAI
+		}
+		AND = {
+			OR = {
+				tag = ENC
+				tag = EN1
+				tag = EN2
+				tag = EN3
+			}
+			OR = {
+				has_war_with = ENC
+				has_war_with = EN1
+				has_war_with = EN2
+				has_war_with = EN3
+			}
+		}
+	}
+}
+
+is_valid_war_target = {
+	custom_trigger_tooltip = {
+		tooltip = is_valid_war_target_tooltip
+		NOT = {
+			tag = ROOT
+			has_capitulated = yes
+			NOT = { exists = yes }
+			is_subject_of = ROOT
+			is_in_faction_with = ROOT
+			has_war_with = ROOT
+			ROOT = { is_subject_of = PREV }
+		}
+	}
+}
+
+is_limited_colonization_state = {
+	OR = {
+		AND = {
+			ROOT = {
+				tag = GON
+			}
+			THIS = {
+				OR = {
+					state = 206
+        			state = 173
+        			state = 237
+       		 		state = 196
+        			state = 137
+       		 		state = 120
+        			state = 110
+        			state = 117
+        			state = 123
+        			state = 130
+        			state = 157
+        			state = 121
+        			state = 108
+        			state = 101
+        			state = 105
+					state = 283
+				}
+			}
+		}
+		AND = {
+			ROOT = {
+				tag = GRN
+			}
+			THIS = {
+				OR = {
+					state = 283
+                    state = 237
+                	state = 206
+                    state = 273
+                    state = 241
+                    state = 196
+                    state = 173
+                    state = 285
+                    state = 254
+                    state = 276
+				}
+			}
+		}
+	}
+}
+
+has_reached_maximum_divisions = {
+	if = {
+		limit = { has_variable = num_actual_divisions }
+		check_variable = { var = num_actual_divisions value = max_divisions compare = greater_than_or_equals }
+	}
+	else = {
+		check_variable = { var = num_divisions value = max_divisions compare = greater_than_or_equals }
+	}
+}
+
+has_exceeded_maximum_divisions = {
+	if = {
+		limit = { has_variable = num_actual_divisions }
+		check_variable = { num_actual_divisions > max_divisions }
+	}
+	else = {
+		check_variable = { num_divisions > max_divisions }
+	}
+}

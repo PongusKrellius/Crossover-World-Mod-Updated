@@ -1,0 +1,34 @@
+﻿capital = 406
+
+oob = "GLO_1936"
+
+# Starting tech
+set_technology = {
+}
+
+add_ideas = {
+	TCWMod_empty_land
+}
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 100
+	fascism = 0
+		
+	communism = 0
+		
+	monarchism = 0
+}
+set_politics = {
+	ruling_party = democratic
+	last_election = "1930.7.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+set_stability = 0.85
+
+recruit_character = GLO_placeholder
+recruit_character = GLO_wilderness
+recruit_character = GLO_alexander_wilson

@@ -1,0 +1,32 @@
+state={
+	id=782
+	name="STATE_782"
+	provinces={
+		2664 9912 9942 9988 
+	}
+	state_category = city
+	manpower=550000
+	buildings_max_level_factor=1.000
+	history = {
+		owner = FLE
+		add_core_of = FLE
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4
+			air_base = 3
+			2664 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			2664 20
+		}
+		
+	}
+	resources = {
+			steel = 13
+			aluminium = 8
+			chromium = 7
+		}
+}

@@ -1,0 +1,64 @@
+spriteTypes = {	
+
+	### categories
+	
+	### category pictures
+	
+	spriteType = {
+		name = "GFX_decision_cat_grn_fate_of_tabaluga"
+		texturefile = "gfx/interface/decisions/decision_cat_grn_fate_of_tabaluga.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_grn_fate_of_tabaluga_2"
+		texturefile = "gfx/interface/decisions/decision_cat_grn_fate_of_tabaluga_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_passione_conflict"
+		texturefile = "gfx/interface/decisions/decision_cat_passione_conflict.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_divide_greenland"
+		texturefile = "gfx/interface/decisions/decision_cat_divide_greenland.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_conflict_for_influence"
+		texturefile = "gfx/interface/decisions/decision_cat_conflict_for_influence.dds"
+	}
+
+	### decision icons
+
+	spriteType = {
+		name = "GFX_decision_greenland_divide_desert"
+		texturefile = "gfx/interface/decisions/decision_greenland_divide_desert.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_greenland_divide_gongmen"
+		texturefile = "gfx/interface/decisions/decision_greenland_divide_gongmen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_greenland_divide_iceworld"
+		texturefile = "gfx/interface/decisions/decision_greenland_divide_iceworld.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_greenland_divide_not_taken"
+		texturefile = "gfx/interface/decisions/decision_greenland_divide_not_taken.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_under_macius_control"
+		texturefile = "gfx/interface/decisions/decision_under_macius_control.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_under_general_control"
+		texturefile = "gfx/interface/decisions/decision_under_general_control.dds"
+	}
+
+}

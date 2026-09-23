@@ -1,0 +1,330 @@
+﻿###########################
+# CK Events
+###########################
+
+add_namespace = game_start_event
+
+country_event = { #Main event (new)
+	id = game_start_event.0
+	immediate = {log = "[GetDateText]: [Root.GetName]: event game_start_event.0"}
+	title = game_start_event.0.t
+	desc = game_start_event.0.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		create_ambition_areas = yes
+	}
+
+	option = {
+		name = game_start_event.0.a
+		hidden_effect = {
+			
+		}
+	}
+}
+
+country_event = {
+	id = game_start_event.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event game_start_event.1"}
+	title = game_start_event.1.t
+	desc = game_start_event.1.d
+
+	fire_only_once = yes
+
+	immediate = {
+		create_ambition_areas = yes
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = game_start_event.1.a
+	}
+}
+
+###MAIN COUNTRIES
+
+country_event = { #Woloszanski's 'Hearts Made of Iron'
+	id = game_start_event.2137
+	immediate = {log = "[GetDateText]: [Root.GetName]: event game_start_event.2137"}
+	title = game_start_event.2137.t
+	desc = game_start_event.2137.d
+	picture = GFX_report_event_poland_rejects
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = game_start_event.2137.a
+		trigger = {
+			NOT = {
+				tag = FRI
+				tag = FLE
+			}
+		}
+	}
+
+	option = {
+		name = game_start_event.2137.b
+		trigger = {
+			OR = {
+				tag = FRI
+				tag = FLE
+			}
+		}
+	}
+}
+
+country_event = { #April Fools content - Spawning APS
+	id = game_start_event.2138
+	immediate = {log = "[GetDateText]: [Root.GetName]: event game_start_event.2138"}
+	title = game_start_event.2138.t
+	desc = game_start_event.2138.d
+	picture = GFX_report_event_poland_rejects
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = game_start_event.2138.a
+		hidden_effect = {
+			set_global_flag = aps_has_spawned
+			every_owned_state = {
+				add_core_of = APS
+			}
+			APS = {
+				transfer_state = 678
+				678 = {
+					add_victory_points = {
+						province = 5222
+						value = 20
+					}
+					set_state_name = "Aperture Science Enrichment Center"
+				}
+				set_capital = { state = 678 } 
+				set_technology = {
+					aps_turrets_are_allowed = 1
+				}
+				load_oob = APS_spawn
+				declare_war_on = {
+					target = TSA
+					type = annex_everything
+				}
+				retire_country_leader = yes
+				inherit_technology = TSA
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 800000
+					producer = APS
+				}
+				delete_unit_template_and_units = {
+					division_template = "Infantry Division"
+					disband = yes #will refund equipment and manpower
+				}
+				delete_unit_template_and_units = {
+					division_template = "Armored Division"
+					disband = yes #will refund equipment and manpower
+				}
+				delete_unit_template_and_units = {
+					division_template = "Mountaineer-Division"
+					disband = yes #will refund equipment and manpower
+				}
+			}
+			TSA = {
+				APS_glados = {
+					set_nationality = {
+						target_country = APS
+						character = APS_glados
+					}
+					add_country_leader_role = {
+						character = APS_glados
+						promote_leader = yes
+						country_leader = {
+							ideology=technocracy
+							expire="1965.1.1.1"
+							id=-1
+							traits = { sentient_ai }
+						}
+					}
+					add_corps_commander_role = {
+						skill=20
+						attack_skill=20
+						defense_skill=20
+						planning_skill=17
+						logistics_skill=20
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Country introduction - Flower Hill
+	id = game_start_event.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event game_start_event.2"}
+	title = game_start_event.2.t
+	desc = game_start_event.2.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = game_start_event.2.a
+	}
+}
+
+country_event = { #Country introduction - Central Kingdom
+	id = game_start_event.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event game_start_event.3"}
+	title = game_start_event.3.t
+	desc = game_start_event.3.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = game_start_event.3.a
+	}
+}
+
+country_event = { #Country introduction - Friedewalt
+	id = game_start_event.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event game_start_event.4"}
+	title = game_start_event.4.t
+	desc = game_start_event.4.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = game_start_event.4.a
+	}
+}
+
+country_event = { #Country introduction - Greenland
+	id = game_start_event.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event game_start_event.5"}
+	title = game_start_event.5.t
+	desc = game_start_event.5.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = game_start_event.5.a
+	}
+}
+
+country_event = { #Country introduction - Iceworld
+	id = game_start_event.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event game_start_event.6"}
+	title = game_start_event.6.t
+	desc = game_start_event.6.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = game_start_event.6.a
+	}
+}
+
+country_event = { #Country introduction - Enchancia
+	id = game_start_event.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event game_start_event.7"}
+	title = game_start_event.7.t
+	desc = game_start_event.7.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = game_start_event.7.a
+	}
+}
+
+country_event = { #Country introduction - Tri State Area
+	id = game_start_event.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event game_start_event.8"}
+	title = game_start_event.8.t
+	desc = game_start_event.8.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = game_start_event.8.a
+	}
+}
+
+country_event = { #Country introduction - Gongmen Empire
+	id = game_start_event.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event game_start_event.9"}
+	title = game_start_event.9.t
+	desc = game_start_event.9.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = game_start_event.9.a
+	}
+}
+
+country_event = { #Country introduction - Japanifornia
+	id = game_start_event.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event game_start_event.10"}
+	title = game_start_event.10.t
+	desc = game_start_event.10.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = game_start_event.9.a
+	}
+}
+
+country_event = { #Country introduction - Lechina Empire
+	id = game_start_event.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event game_start_event.11"}
+	title = game_start_event.11.t
+	desc = game_start_event.11.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = game_start_event.11.a
+	}
+}
+
+country_event = { #Country introduction - Kingdom of Avalor
+	id = game_start_event.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event game_start_event.12"}
+	title = game_start_event.12.t
+	desc = game_start_event.12.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = game_start_event.12.a
+	}
+}

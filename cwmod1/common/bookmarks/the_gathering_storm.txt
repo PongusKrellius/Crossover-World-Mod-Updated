@@ -1,0 +1,414 @@
+bookmarks = {
+	bookmark = {
+		name = "CGATHERING_STORM_NAME"
+		desc = "CGATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default = yes
+		
+		"DIO"={
+			history = "DIO_GATHERING_STORM_DESC"
+			ideas = {
+				modern_tech_idea
+			}
+			focuses = {
+				DIO_pucci_plan
+				DIO_enya_plan
+				DIO_the_way_to_heaven
+			}
+		}
+		
+	"JPN"={
+			history = "JPN_GATHERING_STORM_DESC"
+			ideas = {
+				modern_tech_idea
+				JPN_courts_and_presidents
+			}
+			focuses = {
+				JPN_president_wright
+				JPN_president_edgeworth
+				JPN_manifest_freedom
+			}
+		}
+
+		"FLO"={
+			history = "FLO_GATHERING_STORM_DESC"
+			ideas = {
+				modern_tech_idea
+				FLO_country_divided
+				FLO_medium_production_quotas
+			}
+			focuses = {
+				FLO_so_goesumdochi_wins
+				FLO_so_darami_wins
+				FLO_so_geumsaegi_wins
+			}
+		}
+
+		"ENC"={
+			history = "ENC_GATHERING_STORM_DESC"
+			ideas = {
+				middleage_tech
+				ENC_golden_age
+			}
+			focuses = {
+				ENC_preparing_the_country
+				ENC_victory_in_civil_war
+				ENC_the_dunwiddie_miracle
+			}
+		}
+		"MAI"={
+			history = "MAI_GATHERING_STORM_DESC"
+			ideas = {
+				modern_tech_idea
+				MAI_fighting_with_commies
+				MAI_landlocked
+			}
+			focuses = {
+				
+				MAI_royal_convention
+				MAI_children_parliament_focus
+			}
+		}
+		
+		"GRN"={
+			history = "GRN_GATHERING_STORM_DESC"
+			ideas = {
+				middleage_tech
+				GRN_limited_staff
+			}
+			focuses = {
+				GRN_economy_plan
+				GRN_establish_eastern_continent_treaty
+				GRN_coronation_of_tabaluga
+			}
+		}
+
+
+		"SIO"={
+			minor = yes
+			history = "SIO_GATHERING_STORM_DESC"
+			ideas = {
+				middleage_tech
+			}
+			focuses = {
+				SIO_the_council_meets
+				SIO_were_back_sandman
+				SIO_future_of_the_tribes
+			}
+		}
+
+		"GON"={
+			history = "GON_GATHERING_STORM_DESC"
+			ideas = {
+				pre-industrial_tech
+				GON_closed_country
+				GON_monarchist_guerillas
+			}
+			focuses = {
+				GON_start_prosecuting_monarchists
+				GON_year_of_peacock_shall_begin
+				GON_deeper_into_the_continent
+			}
+		}
+
+		#HERE COME THE MINORS
+
+		"FRI"={
+			minor = yes
+			history = "FRI_GATHERING_STORM_DESC"
+			ideas = {
+				modern_tech_idea
+				FRI_colonial_beginnings
+			}
+			focuses = {
+				FRI_a_new_start_for_diplomacy
+				FRI_draft_recovery_plan
+				FRI_hartmut_rules
+			}
+		}
+
+	"TSA"={
+			minor = yes
+			history = "TSA_GATHERING_STORM_DESC"
+			ideas = {
+				modern_tech_idea
+			}
+			focuses = {
+				TSA_elections_of_1936
+				TSA_proclaim_doofania
+				TSA_bastion_of_democracy
+			}
+		}
+
+		"SWA"={
+			minor = yes
+			history = "SWA_GATHERING_STORM_DESC"
+			ideas = {
+				middleage_tech
+				
+			}
+			focuses = {
+				SWA_the_sharpest_tools_in_the_shed
+				SWA_or_not
+				SWA_and_all_i_got_was_this_lousy_duloc_land
+			}
+		}
+		"FLE"={
+			minor = yes
+			history = "FLE_GATHERING_STORM_DESC"
+			ideas = {
+				modern_tech_idea
+				FLE_ostgesetz
+				FLE_medium_funding_from_pantmawr
+			}
+			focuses = {
+				FLE_a_new_governor
+				FLE_we_are_on_our_own
+				FLE_the_path_of_freedom
+			}
+		}
+		"DES"={
+			minor = yes
+			history = "DES_GATHERING_STORM_DESC"
+			ideas = {
+				pre-industrial_tech
+			}
+			focuses = {
+				DES_open_for_international_relations
+				DES_take_care_of_sioux_tribe
+				DES_demand_reclaimed_fields
+			}
+		}
+
+		"ICW"={
+			minor = yes
+			history = "ICW_GATHERING_STORM_DESC"
+			ideas = {
+				pre-industrial_tech
+				ICW_frozen_dragon_idea
+			}
+			focuses = {
+				ICW_leftovers_of_an_empire
+				ICW_try_second_time
+				ICW_versus_greenland
+			}
+		}
+
+
+	#	"WOL"={
+	#		minor = yes
+	#		history = "WOL_GATHERING_STORM_DESC"
+	#		ideas = {
+	#			modern_tech_idea
+	#		}
+	#		focuses = {
+	#			
+	#		}
+	#	}
+		"AVA"={
+			minor = yes
+			history = "AVA_GATHERING_STORM_DESC"
+			ideas = {
+				middleage_tech
+				AVA_legacy_of_kingdom_of_maru
+				AVA_shuriki_dark_legacy_idea_1
+			}
+			focuses = {
+				AVA_shuriki_dark_legacy
+				AVA_economic_legacy_of_maru
+				AVA_clear_the_remnants_of_shuriki_rule
+			}
+		}
+		"JOJ"={
+			minor = yes
+			history = "JOJ_GATHERING_STORM_DESC"
+			ideas = {
+				modern_tech_idea
+			}
+			focuses = {
+				JOJ_reform_path
+				JOJ_rearm_arendelle
+				JOJ_fortify_border_with_dio
+			}
+		}
+
+		# MIDDLE ROW?
+
+	
+		"DUL"={
+			history = "DUL_GATHERING_STORM_DESC"
+			ideas = {
+				middleage_tech
+				DUL_ambitions_of_farquaad
+				DUL_persecutions_of_magical_creatures
+			}
+			focuses = {
+				DUL_choosing_the_princess
+				DUL_proclaim_the_kingdom
+				DUL_army_modernization
+			}
+		}
+
+		"FFA"={
+			history = "FFA_GATHERING_STORM_DESC"
+			minor = yes
+			ideas = {
+				middleage_tech
+				FFA_two_decades_of_waiting
+			}
+			focuses = {
+				FFA_not_ogre_yet
+				FFA_charming_completes_the_plan
+				FFA_a_third_option_rumpel_tree
+			}
+		}
+
+
+
+		"LAL"={
+			minor = yes
+			history = "LAL_GATHERING_STORM_DESC"
+			ideas = {
+				pre-industrial_tech
+			}
+			focuses = {
+				LAL_sunny_in_charge
+				LAL_anti_shen_coalition
+				LAL_ace_in_charge
+			}
+		}
+
+		"LEC"={
+			minor = yes
+			history = "LEC_GATHERING_STORM_DESC"
+			ideas = {
+				middleage_tech
+			}
+			focuses = {
+				LEC_state_of_the_empire
+				LEC_found_karlino_axis
+				LEC_demand_southern_lechia_lands
+			}
+		}
+
+		"SLD"={
+			minor = yes
+			history = "SLD_GATHERING_STORM_DESC"
+			ideas = {
+				modern_tech_idea
+			}
+			focuses = {
+				SLD_the_great_elections
+				SLD_operation_major_ear
+				SLD_peaceful_negotiations
+			}
+		}
+
+		"KPT"={
+			minor = yes
+			history = "KPT_GATHERING_STORM_DESC"
+			ideas = {
+				modern_tech_idea
+			}
+			focuses = {
+				KPT_admiral_jachas
+				KPT_admiral_kuj
+				KPT_maintaing_old_course
+			}
+		}
+
+		"SKO"={
+			minor = yes
+			history = "SKO_GATHERING_STORM_DESC"
+			ideas = {
+				modern_tech_idea
+				SKO_severed_communication_with_kurvix
+			}
+			focuses = {
+				SKO_warmup_paradoxawka
+				SKO_operation_mortadela
+				SKO_open_war_with_friedewalt
+			}
+		}
+
+		"SAN"={
+			minor = yes
+			history = "SAN_GATHERING_STORM_DESC"
+			ideas = {
+				modern_tech_idea
+			}
+			focuses = {
+				SAN_stonoga_rejects_elections
+				SAN_the_one_and_only
+				SAN_ppu_takes_the_reign
+			}
+		}
+
+		"TIG"={
+			minor = yes
+			history = "TIG_GATHERING_STORM_DESC"
+			ideas = {
+				middleage_tech
+				
+			}
+			focuses = {
+				TIG_the_clan_at_the_end_of_the_world
+				TIG_nak_turns_up
+				TIG_tom_turns_up
+			}
+		}
+
+		"CVA"={
+			minor = yes
+			history = "CVA_GATHERING_STORM_DESC"
+			ideas = {
+				modern_tech_idea
+				CVA_world_without_violence
+				CVA_economics_abc
+				CVA_pincode_program
+			}
+			focuses = {
+				CVA_bastion_of_peace
+				CVA_defending_peace
+				CVA_prepare_for_refugees
+			}
+		}
+
+		"PAT"={
+			minor = yes
+			history = "PAT_GATHERING_STORM_DESC"
+			ideas = {
+				modern_tech_idea
+			}
+			focuses = {
+				PAT_rano_moudrejsi_vecera
+				PAT_coup_aftermath
+				PAT_mountaingeneral_civilwar
+			}
+		}
+
+		"ARE"={
+			minor = yes
+			history = "ARE_GATHERING_STORM_DESC"
+			ideas = {
+				middleage_tech
+			}
+			focuses = {
+				ARE_crusade_against_evil
+				ARE_kingdom_of_isolation
+				ARE_foreign_policy
+			}
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+	bookmark = {
+	 	name = "dummy"
+	 	desc = "dummy"
+		date = 9999.1.1.12
+	}
+}

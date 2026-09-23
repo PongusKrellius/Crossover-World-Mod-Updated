@@ -1,0 +1,77 @@
+﻿division_template = {
+	name = "Zombie Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Stand User Unit"
+	regiments = {
+		stand_users = { x = 0 y = 0 }
+		stand_users = { x = 0 y = 1 }
+		stand_users = { x = 0 y = 2 }
+		stand_users = { x = 1 y = 0 }
+		stand_users = { x = 1 y = 1 }
+		stand_users = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Tank Division"
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+        light_armor = { x = 1 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "1. Zombie Division"
+		location = 7633
+		division_template = "Zombie Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "2. Zombie Division"
+		location = 7633
+		division_template = "Zombie Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "3. Zombie Division"
+		location = 1901
+		division_template = "Zombie Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "4. Zombie Division"
+		location = 1901
+		division_template = "Zombie Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "1. Stand User Unit"
+		location = 7633
+		division_template = "Stand User Unit"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "2. Stand User Unit"
+		location = 7633
+		division_template = "Stand User Unit"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "1. Tank Division"
+		location = 7633
+		division_template = "Tank Division"
+		start_experience_factor = 0.2
+	}
+}
+

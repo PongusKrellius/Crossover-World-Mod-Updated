@@ -1,0 +1,70 @@
+﻿capital = 655
+
+oob = "LEC_1936"
+
+# Starting tech
+set_technology = {
+	horse_drawn_carriage = 1
+	infantry_weapons_med = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		transport = 1
+	}
+
+	set_naval_oob = LEC_1936_naval
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		mtg_transport = 1
+		basic_battery = 1
+		basic_light_battery = 1
+	}
+
+	set_naval_oob = LEC_1936_naval_mtg
+}
+add_ideas = {
+	middleage_tech
+}
+
+add_opinion_modifier = {
+    target = JPN
+    modifier = TCWMod_they_see_us_as_enemy
+}
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 0
+
+	fascism = 0
+		
+	communism = 0
+		
+	
+		
+	monarchism = 100
+}
+
+set_politics = {
+	ruling_party = monarchism
+	last_election = "1930.7.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+set_stability = 0.55
+
+recruit_character = LEC_lech_i_wielki
+recruit_character = LEC_placeholder
+recruit_character = LEC_communist_council_of_lechia
+recruit_character = LEC_szymon_kowalski

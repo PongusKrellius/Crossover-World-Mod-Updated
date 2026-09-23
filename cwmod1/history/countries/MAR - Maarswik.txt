@@ -1,0 +1,61 @@
+﻿capital = 365
+
+oob = "MAR_1936"
+
+# Starting tech
+set_technology = {
+	horse_drawn_carriage = 1
+	infantry_weapons_med = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		mtg_transport = 1
+		basic_battery = 1
+		basic_light_battery = 1
+	}
+}
+add_ideas = {
+	middleage_tech
+}
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 0
+
+	fascism = 0
+		
+	communism = 0
+		
+	
+		
+	monarchism = 100
+}
+
+set_politics = {
+	ruling_party = monarchism
+	last_election = "1930.7.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+set_stability = 0.85
+
+recruit_character = MAR_lars_i
+recruit_character = MAR_placeholder
+recruit_character = MAR_maarswikan_communist_council
+recruit_character = MAR_alex_jones

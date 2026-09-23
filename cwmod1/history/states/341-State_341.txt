@@ -1,0 +1,23 @@
+state={
+	id=341
+	name="STATE_341"
+	state_category = city
+	history = {
+		owner = FLO
+		add_core_of = FLO
+		buildings = {
+			arms_factory = 4
+			industrial_complex = 3
+			infrastructure = 4
+			dockyard = 3
+			3684 = {
+				naval_base = 2
+			}
+		}
+	}
+	provinces={
+		3684 5047 5240 
+	}
+	manpower=1300000
+	buildings_max_level_factor=1.000
+}

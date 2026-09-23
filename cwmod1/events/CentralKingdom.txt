@@ -1,0 +1,5825 @@
+﻿###########################
+# CK Events
+###########################
+
+add_namespace = centralkingdom
+add_namespace = childrenrepublic
+
+country_event = {
+	id = centralkingdom.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.1"}
+	title = centralkingdom.1.t
+	desc = centralkingdom.1.d
+	picture = GFX_report_death_of_stephen
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MAI
+		date > 1936.2.1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_variable = {
+				MAI_NCK_SOC_support = 65
+			}
+
+			set_variable = {
+				MAI_NCK_MIL_support = 60
+			}
+
+			set_variable = {
+				MAI_NCK_IND_support = 65
+			}
+
+			set_variable = {
+				MAI_SCK_SOC_support = 60
+			}
+
+			set_variable = {
+				MAI_SCK_MIL_support = 55
+			}
+
+			set_variable = {
+				MAI_SCK_IND_support = 60
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = centralkingdom.1.a
+		custom_effect_tooltip = MAC_stephen_death_tooltip
+		hidden_effect = { 
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			set_country_flag = big_event_stephen_death
+		}
+		every_country = {
+			limit = {
+				has_variable = cr_superevent_music_status
+			}
+			sound_effect = cr_bigevent_stephen_death_new_sound
+			play_song = cisza45
+		}
+		kill_country_leader = yes
+
+		set_global_flag = stephen_is_dead
+
+		create_country_leader = {
+			name = "Macius I"
+			desc = "POLITICS_MACIUS_I_DESC"
+			picture = "macius.dds"
+			expire = "1965.1.1"
+			ideology = administrative_monarchy
+			traits = {
+				underage_monarch
+			}
+		}
+
+		create_country_leader = {
+			name = "Macius I"
+			desc = "POLITICS_MACIUS_I_DESC"
+			picture = "macius.dds"
+			expire = "1965.1.1"
+			ideology = centrism
+			traits = {
+				underage_monarch
+			}
+		}
+
+		create_country_leader = {
+			name = "General"
+			desc = "POLITICS_GENERAL_DESC"
+			picture = "general.dds"
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				#
+			}
+		}
+			news_event = { 
+				id = worldnews.1 days = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = centralkingdom.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.6"}
+	title = centralkingdom.6.t
+	desc = centralkingdom.6.d
+	picture = GFX_report_enchancia_palace
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.6.a
+		custom_effect_tooltip = MAI_helps_enc
+		trigger = {
+			ENC = {
+				exists = yes
+			}
+		}
+		ai_chance = {
+			base = 15
+			modifier = {
+				OR = {
+					FRI = {
+						has_country_flag = ECW_support_dunwiddie
+					}
+					AVA = {
+						has_country_flag = ECW_support_dunwiddie
+					}
+				}
+				add = -15
+			}
+		}
+		hidden_effect = {
+			ENC = {
+				add_manpower = 15000
+				add_equipment_to_stockpile = {
+    				type = infantry_equipment_0
+    				amount = 7500
+    				producer = MAI
+				}
+			}
+			set_country_flag = ECW_support_dunwiddie
+		}
+	}
+
+	option = {
+		name = centralkingdom.6.b
+		custom_effect_tooltip = MAI_helps_en1
+		trigger = {
+			EN1 = {
+				exists = yes
+			}
+		}
+		ai_chance = {
+			base = 70
+			modifier = {
+				OR = {
+					FRI = {
+						has_country_flag = ECW_support_james
+					}
+					AVA = {
+						has_country_flag = ECW_support_james
+					}
+				}
+				add = -70
+			}
+		}
+		hidden_effect = {
+			EN1 = {
+				add_manpower = 15000
+				add_equipment_to_stockpile = {
+    				type = infantry_equipment_0
+    				amount = 7500
+    				producer = MAI
+				}
+			}
+			set_country_flag = ECW_support_james
+		}
+	}
+
+	option = {
+		name = centralkingdom.6.c
+		custom_effect_tooltip = MAI_helps_en2
+		trigger = {
+			EN2 = {
+				exists = yes
+			}
+		}
+		ai_chance = {
+			base = 15
+			modifier = {
+				OR = {
+					FRI = {
+						has_country_flag = ECW_support_amber
+					}
+					MAI = {
+						has_country_flag = ECW_support_amber
+					}
+					AVA = {
+						has_country_flag = ECW_support_amber
+					}
+				}
+				add = -15
+			}
+		}
+		hidden_effect = {
+			EN2 = {
+				add_manpower = 15000
+				add_equipment_to_stockpile = {
+    				type = infantry_equipment_0
+    				amount = 7500
+    				producer = MAI
+				}
+			}
+			set_country_flag = ECW_support_amber
+		}
+	}
+}
+
+country_event = {
+	id = centralkingdom.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.7"}
+	title = centralkingdom.7.t
+	desc = centralkingdom.7.d
+	picture = GFX_report_enchancia_palace
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.7.a
+		custom_effect_tooltip = MAI_helps_enc_jump
+		hidden_effect = {
+			ENC = {
+				country_event = {
+					id = enchancia.47
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = centralkingdom.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.8"}
+	title = centralkingdom.8.t
+	desc = centralkingdom.8.d
+	picture = GFX_report_enchancia_palace
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.8.a
+	}
+}
+
+country_event = {
+	id = centralkingdom.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.9"}
+	title = centralkingdom.9.t
+	desc = centralkingdom.9.d
+	picture = GFX_report_enchancia_palace
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.9.a
+		custom_effect_tooltip = MAI_faction_with_enc
+		hidden_effect = {
+			ENC = {
+				dismantle_faction = yes
+			}
+			MAI = {
+				set_faction_name = great_kingdom_alliance
+				add_to_faction = ENC
+				add_to_faction = WEI
+				add_to_faction = KHA
+				set_country_flag = greatest_alliance_formed
+			}
+		}
+	}
+}
+
+country_event = {
+	id = centralkingdom.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.10"}
+	title = centralkingdom.10.t
+	desc = centralkingdom.10.d
+	picture = GFX_report_enchancia_palace
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.10.a
+	}
+}
+
+country_event = {
+	id = centralkingdom.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.11"}
+	title = centralkingdom.11.t
+	desc = centralkingdom.11.d
+	picture = GFX_report_enchancia_palace
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.11.a
+		trigger = {
+			ENC = {
+				exists = yes
+			}
+		}
+		ENC = {
+			add_ideas = {
+				MAC_helps_rebuild
+			}
+		}
+	}
+
+	option = {
+		name = centralkingdom.11.a
+		trigger = {
+			EN1 = {
+				exists = yes
+			}
+		}
+		EN1 = {
+			add_ideas = {
+				MAC_helps_rebuild
+			}
+		}
+	}
+
+	option = {
+		name = centralkingdom.11.a
+		trigger = {
+			EN2 = {
+				exists = yes
+			}
+		}
+		EN2 = {
+			add_ideas = {
+				MAC_helps_rebuild
+			}
+		}
+	}
+}
+
+country_event = {
+	id = centralkingdom.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.12"}
+	title = centralkingdom.12.t
+	desc = centralkingdom.12.d
+	picture = GFX_report_enchancia_palace
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.12.a
+	}
+}
+
+country_event = {
+	id = centralkingdom.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.13"}
+	title = centralkingdom.13.t
+	desc = centralkingdom.13.d
+	picture = GFX_report_enchancia_palace
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.13.a
+		trigger = {
+			ENC = {
+				exists = yes
+			}
+		}
+		custom_effect_tooltip = MAI_faction_with_enc_ecw
+		hidden_effect = {
+			MAI = {
+				set_faction_name = great_kingdom_alliance
+				add_to_faction = ENC
+				set_country_flag = greatest_alliance_formed
+			}
+		}
+	}
+
+	option = {
+		name = centralkingdom.13.a
+		trigger = {
+			EN1 = {
+				exists = yes
+			}
+		}
+		custom_effect_tooltip = MAI_faction_with_enc_ecw
+		hidden_effect = {
+			MAI = {
+				set_faction_name = great_kingdom_alliance
+				add_to_faction = EN1
+				set_country_flag = greatest_alliance_formed
+			}
+		}
+	}
+
+	option = {
+		name = centralkingdom.13.a
+		trigger = {
+			EN2 = {
+				exists = yes
+			}
+		}
+		custom_effect_tooltip = MAI_faction_with_enc_ecw
+		hidden_effect = {
+			MAI = {
+				create_faction = great_kingdom_alliance
+				add_to_faction = EN2
+				set_country_flag = greatest_alliance_formed
+			}
+		}
+	}
+}
+
+country_event = {
+	id = centralkingdom.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.14"}
+	title = centralkingdom.14.t
+	desc = centralkingdom.14.d
+	picture = GFX_report_enchancia_palace
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.14.a
+	}
+}
+
+country_event = {
+	id = centralkingdom.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.15"}
+	title = centralkingdom.15.t
+	desc = centralkingdom.15.d
+	picture = GFX_report_greenland
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.15.a
+		hidden_effect = {
+			country_event = {
+				id = centralkingdom.16
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = centralkingdom.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.16"}
+	title = centralkingdom.16.t
+	desc = centralkingdom.16.d
+	picture = GFX_report_greenland
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.16.a
+		hidden_effect = {
+			set_country_flag = visited_grn
+		}
+	}
+}
+
+country_event = {
+	id = centralkingdom.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.17"}
+	title = centralkingdom.17.t
+	desc = centralkingdom.17.d
+	picture = GFX_report_greenland
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.17.a
+	}
+}
+
+country_event = {
+	id = centralkingdom.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.18"}
+	title = centralkingdom.18.t
+	desc = centralkingdom.18.d
+	picture = GFX_report_greenland
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.18.a
+	}
+}
+
+country_event = {
+	id = centralkingdom.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.19"}
+	title = centralkingdom.19.t
+	desc = centralkingdom.19.d
+	picture = GFX_report_macius_palace
+
+	fire_only_once = yes
+
+	trigger = {
+		focus_progress = {
+			focus = MAI_royal_convention
+    		progress > 0.1
+		}
+	}
+
+	option = {
+		name = centralkingdom.19.a
+		add_political_power = -60
+	}
+
+	option = {
+		name = centralkingdom.19.b
+	}
+}
+
+country_event = {
+	id = centralkingdom.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.20"}
+	title = centralkingdom.20.t
+	desc = centralkingdom.20.d
+	picture = GFX_report_macius_palace
+
+	fire_only_once = yes
+
+	trigger = {
+		focus_progress = {
+			focus = MAI_royal_convention
+    		progress > 0.22
+		}
+	}
+
+	option = {
+		name = centralkingdom.20.a
+		add_political_power = -40
+		add_stability = -0.1
+	}
+}
+
+country_event = {
+	id = centralkingdom.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.21"}
+	title = centralkingdom.21.t
+	desc = centralkingdom.21.d
+	picture = GFX_report_macius_palace
+
+	fire_only_once = yes
+
+	trigger = {
+		focus_progress = {
+			focus = MAI_royal_convention
+    		progress > 0.35
+		}
+	}
+
+	option = {
+		name = centralkingdom.21.a
+		add_political_power = -100
+		add_stability = -0.15
+	}
+}
+
+country_event = {
+	id = centralkingdom.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.22"}
+	title = centralkingdom.22.t
+	desc = centralkingdom.22.d
+	picture = GFX_report_macius_palace
+
+	fire_only_once = yes
+
+	trigger = {
+		focus_progress = {
+			focus = MAI_royal_convention
+    		progress > 0.46
+		}
+	}
+
+	option = {
+		name = centralkingdom.22.a
+		add_political_power = -20
+	}
+}
+
+country_event = {
+	id = centralkingdom.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.23"}
+	title = centralkingdom.23.t
+	desc = centralkingdom.23.d
+	picture = GFX_report_macius_palace
+
+	fire_only_once = yes
+
+	trigger = {
+		focus_progress = {
+			focus = MAI_royal_convention
+    		progress > 0.6
+		}
+	}
+
+	option = {
+		name = centralkingdom.23.a
+		add_political_power = -75
+	}
+}
+
+country_event = {
+	id = centralkingdom.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.24"}
+	title = centralkingdom.24.t
+	desc = centralkingdom.24.d
+	picture = GFX_report_macius_palace
+
+	fire_only_once = yes
+
+	trigger = {
+		focus_progress = {
+			focus = MAI_royal_convention
+    		progress > 0.66
+		}
+	}
+
+	option = {
+		name = centralkingdom.20.a
+		add_political_power = -60
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = centralkingdom.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.25"}
+	title = centralkingdom.25.t
+	desc = centralkingdom.25.d
+	picture = GFX_report_macius_palace
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.25.a
+		trigger = {
+			ENC = {
+				exists = yes
+			}
+			has_global_flag = enchancian_civil_war_over
+		}	
+		ENC = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		FRI = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		WEK = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		SLD = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		GRN = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+    			royal_convention_count = 0
+			}
+		}
+	}
+
+	option = {
+		name = centralkingdom.25.a
+		trigger = {
+			EN1 = {
+					exists = yes
+			}
+			has_global_flag = enchancian_civil_war_over
+		}
+		EN1 = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		FRI = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		WEK = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		SLD = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		GRN = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+    			var = royal_convention_count
+    			value = 0
+			}
+		}
+	}
+
+	option = {
+		name = centralkingdom.25.a
+		trigger = {
+			EN2 = {
+				exists = yes
+			}
+			has_global_flag = enchancian_civil_war_over
+		}
+		EN2 = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		FRI = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		WEK = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		SLD = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		GRN = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+    			var = royal_convention_count
+    			value = 0
+			}
+		}
+	}
+
+	option = {
+		name = centralkingdom.25.a
+		trigger = {
+			NOT = {
+				has_global_flag = enchancian_civil_war_over
+			}
+		}
+		FRI = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		WEK = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		if = {
+			limit = {
+				SLD = {
+					NOT = {
+						has_government = fascism
+						has_government = communism
+					}
+				}
+			}
+			SLD = {
+				country_event = {
+					id = royalconvention.1
+					days = 1
+				}
+			}
+		}
+		GRN = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+    			var = royal_convention_count
+    			value = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = centralkingdom.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.26"}
+	title = centralkingdom.26.t
+	desc = centralkingdom.26.d
+	picture = GFX_report_macius_palace
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.26.a
+		TUG = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		AVA = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		WEI = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		if = {
+			limit = {
+				KHA = {
+					has_government = monarchism
+				}
+			}
+			KHA = {
+				country_event = {
+					id = royalconvention.1
+					days = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				TRU = {
+					has_government = monarchism
+				}
+			}
+			TRU = {
+				country_event = {
+					id = royalconvention.1
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = centralkingdom.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.27"}
+	title = centralkingdom.27.t
+	desc = centralkingdom.27.d
+	picture = GFX_report_macius_palace
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.27.a
+		ICW = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		DES = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+
+	option = {
+		name = centralkingdom.27.b
+		ICW = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+
+	option = {
+		trigger = {
+			DES = {
+				NOT = {
+					has_war_with = GRN
+				}
+			}
+		}
+		name = centralkingdom.27.c
+		DES = {
+			country_event = {
+				id = royalconvention.1
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+country_event = {
+	id = centralkingdom.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.28"}
+	title = centralkingdom.28.t
+	desc = centralkingdom.28.d
+	picture = GFX_report_greenland
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.28.a
+		add_political_power = 50
+		add_stability = 0.15
+		hidden_effect = {
+			set_country_flag = GRN_dragon_here
+			news_event = {
+				id = worldnews.17
+				hours = 6
+			}
+		}
+	}
+}
+
+country_event = { #Hartmut is crowned
+	id = centralkingdom.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.29"}
+	title = centralkingdom.29.t
+	desc = centralkingdom.29.d
+	picture = GFX_report_macius_palace
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.29.a
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Hartmut II"
+			desc = "POLITICS_HARTMUT_DESC"
+			picture = "hartmut.dds"
+			expire = "1965.1.1"
+			ideology = administrative_monarchy
+			traits = {
+				warmonger
+				inexperienced_imperialist
+			}
+		}
+		set_cosmetic_tag = HAR
+		hidden_effect = {
+			FLE = {
+				if = {
+					limit = {
+						is_puppet_of = FRI
+					}
+					set_cosmetic_tag = FLE_HAR
+				}
+			}
+			complete_national_focus = FRI_hartmut_rules
+			news_event = {
+				id = worldnews.24
+				hours = 6
+			}
+			country_event = {
+				id = centralkingdom.30
+				days = 4
+			}
+			add_named_threat = {
+				threat = 5
+				name = hartmut_crowned
+			}
+		}
+	}
+}
+
+country_event = { #Start of Hartmut Crisis
+	id = centralkingdom.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.30"}
+	title = centralkingdom.30.t
+	desc = centralkingdom.30.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.30.a
+		trigger = {
+			has_war = no
+		}
+		if = {
+			limit = {
+				is_in_faction_with = MAI
+			}
+			leave_faction = yes
+		}
+		MAI = {
+			country_event = {
+				id = centralkingdom.31
+				days = 1
+			}
+		}
+		add_named_threat = { 
+    		threat = 15 
+    		name = hartmut_crisis
+		}
+		hidden_effect = {
+			set_country_flag = hartmut_crisis_started
+		}
+	}
+
+	option = {
+		name = centralkingdom.30.b
+		trigger = {
+			has_war = yes
+		}
+		custom_effect_tooltip = FRI_not_yet_hartmut
+		hidden_effect = {
+			country_event = {
+				id = centralkingdom.30
+				days = 60
+			}
+		}
+	}
+}
+
+country_event = { #Macius receives ultimatum
+	id = centralkingdom.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.31"}
+	title = centralkingdom.31.t
+	desc = centralkingdom.31.d
+	picture = GFX_report_macius_palace
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.31.a
+		ai_chance = {
+			base = 1
+			modifier = {
+				has_game_rule = {
+					rule = MAI_hartmut_crisis_ai_behavior
+					option = MAI_AGREE_TO_REFORM
+				}
+				add = 99
+			}
+		}
+		hidden_effect = {
+			set_country_flag = hartmut_demands
+			set_country_flag = agreed_to_reform_parliament
+			news_event = {
+				id = worldnews.25
+				hours = 2
+			}
+			country_event = {
+				id = centralkingdom.65
+				hours = 8
+			}
+			complete_national_focus = MAI_hartmut_crisis
+		}
+	}
+
+	option = {
+		name = centralkingdom.31.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				has_game_rule = {
+					rule = MAI_hartmut_crisis_ai_behavior
+					option = MAI_REFUSE
+				}
+				add = 99
+			}
+		}
+		hidden_effect = {
+			set_country_flag = hartmut_demands
+			set_country_flag = denied_reforming_parliament
+			news_event = {
+				id = worldnews.25
+				hours = 2
+			}
+			country_event = {
+				id = centralkingdom.65
+				hours = 8
+			}
+			complete_national_focus = MAI_hartmut_crisis
+		}
+	}
+}
+
+country_event = { #Macius rejects ultimatum
+	id = centralkingdom.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.32"}
+	title = centralkingdom.32.t
+	desc = centralkingdom.32.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #It's war, then!
+		name = centralkingdom.32.a
+		add_political_power = 100
+		hidden_effect = {
+			create_faction = central_alliance
+			if = {
+				limit = {
+					has_country_flag = wek_accepted
+				}
+				add_to_faction = WEK
+				803 = {
+					add_claim_by = WEK
+				}
+				814 = {
+					add_claim_by = WEK
+				}
+				822 = {
+					add_claim_by = WEK
+				}
+				812 = {
+					add_claim_by = WEK
+				}
+				824 = {
+					add_claim_by = WEK
+				}
+				817 = {
+					add_claim_by = WEK
+				}
+				852 = {
+					add_claim_by = WEK
+				}
+				WEK = {
+					declare_war_on = {
+						target = MAI
+						type = annex_everything
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = sld_accepted
+				}
+				if = {
+					limit = {
+						SLD = {
+							NOT = {
+								is_in_faction = yes
+							}
+						}
+					}
+					add_to_faction = SLD
+				}
+				789 = {
+					add_claim_by = SLD
+				}
+				798 = {
+					add_claim_by = SLD
+				}
+				796 = {
+					add_claim_by = SLD
+				}
+				792 = {
+					add_claim_by = SLD
+				}
+				799 = {
+					add_claim_by = SLD
+				}
+				SLD = {
+					declare_war_on = {
+						target = MAI
+						type = annex_everything
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = sld_accepted
+						has_country_flag = wek_accepted
+					}
+				}
+				803 = {
+					add_claim_by = FRI
+				}
+				814 = {
+					add_claim_by = FRI
+				}
+				822 = {
+					add_claim_by = FRI
+				}
+				812 = {
+					add_claim_by = FRI
+				}
+				824 = {
+					add_claim_by = FRI
+				}
+				817 = {
+					add_claim_by = FRI
+				}
+				789 = {
+					add_claim_by = FRI
+				}
+				798 = {
+					add_claim_by = FRI
+				}
+				796 = {
+					add_claim_by = FRI
+				}
+				792 = {
+					add_claim_by = FRI
+				}
+				799 = {
+					add_claim_by = FRI
+				}
+				852 = {
+					add_claim_by = FRI
+				}
+			}
+			858 = {
+				add_claim_by = FRI
+			}
+			843 = {
+				add_claim_by = FRI
+			}
+			831 = {
+				add_claim_by = FRI
+			}
+			808 = {
+				add_claim_by = FRI
+			}
+		}
+		declare_war_on = { 
+			target = MAI
+			type = annex_everything	
+		}
+		hidden_effect = {
+			MAI = {
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+	}
+}
+
+country_event = { #Macius agrees to the ultimatum
+	id = centralkingdom.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.33"}
+	title = centralkingdom.33.t
+	desc = centralkingdom.33.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = hartmut_received_the_reply
+		}
+	}
+
+	option = { #Perfect
+		name = centralkingdom.33.a
+		add_political_power = 50
+		hidden_effect = {
+			set_country_flag = macius_folded
+			MAI = {
+				mark_focus_tree_layout_dirty = yes
+				set_country_flag = form_timeforkids
+				if = {
+					limit = {
+						owns_state = 877
+					}
+					set_country_flag = form_newconfederation
+					else = {
+						set_country_flag = form_freefuture
+					}
+				}
+			}
+			unlock_national_focus = FRI_organize_peace_conference
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+
+	option = { #I don't care if he agrees or not, I hate this kid.
+		name = centralkingdom.33.a
+		add_political_power = -150
+		add_stability = -0.15
+		hidden_effect = {
+			create_faction = central_alliance
+			if = {
+				limit = {
+					has_country_flag = wek_accepted
+				}
+				add_to_faction = WEK
+				803 = {
+					add_claim_by = WEK
+				}
+				814 = {
+					add_claim_by = WEK
+				}
+				822 = {
+					add_claim_by = WEK
+				}
+				812 = {
+					add_claim_by = WEK
+				}
+				824 = {
+					add_claim_by = WEK
+				}
+				817 = {
+					add_claim_by = WEK
+				}
+				852 = {
+					add_claim_by = WEK
+				}
+				WEK = {
+					declare_war_on = {
+						target = MAI
+						type = annex_everything
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = sld_accepted
+				}
+				if = {
+					limit = {
+						SLD = {
+							NOT = {
+								is_in_faction = yes
+							}
+						}
+					}
+					add_to_faction = SLD
+				}
+				789 = {
+					add_claim_by = SLD
+				}
+				798 = {
+					add_claim_by = SLD
+				}
+				796 = {
+					add_claim_by = SLD
+				}
+				792 = {
+					add_claim_by = SLD
+				}
+				799 = {
+					add_claim_by = SLD
+				}
+				SLD = {
+					declare_war_on = {
+						target = MAI
+						type = annex_everything
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = sld_accepted
+						has_country_flag = wek_accepted
+					}
+				}
+				803 = {
+					add_claim_by = FRI
+				}
+				814 = {
+					add_claim_by = FRI
+				}
+				822 = {
+					add_claim_by = FRI
+				}
+				812 = {
+					add_claim_by = FRI
+				}
+				824 = {
+					add_claim_by = FRI
+				}
+				817 = {
+					add_claim_by = FRI
+				}
+				789 = {
+					add_claim_by = FRI
+				}
+				798 = {
+					add_claim_by = FRI
+				}
+				796 = {
+					add_claim_by = FRI
+				}
+				792 = {
+					add_claim_by = FRI
+				}
+				799 = {
+					add_claim_by = FRI
+				}
+				852 = {
+					add_claim_by = FRI
+				}
+			}
+			858 = {
+				add_claim_by = FRI
+			}
+			843 = {
+				add_claim_by = FRI
+			}
+			831 = {
+				add_claim_by = FRI
+			}
+			808 = {
+				add_claim_by = FRI
+			}
+		}
+		declare_war_on = { 
+			target = MAI
+			type = annex_everything	
+		}
+		hidden_effect = {
+			set_country_flag = macius_folded
+			set_country_flag = macius_folded_yet_hartmut_declared
+			MAI = {
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+}
+
+country_event = { #Tungupungu pact
+	id = centralkingdom.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.34"}
+	title = centralkingdom.34.t
+	desc = centralkingdom.34.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Okay
+		name = centralkingdom.34.a
+		MAI = {
+			country_event = {
+				id = centralkingdom.35
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 95
+		}
+	}
+
+	option = { #Nah
+		name = centralkingdom.34.a
+		MAI = {
+			country_event = {
+				id = centralkingdom.36
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+
+country_event = { #Tungupungu pact - agreed
+	id = centralkingdom.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.35"}
+	title = centralkingdom.35.t
+	desc = centralkingdom.35.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Great
+		name = centralkingdom.35.a
+		add_political_power = 50
+		hidden_effect = {
+			set_country_flag = tungupungu_pact
+		}
+	}
+}
+
+country_event = { #Tungupungu pact - denied
+	id = centralkingdom.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.36"}
+	title = centralkingdom.36.t
+	desc = centralkingdom.36.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Great
+		name = centralkingdom.36.a
+		add_political_power = -50
+	}
+}
+
+country_event = { #Macius 18th birthday
+	id = centralkingdom.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.37"}
+	title = centralkingdom.37.t
+	desc = centralkingdom.37.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #Long live the king!
+		name = centralkingdom.37.a
+		hidden_effect = {
+			set_country_flag = macius_reached_adulthood
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Maciej I"
+				desc = "POLITICS_MACIUS_I_DESC"
+				picture = "macius_adult.dds"
+				expire = "1990.1.1"
+				ideology = children_parliamentary_monarchy
+				traits = {
+					#
+				}
+			}
+			create_country_leader = {
+				name = "Maciej I"
+				desc = "POLITICS_MACIUS_I_DESC"
+				picture = "macius_adult.dds"
+				expire = "1990.1.1"
+				ideology = centrism
+				traits = {
+					#
+				}
+			}
+		}
+	}
+}
+
+country_event = { #first plot event
+	id = centralkingdom.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.38"}
+	title = centralkingdom.38.t
+	desc = centralkingdom.38.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.38.a
+	}
+}
+
+country_event = { #second plot event
+	id = centralkingdom.39
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.39"}
+	title = centralkingdom.39.t
+	desc = centralkingdom.39.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.39.a
+		hidden_effect = {
+			set_country_flag = unlock_second_stage_focuses
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+}
+
+country_event = { #peaceful resolution plot event
+	id = centralkingdom.40
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.40"}
+	title = centralkingdom.40.t
+	desc = centralkingdom.40.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.40.a
+	}
+}
+
+country_event = { #arresting ministers plot event
+	id = centralkingdom.41
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.41"}
+	title = centralkingdom.41.t
+	desc = centralkingdom.41.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.41.a
+	}
+}
+
+country_event = { #absolute monarchy (ministers become advisors) plot event
+	id = centralkingdom.42
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.42"}
+	title = centralkingdom.42.t
+	desc = centralkingdom.42.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.42.a
+	}
+}
+
+country_event = { #ministers are released from jail plot event
+	id = centralkingdom.43
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.43"}
+	title = centralkingdom.43.t
+	desc = centralkingdom.43.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.43.a
+	}
+}
+
+country_event = { #Talks with Reds
+	id = centralkingdom.44
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.44"}
+	title = centralkingdom.44.t
+	desc = centralkingdom.44.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #agree to their demands
+		name = centralkingdom.44.a
+		add_popularity = {
+   			ideology = monarchism
+    		popularity = -0.1
+		}
+		add_popularity = {
+   			ideology = communism
+    		popularity = 0.1
+		}
+		add_stability = 0.1
+		remove_ideas = {
+			MAI_fighting_with_commies
+		}
+	}
+}
+
+country_event = { #Government of Spalding refuses entry for Macius
+	id = centralkingdom.45
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.45"}
+	title = centralkingdom.45.t
+	desc = centralkingdom.45.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.45.a
+	}
+}
+
+country_event = { #Visit to Tungu-Pungu plot event
+	id = centralkingdom.46
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.46"}
+	title = centralkingdom.46.t
+	desc = centralkingdom.46.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = MAI_visited_tungupungu
+		}
+	}
+
+	option = {
+		name = centralkingdom.46.a
+		add_opinion_modifier = {
+			target = TUG
+			modifier = MAC_friendship
+		}
+		TUG = {
+			add_opinion_modifier = {
+				target = MAI
+				modifier = MAC_friendship
+			}
+		}
+		add_political_power = 100
+		add_popularity = {
+    		ideology = fascism
+   			popularity = 0.1
+		}
+		add_popularity = {
+    		ideology = monarchism
+   			popularity = -0.1
+		}
+		hidden_effect = {
+			complete_national_focus = MAI_thewayofeconomy
+		}
+	}
+}
+
+country_event = { #Macius' plea for help to other countries
+	id = centralkingdom.47
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.47"}
+	title = centralkingdom.47.t
+	desc = centralkingdom.47.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Allow volunteers to go help him
+		name = centralkingdom.47.a
+		ai_chance = {
+			factor = 30
+		}
+		hidden_effect = {
+			set_country_flag = MAI_volunteer_help_allowed
+		}
+	}
+
+	option = { #Open some lend-lease routes
+		name = centralkingdom.47.b
+		ai_chance = {
+			factor = 25
+		}
+		hidden_effect = {
+			set_country_flag = MAI_lend_lease_help_allowed
+		}
+	}
+
+	option = { #That's not our war.
+		name = centralkingdom.47.c
+		ai_chance = {
+			factor = 45
+		}
+		add_political_power = 50
+		hidden_effect = {
+			set_country_flag = refused_help_to_macius
+		}
+	}
+}
+
+country_event = { #Macius wants to sign separate peace - status quo ante bellum
+	id = centralkingdom.48
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.48"}
+	title = centralkingdom.48.t
+	desc = centralkingdom.48.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Good proposal
+		name = centralkingdom.48.a
+		ai_chance = {
+			factor = 100
+		}
+		white_peace = {
+    		tag = MAI
+    		message = MAI_separate_peace
+		}
+	}
+
+	option = { #No
+		name = centralkingdom.48.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = { #Macius wants to sign peace in exchange for broader shore
+	id = centralkingdom.49
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.49"}
+	title = centralkingdom.49.t
+	desc = centralkingdom.49.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Fine, you win
+		name = centralkingdom.49.a
+		ai_chance = {
+			factor = 100
+		}
+		MAI = {
+			transfer_state = 869
+			transfer_state = 853
+			transfer_state = 1048
+			transfer_state = 835
+			transfer_state = 884
+			transfer_state = 905
+			transfer_state = 911
+			add_state_core = 869
+			add_state_core = 853
+			add_state_core = 835
+			add_state_core = 884
+			add_state_core = 905
+			add_state_core = 911
+			add_state_core = 1048
+			if = {
+				limit = {
+					872 = {
+						NOT = {
+							is_core_of = MAI
+						}
+					}
+				}
+				transfer_state = 872
+				add_state_core = 872
+			}
+		}
+		add_political_power = -50
+		add_stability = -0.2
+		white_peace = {
+    		tag = MAI
+    		message = MAI_peace_for_shore
+		}
+		hidden_effect = {
+			set_country_flag = old_king_was_better
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = big_event_victory_over_hartmut
+			}
+			every_country = {
+				limit = {
+					has_variable = cr_superevent_music_status
+				}
+				sound_effect = cr_bigevent_victory_over_hartmut_sound
+				play_song = cisza30
+			}
+			UNC = { #event to check if Macius owns needed states
+				country_event = {
+					id = childrenparliament.1557
+					days = 2
+				}
+			}
+			if = {
+				limit = {
+					MAI = {
+						AND = {
+							858 = {
+								check_variable = {
+									who_is_controlling_this_state = 2
+								}
+							}
+							has_country_flag = general_moved_to_second_stage
+						}
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							state = 869
+							state = 853
+							state = 835
+							state = 884
+							state = 905
+							state = 911
+							state = 1048
+						}
+					}
+					set_variable = {
+						who_is_controlling_this_state = 2
+					}
+				}
+			}
+			if = {
+				limit = {
+					MAI = {
+						AND = {
+							858 = {
+								check_variable = {
+									who_is_controlling_this_state = 1
+								}
+							}
+							has_country_flag = general_moved_to_second_stage
+						}
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							state = 869
+							state = 853
+							state = 835
+							state = 884
+							state = 905
+							state = 911
+							state = 1048
+						}
+					}
+					set_variable = {
+						who_is_controlling_this_state = 1
+					}
+				}
+			}
+		}
+	}
+
+	option = { #No! Never!
+		name = centralkingdom.49.b
+		ai_chance = {
+			factor = 0
+		}
+		MAI = {
+			country_event = {
+				id = centralkingdom.51
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Macius: we will take less territory but Hartmut must go to the exile
+	id = centralkingdom.50
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.50"}
+	title = centralkingdom.50.t
+	desc = centralkingdom.50.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Fine, you win (restore Friedewalt as king)
+		name = centralkingdom.50.a
+		ai_chance = {
+			factor = 100
+		}
+		MAI = {
+			transfer_state = 884
+			transfer_state = 905
+			transfer_state = 911
+			add_state_core = 884
+			add_state_core = 905
+			add_state_core = 911
+			if = {
+				limit = {
+					872 = {
+						NOT = {
+							is_core_of = MAI
+						}
+					}
+				}
+				transfer_state = 872
+				add_state_core = 872
+			}
+		}
+		add_stability = -0.05
+		white_peace = {
+    		tag = MAI
+    		message = MAI_peace_for_exile
+		}
+		set_country_flag = player_stays_as_friedewalt
+		retire_country_leader = yes
+		drop_cosmetic_tag = yes
+		create_country_leader = {
+			name = "Friedewalt III"
+			desc = "POLITICS_FRIEDEWALT_I_DESC"
+			picture = "friedewalt.dds"
+			expire = "1965.1.1"
+			ideology = administrative_monarchy
+			traits = {
+				#
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = big_event_victory_over_hartmut
+			}
+			every_country = {
+				limit = {
+					has_variable = cr_superevent_music_status
+				}
+				sound_effect = cr_bigevent_victory_over_hartmut_sound
+				play_song = cisza30
+			}
+			UNC = { #event to check if Macius owns needed states
+				country_event = {
+					id = childrenparliament.1557
+					days = 2
+				}
+			}
+			if = {
+				limit = {
+					MAI = {
+						AND = {
+							858 = {
+								check_variable = {
+									who_is_controlling_this_state = 2
+								}
+							}
+							has_country_flag = general_moved_to_second_stage
+						}
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							state = 884
+							state = 905
+							state = 911
+						}
+					}
+					set_variable = {
+						who_is_controlling_this_state = 2
+					}
+				}
+			}
+			if = {
+				limit = {
+					MAI = {
+						AND = {
+							858 = {
+								check_variable = {
+									who_is_controlling_this_state = 1
+								}
+							}
+							has_country_flag = general_moved_to_second_stage
+						}
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							state = 884
+							state = 905
+							state = 911
+						}
+					}
+					set_variable = {
+						who_is_controlling_this_state = 1
+					}
+				}
+			}
+		}
+		FLE = {
+			country_event = {
+				id = centralkingdom.70
+				days  = 0
+			}
+		}
+	}
+
+	option = { #Fine, you win (continue playing as Hartmut)
+		name = centralkingdom.50.b
+		ai_chance = {
+			factor = 0
+		}
+		MAI = {
+			transfer_state = 884
+			transfer_state = 905
+			transfer_state = 911
+			add_state_core = 884
+			add_state_core = 905
+			add_state_core = 911
+			if = {
+				limit = {
+					872 = {
+						NOT = {
+							is_core_of = MAI
+						}
+					}
+				}
+				transfer_state = 872
+				add_state_core = 872
+			}
+		}
+		set_country_flag = player_plays_as_hartmut
+		add_stability = -0.05
+		white_peace = {
+    		tag = MAI
+    		message = MAI_peace_for_exile
+		}
+		retire_country_leader = yes
+		drop_cosmetic_tag = yes
+		create_country_leader = {
+			name = "Friedewalt III"
+			desc = "POLITICS_FRIEDEWALT_I_DESC"
+			picture = "friedewalt.dds"
+			expire = "1965.1.1"
+			ideology = administrative_monarchy
+			traits = {
+				#
+			}
+		}
+		hidden_effect = {
+			UNC = { #event to check if Macius owns needed states
+				country_event = {
+					id = childrenparliament.1557
+					days = 2
+				}
+			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = big_event_victory_over_hartmut
+			}
+			every_country = {
+				limit = {
+					has_variable = cr_superevent_music_status
+				}
+				sound_effect = cr_bigevent_victory_over_hartmut_sound
+				play_song = cisza30
+			}
+			if = {
+				limit = {
+					MAI = {
+						AND = {
+							858 = {
+								check_variable = {
+									who_is_controlling_this_state = 2
+								}
+							}
+							has_country_flag = general_moved_to_second_stage
+						}
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							state = 884
+							state = 905
+							state = 911
+						}
+					}
+					set_variable = {
+						who_is_controlling_this_state = 2
+					}
+				}
+			}
+			if = {
+				limit = {
+					MAI = {
+						AND = {
+							858 = {
+								check_variable = {
+									who_is_controlling_this_state = 1
+								}
+							}
+							has_country_flag = general_moved_to_second_stage
+						}
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							state = 884
+							state = 905
+							state = 911
+						}
+					}
+					set_variable = {
+						who_is_controlling_this_state = 1
+					}
+				}
+			}
+		}
+		FLE = {
+			country_event = {
+				id = centralkingdom.70
+				days  = 0
+			}
+		}
+	}
+
+	option = { #No! Never!
+		name = centralkingdom.49.b
+		ai_chance = {
+			factor = 0
+		}
+		MAI = {
+			country_event = {
+				id = centralkingdom.51
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Hartmut refuses to capitulate
+	id = centralkingdom.51
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.51"}
+	title = centralkingdom.51.t
+	desc = centralkingdom.51.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #If that's his will...
+		name = centralkingdom.51.a
+	}
+}
+
+country_event = { #We were on the verge of greatness! We were this close!
+	id = centralkingdom.52
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.52"}
+	title = centralkingdom.52.t
+	desc = centralkingdom.52.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #The Republican Guard enters and arrests Macius on Felix' orders
+		name = centralkingdom.52.c
+		hidden_effect = {
+			remove_ideas = {
+				MAI_pro_rege_lege_et_grege
+				MAI_audience_for_children_idea
+				MAI_king_of_children
+			}
+			set_cosmetic_tag = CLD
+			load_focus_tree = childrenrepublic
+			retire_country_leader = yes
+			add_country_leader_role = {
+				character = MAI_felix
+				promote_leader = yes
+				country_leader = {
+					ideology = paidocracy_sub
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}
+			add_corps_commander_role = {
+				Character = MAI_felix
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			add_corps_commander_role = {
+				Character = MAI_anton
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			set_politics = {
+				ruling_party = paidocracy
+				election_frequency = 72
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 5
+				communism = 0
+				paidocracy = 70
+				monarchism = 25
+			}
+			remove_mission = MAI_next_seating_of_children_parliament
+			set_country_flag = children_revolution_underway
+			complete_national_focus = MAI_i_see_through_your_lies_macius
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = big_event_children_revolution
+			}
+			every_country = {
+				limit = {
+					has_variable = cr_superevent_music_status
+				}
+				sound_effect = cr_bigevent_children_revolution_sound
+				play_song = cisza30
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = { #Felix before Macius
+	id = centralkingdom.53
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.53"}
+	title = centralkingdom.53.t
+	desc = centralkingdom.53.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Strip him of all titles and send to work in school
+		name = centralkingdom.53.a
+		add_stability = 0.1
+	}
+}
+
+country_event = { #What's next?
+	id = centralkingdom.54
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.54"}
+	title = centralkingdom.54.t
+	desc = centralkingdom.54.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Macius concludes that Parliament was an error
+		name = centralkingdom.54.a
+		hidden_effect = {
+			complete_national_focus = MAI_parliament_was_an_error
+		}
+	}
+
+	option = { #Partification of Parliament imminent
+		name = centralkingdom.54.b
+		hidden_effect = {
+			complete_national_focus = MAI_we_need_to_be_more_cautious
+		}
+	}
+
+	option = { #Macius concludes that ministers were right in 1936
+		name = centralkingdom.54.c
+		hidden_effect = {
+			complete_national_focus = MAI_they_were_right
+		}
+	}
+}
+
+country_event = { #Betryal in the country
+	id = centralkingdom.55
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.55"}
+	title = centralkingdom.55.t
+	desc = centralkingdom.55.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #There can be only one way of revenge
+		name = centralkingdom.55.a
+	}
+}
+
+country_event = { #Betryal outside the country (if Macius sent the letters)
+	id = centralkingdom.56
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.56"}
+	title = centralkingdom.56.t
+	desc = centralkingdom.56.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #There can be only one way of revenge
+		name = centralkingdom.56.a
+		trigger = {
+			tag = MAI
+		}
+		every_country = {
+			limit = {
+				has_country_flag = refused_help_to_macius
+			}
+			add_opinion_modifier = {
+				target = MAI
+				modifier = TCWMod_mortal_enemies
+			}
+		}
+	}
+
+	option = { #wadafak?
+		name = centralkingdom.56.a
+		trigger = {
+			NOT = {
+				tag = MAI
+			}
+		}
+		MAI = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = TCWMod_mortal_enemies
+			}
+		}
+	}
+}
+
+country_event = { #Proclamation of Matt's Empire
+	id = centralkingdom.57
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.57"}
+	title = centralkingdom.57.t
+	desc = centralkingdom.57.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Tremble before him, folks.
+		name = centralkingdom.57.a
+		retire_country_leader = yes
+		if = {
+			limit = {
+				date < 1945.10.3
+			}
+			create_country_leader = {
+				name = "Caesar Matt I"
+				desc = "POLITICS_MACIUS_I_DESC"
+				picture = "macius_coronation.dds"
+				expire = "1965.1.1"
+				ideology = despotic_monarchy
+				traits = {
+					underage_monarch
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = MAI_the_reformer
+				}
+				add_country_leader_trait = the_reformer
+			}
+		}
+		if = {
+			limit = {
+				date > 1945.10.2
+			}
+			create_country_leader = {
+				name = "Caesar Matt I"
+				desc = "POLITICS_MACIUS_I_DESC"
+				picture = "macius_adult.dds"
+				expire = "1965.1.1"
+				ideology = despotic_monarchy
+				traits = {
+
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = MAI_the_reformer
+				}
+				add_country_leader_trait = the_reformer
+			}
+		}
+		hidden_effect = {
+			#news_event = {}
+		}
+	}
+}
+
+country_event = { #Matt's Empire - endgame
+	id = centralkingdom.58
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.58"}
+	title = centralkingdom.58.t
+	desc = centralkingdom.58.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.58.a
+	}
+}
+
+country_event = { #Central Kingdom wants to borrow funds in order to rebuild itself after war
+	id = centralkingdom.59
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.59"}
+	title = centralkingdom.59.t
+	desc = centralkingdom.59.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Okay
+		name = centralkingdom.59.a
+		ai_chance = {
+			base = 100
+			modifier = {
+				has_war = yes
+				add = -100
+			}
+		}
+		MAI = {
+			country_event = {
+				id = centralkingdom.60
+				days = 1
+			}
+		}
+	}
+
+	option = { #Nope
+		name = centralkingdom.59.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				has_war = yes
+				add = 100
+			}
+		}
+		MAI = {
+			country_event = {
+				id = centralkingdom.61
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Duckburg agrees
+	id = centralkingdom.60
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.60"}
+	title = centralkingdom.60.t
+	desc = centralkingdom.60.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Great!
+		name = centralkingdom.60.a
+		add_ideas = {
+			MAI_funds_from_duckburg
+		}
+	}
+}
+
+country_event = { #Duckburg denies
+	id = centralkingdom.61
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.61"}
+	title = centralkingdom.61.t
+	desc = centralkingdom.61.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Damn!
+		name = centralkingdom.61.a
+	}
+}
+
+country_event = { #We're out of money!
+	id = centralkingdom.62
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.62"}
+	title = centralkingdom.62.t
+	desc = centralkingdom.62.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Damn!
+		name = centralkingdom.62.a
+		hidden_effect = {
+			set_variable = {
+				gold_is_needed = 1
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+}
+
+country_event = { #Hartmut sends his spy to Macius
+	id = centralkingdom.63
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.63"}
+	title = centralkingdom.63.t
+	desc = centralkingdom.63.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = centralkingdom.63.a
+		hidden_effect = {
+			MAI = {
+				country_event = {
+					id = centralkingdom.64
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Journalist interrupts the audience
+	id = centralkingdom.64
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.64"}
+	title = centralkingdom.64.t
+	desc = centralkingdom.64.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Interesting.
+		name = centralkingdom.64.a
+		hidden_effect = {
+			set_country_flag = journalist_appeared
+		}
+	}
+}
+
+country_event = { #Journalist is discovered as spy
+	id = centralkingdom.65
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.65"}
+	title = centralkingdom.65.t
+	desc = centralkingdom.65.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Interesting.
+		name = centralkingdom.65.a
+		remove_ideas = {
+			MAI_children_gazette_idea
+		}
+		hidden_effect = {
+			clr_country_flag = felix_is_baron
+		}
+	}
+}
+
+country_event = { #Felix demands the title of Baron
+	id = centralkingdom.66
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.66"}
+	title = centralkingdom.66.t
+	desc = centralkingdom.66.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Okay...
+		name = centralkingdom.66.a
+		hidden_effect = {
+			set_country_flag = felix_is_baron
+		}
+	}
+}
+
+country_event = { #General openly threatens Macius (after one part of country switches to support him)
+	id = centralkingdom.67
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.67"}
+	title = centralkingdom.67.t
+	desc = centralkingdom.67.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #Okay...
+		name = centralkingdom.67.a
+		hidden_effect = {
+			set_country_flag = general_moved_to_second_stage
+			if = {
+				limit = {
+					check_variable = {
+						MAI_NCK_SOC_support < 50
+					}
+					check_variable = {
+						MAI_NCK_IND_support < 50
+					}
+					check_variable = {
+						MAI_NCK_MIL_support < 50
+					}
+				}
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 803
+							state = 814
+							state = 822
+							state = 824
+							state = 817
+							state = 798
+							state = 789
+							state = 796
+							state = 799
+							state = 792
+							state = 776
+							state = 773
+							state = 767
+							state = 736
+						}
+					}
+					set_variable = {
+						who_is_controlling_this_state = 2
+					}
+				}
+				every_owned_state = {
+					limit = {
+						NOT = {
+							state = 803
+							state = 814
+							state = 822
+							state = 824
+							state = 817
+							state = 798
+							state = 789
+							state = 796
+							state = 799
+							state = 792
+							state = 776
+							state = 773
+							state = 767
+							state = 736
+						}
+					}
+					set_variable = {
+						who_is_controlling_this_state = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						MAI_SCK_SOC_support < 50
+					}
+					check_variable = {
+						MAI_SCK_IND_support < 50
+					}
+					check_variable = {
+						MAI_SCK_MIL_support < 50
+					}
+				}
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 852
+							state = 831
+							state = 808
+							state = 843
+							state = 858
+							state = 872
+							state = 853
+							state = 869
+							state = 835
+							state = 884
+							state = 905
+							state = 911
+							state = 897
+							state = 877
+						}
+					}
+					set_variable = {
+						who_is_controlling_this_state = 2
+					}
+				}
+				every_owned_state = {
+					limit = {
+						NOT = {
+							state = 852
+							state = 831
+							state = 808
+							state = 843
+							state = 858
+							state = 872
+							state = 853
+							state = 869
+							state = 835
+							state = 884
+							state = 905
+							state = 911
+							state = 897
+							state = 877
+						}
+					}
+					set_variable = {
+						who_is_controlling_this_state = 1
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = { #Okay... (will play as General)
+		name = centralkingdom.67.b
+		hidden_effect = {
+			set_country_flag = general_moved_to_second_stage
+			set_variable = {
+				will_play_as_general = 1
+			}
+			if = {
+				limit = {
+					check_variable = {
+						MAI_NCK_SOC_support < 50
+					}
+					check_variable = {
+						MAI_NCK_IND_support < 50
+					}
+					check_variable = {
+						MAI_NCK_MIL_support < 50
+					}
+				}
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 803
+							state = 814
+							state = 822
+							state = 824
+							state = 817
+							state = 798
+							state = 789
+							state = 796
+							state = 799
+							state = 792
+							state = 776
+							state = 773
+							state = 767
+							state = 736
+						}
+					}
+					set_variable = {
+						who_is_controlling_this_state = 2
+					}
+				}
+				every_owned_state = {
+					limit = {
+						NOT = {
+							state = 803
+							state = 814
+							state = 822
+							state = 824
+							state = 817
+							state = 798
+							state = 789
+							state = 796
+							state = 799
+							state = 792
+							state = 776
+							state = 773
+							state = 767
+							state = 736
+						}
+					}
+					set_variable = {
+						who_is_controlling_this_state = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						MAI_SCK_SOC_support < 50
+					}
+					check_variable = {
+						MAI_SCK_IND_support < 50
+					}
+					check_variable = {
+						MAI_SCK_MIL_support < 50
+					}
+				}
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 852
+							state = 831
+							state = 808
+							state = 843
+							state = 858
+							state = 872
+							state = 853
+							state = 869
+							state = 835
+							state = 884
+							state = 905
+							state = 911
+							state = 897
+							state = 877
+						}
+					}
+					set_variable = {
+						who_is_controlling_this_state = 2
+					}
+				}
+				every_owned_state = {
+					limit = {
+						NOT = {
+							state = 852
+							state = 831
+							state = 808
+							state = 843
+							state = 858
+							state = 872
+							state = 853
+							state = 869
+							state = 835
+							state = 884
+							state = 905
+							state = 911
+							state = 897
+							state = 877
+						}
+					}
+					set_variable = {
+						who_is_controlling_this_state = 1
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = { #General declares open rebellion against Macius (Children Revolution variant)
+	id = centralkingdom.68
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.68"}
+	title = centralkingdom.68.t
+	desc = centralkingdom.68.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #It's the end of that pesk (play as General)
+		name = centralkingdom.68.a
+		hidden_effect = {
+			GEN = {
+				if = {
+					limit = {
+						MAI = {
+							NOT = {
+								owns_state = 853
+								owns_state = 869
+							}
+						}
+					}
+					transfer_state = 858
+					add_state_core = 858
+					transfer_state = 843
+					add_state_core = 843
+				}
+				if = {
+					limit = {
+						MAI = {
+							owns_state = 872
+						}
+					}
+					transfer_state = 872
+					add_state_core = 872
+				}
+				if = {
+					limit = {
+						MAI = {
+							owns_state = 884
+						}
+					}
+					transfer_state = 884
+					add_state_core = 884
+				}
+				if = {
+					limit = {
+						MAI = {
+							owns_state = 853
+						}
+					}
+					transfer_state = 853
+					add_state_core = 853
+				}
+				if = {
+					limit = {
+						MAI = {
+							owns_state = 869
+						}
+					}
+					transfer_state = 869
+					add_state_core = 869
+				}
+				if = {
+					limit = {
+						MAI = {
+							owns_state = 905
+						}
+					}
+					transfer_state = 905
+					add_state_core = 905
+				}
+				if = {
+					limit = {
+						MAI = {
+							owns_state = 911
+						}
+					}
+					transfer_state = 911
+					add_state_core = 911
+				}
+				every_state = {
+					limit = {
+						is_core_of = MAI
+						NOT = {
+							is_owned_by = GEN
+						}
+					}
+					add_core_of = GEN
+				}
+				set_politics = {
+					ruling_party = fascism
+					election_frequency = 72
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 0
+					fascism = 100
+					communism = 0
+					paidocracy = 0
+					monarchism = 0
+				}
+				create_country_leader = {
+					name = "General"
+					desc = "POLITICS_GENERAL_DESC"
+					picture = "gfx/leaders/MAI/general.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+						#
+					}
+				}
+				if = {
+						limit = {
+							NOT = {
+								has_idea = volunteer_only
+								has_idea = limited_conscription
+								has_idea = extensive_conscription
+								has_idea = service_by_requirement
+								has_idea = all_adults_serve
+								has_idea = scraping_the_barrel
+							}
+						}
+						add_ideas = {
+							extensive_conscription
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_idea = civilian_economy
+								has_idea = low_economic_mobilisation
+								has_idea = partial_economic_mobilisation
+								has_idea = war_economy
+								has_idea = tot_economic_mobilisation
+							}
+						}
+						add_ideas = {
+							partial_economic_mobilisation
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_idea = free_trade
+								has_idea = export_focus
+								has_idea = limited_exports
+								has_idea = closed_economy
+							}
+						}
+						add_ideas = {
+							limited_exports
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_idea = modern_tech_idea
+							}
+						}
+						add_ideas = {
+							modern_tech_idea
+						}
+					}
+				load_oob = GEN_civil_war_basic_templates
+				set_capital = { state = 872 }
+				inherit_technology = MAI
+				every_owned_state = {
+					general_strzelcy_divisions = yes
+				}
+				change_tag_from = MAI
+				declare_war_on = {
+					target = MAI
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = CLD
+					type = annex_everything
+				}
+			}
+			MAI = {
+				transfer_units_fraction= {
+					target = GEN
+					size = 0.35
+					stockpile_ratio = 0.5
+					army_ratio = 0.3
+					navy_ratio = 0
+					air_ratio = 0.25
+				}
+				add_popularity = {
+    				ideology = fascism
+    				popularity = -1
+				}
+				set_country_flag = general_rebelled
+				every_unit_leader = {
+					limit = {
+						has_id = 7312
+					}
+					set_nationality = GEN
+				}
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = { #He finally reveals his true colors.
+		name = centralkingdom.68.b
+		hidden_effect = {
+			GEN = {
+				if = {
+					limit = {
+						MAI = {
+							NOT = {
+								owns_state = 853
+								owns_state = 869
+							}
+						}
+					}
+					transfer_state = 858
+					add_state_core = 858
+					transfer_state = 843
+					add_state_core = 843
+				}
+				if = {
+					limit = {
+						MAI = {
+							owns_state = 872
+						}
+					}
+					transfer_state = 872
+					add_state_core = 872
+				}
+				if = {
+					limit = {
+						MAI = {
+							owns_state = 884
+						}
+					}
+					transfer_state = 884
+					add_state_core = 884
+				}
+				if = {
+					limit = {
+						MAI = {
+							owns_state = 853
+						}
+					}
+					transfer_state = 853
+					add_state_core = 853
+				}
+				if = {
+					limit = {
+						MAI = {
+							owns_state = 869
+						}
+					}
+					transfer_state = 869
+					add_state_core = 869
+				}
+				if = {
+					limit = {
+						MAI = {
+							owns_state = 905
+						}
+					}
+					transfer_state = 905
+					add_state_core = 905
+				}
+				if = {
+					limit = {
+						MAI = {
+							owns_state = 911
+						}
+					}
+					transfer_state = 911
+					add_state_core = 911
+				}
+				every_state = {
+					limit = {
+						is_core_of = MAI
+						NOT = {
+							is_owned_by = GEN
+						}
+					}
+					add_core_of = GEN
+				}
+				set_politics = {
+					ruling_party = fascism
+					election_frequency = 72
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 0
+					fascism = 100
+					communism = 0
+					paidocracy = 0
+					monarchism = 0
+				}
+				if = {
+						limit = {
+							NOT = {
+								has_idea = volunteer_only
+								has_idea = limited_conscription
+								has_idea = extensive_conscription
+								has_idea = service_by_requirement
+								has_idea = all_adults_serve
+								has_idea = scraping_the_barrel
+							}
+						}
+						add_ideas = {
+							extensive_conscription
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_idea = civilian_economy
+								has_idea = low_economic_mobilisation
+								has_idea = partial_economic_mobilisation
+								has_idea = war_economy
+								has_idea = tot_economic_mobilisation
+							}
+						}
+						add_ideas = {
+							partial_economic_mobilisation
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_idea = free_trade
+								has_idea = export_focus
+								has_idea = limited_exports
+								has_idea = closed_economy
+							}
+						}
+						add_ideas = {
+							limited_exports
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_idea = modern_tech_idea
+							}
+						}
+						add_ideas = {
+							modern_tech_idea
+						}
+					}
+				create_country_leader = {
+					name = "General"
+					desc = "POLITICS_GENERAL_DESC"
+					picture = "gfx/leaders/MAI/general.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+						#
+					}
+				}
+				load_oob = GEN_civil_war_basic_templates
+				inherit_technology = MAI
+				every_owned_state = {
+					general_strzelcy_divisions = yes
+				}
+				set_capital = { state = 872 }
+				declare_war_on = {
+					target = MAI
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = CLD
+					type = annex_everything
+				}
+			}
+			MAI = {
+				transfer_units_fraction= {
+					target = GEN
+					size = 0.35
+					stockpile_ratio = 0.5
+					army_ratio = 0.3
+					navy_ratio = 0
+					air_ratio = 0.25
+				}
+				add_popularity = {
+    				ideology = fascism
+    				popularity = -1
+				}
+				set_country_flag = general_rebelled
+				every_unit_leader = {
+					limit = {
+						has_id = 7312
+					}
+					set_nationality = GEN
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = { #Bum-Drum dead
+	id = centralkingdom.69
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.69"}
+	title = centralkingdom.69.t
+	desc = centralkingdom.69.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #Okay...
+		name = centralkingdom.69.a
+		hidden_effect = {
+			TUG = {
+				retire_country_leader = yes
+				if = {
+					limit = {
+						date < 1946.6.22
+					}
+					create_country_leader = {
+						name = "Klu-Klu"
+						desc = "POLITICS_KLUKLU_DESC"
+						picture = "kluklu.dds"
+						expire = "1965.1.1"
+						ideology = administrative_monarchy
+						traits = {
+							#
+						}
+					}
+					else = {
+						create_country_leader = {
+							name = "Klu-Klu"
+							desc = "POLITICS_KLUKLU_DESC"
+							picture = "kluklu_older.dds"
+							expire = "1965.1.1"
+							ideology = administrative_monarchy
+							traits = {
+								#
+							}
+						}
+					}
+				}
+			}
+		}
+		24 = {
+			add_claim_by = MAI
+		}
+	}
+}
+
+country_event = { #Hartmut and his exile
+	id = centralkingdom.70
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.70"}
+	title = centralkingdom.70.t
+	desc = centralkingdom.70.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Agree
+		name = centralkingdom.70.a
+		hidden_effect = {
+			if = {
+				limit = {
+					FRI = {
+						has_country_flag = player_plays_as_hartmut
+					}
+				}
+				change_tag_from = FRI
+			}
+			FRI = {
+				every_unit_leader = {
+					limit = {
+						has_id = 9999
+					}
+					set_nationality = FLE
+				}
+			}
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Hartmut II"
+				desc = "POLITICS_HARTMUT_DESC"
+				picture = "gfx/leaders/FRI/hartmut.dds"
+				expire = "1965.1.1"
+				ideology = administrative_monarchy
+				traits = {
+					warmonger
+					inexperienced_imperialist
+				}
+			}
+			set_cosmetic_tag = Hartmut_in_exile
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = { #Deny
+		name = centralkingdom.70.b
+		add_political_power = 50
+		FRI = {
+			country_event = {
+				id = centralkingdom.71
+				days = 0
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = { #Flensburg denies Hartmut the right to go into exile
+	id = centralkingdom.71
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.71"}
+	title = centralkingdom.71.t
+	desc = centralkingdom.71.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #OH SHIT
+		name = centralkingdom.71.a
+		add_stability = -0.25
+	}
+}
+
+country_event = { #Letter from Macius - proposal of establishing Stabilization Pact
+	id = centralkingdom.72
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.72"}
+	title = centralkingdom.72.t
+	desc = centralkingdom.72.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Agree, but the HQ must be in our capital
+		name = centralkingdom.72.a
+		MAI = {
+			country_event = {
+				id = centralkingdom.73
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = { #Agree with HQ being in Lubniewice
+		name = centralkingdom.72.b
+		MAI = {
+			country_event = {
+				id = centralkingdom.74
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = { #Reject the proposal
+		name = centralkingdom.72.c
+		MAI = {
+			country_event = {
+				id = centralkingdom.75
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = { #They want the HQ to be in their capital
+	id = centralkingdom.73
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.73"}
+	title = centralkingdom.73.t
+	desc = centralkingdom.73.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Okay, if that's the price
+		name = centralkingdom.73.a
+		FROM = {
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_in_faction_with = MAI
+					}
+					set_variable = {
+						transfer_to_stabilization_pact = 1
+					}
+				}
+			}
+			create_faction = stabilization_pact
+			every_country = {
+				limit = {
+					has_variable = transfer_to_stabilization_pact
+				}
+				FROM = {
+					add_to_faction = PREV
+				}
+				clear_variable = transfer_to_stabilization_pact
+			}
+		}
+		hidden_effect = {
+			set_country_flag = stabilization_pact_online
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = { #Let the faction members decide
+		name = centralkingdom.73.b
+		every_country = {
+			limit = {
+				is_in_faction_with = MAI
+			}
+			country_event = {
+				id = centralkingdom.76
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = { #They agree and want for HQ to be in Lubniewice
+	id = centralkingdom.74
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.74"}
+	title = centralkingdom.74.t
+	desc = centralkingdom.74.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Great!
+		name = centralkingdom.74.a
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_in_faction_with = MAI
+				}
+				set_variable = {
+					transfer_to_stabilization_pact = 1
+				}
+			}
+		}
+		create_faction = stabilization_pact
+		every_country = {
+			limit = {
+				has_variable = transfer_to_stabilization_pact
+			}
+			MAI = {
+				add_to_faction = PREV
+			}
+			clear_variable = transfer_to_stabilization_pact
+		}
+		custom_effect_tooltip = MAI_macius_influence_society_whole_country_grows
+		custom_effect_tooltip = MAI_macius_influence_military_whole_country_grows
+		hidden_effect = {
+			add_to_variable = {
+				MAI_NCK_SOC_support = 3
+			}
+			add_to_variable = {
+				MAI_SCK_SOC_support = 3
+			}
+			add_to_variable = {
+				MAI_NCK_MIL_support = 3
+			}
+			add_to_variable = {
+				MAI_SCK_MIL_support = 3
+			}
+			set_country_flag = stabilization_pact_online
+		}
+	}
+}
+
+country_event = { #They reject the proposal
+	id = centralkingdom.75
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.75"}
+	title = centralkingdom.75.t
+	desc = centralkingdom.75.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Are they joking?
+		name = centralkingdom.75.a
+		add_political_power = -150
+		custom_effect_tooltip = MAI_macius_influence_society_whole_country_falls
+		custom_effect_tooltip = MAI_macius_influence_military_whole_country_falls
+		hidden_effect = {
+			add_to_variable = {
+				MAI_NCK_SOC_support = -4
+			}
+			add_to_variable = {
+				MAI_SCK_SOC_support = -4
+			}
+			add_to_variable = {
+				MAI_NCK_MIL_support = -4
+			}
+			add_to_variable = {
+				MAI_SCK_MIL_support = -4
+			}
+		}
+	}
+}
+
+country_event = { #Formation of Stabilization Pact - determine the location of Pact HQ
+	id = centralkingdom.76
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.76"}
+	title = centralkingdom.76.t
+	desc = centralkingdom.76.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Lubniewice
+		name = centralkingdom.76.a
+		hidden_effect = {
+			MAI = {
+				add_to_variable = {
+					votes_cast_for_lubniewice = 1
+				}
+			}
+		}
+		ai_chance = {
+			factor = 12.5
+		}
+	}
+
+	option = { #Greenland
+		name = centralkingdom.76.b
+		trigger = {
+			GRN = {
+				is_in_faction_with = MAI
+			}
+		}
+		hidden_effect = {
+			MAI = {
+				add_to_variable = {
+					votes_cast_for_greenland = 1
+				}
+			}
+		}
+		ai_chance = {
+			factor = 12.5
+		}
+	}
+
+	option = { #Tippecanoe
+		name = centralkingdom.76.c
+		trigger = {
+			SIO = {
+				is_in_faction_with = MAI
+			}
+		}
+		hidden_effect = {
+			MAI = {
+				add_to_variable = {
+					votes_cast_for_tippecanoe = 1
+				}
+			}
+		}
+		ai_chance = {
+			factor = 12.5
+		}
+	}
+
+	option = { #Avalor
+		name = centralkingdom.76.e
+		trigger = {
+			AVA = {
+				is_in_faction_with = MAI
+			}
+		}
+		hidden_effect = {
+			MAI = {
+				add_to_variable = {
+					votes_cast_for_avalor = 1
+				}
+			}
+		}
+		ai_chance = {
+			factor = 12.5
+		}
+	}
+
+	option = { #Loso Angoleso
+		name = centralkingdom.76.f
+		trigger = {
+			JPN = {
+				is_in_faction_with = MAI
+			}
+		}
+		hidden_effect = {
+			MAI = {
+				add_to_variable = {
+					votes_cast_for_losoangoleso = 1
+				}
+			}
+		}
+		ai_chance = {
+			factor = 12.5
+		}
+	}
+
+	option = { #Danville
+		name = centralkingdom.76.g
+		trigger = {
+			TSA = {
+				is_in_faction_with = MAI
+			}
+		}
+		hidden_effect = {
+			MAI = {
+				add_to_variable = {
+					votes_cast_for_danville = 1
+				}
+			}
+		}
+		ai_chance = {
+			factor = 12.5
+		}
+	}
+
+	option = { #Duckburg
+		name = centralkingdom.76.h
+		trigger = {
+			DCB = {
+				is_in_faction_with = MAI
+			}
+		}
+		hidden_effect = {
+			MAI = {
+				add_to_variable = {
+					votes_cast_for_duckburg = 1
+				}
+			}
+		}
+		ai_chance = {
+			factor = 12.5
+		}
+	}
+
+	option = { #New Joestar Mansion
+		name = centralkingdom.76.i
+		trigger = {
+			JOJ = {
+				is_in_faction_with = MAI
+			}
+		}
+		hidden_effect = {
+			MAI = {
+				add_to_variable = {
+					votes_cast_for_joestar = 1
+				}
+			}
+		}
+		ai_chance = {
+			factor = 12.5
+		}
+	}
+
+}
+
+country_event = { #Voting result
+	id = centralkingdom.77
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.77"}
+	title = centralkingdom.77.t
+	desc = centralkingdom.77.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_in_faction_with = MAI
+				}
+				set_variable = {
+					transfer_to_stabilization_pact = 1
+				}
+			}
+			if = {
+				limit = {
+					tag = MAI
+				}
+				set_country_flag = stabilization_pact_online
+			}
+		}
+	}
+
+	option = { #Lubniewice win
+		name = centralkingdom.76.a
+		trigger = {
+			tag = MAI
+			check_variable = { votes_cast_for_lubniewice > votes_cast_for_greenland }
+			check_variable = { votes_cast_for_lubniewice > votes_cast_for_tippecanoe }
+			check_variable = { votes_cast_for_lubniewice > votes_cast_for_danville }
+			check_variable = { votes_cast_for_lubniewice > votes_cast_for_duckburg }
+			check_variable = { votes_cast_for_lubniewice > votes_cast_for_avalor }
+			check_variable = { votes_cast_for_lubniewice > votes_cast_for_losoangoleso }
+			check_variable = { votes_cast_for_lubniewice > votes_cast_for_joestar }
+		}
+		create_faction = stabilization_pact
+		every_country = {
+			limit = {
+				has_variable = transfer_to_stabilization_pact
+			}
+			MAI = {
+				add_to_faction = PREV
+			}
+			clear_variable = transfer_to_stabilization_pact
+		}
+		custom_effect_tooltip = MAI_macius_influence_society_whole_country_grows
+		custom_effect_tooltip = MAI_macius_influence_military_whole_country_grows
+		hidden_effect = {
+			add_to_variable = {
+				MAI_NCK_SOC_support = 3
+			}
+			add_to_variable = {
+				MAI_SCK_SOC_support = 3
+			}
+			add_to_variable = {
+				MAI_NCK_MIL_support = 3
+			}
+			add_to_variable = {
+				MAI_SCK_MIL_support = 3
+			}
+		}
+	}
+
+	option = { #Greenland win
+		name = centralkingdom.76.b
+		trigger = {
+			tag = MAI
+			check_variable = { votes_cast_for_greenland > votes_cast_for_lubniewice }
+			check_variable = { votes_cast_for_greenland > votes_cast_for_tippecanoe }
+			check_variable = { votes_cast_for_greenland > votes_cast_for_danville }
+			check_variable = { votes_cast_for_greenland > votes_cast_for_duckburg }
+			check_variable = { votes_cast_for_greenland > votes_cast_for_avalor }
+			check_variable = { votes_cast_for_greenland > votes_cast_for_losoangoleso }
+			check_variable = { votes_cast_for_greenland > votes_cast_for_joestar }
+		}
+		GRN = {
+			create_faction = stabilization_pact
+		}
+		every_country = {
+			limit = {
+				has_variable = transfer_to_stabilization_pact
+			}
+			GRN = {
+				add_to_faction = PREV
+			}
+			clear_variable = transfer_to_stabilization_pact
+		}
+		custom_effect_tooltip = MAI_macius_influence_society_whole_country_grows
+		custom_effect_tooltip = MAI_macius_influence_military_whole_country_grows
+		hidden_effect = {
+			add_to_variable = {
+				MAI_NCK_SOC_support = 2
+			}
+			add_to_variable = {
+				MAI_SCK_SOC_support = 2
+			}
+			add_to_variable = {
+				MAI_NCK_MIL_support = 2
+			}
+			add_to_variable = {
+				MAI_SCK_MIL_support = 2
+			}
+		}
+	}
+
+	option = { #Tippecanoe win
+		name = centralkingdom.76.c
+		trigger = {
+			tag = MAI
+			check_variable = { votes_cast_for_tippecanoe > votes_cast_for_lubniewice }
+			check_variable = { votes_cast_for_tippecanoe > votes_cast_for_greenland }
+			check_variable = { votes_cast_for_tippecanoe > votes_cast_for_danville }
+			check_variable = { votes_cast_for_tippecanoe > votes_cast_for_duckburg }
+			check_variable = { votes_cast_for_tippecanoe > votes_cast_for_avalor }
+			check_variable = { votes_cast_for_tippecanoe > votes_cast_for_losoangoleso }
+			check_variable = { votes_cast_for_tippecanoe > votes_cast_for_joestar }
+		}
+		SIO = {
+			create_faction = stabilization_pact
+		}
+		every_country = {
+			limit = {
+				has_variable = transfer_to_stabilization_pact
+			}
+			SIO = {
+				add_to_faction = PREV
+			}
+			clear_variable = transfer_to_stabilization_pact
+		}
+		custom_effect_tooltip = MAI_macius_influence_society_whole_country_grows
+		custom_effect_tooltip = MAI_macius_influence_military_whole_country_grows
+		hidden_effect = {
+			add_to_variable = {
+				MAI_NCK_SOC_support = 2
+			}
+			add_to_variable = {
+				MAI_SCK_SOC_support = 2
+			}
+			add_to_variable = {
+				MAI_NCK_MIL_support = 2
+			}
+			add_to_variable = {
+				MAI_SCK_MIL_support = 2
+			}
+		}
+	}
+
+	option = { #Avalor win
+		name = centralkingdom.76.e
+		trigger = {
+			tag = MAI
+			check_variable = { votes_cast_for_avalor > votes_cast_for_lubniewice }
+			check_variable = { votes_cast_for_avalor > votes_cast_for_greenland }
+			check_variable = { votes_cast_for_avalor > votes_cast_for_danville }
+			check_variable = { votes_cast_for_avalor > votes_cast_for_duckburg }
+			check_variable = { votes_cast_for_avalor > votes_cast_for_tippecanoe }
+			check_variable = { votes_cast_for_avalor > votes_cast_for_losoangoleso }
+			check_variable = { votes_cast_for_avalor > votes_cast_for_joestar }
+		}
+		AVA = {
+			create_faction = stabilization_pact
+		}
+		every_country = {
+			limit = {
+				has_variable = transfer_to_stabilization_pact
+			}
+			AVA = {
+				add_to_faction = PREV
+			}
+			clear_variable = transfer_to_stabilization_pact
+		}
+		custom_effect_tooltip = MAI_macius_influence_society_whole_country_grows
+		custom_effect_tooltip = MAI_macius_influence_military_whole_country_grows
+		hidden_effect = {
+			add_to_variable = {
+				MAI_NCK_SOC_support = 2
+			}
+			add_to_variable = {
+				MAI_SCK_SOC_support = 2
+			}
+			add_to_variable = {
+				MAI_NCK_MIL_support = 2
+			}
+			add_to_variable = {
+				MAI_SCK_MIL_support = 2
+			}
+		}
+	}
+
+	option = { #Loso Angoleso win
+		name = centralkingdom.76.f
+		trigger = {
+			tag = MAI
+			check_variable = { votes_cast_for_losoangoleso > votes_cast_for_lubniewice }
+			check_variable = { votes_cast_for_losoangoleso > votes_cast_for_greenland }
+			check_variable = { votes_cast_for_losoangoleso > votes_cast_for_danville }
+			check_variable = { votes_cast_for_losoangoleso > votes_cast_for_duckburg }
+			check_variable = { votes_cast_for_losoangoleso > votes_cast_for_tippecanoe }
+			check_variable = { votes_cast_for_losoangoleso > votes_cast_for_avalor }
+			check_variable = { votes_cast_for_losoangoleso > votes_cast_for_joestar }
+		}
+		JPN = {
+			create_faction = stabilization_pact
+		}
+		every_country = {
+			limit = {
+				has_variable = transfer_to_stabilization_pact
+			}
+			JPN = {
+				add_to_faction = PREV
+			}
+			clear_variable = transfer_to_stabilization_pact
+		}
+		custom_effect_tooltip = MAI_macius_influence_society_whole_country_grows
+		custom_effect_tooltip = MAI_macius_influence_military_whole_country_grows
+		hidden_effect = {
+			add_to_variable = {
+				MAI_NCK_SOC_support = 2
+			}
+			add_to_variable = {
+				MAI_SCK_SOC_support = 2
+			}
+			add_to_variable = {
+				MAI_NCK_MIL_support = 2
+			}
+			add_to_variable = {
+				MAI_SCK_MIL_support = 2
+			}
+		}
+	}
+
+	option = { #Danville win
+		name = centralkingdom.76.g
+		trigger = {
+			tag = MAI
+			check_variable = { votes_cast_for_danville > votes_cast_for_lubniewice }
+			check_variable = { votes_cast_for_danville > votes_cast_for_greenland }
+			check_variable = { votes_cast_for_danville > votes_cast_for_losoangoleso }
+			check_variable = { votes_cast_for_danville > votes_cast_for_duckburg }
+			check_variable = { votes_cast_for_danville > votes_cast_for_tippecanoe }
+			check_variable = { votes_cast_for_danville > votes_cast_for_avalor }
+			check_variable = { votes_cast_for_danville > votes_cast_for_joestar }
+		}
+		TSA = {
+			create_faction = stabilization_pact
+		}
+		every_country = {
+			limit = {
+				has_variable = transfer_to_stabilization_pact
+			}
+			TSA = {
+				add_to_faction = PREV
+			}
+			clear_variable = transfer_to_stabilization_pact
+		}
+		custom_effect_tooltip = MAI_macius_influence_society_whole_country_grows
+		custom_effect_tooltip = MAI_macius_influence_military_whole_country_grows
+		hidden_effect = {
+			add_to_variable = {
+				MAI_NCK_SOC_support = 2
+			}
+			add_to_variable = {
+				MAI_SCK_SOC_support = 2
+			}
+			add_to_variable = {
+				MAI_NCK_MIL_support = 2
+			}
+			add_to_variable = {
+				MAI_SCK_MIL_support = 2
+			}
+		}
+	}
+
+	option = { #Duckburg win
+		name = centralkingdom.76.g
+		trigger = {
+			tag = MAI
+			check_variable = { votes_cast_for_duckburg > votes_cast_for_lubniewice }
+			check_variable = { votes_cast_for_duckburg > votes_cast_for_greenland }
+			check_variable = { votes_cast_for_duckburg > votes_cast_for_losoangoleso }
+			check_variable = { votes_cast_for_duckburg > votes_cast_for_danville }
+			check_variable = { votes_cast_for_duckburg > votes_cast_for_tippecanoe }
+			check_variable = { votes_cast_for_duckburg > votes_cast_for_avalor }
+			check_variable = { votes_cast_for_duckburg > votes_cast_for_joestar }
+		}
+		DCB = {
+			create_faction = stabilization_pact
+		}
+		every_country = {
+			limit = {
+				has_variable = transfer_to_stabilization_pact
+			}
+			DCB = {
+				add_to_faction = PREV
+			}
+			clear_variable = transfer_to_stabilization_pact
+		}
+		custom_effect_tooltip = MAI_macius_influence_society_whole_country_grows
+		custom_effect_tooltip = MAI_macius_influence_military_whole_country_grows
+		hidden_effect = {
+			add_to_variable = {
+				MAI_NCK_SOC_support = 2
+			}
+			add_to_variable = {
+				MAI_SCK_SOC_support = 2
+			}
+			add_to_variable = {
+				MAI_NCK_MIL_support = 2
+			}
+			add_to_variable = {
+				MAI_SCK_MIL_support = 2
+			}
+		}
+	}
+
+	option = { #Lubniewice win
+		name = centralkingdom.76.a
+		trigger = {
+			NOT = {
+				tag = MAI
+			}
+			MAI = {
+			check_variable = { votes_cast_for_lubniewice > votes_cast_for_greenland }
+			check_variable = { votes_cast_for_lubniewice > votes_cast_for_tippecanoe }
+			check_variable = { votes_cast_for_lubniewice > votes_cast_for_danville }
+			check_variable = { votes_cast_for_lubniewice > votes_cast_for_duckburg }
+			check_variable = { votes_cast_for_lubniewice > votes_cast_for_avalor }
+			check_variable = { votes_cast_for_lubniewice > votes_cast_for_losoangoleso }
+			check_variable = { votes_cast_for_lubniewice > votes_cast_for_joestar }
+			}
+		}
+	}
+
+	option = { #Greenland win
+		name = centralkingdom.76.b
+		trigger = {
+			NOT = {
+				tag = MAI
+			}
+			MAI = {
+			check_variable = { votes_cast_for_greenland > votes_cast_for_lubniewice }
+			check_variable = { votes_cast_for_greenland > votes_cast_for_tippecanoe }
+			check_variable = { votes_cast_for_greenland > votes_cast_for_danville }
+			check_variable = { votes_cast_for_greenland > votes_cast_for_duckburg }
+			check_variable = { votes_cast_for_greenland > votes_cast_for_avalor }
+			check_variable = { votes_cast_for_greenland > votes_cast_for_losoangoleso }
+			check_variable = { votes_cast_for_greenland > votes_cast_for_joestar }
+			}
+		}
+	}
+
+	option = { #Tippecanoe win
+		name = centralkingdom.76.c
+		trigger = {
+			NOT = {
+				tag = MAI
+			}
+			MAI = {
+			check_variable = { votes_cast_for_tippecanoe > votes_cast_for_lubniewice }
+			check_variable = { votes_cast_for_tippecanoe > votes_cast_for_greenland }
+			check_variable = { votes_cast_for_tippecanoe > votes_cast_for_danville }
+			check_variable = { votes_cast_for_tippecanoe > votes_cast_for_duckburg }
+			check_variable = { votes_cast_for_tippecanoe > votes_cast_for_avalor }
+			check_variable = { votes_cast_for_tippecanoe > votes_cast_for_losoangoleso }
+			check_variable = { votes_cast_for_tippecanoe > votes_cast_for_joestar }
+			}
+		}
+	}
+
+	option = { #Avalor win
+		name = centralkingdom.76.e
+		trigger = {
+			NOT = {
+				tag = MAI
+			}
+			MAI = {
+			check_variable = { votes_cast_for_avalor > votes_cast_for_lubniewice }
+			check_variable = { votes_cast_for_avalor > votes_cast_for_greenland }
+			check_variable = { votes_cast_for_avalor > votes_cast_for_danville }
+			check_variable = { votes_cast_for_avalor > votes_cast_for_duckburg }
+			check_variable = { votes_cast_for_avalor > votes_cast_for_tippecanoe }
+			check_variable = { votes_cast_for_avalor > votes_cast_for_losoangoleso }
+			check_variable = { votes_cast_for_avalor > votes_cast_for_joestar }
+			}
+		}
+	}
+
+	option = { #Loso Angoleso win
+		name = centralkingdom.76.f
+		trigger = {
+			NOT = {
+				tag = MAI
+			}
+			MAI = {
+			check_variable = { votes_cast_for_losoangoleso > votes_cast_for_lubniewice }
+			check_variable = { votes_cast_for_losoangoleso > votes_cast_for_greenland }
+			check_variable = { votes_cast_for_losoangoleso > votes_cast_for_danville }
+			check_variable = { votes_cast_for_losoangoleso > votes_cast_for_duckburg }
+			check_variable = { votes_cast_for_losoangoleso > votes_cast_for_tippecanoe }
+			check_variable = { votes_cast_for_losoangoleso > votes_cast_for_avalor }
+			check_variable = { votes_cast_for_losoangoleso > votes_cast_for_joestar }
+			}
+		}
+	}
+
+	option = { #Danville win
+		name = centralkingdom.76.g
+		trigger = {
+			NOT = {
+				tag = MAI
+			}
+			MAI = {
+			check_variable = { votes_cast_for_danville > votes_cast_for_lubniewice }
+			check_variable = { votes_cast_for_danville > votes_cast_for_greenland }
+			check_variable = { votes_cast_for_danville > votes_cast_for_losoangoleso }
+			check_variable = { votes_cast_for_danville > votes_cast_for_duckburg }
+			check_variable = { votes_cast_for_danville > votes_cast_for_tippecanoe }
+			check_variable = { votes_cast_for_danville > votes_cast_for_avalor }
+			check_variable = { votes_cast_for_danville > votes_cast_for_joestar }
+			}
+		}
+	}
+
+	option = { #Duckburg win
+		name = centralkingdom.76.g
+		trigger = {
+			NOT = {
+				tag = MAI
+			}
+			MAI = {
+			check_variable = { votes_cast_for_duckburg > votes_cast_for_lubniewice }
+			check_variable = { votes_cast_for_duckburg > votes_cast_for_greenland }
+			check_variable = { votes_cast_for_duckburg > votes_cast_for_losoangoleso }
+			check_variable = { votes_cast_for_duckburg > votes_cast_for_danville }
+			check_variable = { votes_cast_for_duckburg > votes_cast_for_tippecanoe }
+			check_variable = { votes_cast_for_duckburg > votes_cast_for_avalor }
+			check_variable = { votes_cast_for_duckburg > votes_cast_for_joestar }
+			}
+		}
+	}
+}
+
+country_event = { #Stabilization Pact proposes us a fusion with them
+	id = centralkingdom.78
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.78"}
+	title = centralkingdom.78.t
+	desc = centralkingdom.78.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_in_faction_with = ROOT
+				}
+				set_variable = {
+					transfer_to_stabilization_pact_others = 1
+				}
+			}
+		}
+	}
+
+	option = { #Accept
+		name = centralkingdom.78.a
+		every_country = {
+			limit = {
+				OR = {
+					AND = {
+						is_in_faction_with = FROM
+						is_faction_leader = yes
+					}
+					AND = {
+						tag = FROM
+						is_faction_leader = yes
+					}
+				}
+			}
+			add_to_faction = ROOT
+		}
+		every_country = {
+			limit = {
+				has_variable = transfer_to_stabilization_pact_others
+			}
+			every_country = {
+				limit = {
+					OR = {
+						AND = {
+							is_in_faction_with = FROM
+							is_faction_leader = yes
+						}
+						AND = {
+							tag = FROM
+							is_faction_leader = yes
+						}
+					}
+				}
+				add_to_faction = PREV
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					has_variable = transfer_to_stabilization_pact_others
+				}
+				clear_variable = transfer_to_stabilization_pact_others
+			}
+		}
+		FROM = {
+			country_event = {
+				id = centralkingdom.79
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = { #Refuse
+		name = centralkingdom.78.a
+		FROM = {
+			country_event = {
+				id = centralkingdom.80
+				days = 1
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					has_variable = transfer_to_stabilization_pact_others
+				}
+				clear_variable = transfer_to_stabilization_pact_others
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = { #They accept
+	id = centralkingdom.79
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.79"}
+	title = centralkingdom.79.t
+	desc = centralkingdom.79.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Great
+		name = centralkingdom.79.a
+	}
+}
+
+country_event = { #They refuse
+	id = centralkingdom.80
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.80"}
+	title = centralkingdom.80.t
+	desc = centralkingdom.80.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Sad
+		name = centralkingdom.80.a
+	}
+}
+
+country_event = { #In search of Queen
+	id = centralkingdom.81
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.81"}
+	title = centralkingdom.81.t
+	desc = centralkingdom.81.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Queen Sofia
+		name = centralkingdom.81.a
+		trigger = {
+			has_global_flag = enchancian_civil_war_over
+			OR = {
+				ENC = {
+					exists = yes
+				}
+				EN1 = {
+					exists = yes
+				}
+				EN2 = {
+					exists = yes
+					NOT = {
+						has_country_leader = {
+							name = "Sofia I"
+							ruling_only = yes
+						}
+					}
+				}
+				any_country = {
+					has_country_flag = winslow_on_exile
+				}
+			}
+			NOT = {
+				has_variable = sofia_rejected
+			}
+		}
+		if = {
+			limit = {
+				ENC = {
+					exists = yes
+				}
+			}
+			ENC = {
+				country_event = {
+					id = centralkingdom.82
+					days = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				EN1 = {
+					exists = yes
+				}
+			}
+			EN1 = {
+				country_event = {
+					id = centralkingdom.82
+					days = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				EN2 = {
+					exists = yes
+				}
+			}
+			EN2 = {
+				country_event = {
+					id = centralkingdom.82
+					days = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_country = {
+					has_country_flag = winslow_on_exile
+				}
+			}
+			every_country = {
+				limit = {
+					has_country_flag = winslow_on_exile
+				}
+				country_event = {
+					id = centralkingdom.82
+					days = 1
+				}
+			}
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+
+	option = { #Queen Isabel
+		name = centralkingdom.81.b
+		trigger = {
+			AVA = {
+				exists = yes
+			}
+			NOT = {
+				has_variable = isabel_rejected
+			}
+		}
+		AVA = {
+			country_event = {
+				id = centralkingdom.83
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+
+	option = { #Queen Hanna
+		name = centralkingdom.81.c
+		ai_chance = {
+			factor = 25
+		}
+	}
+
+	option = { #Queen Klu-Klu
+		name = centralkingdom.81.e
+		add_ideas = {
+			MAI_queen_kluklu
+		}
+		hidden_effect = {
+			news_event = {
+				id = worldnews.104
+				hours = 6
+			}
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+country_event = { #Delegation from Central Kingdom
+	id = centralkingdom.82
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.82"}
+	title = centralkingdom.82.t
+	desc = centralkingdom.82.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Sofia agrees
+		name = centralkingdom.82.a
+		MAI = {
+			country_event = {
+				id = centralkingdom.84
+				days = 4
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = { #Sofia does not agree
+		name = centralkingdom.82.b
+		MAI = {
+			hidden_effect = {
+				set_variable = {
+					sofia_rejected = 1
+				}
+			}
+			country_event = {
+				id = centralkingdom.85
+				days = 4
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = { #Delegation from Central Kingdom
+	id = centralkingdom.83
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.83"}
+	title = centralkingdom.82.t
+	desc = centralkingdom.83.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Isabel agrees
+		name = centralkingdom.83.a
+		MAI = {
+			country_event = {
+				id = centralkingdom.86
+				days = 4
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = { #Isabel does not agree
+		name = centralkingdom.83.b
+		MAI = {
+			hidden_effect = {
+				set_variable = {
+					isabel_rejected = 1
+				}
+			}
+			country_event = {
+				id = centralkingdom.85
+				days = 4
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = { #Sofia arrives to Central Kingdom
+	id = centralkingdom.84
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.84"}
+	title = centralkingdom.84.t
+	desc = centralkingdom.84.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #The greatest day in recent history!
+		name = centralkingdom.84.a
+		add_ideas = {
+			MAI_queen_zofia
+		}
+		hidden_effect = {
+			news_event = {
+				id = worldnews.102
+				hours = 6
+			}
+		}
+	}
+}
+
+country_event = { #The delegation is rejected
+	id = centralkingdom.85
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.85"}
+	title = centralkingdom.85.t
+	desc = centralkingdom.85.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Let's choose again, then.
+		name = centralkingdom.85.a
+		country_event = {
+			id = centralkingdom.81
+			days = 0
+		}
+	}
+}
+
+country_event = { #Isabel arrives to Central Kingdom
+	id = centralkingdom.86
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.86"}
+	title = centralkingdom.86.t
+	desc = centralkingdom.86.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #The greatest day in recent history!
+		name = centralkingdom.86.a
+		add_stability = 0.05
+		hidden_effect = {
+			news_event = {
+				id = worldnews.103
+				hours = 6
+			}
+		}
+	}
+}
+
+country_event = { #People are getting upset!
+	id = centralkingdom.87
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.87"}
+	title = centralkingdom.87.t
+	desc = centralkingdom.87.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = { #Oh god oh fuck
+		name = centralkingdom.87.a
+		custom_effect_tooltip = MAI_macius_influence_society_whole_country_falls
+		custom_effect_tooltip = MAI_macius_influence_military_whole_country_falls
+		custom_effect_tooltip = MAI_macius_influence_industry_whole_country_falls
+		hidden_effect = {
+			add_to_variable = {
+				MAI_NCK_SOC_support = -1
+			}
+			add_to_variable = {
+				MAI_SCK_SOC_support = -1
+			}
+			add_to_variable = {
+				MAI_NCK_IND_support = -1
+			}
+			add_to_variable = {
+				MAI_SCK_IND_support = -1
+			}
+			add_to_variable = {
+				MAI_NCK_MIL_support = -1
+			}
+			add_to_variable = {
+				MAI_SCK_MIL_support = -1
+			}
+		}
+	}
+}
+
+
+
+country_event = { #Industrialist in state declares his support to opposing faction
+	id = centralkingdom.88
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.88"}
+	title = centralkingdom.88.t
+	desc = centralkingdom.88.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					has_variable = central_cw_preparing
+				}
+				save_event_target_as = central_cw_preparing_et
+			}
+		}
+	}
+
+	option = { #Force him to change his mind
+		name = centralkingdom.88.a
+		trigger = {
+			has_political_power > 50
+		}
+		MAI = {
+			add_political_power = -50
+			add_days_remove  = {
+    			decision = MAI_time_until_central_civil_war
+    			days = -34
+			}
+		}
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					has_variable = central_cw_preparing
+				}
+				clear_variable = central_cw_preparing
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = { #We have more important problems
+		name = centralkingdom.88.b
+		custom_effect_tooltip = MAI_support_in_state_changes
+		MAI = {
+			add_days_remove  = {
+    			decision = MAI_time_until_central_civil_war
+    			days = -25
+			}
+		}
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					has_variable = central_cw_preparing
+				}
+				if = {
+					limit = {
+						check_variable = {
+							who_is_controlling_this_state = 1
+						}
+					}
+					set_variable = {
+						who_is_controlling_this_state = 2
+					}
+					else = {
+						set_variable = {
+							who_is_controlling_this_state = 1
+						}
+					}
+				}
+				clear_variable = central_cw_preparing
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = { #Citizens of demand more food
+	id = centralkingdom.89
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.89"}
+	title = centralkingdom.89.t
+	desc = centralkingdom.89.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					has_variable = central_cw_preparing
+				}
+				save_event_target_as = central_cw_preparing_et
+			}
+		}
+	}
+
+	option = { #Give them what they want
+		name = centralkingdom.89.a
+		trigger = {
+			has_political_power > 50
+		}
+		MAI = {
+			add_political_power = -50
+			add_days_remove  = {
+    			decision = MAI_time_until_central_civil_war
+    			days = 10
+			}
+		}
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					has_variable = central_cw_preparing
+				}
+				clear_variable = central_cw_preparing
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = { #We have more important problems
+		name = centralkingdom.88.b
+		custom_effect_tooltip = MAI_support_in_state_changes
+		MAI = {
+			add_days_remove  = {
+    			decision = MAI_time_until_central_civil_war
+    			days = 40
+			}
+		}
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					has_variable = central_cw_preparing
+				}
+				if = {
+					limit = {
+						check_variable = {
+							who_is_controlling_this_state = 1
+						}
+					}
+					set_variable = {
+						who_is_controlling_this_state = 2
+					}
+					else = {
+						set_variable = {
+							who_is_controlling_this_state = 1
+						}
+					}
+				}
+				clear_variable = central_cw_preparing
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = { #Army unit revolts against
+	id = centralkingdom.90
+	immediate = {log = "[GetDateText]: [Root.GetName]: event centralkingdom.90"}
+	title = centralkingdom.90.t
+	desc = centralkingdom.90.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					has_variable = central_cw_preparing
+				}
+				save_event_target_as = central_cw_preparing_et
+			}
+		}
+	}
+
+	option = { #Pacify them!
+		name = centralkingdom.90.a
+		MAI = {
+			add_manpower = -1500
+			add_days_remove  = {
+    			decision = MAI_time_until_central_civil_war
+    			days = 15
+			}
+		}
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					has_variable = central_cw_preparing
+				}
+				clear_variable = central_cw_preparing
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = { #We have more important problems
+		name = centralkingdom.88.b
+		custom_effect_tooltip = MAI_support_in_state_changes
+		MAI = {
+			add_days_remove  = {
+    			decision = MAI_time_until_central_civil_war
+    			days = 20
+			}
+		}
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					has_variable = central_cw_preparing
+				}
+				if = {
+					limit = {
+						check_variable = {
+							who_is_controlling_this_state = 1
+						}
+					}
+					set_variable = {
+						who_is_controlling_this_state = 2
+					}
+					else = {
+						set_variable = {
+							who_is_controlling_this_state = 1
+						}
+					}
+				}
+				clear_variable = central_cw_preparing
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+#############################################################
+
+country_event = { #Secret Supergirls Club joins the Children Parliament
+	id = childrenrepublic.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event childrenrepublic.1"}
+	title = childrenrepublic.1.t
+	desc = childrenrepublic.1.d
+	picture = GFX_report_children_parliament
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MAI
+		focus_progress = {
+			focus = CLD_the_first_free_elections
+			progress > 0.10
+		}
+		focus_progress = {
+			focus = CLD_the_first_free_elections
+			progress < 0.25
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = childrenrepublic.1.a
+		hidden_effect = {
+			hidden_effect = {
+				set_country_flag = ssgc_active
+			} 
+			country_event = {
+				id = childrenrepublic.2
+				days = 25
+			}
+		}
+	}
+}
+
+country_event = { #Felek tells Hanna and Anton his plan
+	id = childrenrepublic.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event childrenrepublic.2"}
+	title = childrenrepublic.2.t
+	desc = childrenrepublic.2.d
+	picture = GFX_report_children_parliament
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = childrenrepublic.2.a
+		country_event = {
+			id = childrenrepublic.3
+			days = 25
+		}
+	}
+}
+
+country_event = { #Jan Odkrywca sides Geoffroy and Lou/Bolek and Lolek with him
+	id = childrenrepublic.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event childrenrepublic.3"}
+	title = childrenrepublic.3.t
+	desc = {
+		text = childrenrepublic.3.dbl
+		trigger = {
+			MAI = {
+				NOT = {
+					owns_state = 897
+				}
+			}
+		}
+	}
+	desc = {
+		text = childrenrepublic.3.dblgl
+		trigger = {
+			MAI = {
+				owns_state = 897
+			}
+		}
+	}
+	picture = GFX_report_children_parliament
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = childrenrepublic.3.a
+		hidden_effect = {
+			if = {
+				limit = {
+					MAI = {
+						owns_state = 897
+					}
+				}
+				set_country_flag = has_geoffroy_and_lou
+			}
+		}
+	}
+}
+
+country_event = { #First free elections
+	id = childrenrepublic.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event childrenrepublic.4"}
+	title = childrenrepublic.4.t
+	desc = childrenrepublic.4.d
+	picture = GFX_report_children_parliament
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = chp_work_suspended
+		}
+	}
+
+	option = { #Playing as Felix
+		name = childrenrepublic.4.a
+		hidden_effect = {
+			set_country_flag = playing_as_felix
+		}
+	}
+
+	option = { #Playing as Odkrywca
+		name = childrenrepublic.4.b
+		hidden_effect = {
+			set_country_flag = playing_as_odkrywca
+		}
+	}
+
+	option = { #Playing as Gacek
+		name = childrenrepublic.4.c
+		hidden_effect = {
+			set_country_flag = playing_as_emi
+		}
+	}
+}
+
+country_event = { #First Session - creating the Constitution
+	id = childrenrepublic.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event childrenrepublic.5"}
+	title = childrenrepublic.5.t
+	desc = childrenrepublic.5.d
+	picture = GFX_report_children_parliament
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = childrenrepublic.5.a
+		hidden_effect = {
+			set_variable = { constitution_odkrywca_points = 0 }
+			set_variable = { constitution_felix_points = 0 }
+			set_variable = { constitution_gacek_points = 0 }
+		}
+		country_event = {
+			id = childrenrepublic.6
+			days = 0
+		}
+	}
+}
+
+country_event = { #Creating the Constitution - Head of State
+	id = childrenrepublic.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event childrenrepublic.6"}
+	title = childrenrepublic.6.t
+	desc = childrenrepublic.6.d
+	picture = GFX_report_children_parliament
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #The President with Head of Parliament as his second-in-command having edge over Parliament will be enough (Odkrywca)
+		name = childrenrepublic.6.a
+		custom_effect_tooltip = option_helps_odkrywca
+		hidden_effect = {
+			add_to_variable = { constitution_odkrywca_points = 1 }
+			set_country_flag = president_with_hop
+		}
+		country_event = {
+			id = childrenrepublic.7
+			days = 0
+		}
+	}
+
+	option = { #The President should be the sole HoS, be able to issue degrees bypassing Parliament; HoP will only preside over Parliament (Felix)
+		name = childrenrepublic.6.b
+		custom_effect_tooltip = option_helps_felix
+		hidden_effect = {
+			add_to_variable = { constitution_felix_points = 1 }
+			set_country_flag = president_sole_auth
+		}
+		country_event = {
+			id = childrenrepublic.7
+			days = 0
+		}
+	}
+
+	option = { #The President should act as Prime Minister, but cannot be no-confidenced by Parliament (Gacek)
+		name = childrenrepublic.6.c
+		custom_effect_tooltip = option_helps_gacek
+		hidden_effect = {
+			add_to_variable = { constitution_gacek_points = 1 }
+			set_country_flag = president_cooperation
+		}
+		country_event = {
+			id = childrenrepublic.7
+			days = 0
+		}
+	}
+}
+
+country_event = { #Creating the Constitution - Elections
+	id = childrenrepublic.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event childrenrepublic.7"}
+	title = childrenrepublic.7.t
+	desc = childrenrepublic.7.d
+	picture = GFX_report_children_parliament
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Elections should be secret, with only direct voting at schools (Odkrywca and Gacek)
+		name = childrenrepublic.7.a
+		custom_effect_tooltip = option_helps_odkrywca_and_gacek
+		hidden_effect = {
+			add_to_variable = { constitution_odkrywca_points = 1 }
+			add_to_variable = { constitution_gacek_points = 1 }
+		}
+		country_event = {
+			id = childrenrepublic.8
+			days = 0
+		}
+	}
+
+	option = { #No secret elections as everyone quickly reveals who votes for whom, voting at poll stations in and outside the schools, can delegate others (Felix)
+		name = childrenrepublic.7.b
+		custom_effect_tooltip = option_helps_felix
+		hidden_effect = {
+			add_to_variable = { constitution_felix_points = 1 }
+		}
+		country_event = {
+			id = childrenrepublic.8
+			days = 0
+		}
+	}
+}
+
+country_event = { #Creating the Constitution - Parliament size
+	id = childrenrepublic.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event childrenrepublic.8"}
+	title = childrenrepublic.8.t
+	desc = childrenrepublic.8.d
+	picture = GFX_report_children_parliament
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Parliament should stay as is (Odkrywca)
+		name = childrenrepublic.8.a
+		custom_effect_tooltip = option_helps_odkrywca
+		hidden_effect = {
+			add_to_variable = { constitution_odkrywca_points = 1 }
+		}
+		country_event = {
+			id = childrenrepublic.9
+			days = 0
+		}
+	}
+
+	option = { #Parliament should be bigger (Felix and Gacek)
+		name = childrenrepublic.8.b
+		custom_effect_tooltip = option_helps_felix_and_gacek
+		hidden_effect = {
+			set_country_flag = chp_250_seats
+			add_to_variable = { constitution_felix_points = 1 }
+			add_to_variable = { constitution_gacek_points = 1 }
+		}
+		country_event = {
+			id = childrenrepublic.9
+			days = 0
+		}
+	}
+}
+
+country_event = { #Creating the Constitution - Juidicary System
+	id = childrenrepublic.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event childrenrepublic.9"}
+	title = childrenrepublic.9.t
+	desc = childrenrepublic.9.d
+	picture = GFX_report_children_parliament
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Judges should be accountable only to the Parliament (Odkrywca)
+		name = childrenrepublic.9.a
+		custom_effect_tooltip = option_helps_odkrywca
+		hidden_effect = {
+			add_to_variable = { constitution_odkrywca_points = 1 }
+		}
+		country_event = {
+			id = childrenrepublic.10
+			days = 0
+		}
+	}
+
+	option = { #Judges should be accountable only to the President (Felix)
+		name = childrenrepublic.9.b
+		custom_effect_tooltip = option_helps_felix_and_gacek
+		hidden_effect = {
+			add_to_variable = { constitution_felix_points = 1 }
+		}
+		country_event = {
+			id = childrenrepublic.10
+			days = 0
+		}
+	}
+
+	option = { #Judges should remain separate from President and Parliament (Gacek)
+		name = childrenrepublic.9.b
+		custom_effect_tooltip = option_helps_gacek
+		hidden_effect = {
+			add_to_variable = { constitution_gacek_points = 1 }
+		}
+		country_event = {
+			id = childrenrepublic.10
+			days = 0
+		}
+	}
+}
+
+country_event = { #First Session - Constitution Created
+	id = childrenrepublic.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event childrenrepublic.10"}
+	title = childrenrepublic.10.t
+	desc = childrenrepublic.10.d
+	picture = GFX_report_children_parliament
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = childrenrepublic.10.a
+		add_political_power = 50
+	}
+}
+
+country_event = { #Jan Odkrywca's running mate
+	id = childrenrepublic.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event childrenrepublic.11"}
+	title = childrenrepublic.11.t
+	desc = childrenrepublic.11.d
+	picture = GFX_report_children_parliament
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MAI
+		focus_progress = {
+			focus = CLD_choosing_new_government
+			progress > 0.05
+		}
+		focus_progress = {
+			focus = CLD_choosing_new_government
+			progress < 0.45
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = { #Geoffroy
+		name = childrenrepublic.11.a
+		trigger = {
+			has_country_flag = has_geoffroy_and_lou
+		}
+		hidden_effect = {
+			set_country_flag = geoffroy_running_mate
+		}
+	}
+
+	option = { #Lou
+		name = childrenrepublic.11.b
+		trigger = {
+			has_country_flag = has_geoffroy_and_lou
+		}
+		hidden_effect = {
+			set_country_flag = lou_running_mate
+		}
+	}
+
+	option = { #Bolek and Lolek
+		name = childrenrepublic.11.c
+		hidden_effect = {
+			set_country_flag = bolek_and_lolek_running_mate
+		}
+	}
+}
+
+country_event = { #Felix running mate
+	id = childrenrepublic.110
+	immediate = {log = "[GetDateText]: [Root.GetName]: event childrenrepublic.110"}
+	title = childrenrepublic.110.t
+	desc = childrenrepublic.110.d
+	picture = GFX_report_children_parliament
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MAI
+		focus_progress = {
+			focus = CLD_choosing_new_government
+			progress > 0.45
+		}
+		focus_progress = {
+			focus = CLD_choosing_new_government
+			progress < 0.75
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = { #Hanna
+		name = childrenrepublic.110.a
+		hidden_effect = {
+			set_country_flag = hanna_running_mate
+			set_country_flag = form_timeforkids
+		}
+	}
+
+	option = { #Anton
+		name = childrenrepublic.110.b
+		hidden_effect = {
+			set_country_flag = anton_running_mate
+			set_country_flag = form_freefuture
+		}
+	}
+}
+
+country_event = { #Choosing the Government
+	id = childrenrepublic.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event childrenrepublic.12"}
+	title = childrenrepublic.12.t
+	desc = childrenrepublic.12.d
+	picture = GFX_report_children_parliament
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_temp_variable = {
+				gacek_supporters = 0
+			}
+			set_temp_variable = {
+				odkrywca_supporters = 0
+			}
+			set_temp_variable = {
+				felix_supporters = 0
+			}
+			set_temp_variable = {
+				all_points = 0
+			}
+			if = {
+				limit = {
+					has_country_flag = chp_250_seats
+				}
+				add_to_temp_variable = { all_points = constitution_odkrywca_points }
+				add_to_temp_variable = { all_points = constitution_felix_points }
+				add_to_temp_variable = { all_points = constitution_gacek_points }
+				add_to_temp_variable = { odkrywca_supporters = constitution_odkrywca_points }
+				add_to_temp_variable = { felix_supporters = constitution_felix_points }
+				add_to_temp_variable = { gacek_supporters = constitution_gacek_points }
+				divide_temp_variable = { odkrywca_supporters = all_points }
+				divide_temp_variable = { felix_supporters = all_points }
+				divide_temp_variable = { gacek_supporters = all_points }
+				set_variable = { MAI_gacek_supporting_deputies = 250 }
+				set_variable = { MAI_felix_supporting_deputies = 250 }
+				set_variable = { MAI_odkrywca_supporting_deputies = 250 }
+				multiply_variable = { MAI_gacek_supporting_deputies = gacek_supporters }
+				multiply_variable = { MAI_felix_supporting_deputies = felix_supporters }
+				multiply_variable = { MAI_odkrywca_supporting_deputies = odkrywca_supporters }
+				else = {
+					add_to_temp_variable = { all_points = constitution_odkrywca_points }
+					add_to_temp_variable = { all_points = constitution_felix_points }
+					add_to_temp_variable = { all_points = constitution_gacek_points }
+					add_to_temp_variable = { odkrywca_supporters = constitution_odkrywca_points }
+					add_to_temp_variable = { felix_supporters = constitution_felix_points }
+					add_to_temp_variable = { gacek_supporters = constitution_gacek_points }
+					divide_temp_variable = { odkrywca_supporters = all_points }
+					divide_temp_variable = { felix_supporters = all_points }
+					divide_temp_variable = { gacek_supporters = all_points }
+					set_variable = { MAI_gacek_supporting_deputies = 100 }
+					set_variable = { MAI_felix_supporting_deputies = 100 }
+					set_variable = { MAI_odkrywca_supporting_deputies = 100 }
+					multiply_variable = { MAI_gacek_supporting_deputies = gacek_supporters }
+					multiply_variable = { MAI_felix_supporting_deputies = felix_supporters }
+					multiply_variable = { MAI_odkrywca_supporting_deputies = odkrywca_supporters }
+				}
+			}
+		}
+	}
+
+	option = { #Odkrywca/running mate
+		name = childrenrepublic.12.a
+		trigger = {
+			OR = {
+				OR = {
+					check_variable = {
+						var = constitution_odkrywca_points
+						value = constitution_felix_points
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = constitution_odkrywca_points
+						value = constitution_gacek_points
+						compare = greater_than_or_equals
+					}
+				}
+				AND = {
+					check_variable = {
+						var = constitution_odkrywca_points
+						value = constitution_felix_points
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = constitution_odkrywca_points
+						value = constitution_gacek_points
+						compare = greater_than
+					}
+				}
+				AND = {
+					check_variable = {
+						var = constitution_odkrywca_points
+						value = constitution_felix_points
+						compare = greater_than
+					}
+					check_variable = {
+						var = constitution_odkrywca_points
+						value = constitution_gacek_points
+						compare = greater_than_or_equals
+					}
+				}
+				AND = {
+					check_variable = {
+						var = constitution_odkrywca_points
+						value = constitution_felix_points
+						compare = greater_than
+					}
+					check_variable = {
+						var = constitution_odkrywca_points
+						value = constitution_gacek_points
+						compare = greater_than
+					}
+				}
+			}
+		}
+		promote_character = MAI_odkrywca
+		if = {
+			limit = {
+				has_country_flag = geoffroy_running_mate
+			}
+			custom_effect_tooltip = geoffroy_becomes_hop
+			hidden_effect = {
+				set_variable = { chp_leader_icon_temp_number = 8 }
+				recalc_children_parliament_leader_icon = yes
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = lou_running_mate
+			}
+			custom_effect_tooltip = lou_becomes_hop
+			hidden_effect = {
+				set_variable = { chp_leader_icon_temp_number = 6 }
+				recalc_children_parliament_leader_icon = yes
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = bolek_and_lolek_running_mate
+			}
+			custom_effect_tooltip = bolek_and_lolek_becomes_hop
+			hidden_effect = {
+				set_variable = { chp_leader_icon_temp_number = 10 }
+				recalc_children_parliament_leader_icon = yes
+			}
+		}
+		complete_national_focus = CLD_compromise_candidate
+	}
+
+	option = { #Felix/running mate
+		name = childrenrepublic.12.b
+		trigger = {
+			OR = {
+				OR = {
+					check_variable = {
+						var = constitution_felix_points
+						value = constitution_odkrywca_points
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = constitution_felix_points
+						value = constitution_gacek_points
+						compare = greater_than_or_equals
+					}
+				}
+				AND = {
+					check_variable = {
+						var = constitution_felix_points
+						value = constitution_odkrywca_points
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = constitution_felix_points
+						value = constitution_gacek_points
+						compare = greater_than
+					}
+				}
+				AND = {
+					check_variable = {
+						var = constitution_felix_points
+						value = constitution_odkrywca_points
+						compare = greater_than
+					}
+					check_variable = {
+						var = constitution_felix_points
+						value = constitution_gacek_points
+						compare = greater_than_or_equals
+					}
+				}
+				AND = {
+					check_variable = {
+						var = constitution_felix_points
+						value = constitution_odkrywca_points
+						compare = greater_than
+					}
+					check_variable = {
+						var = constitution_felix_points
+						value = constitution_gacek_points
+						compare = greater_than
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = hanna_running_mate
+			}
+			custom_effect_tooltip = hanna_becomes_hop
+			if = {
+				limit = {
+					has_idea = MAI_hanna_i
+				}
+				remove_ideas = {
+					MAI_hanna_i
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = MAI_anton_i
+					}
+				}
+				add_ideas = {
+					MAI_anton_i
+				}
+			}
+			hidden_effect = {
+				set_variable = { chp_leader_icon_temp_number = 4 }
+				recalc_children_parliament_leader_icon = yes
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = anton_running_mate
+			}
+			if = {
+				limit = {
+					has_idea = MAI_anton_i
+				}
+				remove_ideas = {
+					MAI_anton_i
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = MAI_hanna_i
+					}
+				}
+				add_ideas = {
+					MAI_hanna_i
+				}
+			}
+			custom_effect_tooltip = anton_becomes_hop
+			hidden_effect = {
+				set_variable = { chp_leader_icon_temp_number = 3 }
+				recalc_children_parliament_leader_icon = yes
+			}
+		}
+		complete_national_focus = CLD_unlimited_power
+	}
+
+	option = { #Gacek/Czapla
+		name = childrenrepublic.12.c
+		trigger = {
+			OR = {
+				OR = {
+					check_variable = {
+						var = constitution_gacek_points
+						value = constitution_odkrywca_points
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = constitution_gacek_points
+						value = constitution_felix_points
+						compare = greater_than_or_equals
+					}
+				}
+				AND = {
+					check_variable = {
+						var = constitution_gacek_points
+						value = constitution_odkrywca_points
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = constitution_gacek_points
+						value = constitution_felix_points
+						compare = greater_than
+					}
+				}
+				AND = {
+					check_variable = {
+						var = constitution_gacek_points
+						value = constitution_odkrywca_points
+						compare = greater_than
+					}
+					check_variable = {
+						var = constitution_gacek_points
+						value = constitution_felix_points
+						compare = greater_than_or_equals
+					}
+				}
+				AND = {
+					check_variable = {
+						var = constitution_gacek_points
+						value = constitution_odkrywca_points
+						compare = greater_than
+					}
+					check_variable = {
+						var = constitution_gacek_points
+						value = constitution_felix_points
+						compare = greater_than
+					}
+				}
+			}
+		}
+		promote_character = MAI_emi
+		custom_effect_tooltip = czapla_becomes_hop
+		hidden_effect = {
+			set_variable = { chp_leader_icon_temp_number = 9 }
+			recalc_children_parliament_leader_icon = yes
+		}
+		add_ideas = {
+			MAI_flora_i
+			MAI_franek_i
+			MAI_faustyna_i
+		}
+		complete_national_focus = CLD_the_most_dangerous_secret_mission
+	}
+}

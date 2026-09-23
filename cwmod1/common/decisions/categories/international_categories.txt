@@ -1,0 +1,78 @@
+expeditions_for_resources_dec_category = {
+	icon = generic_political_actions
+	allowed = {
+		OR = {
+			AND = {
+				original_tag = FRI
+				SIO = {
+					exists = yes
+				}
+				FRI = {
+					has_country_flag = FRI_sioux_accepted_expeditions
+				}
+			}
+			AND = {
+				original_tag = JOJ
+				SIO = {
+					exists = yes
+				}
+				JOJ = {
+					has_country_flag = sioux_agreed_to_explore
+				}
+			}
+			AND = {
+				original_tag = JOJ
+				FLE = {
+					exists = yes
+				}
+				JOJ = {
+					has_country_flag = flensburg_agreed_to_explore
+				}
+			}
+		}
+	}
+	
+	priority = 50
+}
+
+royal_convention_dec_category = {
+	icon = generic_political_actions
+	
+	priority = 49
+}
+
+international_policy_dec_category = {
+	icon = generic_political_actions
+	
+	priority = 49
+}
+
+integration_of_lands_dec_category = {
+	icon = generic_political_actions
+	
+	priority = 49
+}
+
+bridging_the_gaps_dec_category = {
+	icon = generic_political_actions
+	
+	priority = 49
+}
+
+stabilization_pact_dec_category = {
+	icon = generic_political_actions
+	
+	priority = 49
+}
+
+stabilization_pact_2_dec_category = {
+	icon = generic_political_actions
+	
+	priority = 49
+}
+
+arms_dealer_dec_category = {
+	icon = generic_political_actions
+	
+	priority = 49
+}

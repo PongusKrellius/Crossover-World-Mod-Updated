@@ -1,0 +1,20 @@
+state={
+	id=501
+	name="STATE_501"
+	provinces={
+		1540 2490 2635 3987 4644 5798 8016 8055 8078 8113 8157 8326 
+	}
+	state_category = rural
+	manpower=450000
+	buildings_max_level_factor=1.000
+	history = {
+		owner = CVA
+		add_core_of = CVA
+		buildings = {
+			infrastructure = 2
+			3987 = {
+				naval_base = 2
+			}
+		}
+	}
+}

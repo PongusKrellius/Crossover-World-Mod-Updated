@@ -1,0 +1,799 @@
+domestic_politics_dec_category = {
+	halt_all_festivities = {
+        icon = generic_political_discourse
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 100
+		}
+
+        visible = {
+            tag = SIO
+            has_war_with = DES
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            add_political_power = -50
+            add_stability = -0.15
+            hidden_effect = {
+                set_country_flag = SIO_halted_all_festivities
+            }
+        }
+    }
+
+    reinstate_all_festivities = {
+        icon = generic_political_discourse
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 100
+		}
+
+        fire_only_once = yes
+
+        visible = {
+            tag = SIO
+            OR = {
+                has_completed_focus = SIO_the_liberator_stays
+                has_completed_focus = SIO_decisive_rule
+                has_completed_focus = SIO_the_remnants_of_old_order
+                has_completed_focus = SIO_its_girls_turn
+                has_completed_focus = SIO_the_rule_of_women
+                has_completed_focus = SIO_turn_into_monarchy
+                has_completed_focus = SIO_establish_republic
+                has_completed_focus = SIO_surrounded_by
+            }
+        }
+
+        complete_effect = {
+            add_political_power = 50
+            add_stability = 0.15
+            hidden_effect = {
+                clr_country_flag = SIO_halted_all_festivities
+                set_country_flag = SIO_festivities_reinstated
+                clear_variable = festivities_halted_counter_stopped
+            }
+        }
+    }
+
+    recall_the_animals = {
+        icon = generic_political_discourse
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 100
+		}
+
+        fire_only_once = yes
+
+        visible = {
+            tag = SIO
+            has_completed_focus = SIO_alliance_of_interspecies
+            OR = {
+                has_completed_focus = SIO_decisive_rule
+                has_completed_focus = SIO_the_remnants_of_old_order
+                has_completed_focus = SIO_its_girls_turn
+                has_completed_focus = SIO_the_rule_of_women
+            }
+        }
+
+        complete_effect = {
+            every_unit_leader = {
+                limit = {
+                    OR = {
+                        has_id = 6500
+                        has_id = 6501
+                        has_id = 6502
+                    }
+                }
+                retire = yes
+            }
+        }
+    }
+
+    revoke_role_change_law = {
+        icon = generic_political_discourse
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 100
+		}
+
+        fire_only_once = yes
+
+        visible = {
+            tag = MAI
+            has_idea = MAI_the_great_switcheroo
+            NOT = {
+                has_country_flag = felix_is_baron
+            }
+        }
+
+        complete_effect = {
+            swap_ideas = {
+                remove_idea = MAI_the_great_switcheroo
+                add_idea = MAI_aftermath_of_role_change_law_1
+            }
+            hidden_effect = {
+                unlock_national_focus = MAI_aftermath_of_the_ten_days
+                if = {
+                    limit = {
+                        NOT = {
+                            has_completed_focus = MAI_reform_the_parliament
+                        }
+                    }
+                    set_country_flag = chp_work_suspended
+				    clear_variable = days_since_deputies_submitted_bill
+				    remove_mission = MAI_next_seating_of_children_parliament
+                }
+                set_variable = {
+                    days_countdown_macius_come_on = 0
+                }
+            }
+        }
+    }
+
+	fulfill_the_promise = {
+
+		icon = ger_mefo_bills
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+            always = no
+            DUL = {
+                exists = no
+            }
+            tag = SWA
+            has_completed_focus = SWA_sign_contracts_with_former_soldiers
+			owns_state = 109
+			is_puppet = no
+		}
+
+		complete_effect = {
+            custom_effect_tooltip = SWA_nation_for_magical_creatures_will_be_created
+            hidden_effect = {
+                DUL = {
+                    set_cosmetic_tag = nation_of_magical_creatures
+
+                }
+                SWA_donkey = {
+                    set_nationality = {
+                        target_country = DUL
+                        character = SWA_donkey
+                    }
+                }
+                puppet = DUL
+                DUL = {
+                    add_country_leader_role = {
+                        character = SWA_donkey
+                        country_leader = {
+                            ideology = centrism
+                            expire = "1965.1.1.1"
+                            traits = { }
+                        }
+                        promote_leader = yes
+                    }
+                }
+            }
+		}
+	}
+
+	SWA_time_left_to_create_nation_of_magical_creatures = {
+		icon = generic_political_discourse
+        visible = {
+            always = no
+        }
+		available = {
+			hidden_trigger = {
+				tag = SWA
+                has_completed_focus = SWA_sign_contracts_with_former_soldiers
+                DUL = {
+                    NOT = {
+                        is_puppet_of = SWA
+                        has_cosmetic_tag = nation_of_magical_creatures
+                    }
+                }
+			}
+		}
+		activation = { always = no }
+		selectable_mission = no
+		days_mission_timeout = 400
+		timeout_effect = {
+            #event
+        }
+    }
+}
+
+SWA_coring_the_duloc = {
+	SWA_core_the_state = {
+        visible = {
+            SWA = {
+                has_completed_focus = SWA_against_all_odds
+            }
+        }
+        state_target = yes
+		icon = generic_political_discourse
+        cost = 85
+        target_array = DUL.core_states
+        target_trigger = {
+            FROM = {
+                is_owned_by = ROOT
+                NOT = {
+                    state = 428
+                    is_core_of = ROOT
+                }
+            }
+        }
+		days_remove = 100
+		remove_effect = {
+            FROM = {
+                add_core_of = SWA
+            }
+        }
+    }
+}
+
+flensburgian_road_to_independence = {
+    organize_meetings_with_citizens = {
+        icon = generic_political_discourse
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 100
+		}
+
+        available = {
+            NOT = {
+                has_country_flag = FLE_only_one_campaign_at_once
+            }
+        }
+
+        visible = {
+            tag = FLE
+            OR = {
+                has_completed_focus = FLE_sekai_ichi
+                AND = {
+                    has_completed_focus = FLE_stick_with_wissmann
+                    NOT = {
+                        has_completed_focus = FLE_pantmawr_stock_exchange_colony_branch
+                    }
+                }
+                AND = {
+                    has_completed_focus = FLE_a_shady_banker
+                    NOT = {
+                        has_completed_focus = FLE_the_art_of_the_deal
+                    }
+                }
+                has_completed_focus = FLE_we_are_on_our_own
+            }
+            is_puppet = yes
+        }
+
+        modifier = {
+            autonomy_gain = 0.25
+        }
+
+        days_remove = 30
+
+        days_re_enable = 2
+
+        complete_effect = {
+            custom_effect_tooltip = FLE_our_liberty_desire_will_rise
+            hidden_effect = {
+                set_country_flag = FLE_only_one_campaign_at_once
+            }
+        }
+
+        remove_effect = {
+            hidden_effect = {
+                clr_country_flag = FLE_only_one_campaign_at_once
+            }
+        }
+    }
+
+    propagate_liberty_values_in_schools = {
+        icon = generic_political_discourse
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+        available = {
+            NOT = {
+                has_country_flag = FLE_only_one_campaign_at_once
+            }
+        }
+
+        visible = {
+            tag = FLE
+            OR = {
+                has_completed_focus = FLE_sekai_ichi
+                AND = {
+                    has_completed_focus = FLE_stick_with_wissmann
+                    NOT = {
+                        has_completed_focus = FLE_pantmawr_stock_exchange_colony_branch
+                    }
+                }
+                AND = {
+                    has_completed_focus = FLE_a_shady_banker
+                    NOT = {
+                        has_completed_focus = FLE_the_art_of_the_deal
+                    }
+                }
+                has_completed_focus = FLE_we_are_on_our_own
+            }
+            is_puppet = yes
+        }
+
+        modifier = {
+            autonomy_gain = 0.2
+        }
+
+        days_remove = 30
+
+        days_re_enable = 2
+
+        complete_effect = {
+            custom_effect_tooltip = FLE_our_liberty_desire_will_rise
+            hidden_effect = {
+                set_country_flag = FLE_only_one_campaign_at_once
+            }
+        }
+
+        remove_effect = {
+            hidden_effect = {
+                clr_country_flag = FLE_only_one_campaign_at_once
+            }
+        }
+    }
+
+    show_the_workers_positive_sides_of_independence = {
+        icon = generic_political_discourse
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+        available = {
+            NOT = {
+                has_country_flag = FLE_only_one_campaign_at_once
+            }
+        }
+
+        visible = {
+            tag = FLE
+            OR = {
+                has_completed_focus = FLE_sekai_ichi
+                AND = {
+                    has_completed_focus = FLE_stick_with_wissmann
+                    NOT = {
+                        has_completed_focus = FLE_pantmawr_stock_exchange_colony_branch
+                    }
+                }
+                AND = {
+                    has_completed_focus = FLE_a_shady_banker
+                    NOT = {
+                        has_completed_focus = FLE_the_art_of_the_deal
+                    }
+                }
+                has_completed_focus = FLE_we_are_on_our_own
+            }
+            is_puppet = yes
+        }
+
+        modifier = {
+            autonomy_gain = 0.1
+        }
+
+        days_remove = 30
+
+        days_re_enable = 2
+
+        complete_effect = {
+            custom_effect_tooltip = FLE_our_liberty_desire_will_rise
+            hidden_effect = {
+                set_country_flag = FLE_only_one_campaign_at_once
+            }
+        }
+
+        remove_effect = {
+            hidden_effect = {
+                clr_country_flag = FLE_only_one_campaign_at_once
+            }
+        }
+    }
+
+    declare_independence = {
+        icon = generic_political_discourse
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+        available = {
+			compare_autonomy_progress_ratio > 0.99
+		}
+
+        visible = {
+            tag = FLE
+            has_completed_focus = FLE_we_are_on_our_own
+            is_puppet = yes
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            country_event = {
+                id = flensburg.10
+                days = 0
+            }
+            FRI = {
+				country_event = {
+					id = flensburg.11
+					days = 3
+				}
+			}
+        }
+    }
+}
+
+king_to_be_dec_category = {
+    go_to_fairy_for_help = {
+        icon = generic_political_discourse
+
+        available = {
+			
+		}
+
+        visible = {
+            has_variable = charming_decisions
+        }
+
+        allowed = {
+            tag = FFA
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            country_event = {
+                id = farfaraway.36
+                days = 0
+            }
+        }
+    }
+
+    to_the_poison_apple = {
+        icon = generic_political_discourse
+
+        available = {
+			
+		}
+
+        visible = {
+            has_variable = charming_decisions
+            has_variable = charming_knows_what_to_do
+        }
+
+        allowed = {
+            tag = FFA
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            country_event = {
+                id = farfaraway.37
+                days = 0
+            }
+        }
+    }
+
+    the_final_step = {
+        icon = generic_political_discourse
+
+        available = {
+			
+		}
+
+        visible = {
+            has_variable = charming_decisions
+            has_variable = charming_knows_what_to_do
+            has_variable = strongest_you_get
+        }
+
+        allowed = {
+            tag = FFA
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            country_event = {
+                id = farfaraway.38
+                days = 0
+            }
+        }
+    }
+
+    the_final_step_potion_countdown = {
+        icon = generic_political_discourse
+
+        available = {
+			hidden_trigger = {
+				is_puppet = yes
+			}
+		}
+
+        allowed = {
+            tag = FFA
+        }
+
+        activation = {
+            has_variable = charming_decisions
+            has_variable = fairy_gets_her_way
+        }
+
+        selectable_mission = no
+
+        is_good = yes
+
+        days_mission_timeout = 11
+
+        timeout_effect = {
+            hidden_effect = {
+                set_variable = {
+                    fairy_brew_the_potion = 1
+                }
+            }
+        }
+    }
+
+    the_final_step_potion = {
+        icon = generic_political_discourse
+
+        available = {
+			custom_trigger_tooltip = {
+                tooltip = FFA_fairy_prepared_the_potion
+                has_variable = fairy_brew_the_potion
+            }
+		}
+
+        visible = {
+            has_variable = charming_decisions
+            has_variable = fairy_gets_her_way
+        }
+
+        allowed = {
+            tag = FFA
+        }
+
+        fire_only_once = yes
+
+        complete_effect = {
+            country_event = {
+                id = farfaraway.41
+                days = 0
+            }
+        }
+    }
+}
+
+flensburgian_war_of_independence = {
+    countdown_to_peace_proposal = {
+        icon = generic_political_discourse
+
+        available = {
+			hidden_trigger = {
+				is_puppet = yes
+			}
+		}
+
+        allowed = {
+            tag = FLE
+        }
+
+        activation = {
+            has_war_with = FRI
+            is_puppet = no
+            surrender_progress < 0.2
+        }
+
+        selectable_mission = no
+
+        is_good = yes
+
+        days_mission_timeout = 90
+
+        timeout_effect = {
+            FRI = {
+				country_event = {
+					id = flensburg.15
+					days = 3
+				}
+			}
+        }
+    }
+
+    time_left_to_subjugate_flensburg = {
+        icon = generic_political_discourse
+
+        available = {
+            NOT = {
+                has_war_with = FLE
+            }
+        }
+
+        allowed = {
+            tag = FRI
+        }
+
+        selectable_mission = no
+
+        activation = {
+            has_war_with = FLE
+            has_variable = FRI_start_the_countdown
+        }
+
+        days_mission_timeout = 180
+
+        timeout_effect = {
+			country_event = {
+				id = flensburg.19
+				days = 0
+			}
+            hidden_effect = {
+                clear_variable = FRI_start_the_countdown
+            }
+        }
+    }
+}
+
+luvland_investment_projects = {
+    invest_in_civilian_sector = {
+        icon = generic_political_discourse
+
+		cost = 125
+
+		ai_will_do = {
+			factor = 100
+		}
+
+        available = {
+            NOT = {
+                has_country_flag = FLE_only_one_campaign_at_once_2
+            }
+        }
+
+        visible = {
+            tag = FLE
+            has_completed_focus = FLE_open_investments_programs
+        }
+
+        days_remove = 120
+
+        days_re_enable = 5
+
+        complete_effect = {
+            hidden_effect = {
+                set_country_flag = FLE_only_one_campaign_at_once_2
+            }
+        }
+
+        remove_effect = {
+            random_owned_state = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+                add_extra_state_shared_building_slots = 1
+            }
+        }
+    }
+
+    invest_in_arms_sector = {
+        icon = generic_political_discourse
+
+		cost = 125
+
+		ai_will_do = {
+			factor = 100
+		}
+
+        available = {
+            NOT = {
+                has_country_flag = FLE_only_one_campaign_at_once_2
+            }
+        }
+
+        visible = {
+            tag = FLE
+            has_completed_focus = FLE_open_investments_programs
+        }
+
+        days_remove = 120
+
+        days_re_enable = 5
+
+        complete_effect = {
+            hidden_effect = {
+                set_country_flag = FLE_only_one_campaign_at_once_2
+            }
+        }
+
+        remove_effect = {
+            random_owned_state = {
+                add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+                add_extra_state_shared_building_slots = 1
+            }
+        }
+    }
+
+    invest_in_naval_sector = {
+        icon = generic_political_discourse
+
+		cost = 125
+
+		ai_will_do = {
+			factor = 100
+		}
+
+        available = {
+            NOT = {
+                has_country_flag = FLE_only_one_campaign_at_once_2
+            }
+        }
+
+        visible = {
+            tag = FLE
+            has_completed_focus = FLE_open_investments_programs
+        }
+
+        days_remove = 120
+
+        days_re_enable = 5
+
+        complete_effect = {
+            hidden_effect = {
+                set_country_flag = FLE_only_one_campaign_at_once_2
+            }
+        }
+
+        remove_effect = {
+            random_owned_state = {
+                limit = {
+                    is_coastal = yes
+                }
+                add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+                add_extra_state_shared_building_slots = 1
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+state={
+	id=640
+	name="STATE_640"
+	provinces={
+		2529 3386 4574 5608 9047 9075 9088 9109 9112 9138 9163 9176 
+	}
+	state_category = town
+	manpower=400000
+	buildings_max_level_factor=1.000
+	history = {
+		owner = MOR
+		add_core_of = MOR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 2
+			9176 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			9176 15
+		}
+	}
+}

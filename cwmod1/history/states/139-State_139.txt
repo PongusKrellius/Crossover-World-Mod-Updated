@@ -1,0 +1,17 @@
+state={
+	id=139
+	name="STATE_139"
+	provinces={
+		773 690 1004 2521 2734 2784 2827 4087 4113 4161 4470 4776 4838 5916 6076 6098 6099 6166 6198 6231 6252 2736 
+	}
+	manpower=350000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	history = {
+		owner = ELW
+		add_core_of = ELW
+		buildings = {
+			infrastructure = 3
+		}
+	}
+}

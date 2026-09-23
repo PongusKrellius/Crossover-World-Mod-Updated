@@ -1,0 +1,78 @@
+﻿capital = 705
+
+oob = "SIO_1936"
+
+# Starting tech
+set_technology = {
+	horse_drawn_carriage = 1
+	infantry_weapons_med = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		mtg_transport = 1
+		basic_battery = 1
+		basic_light_battery = 1
+	}
+}
+add_ideas = {
+	middleage_tech
+}
+
+set_convoys = 50
+
+set_popularities = {
+	democratic = 100
+
+	fascism = 0
+		
+	communism = 0
+		
+	monarchism = 0
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1930.7.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+country_event = {
+	id = sioux.14
+	days = 195
+}
+
+country_event = {
+	id = sioux.12
+	days = 100
+}
+
+country_event = {
+	id = sioux.17
+	days = 580
+}
+
+set_stability = 0.55
+
+recruit_character = SIO_vacant
+recruit_character = SIO_council_of_tribes
+recruit_character = SIO_bold_gaze
+recruit_character = SIO_impatient_squirrel
+recruit_character = SIO_quick_bow
+recruit_character = SIO_proudest_cloud
+recruit_character = SIO_restful_wolf
+recruit_character = SIO_kokomako_sisithunwan

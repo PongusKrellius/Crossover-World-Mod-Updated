@@ -1,0 +1,83 @@
+﻿capital = 187
+
+oob = "ENC_1936"
+
+# Starting tech
+set_technology = {
+	horse_drawn_carriage = 1
+	infantry_weapons_med = 1
+
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		transport = 1
+	}
+
+	set_naval_oob = ENC_1936_naval
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		mtg_transport = 1
+		basic_battery = 1
+		basic_light_battery = 1
+	}
+
+	set_naval_oob = ENC_1936_naval_mtg
+}
+
+add_ideas = {
+	middleage_tech
+	ENC_golden_age
+}
+
+create_faction = threekingdoms
+add_to_faction = ENC
+add_to_faction = WEI
+add_to_faction = KHA
+
+
+set_convoys = 50
+
+set_popularities = {
+	democratic = 0
+
+	fascism = 0
+		
+	communism = 0
+		
+	
+		
+	monarchism = 100
+}
+
+set_politics = {
+	ruling_party = monarchism
+	last_election = "1930.7.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+set_stability = 0.85
+
+recruit_character = ENC_cedric
+recruit_character = ENC_roland_ii
+recruit_character = ENC_council_of_artisans
+recruit_character = ENC_lord_gilbert
+recruit_character = ENC_leopold_murphy
+recruit_character = ENC_gwen
+recruit_character = ENC_miranda_character
+recruit_character = ENC_amber_character
+recruit_character = ENC_amber_older_character
+recruit_character = ENC_sofia_character
+recruit_character = ENC_sofia_older_character
+recruit_character = ENC_james_character
+recruit_character = ENC_james_adult_character

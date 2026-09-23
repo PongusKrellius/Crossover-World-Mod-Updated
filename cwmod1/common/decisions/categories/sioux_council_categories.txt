@@ -1,0 +1,20 @@
+sioux_council_dec_category = {
+	icon = usa_congress
+	allowed = {
+		tag = SIO
+	}
+
+	visible = {
+		NOT = {
+			has_country_flag = SIO_council_abolished
+			AND = {
+				has_country_flag = SIO_yakari_left_the_country
+				has_global_flag = sioux_are_returning
+			}
+		}
+	}
+
+	scripted_gui = sioux_council_decisions
+
+	priority = 85
+}

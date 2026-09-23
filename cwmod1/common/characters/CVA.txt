@@ -1,0 +1,159 @@
+characters={
+	CVA_karych={
+		name="Kar-Karych"
+		portraits={
+			civilian={
+				large="gfx/leaders/CVA/karych.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_TBD_DESC"
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="POLITICS_TBD_DESC"
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CVA_krosh={
+		name="Krosh"
+		portraits={
+			civilian={
+				large="gfx/leaders/CVA/kroshciv.dds"
+			}
+			army={
+				small="GFX_idea_CVA_krosh"
+			}
+			army={
+				large="gfx/leaders/CVA/krosh.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_TBD_DESC"
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="POLITICS_TBD_DESC"
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits={ superior_tactician }
+			skill=4
+			attack_skill=2
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=7999
+		}
+	}
+	CVA_pin={
+		name="Pin"
+		portraits={
+			army={
+				small="GFX_idea_CVA_pin"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CVA_pin_i
+			allowed = {
+				original_tag = CVA
+			}
+			traits = {
+				captain_of_industry
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CVA_mysharik={
+		name="Mysharik"
+		portraits={
+			army={
+				small="GFX_idea_CVA_mysharik"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CVA_mysharik_i
+			allowed = {
+				original_tag = CVA
+			}
+			traits = { economist financial_expert }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CVA_kopatych={
+		name="Kopatych"
+		portraits={
+			army={
+				small="GFX_idea_CVA_kopatych"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CVA_kopatych_i
+			allowed = {
+				original_tag = CVA
+			}
+			traits = {
+				lieutenant_of_industry
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CVA_yezhik={
+		name="Yezhik"
+		portraits={
+			army={
+				small="GFX_idea_CVA_yezhik"
+			}
+			army={
+				large="gfx/leaders/CVA/yezhik.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=7999
+		}
+	}
+	CVA_barash={
+		name="Barash"
+		portraits={
+			civilian={
+				large="gfx/leaders/CVA/barashregent.dds"
+			}
+			army={
+				small="GFX_idea_CVA_barash"
+			}
+			army={
+				large="gfx/leaders/CVA/barash.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=7999
+		}
+	}
+}

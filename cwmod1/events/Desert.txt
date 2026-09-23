@@ -1,0 +1,1858 @@
+﻿###########################
+# CK Events
+###########################
+
+add_namespace = desert
+
+country_event = { #Humsin proposes alliance to destroy Greenland
+	id = desert.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.1"}
+	title = desert.1.t
+	desc = desert.1.d
+	picture = GFX_report_greenland
+
+	is_triggered_only = yes
+
+	option = {
+		name = desert.1.a
+		DES = {
+			country_event = {
+				id = desert.2
+				days = 1
+			}
+		}
+	}
+
+	option = {
+		name = desert.1.b
+		DES = {
+			country_event = {
+				id = desert.3
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Arktos/Shen agrees
+	id = desert.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.2"}
+	title = desert.2.t
+	desc = desert.2.d
+	picture = GFX_report_greenland
+
+	is_triggered_only = yes
+
+	option = {
+		name = desert.2.a
+		if = {
+			limit = {
+				FROM = {
+					tag = ICW
+				}
+			}
+			diplomatic_relation = {
+    			country = ICW
+    			relation = non_aggression_pact
+    			active = yes
+			}
+			diplomatic_relation = {
+    			country = ICW
+    			relation = military_access
+    			active = yes
+			}
+			hidden_effect = {
+				set_country_flag = arktos_agreed
+				set_variable = {
+					can_claim_greenland = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					tag = GON
+				}
+			}
+			diplomatic_relation = {
+    			country = GON
+    			relation = non_aggression_pact
+    			active = yes
+			}
+			diplomatic_relation = {
+    			country = GON
+    			relation = military_access
+    			active = yes
+			}
+			hidden_effect = {
+				set_country_flag = gongmen_agreed
+				set_variable = {
+					can_claim_greenland = 1
+				}
+			}
+		}
+	#	hidden_effect = {
+	#		news_event = {
+	#			id = worldnews.21
+	#			hours = 6
+	#		}
+	#	}
+	}
+}
+
+country_event = { #Arktos/Shen disagrees
+	id = desert.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.3"}
+	title = desert.3.t
+	desc = desert.3.d
+	picture = GFX_report_greenland
+
+	is_triggered_only = yes
+
+	option = {
+		name = desert.3.a
+		add_political_power = -50
+		if = {
+			limit = {
+				FROM = {
+					tag = GON
+				}
+			}
+			hidden_effect = {
+				set_country_flag = gongmen_rejected
+			}
+		}
+	}
+}
+
+country_event = { #Dividing Greenland
+	id = desert.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.4"}
+	title = desert.4.t
+	desc = desert.4.d
+	picture = GFX_report_greenland
+
+	
+
+	is_triggered_only = yes
+
+	option = { #We get Southern parts, Arktos gets Northern
+		name = desert.4.a
+		ICW = {
+			country_event = {
+				id = desert.5
+				days = 1
+			}
+		}
+	}
+
+	option = { #We get Southern and Outcasts, Arktos gets Northern
+		name = desert.4.b
+		ICW = {
+			country_event = {
+				id = desert.6
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Humsin gets Southern parts, Arktos gets Northern - Iceworld part
+	id = desert.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.5"}
+	title = desert.5.t
+	desc = desert.5.d
+	picture = GFX_report_greenland
+
+	
+
+	is_triggered_only = yes
+
+	option = { #Agree
+		name = desert.5.a
+		DES = {
+			country_event = {
+				id = desert.7
+				days = 1
+			}
+		}
+	}
+
+	option = { #Give us Central Greenland and we're done
+		name = desert.5.b
+		DES = {
+			country_event = {
+				id = desert.8
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Humsin gets Southern and Outcasts, Arktos gets Northern - Iceworld part
+	id = desert.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.6"}
+	title = desert.6.t
+	desc = desert.6.d
+	picture = GFX_report_greenland
+
+	
+
+	is_triggered_only = yes
+
+	option = { #Agree
+		name = desert.6.a
+		DES = {
+			country_event = {
+				id = desert.9
+				days = 1
+			}
+		}
+	}
+
+	option = { #Give us Central and Eastern Greenland and we're done
+		name = desert.6.b
+		DES = {
+			country_event = {
+				id = desert.10
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Humsin gets Southern parts, Arktos gets Northern - Arktos agreed
+	id = desert.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.7"}
+	title = desert.7.t
+	desc = desert.7.d
+	picture = GFX_report_greenland
+
+	
+
+	is_triggered_only = yes
+
+	option = { #Great!
+		name = desert.7.a
+		474 = {
+			add_claim_by = DES
+		}
+		467 = {
+			add_claim_by = DES
+		}
+		359 = {
+			add_claim_by = ICW
+		}
+		366 = {
+			add_claim_by = ICW
+		}
+		355 = {
+			add_claim_by = ICW
+		}
+	}
+}
+
+country_event = { #Humsin gets Southern parts, Arktos gets Northern - Arktos wants Central Greenland
+	id = desert.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.8"}
+	title = desert.8.t
+	desc = desert.8.d
+	picture = GFX_report_greenland
+
+	
+
+	is_triggered_only = yes
+
+	option = { #Well, OK
+		name = desert.8.a
+		474 = {
+			add_claim_by = DES
+		}
+		467 = {
+			add_claim_by = DES
+		}
+		359 = {
+			add_claim_by = ICW
+		}
+		366 = {
+			add_claim_by = ICW
+		}
+		355 = {
+			add_claim_by = ICW
+		}
+		439 = {
+			add_claim_by = ICW
+		}
+	}
+	option = { #No way
+		name = desert.8.b
+		ICW = {
+			country_event = {
+				id = desert.11
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Humsin gets Southern parts and Outcasts, Arktos gets Northern - Arktos agreed
+	id = desert.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.9"}
+	title = desert.9.t
+	desc = desert.9.d
+	picture = GFX_report_greenland
+
+	
+
+	is_triggered_only = yes
+
+	option = { #Great!
+		name = desert.7.a
+		474 = {
+			add_claim_by = DES
+		}
+		467 = {
+			add_claim_by = DES
+		}
+		359 = {
+			add_claim_by = ICW
+		}
+		366 = {
+			add_claim_by = ICW
+		}
+		355 = {
+			add_claim_by = ICW
+		}
+		OUT = {
+			every_owned_state = {
+				add_claim_by = DES
+			}
+		}
+	}
+}
+
+country_event = { #Humsin gets Southern parts and Outcasts, Arktos gets Northern - Arktos wants Central and Eastern Greenland
+	id = desert.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.10"}
+	title = desert.10.t
+	desc = desert.10.d
+	picture = GFX_report_greenland
+
+	
+
+	is_triggered_only = yes
+
+	option = { #Well, OK
+		name = desert.8.a
+		474 = {
+			add_claim_by = DES
+		}
+		467 = {
+			add_claim_by = DES
+		}
+		359 = {
+			add_claim_by = ICW
+		}
+		366 = {
+			add_claim_by = ICW
+		}
+		355 = {
+			add_claim_by = ICW
+		}
+		439 = {
+			add_claim_by = ICW
+		}
+		432 = {
+			add_claim_by = ICW
+		}
+		OUT = {
+			every_owned_state = {
+				add_claim_by = DES
+			}
+		}
+	}
+	option = { #No way
+		name = desert.8.b
+		ICW = {
+			country_event = {
+				id = desert.12
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Humsin gets Southern parts, Arktos gets Northern - Humsin rejects
+	id = desert.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.11"}
+	title = desert.11.t
+	desc = desert.11.d
+	picture = GFX_report_greenland
+
+	
+
+	is_triggered_only = yes
+
+	option = { #Back down
+		name = desert.11.a
+		474 = {
+			add_claim_by = DES
+		}
+		467 = {
+			add_claim_by = DES
+		}
+		359 = {
+			add_claim_by = ICW
+		}
+		366 = {
+			add_claim_by = ICW
+		}
+		355 = {
+			add_claim_by = ICW
+		}
+	}
+	option = { #We will take it anyway
+		name = desert.11.b
+		474 = {
+			add_claim_by = DES
+		}
+		467 = {
+			add_claim_by = DES
+		}
+		359 = {
+			add_claim_by = ICW
+		}
+		366 = {
+			add_claim_by = ICW
+		}
+		355 = {
+			add_claim_by = ICW
+		}
+		439 = {
+			add_claim_by = ICW
+		}
+	}
+}
+
+country_event = { #Humsin gets Southern parts and Outcasts, Arktos gets Northern - Humsin rejects
+	id = desert.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.12"}
+	title = desert.12.t
+	desc = desert.12.d
+	picture = GFX_report_greenland
+
+	
+
+	is_triggered_only = yes
+
+	option = { #Back down
+		name = desert.11.a
+		474 = {
+			add_claim_by = DES
+		}
+		467 = {
+			add_claim_by = DES
+		}
+		359 = {
+			add_claim_by = ICW
+		}
+		366 = {
+			add_claim_by = ICW
+		}
+		355 = {
+			add_claim_by = ICW
+		}
+		OUT = {
+			every_owned_state = {
+				add_claim_by = DES
+			}
+		}
+	}
+	option = { #We will take it anyway
+		name = desert.11.b
+		474 = {
+			add_claim_by = DES
+		}
+		467 = {
+			add_claim_by = DES
+		}
+		359 = {
+			add_claim_by = ICW
+		}
+		366 = {
+			add_claim_by = ICW
+		}
+		355 = {
+			add_claim_by = ICW
+		}
+		439 = {
+			add_claim_by = ICW
+		}
+		432 = {
+			add_claim_by = ICW
+		}
+	}
+}
+
+country_event = { #Humsin demands annexation of Sioux lands
+	id = desert.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.13"}
+	title = desert.13.t
+	desc = desert.13.d
+	picture = GFX_report_sioux
+
+	is_triggered_only = yes
+
+	option = { #Request more time from Humsin, we need to think!
+		name = desert.13.a
+		DES = {
+			country_event = {
+				id = desert.14
+				days = 1
+			}
+		}
+	}
+
+	option = { #Reject
+		name = desert.13.b
+		DES = {
+			country_event = {
+				id = desert.15
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Sioux request more time
+	id = desert.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.14"}
+	title = desert.14.t
+	desc = desert.14.d
+	picture = GFX_report_sioux
+
+	is_triggered_only = yes
+
+	option = { #7 days
+		name = desert.14.a
+		SIO = {
+			country_event = {
+				id = desert.16
+				days = 7
+			}
+		}
+	}
+
+	option = { #14 days
+		name = desert.14.b
+		SIO = {
+			country_event = {
+				id = desert.16
+				days = 14
+			}
+		}
+	}
+}
+
+country_event = { #Sioux reject
+	id = desert.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.15"}
+	title = desert.15.t
+	desc = desert.15.d
+	picture = GFX_report_sioux
+
+	is_triggered_only = yes
+
+	option = { #They wanted it
+		name = desert.15.a
+		declare_war_on = { 
+			target = SIO
+			type = annex_everything	
+		}
+		hidden_effect = {
+			news_event = {
+				id = worldnews.22
+				hours = 6
+			}
+		}
+	}
+}
+
+country_event = { #Humsin demands annexation of Sioux lands - time is up
+	id = desert.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.16"}
+	title = desert.16.t
+	desc = desert.16.d
+	picture = GFX_report_sioux
+
+	is_triggered_only = yes
+
+	option = { #Reject
+		name = desert.13.b
+		DES = {
+			country_event = {
+				id = desert.15
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Evacuation of Sioux women and children
+	id = desert.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.17"}
+	title = desert.17.t
+	desc = desert.17.d
+	picture = GFX_report_sioux
+
+	trigger = {
+		tag = SIO
+		has_war_with = DES
+		surrender_progress > 0.3
+		SIO = {
+			has_country_flag = SIO_council_not_rejected_sandstorm
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				is_ai = no
+			}
+			hidden_effect = {
+				set_country_flag = SIO_was_ai
+			}
+		}
+		hidden_effect = {
+			set_country_flag = SIO_sandstorm_fired
+		}
+	}
+
+	fire_only_once = yes
+
+	option = { #Greenland
+		name = desert.17.a
+		ai_chance = {
+			factor = 95
+		}
+		GRN = {
+			country_event = {
+				id = desert.18
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Sioux refugees exiled to Greenland
+	id = desert.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.18"}
+	title = desert.18.t
+	desc = desert.18.d
+	picture = GFX_report_sioux
+
+	is_triggered_only = yes
+
+	option = { #We gladly welcome you!
+		name = desert.18.a
+		add_ideas = {
+			SIO_refugees
+		}
+		SIX = {
+			add_state_core = 22
+			add_state_core = 23
+			transfer_state = 22
+			transfer_state = 23
+			set_capital = { state = 22 }
+			add_manpower = 20000
+			add_ideas = {
+				modern_tech_idea
+			}
+			GRN = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+			set_politics = {
+				ruling_party = democratic
+			}
+			set_popularities = {
+				democratic = 100
+				monarchism = 0
+				fascism = 0
+				communism = 0
+			}
+			hidden_effect = {
+				load_oob = GRN_sioux_arrive
+				change_tag_from = SIO
+			}
+			inherit_technology = GRN
+			add_equipment_to_stockpile = {
+    			type = var:convoys
+    			amount = 40
+			}
+			if = {
+				limit = {
+					SIO = {
+						has_country_flag = SIO_yakari_left_the_country
+					}
+				}
+				hidden_effect = {
+					every_unit_leader = {
+						limit = {
+							has_id = 9000
+						}
+						retire = yes
+					}
+					create_country_leader = {
+						name = "Buffalo Seed"
+						desc = "POLITICS_BUFFALO_DESC"
+						picture = "buffalo_seed.dds"
+						expire = "1965.1.1"
+						ideology = centrism
+						traits = {
+							#
+						}
+					}
+					country_event = {
+						id = desert.48
+						days = 4
+					}
+				}
+			}
+		}
+		SIO = {
+			delete_unit_template_and_units = {
+    			division_template = "Sioux Cavalry Division"
+			}
+			transfer_navy = {
+    			target = SIX
+			}
+		}
+	}
+}
+
+country_event = { #Sioux refugees arrive to Central Kingdom
+	id = desert.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.19"}
+	title = desert.19.t
+	desc = desert.19.d
+	picture = GFX_report_greenland
+
+	is_triggered_only = yes
+
+	option = { #Humsin? Conquering tribes? My god!
+		name = desert.19.a
+		add_manpower = 10000
+		add_ideas = {
+			SIO_refugees
+		}
+		hidden_effect = {
+			SIO = {
+				retire_country_leader = yes
+				create_country_leader = {
+					name = "Yakari"
+					desc = "POLITICS_STEPHEN_I_DESC"
+					picture = "yakari_feathers.dds"
+					expire = "1965.1.1"
+					ideology = centrism
+					traits = {
+						#
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Case of Salamanders
+	id = desert.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.20"}
+	title = desert.20.t
+	desc = desert.20.d
+	picture = GFX_report_greenland
+
+	is_triggered_only = yes
+
+	option = { #Begin talks with them
+		name = desert.20.a
+		add_political_power = -250
+		hidden_effect = {
+			country_event = {
+				id = desert.21
+				days = 7
+			}
+		}
+	}
+
+	option = { #Crush their autonomy dreams
+		name = desert.20.b
+		add_political_power = -150
+		set_country_flag = DES_no_negotiations
+	}
+}
+
+country_event = { #Case of Salamanders - negotiations
+	id = desert.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.20"}
+	title = desert.21.t
+	desc = desert.21.d
+	picture = GFX_report_greenland
+
+	is_triggered_only = yes
+
+	option = { #Accept their demands
+		name = desert.21.a
+		add_political_power = -100
+		add_stability = -0.1
+		set_country_flag = DES_granted_autonomy
+	}
+
+	option = { #No autonomy, you are subjects of Humsin!
+		name = desert.21.b
+		add_political_power = 50
+		add_war_support = 0.1
+		set_country_flag = DES_no_negotiations
+	}
+}
+
+country_event = { #Humsin demands return of Reclaimed Fields
+	id = desert.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.22"}
+	title = desert.22.t
+	desc = desert.22.d
+	picture = GFX_report_greenland
+
+	is_triggered_only = yes
+
+	option = { #Fold
+		name = desert.22.a
+		DES = {
+			transfer_state = 518
+		}
+		add_political_power = -200
+		add_stability = -0.35
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = { #Reject
+		name = desert.22.b
+		ai_chance = {
+			factor = 100
+		}
+		DES = {
+			country_event = {
+				id = desert.23
+				days = 7
+			}
+		}
+		hidden_effect = {
+			news_event = {
+				id = worldnews.23
+				hours = 6
+			}
+		}
+	}
+}
+
+country_event = { #Greenland rejects
+	id = desert.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.23"}
+	title = desert.23.t
+	desc = desert.23.d
+	picture = GFX_report_greenland
+
+	is_triggered_only = yes
+
+	option = { #They wanted it
+		name = desert.15.a
+		declare_war_on = { 
+			target = GRN
+			type = annex_everything	
+		}
+	}
+}
+
+country_event = { #Humsin demands Outcasts
+	id = desert.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.24"}
+	title = desert.24.t
+	desc = desert.24.d
+	picture = GFX_report_greenland
+
+	is_triggered_only = yes
+
+	option = { #Fold
+		name = desert.24.a
+		DES = {
+			annex_country = {
+				target = OUT
+    			transfer_troops = no
+			}
+		}
+	}
+
+	option = { #Reject and ask Greenland for help
+		name = desert.24.b
+		GRN = {
+			country_event = {
+				id = desert.25
+				days = 1
+			}
+		}
+		DES = {
+			country_event = {
+				id = desert.26
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { #Outcasts want guarantee
+	id = desert.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.25"}
+	title = desert.25.t
+	desc = desert.25.d
+	picture = GFX_report_greenland
+	
+
+	is_triggered_only = yes
+
+	option = { #OK
+		name = desert.25.a
+		give_guarantee = OUT
+		OUT = {
+			give_military_access = GRN
+		}
+	}
+}
+
+country_event = { #Outcasts reject
+	id = desert.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.26"}
+	title = desert.26.t
+	desc = desert.26.d
+	picture = GFX_report_greenland
+	
+
+	is_triggered_only = yes
+
+	option = { #They wanted it
+		name = desert.15.a
+		declare_war_on = { 
+			target = OUT
+			type = annex_everything	
+		}
+	}
+}
+
+country_event = { #Sioux refugees return to their country - CK
+	id = desert.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.27"}
+	title = desert.27.t
+	desc = desert.27.d
+	picture = GFX_report_greenland
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = MAI
+		DES = {
+			exists = no
+		}
+		SIO = {
+			exists = yes
+		}
+		has_idea = SIO_refugees
+	}
+
+	option = { #Have a good trip!
+		name = desert.27.a
+		add_manpower = -10000
+		remove_ideas = {
+			SIO_refugees
+		}
+	}
+}
+
+country_event = { #Sioux refugees return to their country - Greenland
+	id = desert.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.28"}
+	title = desert.27.t
+	desc = desert.27.d
+	picture = GFX_report_greenland
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	trigger = {
+		tag = GRN
+		DES = {
+			exists = no
+		}
+		SIO = {
+			exists = yes
+		}
+		has_idea = SIO_refugees
+	}
+
+	option = { #Have a good trip!
+		name = desert.27.a
+		remove_ideas = {
+			SIO_refugees
+		}
+		transfer_state = 22
+		transfer_state = 23
+		hidden_effect = {
+			SIO = {
+				remove_state_core = 22
+				remove_state_core = 23
+			}
+		}
+	}
+}
+
+country_event = { #Landing in Tippecanoe successful
+	id = desert.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.29"}
+	title = desert.29.t
+	desc = desert.29.d
+	picture = GFX_report_greenland
+	
+
+	is_triggered_only = yes
+
+	option = { #They wanted it
+		name = desert.29.a
+		declare_war_on = { 
+			target = DES
+			type = annex_everything	
+		}
+		hidden_effect = {
+			GRN = {
+				add_to_faction = SIO
+			}
+		}
+	}
+}
+
+country_event = { #Humsin proposes alliance to Doofenshmirtz
+	id = desert.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.30"}
+	title = desert.30.t
+	desc = desert.30.d
+	picture = GFX_report_greenland
+
+	
+
+	is_triggered_only = yes
+
+	option = { #Accept
+		name = desert.30.a
+		DES = {
+			country_event = {
+				id = desert.31
+				days = 1
+			}
+		}
+	}
+
+	option = { #Deny
+		name = desert.30.b
+		DES = {
+			country_event = {
+				id = desert.32
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Doofenshmirtz accepts
+	id = desert.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.31"}
+	title = desert.31.t
+	desc = desert.31.d
+	picture = GFX_report_greenland
+
+	
+
+	is_triggered_only = yes
+
+	option = { #Our bloc grows stronger
+		name = desert.31.a
+		add_to_faction = TSA
+	}
+}
+
+country_event = { #Doofenshmirtz rejects
+	id = desert.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.32"}
+	title = desert.32.t
+	desc = desert.32.d
+	picture = GFX_report_greenland
+
+	
+
+	is_triggered_only = yes
+
+	option = { #Then there is no place for him in our world
+		name = desert.32.a
+		add_stability = -0.1
+	}
+}
+
+country_event = { #Humsin proposes alliance to us
+	id = desert.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.33"}
+	title = desert.33.t
+	desc = desert.33.d
+	picture = GFX_report_greenland
+
+	
+
+	is_triggered_only = yes
+
+	option = { #Accept
+		name = desert.30.a
+		DES = {
+			country_event = {
+				id = desert.34
+				days = 1
+			}
+		}
+	}
+
+	option = { #Deny
+		name = desert.30.b
+		DES = {
+			country_event = {
+				id = desert.35
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #They accept
+	id = desert.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.34"}
+	title = desert.34.t
+	desc = desert.34.d
+	picture = GFX_report_greenland
+
+	
+
+	is_triggered_only = yes
+
+	option = { #Our bloc grows stronger
+		name = desert.34.a
+		add_to_faction = FROM
+	}
+}
+
+country_event = { #They reject
+	id = desert.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.35"}
+	title = desert.35.t
+	desc = desert.35.d
+	picture = GFX_report_greenland
+
+	
+
+	is_triggered_only = yes
+
+	option = { #Then there is no place for them in our world
+		name = desert.35.a
+		add_stability = -0.1
+	}
+}
+
+country_event = { #Humsin proposes to sign Pax Orientis
+	id = desert.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.36"}
+	title = desert.36.t
+	desc = desert.36.d
+	picture = GFX_report_greenland
+
+	
+
+	is_triggered_only = yes
+
+	option = { #Accept
+		name = desert.36.a
+		DES = {
+			country_event = {
+				id = desert.37
+				days = 1
+			}
+		}
+		hidden_effect = {
+			set_country_flag = FLO_signed_pax_orientis
+		}
+	}
+
+	option = { #Refuse
+		name = desert.36.b
+		DES = {
+			country_event = {
+				id = desert.38
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #They accept
+	id = desert.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.37"}
+	title = desert.37.t
+	desc = desert.37.d
+	picture = GFX_report_greenland
+
+	
+
+	is_triggered_only = yes
+
+	option = { #Peace in the East!
+		name = desert.37.a
+		add_political_power = 50
+		add_named_threat = { 
+    		threat = -10
+    		name = pax_orientis_signed
+		}
+		set_country_flag = FLO_signed_pax_orientis
+	}
+}
+
+country_event = { #They reject
+	id = desert.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.38"}
+	title = desert.38.t
+	desc = desert.38.d
+	picture = GFX_report_greenland
+
+	
+
+	is_triggered_only = yes
+
+	option = { #Then war is inevitable
+		name = desert.38.a
+		add_political_power = -50
+	}
+}
+
+country_event = { #Fleas in Greenland
+	id = desert.39
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.39"}
+	title = desert.39.t
+	desc = desert.39.d
+	picture = GFX_report_greenland
+
+	
+
+	is_triggered_only = yes
+
+	option = { 
+		name = desert.39.a
+		if = {
+			limit = {
+				tag = GRN
+			}
+			add_stability = -0.05
+			add_political_power = 50
+		}
+		if = {
+			limit = {
+				tag = DES
+			}
+			add_war_support = 0.05
+			random_owned_state = {
+				damage_building = {
+    				type = infrastructure
+    				damage = 2
+				}
+			}
+			random_owned_state = {
+				damage_building = {
+    				type = infrastructure
+    				damage = 2
+				}
+			}
+			random_owned_state = {
+				damage_building = {
+    				type = infrastructure
+    				damage = 2
+				}
+			}
+			random_owned_state = {
+				damage_building = {
+    				type = infrastructure
+    				damage = 2
+				}
+			}
+			random_owned_state = {
+				damage_building = {
+    				type = infrastructure
+    				damage = 2
+				}
+			}
+			random_owned_state = {
+				damage_building = {
+    				type = infrastructure
+    				damage = 2
+				}
+			}
+			random_owned_state = {
+				damage_building = {
+    				type = infrastructure
+    				damage = 2
+				}
+			}
+			random_owned_state = {
+				damage_building = {
+    				type = infrastructure
+    				damage = 2
+				}
+			}
+			random_owned_state = {
+				damage_building = {
+    				type = infrastructure
+    				damage = 2
+				}
+			}
+			550 = {
+				damage_building = {
+    				type = industrial_complex
+    				damage = 2
+				}
+				damage_building = {
+    				type = arms_factory
+    				damage = 2
+				}
+			}
+			557 = {
+				damage_building = {
+    				type = arms_factory
+    				damage = 1
+				}
+			}
+			591 = {
+				damage_building = {
+    				type = industrial_complex
+    				damage = 2
+				}
+			}
+		}
+	}
+}
+
+country_event = { #One Arktos too much?
+	id = desert.40
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.40"}
+	title = desert.40.t
+	desc = desert.40.d
+	picture = GFX_report_greenland
+
+	
+
+	is_triggered_only = yes
+
+	option = { 
+		name = desert.40.a
+		if = {
+			limit = {
+				tag = GRN
+			}
+			add_political_power = 50
+		}
+		if = {
+			limit = {
+				tag = DES
+			}
+			army_experience = 5
+			add_stability = -0.1
+		}
+	}
+}
+
+country_event = { #Crystal Ball
+	id = desert.41
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.41"}
+	title = desert.41.t
+	desc = desert.41.d
+	picture = GFX_report_greenland
+
+	is_triggered_only = yes
+
+	option = { 
+		name = desert.41.a
+		if = {
+			limit = {
+				tag = GRN
+			}
+			add_stability = -0.1
+		}
+		if = {
+			limit = {
+				tag = DES
+			}
+			add_war_support = 0.05
+			add_political_power = -50
+			random_owned_state = {
+				damage_building = {
+    				type = infrastructure
+    				damage = 2
+				}
+			}
+			random_owned_state = {
+				damage_building = {
+    				type = infrastructure
+    				damage = 2
+				}
+			}
+			random_owned_state = {
+				damage_building = {
+    				type = infrastructure
+    				damage = 2
+				}
+			}
+			random_owned_state = {
+				damage_building = {
+    				type = infrastructure
+    				damage = 2
+				}
+			}
+			random_owned_state = {
+				damage_building = {
+    				type = infrastructure
+    				damage = 2
+				}
+			}
+			random_owned_state = {
+				damage_building = {
+    				type = infrastructure
+    				damage = 2
+				}
+			}
+			random_owned_state = {
+				damage_building = {
+    				type = infrastructure
+    				damage = 2
+				}
+			}
+			random_owned_state = {
+				damage_building = {
+    				type = infrastructure
+    				damage = 2
+				}
+			}
+			random_owned_state = {
+				damage_building = {
+    				type = infrastructure
+    				damage = 2
+				}
+			}
+			550 = {
+				damage_building = {
+    				type = industrial_complex
+    				damage = 1
+				}
+				damage_building = {
+    				type = arms_factory
+    				damage = 1
+				}
+			}
+			557 = {
+				damage_building = {
+    				type = arms_factory
+    				damage = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Hypnotizing Greenlanders
+	id = desert.42
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.42"}
+	title = desert.42.t
+	desc = desert.42.d
+	picture = GFX_report_greenland
+
+	is_triggered_only = yes
+
+	option = { 
+		name = desert.42.a
+		if = {
+			limit = {
+				tag = GRN
+			}
+			add_stability = -0.05
+		}
+		if = {
+			limit = {
+				tag = DES
+			}
+			army_experience = 5
+			add_political_power = 50
+		}
+	}
+}
+
+country_event = { #Kayo vs Sioux - Strange happenings
+	id = desert.43
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.43"}
+	title = desert.43.t
+	desc = desert.43.d
+	picture = GFX_report_sioux
+
+	is_triggered_only = yes
+
+	option = { 
+		name = desert.43.a
+		705 = {
+			damage_building = {
+    			type = indsutrial_complex
+    			damage = 1
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = desert.44
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = { #Kayo vs Sioux - Yakari implied to be responsible
+	id = desert.44
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.44"}
+	title = desert.44.t
+	desc = desert.44.d
+	picture = GFX_report_sioux
+
+	is_triggered_only = yes
+
+	option = { 
+		name = desert.44.a
+		add_political_power = -10
+		hidden_effect = {
+			country_event = {
+				id = desert.45
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = { #Kayo vs Sioux - Final event
+	id = desert.45
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.45"}
+	title = desert.45.t
+	desc = desert.45.d
+	picture = GFX_report_sioux
+
+	is_triggered_only = yes
+
+	option = { #Launch an investigation into this matter
+		name = desert.45.a
+		ai_chance = {
+			base = 1
+			modifier = {
+				has_game_rule = {
+					rule = SIO_yakari_status
+					option = SIO_YAKARI_PRESENT
+				}
+				add = 99
+			}
+			modifier = {
+				has_game_rule = {
+					rule = SIO_yakari_status
+					option = SIO_YAKARI_NOT_PRESENT
+				}
+				add = -1
+			}
+		}
+		add_political_power = -50
+		hidden_effect = {
+			country_event = {
+				id = desert.46
+				days = 4
+			}
+			set_variable = {
+				kayo_lost = 1
+			}
+		}
+	}
+
+	option = { #Order Yakari to leave the country
+		name = desert.45.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				has_game_rule = {
+					rule = SIO_yakari_status
+					option = SIO_YAKARI_PRESENT
+				}
+				add = -1
+			}
+			modifier = {
+				has_game_rule = {
+					rule = SIO_yakari_status
+					option = SIO_YAKARI_NOT_PRESENT
+				}
+				add = 99
+			}
+		}
+		add_political_power = 50
+		add_stability = -0.25
+		hidden_effect = {
+			set_country_flag = SIO_yakari_left_the_country
+			GRN = {
+				country_event = {
+					id = desert.47
+					days = 7
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Kayo vs Sioux - Nothing that would point to Yakari's fault has been found
+	id = desert.46
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.46"}
+	title = desert.46.t
+	desc = desert.46.d
+	picture = GFX_report_sioux
+
+	is_triggered_only = yes
+
+	option = { #Good thing we did not exile him
+		name = desert.46.a
+		add_political_power = 50
+	}
+}
+
+country_event = { #Yakari arrives to Greenland
+	id = desert.47
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.47"}
+	title = desert.47.t
+	desc = desert.47.d
+	picture = GFX_report_yakari
+
+	is_triggered_only = yes
+
+	option = { #Welcome, stay as long you want
+		name = desert.47.a
+		hidden_effect = {
+			set_country_flag = yakari_arrived
+		}
+		create_corps_commander = {
+			name = "Yakari"
+			portrait_path = "gfx/leaders/SIO/yakari.dds"
+			skill = 3
+   			attack_skill = 3
+    		defense_skill = 2
+   			planning_skill = 2
+    		logistics_skill = 3
+    		id = 90000
+		}
+	}
+}
+
+country_event = { #Yakari about rejoining Sioux
+	id = desert.48
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.48"}
+	title = desert.48.t
+	desc = desert.48.d
+	picture = GFX_report_sioux
+
+	is_triggered_only = yes
+
+	option = { #He's not returning folks. You did that yourself. And Rainbow stays with Yakari, so good job mate.
+		name = desert.48.a
+		hidden_effect = {
+			SIO = {
+				set_country_flag = rainbow_not_returning_too
+			}
+			GRN = {
+				create_corps_commander = {
+					name = "Rainbow"
+					portrait_path = "gfx/leaders/SIO/rainbow.dds"
+					skill = 3
+   					attack_skill = 2
+    				defense_skill = 3
+   					planning_skill = 3
+    				logistics_skill = 3
+    				id = 90001
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Kayo vs Sioux - results
+	id = desert.49
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.49"}
+	title = desert.49.t
+	desc = desert.49.d
+	picture = GFX_report_sioux
+
+	is_triggered_only = yes
+
+	option = {
+		name = desert.49.a
+		trigger = {
+			SIO = {
+				has_country_flag = SIO_yakari_left_the_country
+			}
+		}
+		hidden_effect = {
+			set_country_flag = good_good_sioux
+		}
+	}
+
+	option = {
+		name = desert.49.b
+		trigger = {
+			SIO = {
+				NOT = {
+					has_country_flag = SIO_yakari_left_the_country
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Chameleon wants to kill Clan leader
+	id = desert.50
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.50"}
+	title = desert.50.t
+	desc = desert.50.d
+	picture = GFX_report_tiger_village
+
+	is_triggered_only = yes
+
+	option = { #Ok, why not?
+		name = desert.50.a
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_leader = {
+						name = "Tom"
+						ruling_only = yes
+					}
+				}
+				country_event = {
+					id = tigers.30
+					days = 4
+				}
+				else = {
+					country_event = {
+						id = tigers.29
+						days = 4
+					}
+				}
+			}
+		}
+	}
+
+	option = { #That's not possible. No way. I'm seeing things.
+		name = desert.50.a
+		hidden_effect = {
+			set_variable = {
+				kayo_lost = 1
+			}
+			DES = {
+				country_event = {
+					id = desert.51
+					days = 4
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Kayo vs Tigers - results
+	id = desert.51
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.51"}
+	title = desert.51.t
+	desc = desert.51.d
+	picture = GFX_report_tiger_village
+
+	is_triggered_only = yes
+
+	option = {
+		name = desert.51.a
+		trigger = {
+			TIG = {
+				OR = {
+					has_country_leader = {
+						name = "Lud"
+    					ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Tib"
+    					ruling_only = yes
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			set_country_flag = good_good_tigers
+		}
+	}
+
+	option = {
+		name = desert.51.b
+		trigger = {
+			TIG = {
+				has_variable = kayo_lost
+			}
+		}
+	}
+}
+
+country_event = { #Kayo notifies Humsin about Red Ribbon Race
+	id = desert.52
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.52"}
+	title = desert.52.t
+	desc = desert.52.d
+	picture = GFX_report_sioux
+
+	is_triggered_only = yes
+
+	option = { #Oh that's nice
+		name = desert.52.a
+	}
+}
+
+country_event = { #Economy question
+	id = desert.53
+	immediate = {log = "[GetDateText]: [Root.GetName]: event desert.53"}
+	title = desert.53.t
+	desc = desert.53.d
+	picture = GFX_report_greenland
+
+	is_triggered_only = yes
+
+	option = { #West
+		name = desert.53.a
+		complete_national_focus = DES_move_economy_west
+	}
+
+	option = { #East
+		name = desert.53.b
+		complete_national_focus = DES_move_economy_east
+	}
+
+	option = { #Balance
+		name = desert.53.c
+		complete_national_focus = DES_balance_the_locations
+	}
+}

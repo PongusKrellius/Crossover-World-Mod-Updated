@@ -1,0 +1,29 @@
+state={
+	id=91
+	name="STATE_91"
+	provinces={
+		298 17 986 1797 5947 5955 
+	}
+	manpower=350000
+	state_category = city
+	buildings_max_level_factor=1.000
+	history = {
+		owner = WOR
+		add_core_of = WOR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 4
+			dockyard = 2
+			986 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			986 15
+		}
+	}
+	resources = {
+		wood = 10
+	}
+}

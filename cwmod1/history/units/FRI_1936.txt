@@ -1,0 +1,190 @@
+﻿division_template = {
+	name = "Infanterie-Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 0 y = 4 }
+		artillery_brigade = { x = 1 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Panzer-Division"
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+        light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "1. Infanterie-Division"
+		location = 9949
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "2. Infanterie-Division"
+		location = 9949
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "3. Infanterie-Division"
+		location = 9949
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "4. Infanterie-Division"
+		location = 9949
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "5. Infanterie-Division"
+		location = 9949
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "6. Infanterie-Division"
+		location = 10529
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "7. Infanterie-Division"
+		location = 10529
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "8. Infanterie-Division"
+		location = 10529
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "9. Infanterie-Division"
+		location = 10529
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "10. Infanterie-Division"
+		location = 1160
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "11. Infanterie-Division"
+		location = 1160
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "12. Infanterie-Division"
+		location = 1160
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "13. Infanterie-Division"
+		location = 1160
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "14. Infanterie-Division"
+		location = 9949
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "15. Infanterie-Division"
+		location = 9949
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "16. Infanterie-Division"
+		location = 9949
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "17. Infanterie-Division"
+		location = 9949
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "18. Infanterie-Division"
+		location = 9949
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "19. Infanterie-Division"
+		location = 9949
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "20. Infanterie-Division"
+		location = 9949
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "21. Infanterie-Division"
+		location = 9949
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "22. Infanterie-Division"
+		location = 9949
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "1. Panzer-Division"
+		location = 9949
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "2. Panzer-Division"
+		location = 9949
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "3. Panzer-Division"
+		location = 9949
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "4. Panzer-Division"
+		location = 9949
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "5. Panzer-Division"
+		location = 9949
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.6
+	}
+}
+

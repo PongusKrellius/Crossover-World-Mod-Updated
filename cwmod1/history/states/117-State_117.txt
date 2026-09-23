@@ -1,0 +1,20 @@
+
+state={
+	id=117
+	name="STATE_117"
+
+	history={
+		owner = SOO
+		add_core_of = SOO	
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces={
+		132 305 1702 1753 1809 4188 4786 5683 6056 6062 6072 6080 
+	}
+	manpower=244032
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

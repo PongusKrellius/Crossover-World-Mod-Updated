@@ -1,0 +1,993 @@
+﻿###########################
+# CK Events
+###########################
+
+add_namespace = royalconvention
+
+country_event = {
+	id = royalconvention.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event royalconvention.1"}
+	title = royalconvention.1.t
+	desc = royalconvention.1.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = royalconvention.1.a
+		MAI = {
+			country_event = {
+				id = royalconvention.2
+				days = 1
+			}
+		}
+		hidden_effect = {
+			ROOT = {
+				set_country_flag = will_attend_royal_convention
+			}
+		}
+		hidden_effect = {
+			MAI = {
+				add_to_variable = {
+    				royal_convention_count = 1
+				}
+			}
+		}
+		ai_chance = {
+			modifier = {
+				OR = {
+					tag = FRI
+					tag = WEK
+				}
+				factor = 100
+			}
+			modifier = {
+				OR = {
+					tag = AVA
+					tag = GRN
+				}
+				factor = 75
+			}
+			modifier = {
+				NOT = {
+					tag = FRI
+					tag = WEK
+					tag = AVA
+					tag = GRN
+				}
+				factor = 50
+			}
+		}
+	}
+	option = {
+		name = royalconvention.1.b
+		MAI = {
+			country_event = {
+				id = royalconvention.3
+				days = 1
+			}
+		}
+		hidden_effect = {
+			ROOT = {
+				set_country_flag = wont_attend_royal_convention
+			}
+		}
+		ai_chance = {
+			modifier = {
+				OR = {
+					tag = FRI
+					tag = WEK
+				}
+				factor = 0
+			}
+			modifier = {
+				OR = {
+					tag = AVA
+					tag = GRN
+				}
+				factor = 25
+			}
+			modifier = {
+				NOT = {
+					tag = FRI
+					tag = WEK
+					tag = AVA
+					tag = GRN
+				}
+				factor = 50
+			}
+		}
+	}
+}
+
+country_event = {
+	id = royalconvention.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event royalconvention.2"}
+	title = royalconvention.2.t
+	desc = royalconvention.2.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = royalconvention.2.a
+	}
+}
+
+country_event = {
+	id = royalconvention.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event royalconvention.3"}
+	title = royalconvention.3.t
+	desc = royalconvention.3.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = royalconvention.3.a
+	}
+}
+
+country_event = {
+	id = royalconvention.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event royalconvention.4"}
+	title = royalconvention.4.t
+	desc = royalconvention.4.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = royalconvention.4.a
+		hidden_effect = {
+			ROOT = {
+				country_event = {
+					id = royalconvention.5
+					days = 31
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = royalconvention.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event royalconvention.5"}
+	title = royalconvention.5.t
+	desc = royalconvention.5.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = royalconvention.5.a
+		hidden_effect = {
+			ROOT = {
+				declare_war_on = { 
+					target = GRN
+					type = annex_everything	
+				}
+			}
+			news_event = { 
+				id = worldnews.9 hours = 1
+			} 
+		}
+	}
+}
+
+country_event = {
+	id = royalconvention.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event royalconvention.6"}
+	title = royalconvention.6.t
+	desc = royalconvention.6.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = royalconvention.6.a
+		hidden_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = will_attend_royal_convention
+				}
+				activate_mission = time_left_until_the_end_of_convention
+			}
+			activate_mission = time_left_until_the_end_of_convention
+			news_event = { 
+				id = worldnews.10 hours = 1
+			} 
+			MAI = {
+				set_country_flag = royal_convention_online
+			}
+		}
+	}
+}
+
+country_event = { #Our request for sea access has been denied
+	id = royalconvention.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event royalconvention.7"}
+	title = royalconvention.7.t
+	desc = royalconvention.7.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = royalconvention.7.a
+		hidden_effect = {
+			set_variable = {
+				macius_is_asking = 0
+			}
+		}
+	}
+}
+
+country_event = { #Friedewalt is asked about sea
+	id = royalconvention.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event royalconvention.8"}
+	title = royalconvention.8.t
+	desc = royalconvention.8.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = royalconvention.8.a
+		MAI = {
+			country_event = {
+				id = royalconvention.11
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = royalconvention.8.b
+		trigger = {
+			AND = {
+				WEK = {
+					NOT = {
+						has_country_flag = denied_macius_sea
+					}
+				}
+				SLD = {
+					NOT = {
+						has_country_flag = denied_macius_sea
+					}
+					has_country_flag = will_attend_royal_convention
+				}
+			}
+		}
+		set_country_flag = denied_macius_sea
+		MAI = {
+			country_event = {
+				id = royalconvention.7
+				days = 0
+			}
+		}
+	}
+}
+
+country_event = { #Western Kingdom is asked about sea
+	id = royalconvention.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event royalconvention.9"}
+	title = royalconvention.9.t
+	desc = royalconvention.9.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = royalconvention.9.a
+		MAI = {
+			country_event = {
+				id = royalconvention.12
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = royalconvention.9.b
+		trigger = {
+			AND = {
+				FRI = {
+					NOT = {
+						has_country_flag = denied_macius_sea
+					}
+				}
+				SLD = {
+					NOT = {
+						has_country_flag = denied_macius_sea
+					}
+					has_country_flag = will_attend_royal_convention
+				}
+			}
+		}
+		set_country_flag = denied_macius_sea
+		MAI = {
+			country_event = {
+				id = royalconvention.7
+				days = 0
+			}
+		}
+	}
+}
+
+country_event = { #Spalding is asked about sea
+	id = royalconvention.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event royalconvention.10"}
+	title = royalconvention.10.t
+	desc = royalconvention.10.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = royalconvention.10.a
+		MAI = {
+			country_event = {
+				id = royalconvention.13
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = royalconvention.10.b
+		trigger = {
+			AND = {
+				FRI = {
+					NOT = {
+						has_country_flag = denied_macius_sea
+					}
+				}
+				WEK = {
+					NOT = {
+						has_country_flag = denied_macius_sea
+					}
+				}
+			}
+		}
+		set_country_flag = denied_macius_sea
+		MAI = {
+			country_event = {
+				id = royalconvention.7
+				days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = royalconvention.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event royalconvention.11"}
+	title = royalconvention.11.t
+	desc = royalconvention.11.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = royalconvention.11.a
+		MAI = {
+			transfer_state = 872
+			872 = {
+				add_core_of = MAI
+				set_state_name = "Zawady"
+			}
+			add_political_power = -50
+			add_ideas = {
+				MAI_gained_shore
+			}
+			remove_ideas = {
+				MAI_landlocked
+			}
+			set_country_flag = access_to_sea
+		}
+		FRI = {
+			transfer_ship = {
+    			prefer_name = "Murva"
+    			type = light_cruiser
+    			target = MAI
+			}
+			transfer_ship = {
+    			prefer_name = "Tiger"
+    			type = destroyer
+    			target = MAI
+			}
+			transfer_ship = {
+    			prefer_name = "Luchs"
+    			type = destroyer
+    			target = MAI
+			}
+			add_political_power = 50
+		}
+		hidden_effect = {
+			FRI = {
+				set_country_flag = gave_macius_shore
+			}
+			news_event = { 
+				id = worldnews.11 hours = 1
+			} 
+			if = {
+					limit = {
+						not = { has_dlc = "Man the Guns" }
+					}
+					set_technology = {
+						early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					set_technology = {
+						basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		panzerschiffe = 1
+		pre_dreadnoughts = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		mtg_transport = 1
+		basic_torpedo = 1
+		improved_ship_torpedo_launcher = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_depth_charges = 1
+		sonar = 1
+		basic_cruiser_armor_scheme = 1
+					}	
+				}
+		}
+	}
+}
+
+country_event = {
+	id = royalconvention.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event royalconvention.12"}
+	title = royalconvention.12.t
+	desc = royalconvention.12.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = royalconvention.12.a
+		MAI = {
+			transfer_state = 877
+			transfer_state = 897
+			877 = {
+				add_core_of = MAI
+			}
+			897 = {
+				add_core_of = MAI
+			}
+			add_political_power = 50
+			add_ideas = {
+				MAI_gained_shore
+			}
+			remove_ideas = {
+				MAI_landlocked
+			}
+			set_country_flag = access_to_sea
+		}
+		hidden_effect = {
+			WEK = {
+				set_country_flag = gave_macius_shore
+			}
+			news_event = { 
+				id = worldnews.11 hours = 1
+			} 
+			if = {
+					limit = {
+						not = { has_dlc = "Man the Guns" }
+					}
+					set_technology = {
+						early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					set_technology = {
+						basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		panzerschiffe = 1
+		pre_dreadnoughts = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		mtg_transport = 1
+		basic_torpedo = 1
+		improved_ship_torpedo_launcher = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_depth_charges = 1
+		sonar = 1
+		basic_cruiser_armor_scheme = 1
+					}	
+				}
+		}
+	}
+}
+
+country_event = {
+	id = royalconvention.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event royalconvention.13"}
+	title = royalconvention.13.t
+	desc = royalconvention.13.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = royalconvention.13.a
+		MAI = {
+			transfer_state = 773
+			transfer_state = 736
+			transfer_state = 767
+			transfer_state = 776
+			773 = {
+				add_core_of = MAI
+			}
+			736 = {
+				add_core_of = MAI
+			}
+			767 = {
+				add_core_of = MAI
+			}
+			776 = {
+				add_core_of = MAI
+			}
+			add_political_power = 50
+			add_ideas = {
+				MAI_gained_shore
+			}
+			remove_ideas = {
+				MAI_landlocked
+			}
+			set_country_flag = access_to_sea
+		}
+		hidden_effect = {
+			SLD = {
+				set_country_flag = gave_macius_shore
+			}
+			news_event = { 
+				id = worldnews.11 hours = 1
+			} 
+			if = {
+					limit = {
+						not = { has_dlc = "Man the Guns" }
+					}
+					set_technology = {
+						early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					set_technology = {
+						basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		panzerschiffe = 1
+		pre_dreadnoughts = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		mtg_transport = 1
+		basic_torpedo = 1
+		improved_ship_torpedo_launcher = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_depth_charges = 1
+		sonar = 1
+		basic_cruiser_armor_scheme = 1
+					}	
+				}
+		}
+	}
+}
+
+country_event = { #End of Royal Convention
+	id = royalconvention.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event royalconvention.14"}
+	title = royalconvention.14.t
+	desc = royalconvention.14.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = royalconvention.14.a
+		hidden_effect = {
+			if = {
+				limit = {
+					tag = MAI
+				}
+				clr_country_flag = royal_convention_online
+				if = {
+					limit = {
+						AVA = {
+							has_country_flag = will_attend_royal_convention
+						}
+					}
+					AVA = {
+						country_event = {
+							id = royalconvention.17
+							days = 3
+						}
+					}
+				}
+				if = {
+					limit = {
+						GRN = {
+							has_country_flag = will_attend_royal_convention
+						}
+					}
+					GRN = {
+						country_event = {
+							id = royalconvention.17
+							days = 4
+						}
+					}
+				}
+			}
+		}
+		add_political_power = 50
+	}
+}
+
+country_event = { #Enchancian Question speech
+	id = royalconvention.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event royalconvention.15"}
+	title = royalconvention.15.t
+	desc = royalconvention.15.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = royalconvention.15.a
+		trigger = {
+			NOT = {
+				tag = AVA
+			}
+		}
+		hidden_effect = {
+			set_country_flag = will_help_avalor
+			AVA = {
+				add_to_variable = {
+					countries_declared_to_help_ava = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				EN3 = {
+					exists = yes
+				}
+			}
+			reverse_add_opinion_modifier = {
+				target = EN3
+				modifier = TCWMod_they_see_us_as_enemy
+			}
+		}
+		if = {
+			limit = {
+				EN4 = {
+					exists = yes
+				}
+			}
+			reverse_add_opinion_modifier = {
+				target = EN4
+				modifier = TCWMod_they_see_us_as_enemy
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = {
+		name = royalconvention.15.b
+		trigger = {
+			NOT = {
+				tag = AVA
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = {
+		name = royalconvention.15.c
+		trigger = {
+			tag = AVA
+		}
+	}
+}
+
+country_event = { #Eastern Continent speech
+	id = royalconvention.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event royalconvention.16"}
+	title = royalconvention.16.t
+	desc = royalconvention.16.d
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = royalconvention.16.a
+		trigger = {
+			NOT = {
+				tag = GRN
+			}
+		}
+		hidden_effect = {
+			set_country_flag = will_help_greenland
+			GRN = {
+				add_to_variable = {
+					countries_declared_to_help_grn = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				GON = {
+					exists = yes
+					is_puppet = no
+				}
+			}
+			reverse_add_opinion_modifier = {
+				target = GON
+				modifier = TCWMod_they_see_us_as_enemy
+			}
+		}
+		if = {
+			limit = {
+				FLO = {
+					exists = yes
+					is_puppet = no
+				}
+			}
+			reverse_add_opinion_modifier = {
+				target = FLO
+				modifier = TCWMod_they_see_us_as_enemy
+			}
+		}
+		if = {
+			limit = {
+				DIO = {
+					exists = yes
+					is_puppet = no
+				}
+			}
+			reverse_add_opinion_modifier = {
+				target = DIO
+				modifier = TCWMod_they_see_us_as_enemy
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = {
+		name = royalconvention.16.b
+		trigger = {
+			NOT = {
+				tag = GRN
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = {
+		name = royalconvention.16.c
+		trigger = {
+			tag = GRN
+		}
+	}
+}
+
+country_event = { #RC aftermath - event for GRN and AVA
+	id = royalconvention.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event royalconvention.17"}
+	title = royalconvention.17.t
+	desc = {
+		trigger = {
+			tag = AVA
+		}
+		text = royalconvention.17.desc.ava
+	}
+	desc = {
+		trigger = {
+			tag = GRN
+		}
+		text = royalconvention.17.desc.grn
+	}
+	picture = GFX_report_macius_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = royalconvention.17.a
+		trigger = {
+			tag = GRN
+		}
+		if = {
+			limit = {
+				check_variable = {
+					countries_declared_to_help_grn < 1
+				}
+			}
+			custom_effect_tooltip = sadly_no_one_decided_to_help
+		}
+		if = {
+			limit = {
+				check_variable = {
+					countries_declared_to_help_grn > 0
+				}
+				check_variable = {
+					countries_declared_to_help_grn < 2
+				}
+			}
+			add_offsite_building = { type = arms_factory level = 1 }
+		}
+		if = {
+			limit = {
+				check_variable = {
+					countries_declared_to_help_grn > 1
+				}
+				check_variable = {
+					countries_declared_to_help_grn < 4
+				}
+			}
+			add_offsite_building = { type = arms_factory level = 1 }
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+		if = {
+			limit = {
+				check_variable = {
+					countries_declared_to_help_grn > 3
+				}
+				check_variable = {
+					countries_declared_to_help_grn < 6
+				}
+			}
+			add_offsite_building = { type = arms_factory level = 2 }
+			add_offsite_building = { type = industrial_complex level = 2 }
+		}
+		if = {
+			limit = {
+				check_variable = {
+					countries_declared_to_help_grn > 5
+				}
+			}
+			add_offsite_building = { type = arms_factory level = 3 }
+			add_offsite_building = { type = industrial_complex level = 3 }
+		}
+	}
+
+	option = {
+		name = royalconvention.17.a
+		trigger = {
+			tag = AVA
+		}
+		if = {
+			limit = {
+				check_variable = {
+					countries_declared_to_help_grn < 1
+				}
+			}
+			custom_effect_tooltip = sadly_no_one_decided_to_help
+		}
+		if = {
+			limit = {
+				check_variable = {
+					countries_declared_to_help_grn > 0
+				}
+				check_variable = {
+					countries_declared_to_help_grn < 2
+				}
+			}
+			add_offsite_building = { type = arms_factory level = 1 }
+		}
+		if = {
+			limit = {
+				check_variable = {
+					countries_declared_to_help_grn > 1
+				}
+				check_variable = {
+					countries_declared_to_help_grn < 4
+				}
+			}
+			add_offsite_building = { type = arms_factory level = 1 }
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+		if = {
+			limit = {
+				check_variable = {
+					countries_declared_to_help_grn > 3
+				}
+				check_variable = {
+					countries_declared_to_help_grn < 6
+				}
+			}
+			add_offsite_building = { type = arms_factory level = 2 }
+			add_offsite_building = { type = industrial_complex level = 2 }
+		}
+		if = {
+			limit = {
+				check_variable = {
+					countries_declared_to_help_grn > 5
+				}
+			}
+			add_offsite_building = { type = arms_factory level = 3 }
+			add_offsite_building = { type = industrial_complex level = 3 }
+		}
+	}
+
+}

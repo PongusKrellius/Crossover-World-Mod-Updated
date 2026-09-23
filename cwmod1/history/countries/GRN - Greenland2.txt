@@ -1,0 +1,61 @@
+﻿capital = 439
+
+oob = "GRN_1936"
+
+# Starting tech
+set_technology = {
+	horse_drawn_carriage = 1
+	infantry_weapons_med = 1
+}
+
+add_ideas = {
+	middleage_tech
+	GRN_limited_staff
+}
+
+set_convoys = 50
+
+set_popularities = {
+	democratic = 20
+
+	fascism = 0
+		
+	communism = 0
+		
+	monarchism = 80
+}
+set_politics = {
+	ruling_party = monarchism
+	last_election = "1930.7.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+set_stability = 0.85
+
+recruit_character = GRN_shouhu
+recruit_character = GRN_prinz_tabaluga
+recruit_character = GRN_council_of_elders
+recruit_character = GRN_placeholder
+recruit_character = GRN_tabaluga
+recruit_character = GRN_happy_the_rabbit
+recruit_character = GRN_ranger_rabbit
+recruit_character = GRN_patrick__
+recruit_character = GRN_leo
+recruit_character = GRN_digby
+
+
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Digby the Mole"
+		GFX = GFX_portrait_digby
+		traits = { mole_trait }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GRN }
+	}
+}

@@ -1,0 +1,29 @@
+state={
+	id=242
+	name="STATE_242"
+	state_category = city
+	history = {
+		owner = ENC
+		add_core_of = ENC
+		buildings = {
+			arms_factory = 2
+			industrial_complex = 2
+			infrastructure = 2
+			dockyard = 3
+			19 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+            19 10
+        }
+	}
+	resources = {
+		steel = 20
+	}
+	provinces={
+		19 2359 3010 6637 6669 6685 6721 6750 
+	}
+	manpower=850153
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,83 @@
+﻿capital = 142
+
+oob = "FFA_1936"
+
+# Starting tech
+set_technology = {
+	horse_drawn_carriage = 1
+	infantry_weapons_med = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		transport = 1
+	}
+	set_naval_oob = FFA_1936_naval
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		mtg_transport = 1
+		basic_battery = 1
+		basic_light_battery = 1
+	}
+	set_naval_oob = FFA_1936_naval_mtg
+}
+add_ideas = {
+	middleage_tech
+	FFA_two_decades_of_waiting
+}
+
+set_convoys = 50
+
+set_popularities = {
+	democratic = 0
+
+	fascism = 0
+		
+	communism = 0
+		
+	
+		
+	monarchism = 100
+}
+
+set_country_flag = colonies_enabled
+
+set_autonomy = {
+	target = WOR
+	autonomy_state = cr_colonial_government
+}
+
+set_politics = {
+	ruling_party = monarchism
+	last_election = "1930.7.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+set_stability = 0.85
+
+recruit_character = FFA_harold
+recruit_character = FFA_placeholder
+recruit_character = FFA_jonas_jones
+recruit_character = FFA_fairy_godmother
+recruit_character = FFA_charming
+recruit_character = FFA_rumpel
+recruit_character = FFA_puss_in_boots
+recruit_character = FFA_arthur
+recruit_character = FFA_babawitch
+recruit_character = FFA_griseldawitch
+recruit_character = FFA_pumpkinwitch
+recruit_character = FFA_meltywitch
+
+FFA_charming = {
+	set_character_flag = mommys_best
+}

@@ -1,0 +1,3259 @@
+recalc_children_parliament_leader_icon = {
+	set_variable = { current_children_parliament_leader_icon_frame = chp_leader_icon_temp_number }
+}
+
+chp_next_session_date = {
+	set_variable = { MAI_next_chp_session = 0 }
+}
+
+recalc_en1_children_parliament_leader_icon_party_1 = {
+	set_variable = { current_en1_children_parliament_leader_icon_party_1_frame = en1_chp_leader_icon_party_1_temp_number }
+}
+
+recalc_en1_children_parliament_leader_icon_party_2 = {
+	set_variable = { current_en1_children_parliament_leader_icon_party_2_frame = en1_chp_leader_icon_party_2_temp_number }
+}
+
+recalc_en1_children_parliament_leader_icon_party_3 = {
+	set_variable = { current_en1_children_parliament_leader_icon_party_3_frame = en1_chp_leader_icon_party_3_temp_number }
+}
+
+recalc_en1_children_parliament_leader_icon_party_4 = {
+	set_variable = { current_en1_children_parliament_leader_icon_party_4_frame = en1_chp_leader_icon_party_4_temp_number }
+}
+
+MAI_ncp_win = {
+	random_list = {
+		40 = {
+			set_variable = { ncp_seats_in_chp = 60 }
+			set_variable = { mai_chp_chart_ncp_frame = 3 }
+			random_list = {
+				34 = {
+					set_variable = { ffp_seats_in_chp = 13 }
+					set_variable = { tfk_seats_in_chp = 14 }
+					set_variable = { ccfrok_seats_in_chp = 13 }
+				}
+				33 = {
+					set_variable = { ffp_seats_in_chp = 14 }
+					set_variable = { tfk_seats_in_chp = 13 }
+					set_variable = { ccfrok_seats_in_chp = 13 }
+				}
+				33 = {
+					set_variable = { ffp_seats_in_chp = 13 }
+					set_variable = { tfk_seats_in_chp = 13 }
+					set_variable = { ccfrok_seats_in_chp = 14 }
+				}
+			}
+		}
+		40 = {
+			set_variable = { ncp_seats_in_chp = 55 }
+			set_variable = { mai_chp_chart_ncp_frame = 2 }
+			random_list = {
+				34 = {
+					set_variable = { ffp_seats_in_chp = 15 }
+					set_variable = { tfk_seats_in_chp = 15 }
+					set_variable = { ccfrok_seats_in_chp = 15 }
+				}
+				33 = {
+					set_variable = { ffp_seats_in_chp = 16 }
+					set_variable = { tfk_seats_in_chp = 15 }
+					set_variable = { ccfrok_seats_in_chp = 14 }
+				}
+				33 = {
+					set_variable = { ffp_seats_in_chp = 13 }
+					set_variable = { tfk_seats_in_chp = 15 }
+					set_variable = { ccfrok_seats_in_chp = 17 }
+				}
+			}
+		}
+		20 = {
+			set_variable = { ncp_seats_in_chp = 51 }
+			set_variable = { mai_chp_chart_ncp_frame = 1 }
+			random_list = {
+				34 = {
+					set_variable = { ffp_seats_in_chp = 17 }
+					set_variable = { tfk_seats_in_chp = 16 }
+					set_variable = { ccfrok_seats_in_chp = 16 }
+				}
+				33 = {
+					set_variable = { ffp_seats_in_chp = 16 }
+					set_variable = { tfk_seats_in_chp = 17 }
+					set_variable = { ccfrok_seats_in_chp = 16 }
+				}
+				33 = {
+					set_variable = { ffp_seats_in_chp = 16 }
+					set_variable = { tfk_seats_in_chp = 16 }
+					set_variable = { ccfrok_seats_in_chp = 17 }
+				}
+			}
+		}
+	}
+}
+
+MAI_tfk_win = {
+	random_list = {
+		40 = {
+			set_variable = { tfk_seats_in_chp = 60 }
+			set_variable = { mai_chp_chart_tfk_frame = 3 }
+			random_list = {
+				34 = {
+					set_variable = { ffp_seats_in_chp = 13 }
+					set_variable = { ncp_seats_in_chp = 14 }
+					set_variable = { ccfrok_seats_in_chp = 13 }
+				}
+				33 = {
+					set_variable = { ffp_seats_in_chp = 14 }
+					set_variable = { ncp_seats_in_chp = 13 }
+					set_variable = { ccfrok_seats_in_chp = 13 }
+				}
+				33 = {
+					set_variable = { ffp_seats_in_chp = 13 }
+					set_variable = { ncp_seats_in_chp = 13 }
+					set_variable = { ccfrok_seats_in_chp = 14 }
+				}
+			}
+		}
+		40 = {
+			set_variable = { tfk_seats_in_chp = 55 }
+			set_variable = { mai_chp_chart_tfk_frame = 2 }
+			random_list = {
+				34 = {
+					set_variable = { ffp_seats_in_chp = 15 }
+					set_variable = { ncp_seats_in_chp = 15 }
+					set_variable = { ccfrok_seats_in_chp = 15 }
+				}
+				33 = {
+					set_variable = { ffp_seats_in_chp = 16 }
+					set_variable = { ncp_seats_in_chp = 15 }
+					set_variable = { ccfrok_seats_in_chp = 14 }
+				}
+				33 = {
+					set_variable = { ffp_seats_in_chp = 13 }
+					set_variable = { ncp_seats_in_chp = 15 }
+					set_variable = { ccfrok_seats_in_chp = 17 }
+				}
+			}
+		}
+		20 = {
+			set_variable = { tfk_seats_in_chp = 51 }
+			set_variable = { mai_chp_chart_tfk_frame = 1 }
+			random_list = {
+				34 = {
+					set_variable = { ffp_seats_in_chp = 17 }
+					set_variable = { ncp_seats_in_chp = 16 }
+					set_variable = { ccfrok_seats_in_chp = 16 }
+				}
+				33 = {
+					set_variable = { ffp_seats_in_chp = 16 }
+					set_variable = { ncp_seats_in_chp = 17 }
+					set_variable = { ccfrok_seats_in_chp = 16 }
+				}
+				33 = {
+					set_variable = { ffp_seats_in_chp = 16 }
+					set_variable = { ncp_seats_in_chp = 16 }
+					set_variable = { ccfrok_seats_in_chp = 17 }
+				}
+			}
+		}
+	}
+}
+
+MAI_ffp_win = {
+	random_list = {
+		40 = {
+			set_variable = { ffp_seats_in_chp = 60 }
+			set_variable = { mai_chp_chart_ffp_frame = 3 }
+			random_list = {
+				34 = {
+					set_variable = { tfk_seats_in_chp = 13 }
+					set_variable = { ncp_seats_in_chp = 14 }
+					set_variable = { ccfrok_seats_in_chp = 13 }
+				}
+				33 = {
+					set_variable = { tfk_seats_in_chp = 14 }
+					set_variable = { ncp_seats_in_chp = 13 }
+					set_variable = { ccfrok_seats_in_chp = 13 }
+				}
+				33 = {
+					set_variable = { tfk_seats_in_chp = 13 }
+					set_variable = { ncp_seats_in_chp = 13 }
+					set_variable = { ccfrok_seats_in_chp = 14 }
+				}
+			}
+		}
+		40 = {
+			set_variable = { ffp_seats_in_chp = 55 }
+			set_variable = { mai_chp_chart_ffp_frame = 2 }
+			random_list = {
+				34 = {
+					set_variable = { tfk_seats_in_chp = 15 }
+					set_variable = { ncp_seats_in_chp = 15 }
+					set_variable = { ccfrok_seats_in_chp = 15 }
+				}
+				33 = {
+					set_variable = { tfk_seats_in_chp = 16 }
+					set_variable = { ncp_seats_in_chp = 15 }
+					set_variable = { ccfrok_seats_in_chp = 14 }
+				}
+				33 = {
+					set_variable = { tfk_seats_in_chp = 13 }
+					set_variable = { ncp_seats_in_chp = 15 }
+					set_variable = { ccfrok_seats_in_chp = 17 }
+				}
+			}
+		}
+		20 = {
+			set_variable = { ffp_seats_in_chp = 51 }
+			set_variable = { mai_chp_chart_ffp_frame = 1 }
+			random_list = {
+				34 = {
+					set_variable = { tfk_seats_in_chp = 17 }
+					set_variable = { ncp_seats_in_chp = 16 }
+					set_variable = { ccfrok_seats_in_chp = 16 }
+				}
+				33 = {
+					set_variable = { tfk_seats_in_chp = 16 }
+					set_variable = { ncp_seats_in_chp = 17 }
+					set_variable = { ccfrok_seats_in_chp = 16 }
+				}
+				33 = {
+					set_variable = { tfk_seats_in_chp = 16 }
+					set_variable = { ncp_seats_in_chp = 16 }
+					set_variable = { ccfrok_seats_in_chp = 17 }
+				}
+			}
+		}
+	}
+}
+
+MAI_ccfrok_win = {
+	random_list = {
+		40 = {
+			set_variable = { ccfrok_seats_in_chp = 60 }
+			set_variable = { mai_chp_chart_ccfrok_frame = 3 }
+			random_list = {
+				34 = {
+					set_variable = { tfk_seats_in_chp = 13 }
+					set_variable = { ncp_seats_in_chp = 14 }
+					set_variable = { ffp_seats_in_chp = 13 }
+				}
+				33 = {
+					set_variable = { tfk_seats_in_chp = 14 }
+					set_variable = { ncp_seats_in_chp = 13 }
+					set_variable = { ffp_seats_in_chp = 13 }
+				}
+				33 = {
+					set_variable = { tfk_seats_in_chp = 13 }
+					set_variable = { ncp_seats_in_chp = 13 }
+					set_variable = { ffp_seats_in_chp = 14 }
+				}
+			}
+		}
+		40 = {
+			set_variable = { ccfrok_seats_in_chp = 55 }
+			set_variable = { mai_chp_chart_ccfrok_frame = 2 }
+			random_list = {
+				34 = {
+					set_variable = { tfk_seats_in_chp = 15 }
+					set_variable = { ncp_seats_in_chp = 15 }
+					set_variable = { ffp_seats_in_chp = 15 }
+				}
+				33 = {
+					set_variable = { tfk_seats_in_chp = 16 }
+					set_variable = { ncp_seats_in_chp = 15 }
+					set_variable = { ffp_seats_in_chp = 14 }
+				}
+				33 = {
+					set_variable = { tfk_seats_in_chp = 13 }
+					set_variable = { ncp_seats_in_chp = 15 }
+					set_variable = { ffp_seats_in_chp = 17 }
+				}
+			}
+		}
+		20 = {
+			set_variable = { ccfrok_seats_in_chp = 51 }
+			set_variable = { mai_chp_chart_ccfrok_frame = 1 }
+			random_list = {
+				34 = {
+					set_variable = { tfk_seats_in_chp = 17 }
+					set_variable = { ncp_seats_in_chp = 16 }
+					set_variable = { ffp_seats_in_chp = 16 }
+				}
+				33 = {
+					set_variable = { tfk_seats_in_chp = 16 }
+					set_variable = { ncp_seats_in_chp = 17 }
+					set_variable = { ffp_seats_in_chp = 16 }
+				}
+				33 = {
+					set_variable = { tfk_seats_in_chp = 16 }
+					set_variable = { ncp_seats_in_chp = 16 }
+					set_variable = { ffp_seats_in_chp = 17 }
+				}
+			}
+		}
+	}
+}
+
+MAI_chp_calculate_bill_support = {
+	if = {
+		limit = {
+			has_country_flag = national_children_party_wins
+		}
+		set_variable = { mai_chp_dep_support = ncp_seats_in_chp }
+		if = {
+			limit = {
+				has_country_flag = ffp_in_the_coalition
+			}
+			add_to_variable = { mai_chp_dep_support = ffp_seats_in_chp }
+			random_list = {
+				50 = {
+					set_variable = { mai_chp_dep_oppose = tfk_seats_in_chp }
+					set_variable = { mai_chp_dep_undecided = ccfrok_seats_in_chp }
+				}
+				50 = {
+					set_variable = { mai_chp_dep_oppose = ccfrok_seats_in_chp }
+					set_variable = { mai_chp_dep_undecided = tfk_seats_in_chp }
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = tfk_in_the_coalition
+				}
+				add_to_variable = { mai_chp_dep_support = tfk_seats_in_chp }
+				random_list = {
+					50 = {
+						set_variable = { mai_chp_dep_oppose = ffp_seats_in_chp }
+						set_variable = { mai_chp_dep_undecided = ccfrok_seats_in_chp }
+					}
+					50 = {
+						set_variable = { mai_chp_dep_oppose = ccfrok_seats_in_chp }
+						set_variable = { mai_chp_dep_undecided = ffp_seats_in_chp }
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = ccfrok_in_the_coalition
+					}
+					add_to_variable = { mai_chp_dep_support = ccfrok_seats_in_chp }
+					random_list = {
+						50 = {
+							set_variable = { mai_chp_dep_oppose = ffp_seats_in_chp }
+							set_variable = { mai_chp_dep_undecided = tfk_seats_in_chp }
+						}
+						50 = {
+							set_variable = { mai_chp_dep_oppose = tfk_seats_in_chp }
+							set_variable = { mai_chp_dep_undecided = ffp_seats_in_chp }
+						}
+					}
+					else = {
+						random_list = {
+							17 = {
+								set_variable = { mai_chp_dep_oppose = tfk_seats_in_chp }
+								add_to_variable = { mai_chp_dep_oppose = ffp_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = ccfrok_seats_in_chp }
+							}
+							16 = {
+								set_variable = { mai_chp_dep_oppose = tfk_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = ccfrok_seats_in_chp }
+								add_to_variable = { mai_chp_dep_undecided = ffp_seats_in_chp }
+							}
+							16 = {
+								set_variable = { mai_chp_dep_oppose = ffp_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = ccfrok_seats_in_chp }
+								add_to_variable = { mai_chp_dep_undecided = tfk_seats_in_chp }
+							}
+							16 = {
+								set_variable = { mai_chp_dep_oppose = ccfrok_seats_in_chp }
+								add_to_variable = { mai_chp_dep_oppose = tfk_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = ffp_seats_in_chp }
+							}
+							16 = {
+								set_variable = { mai_chp_dep_oppose = ccfrok_seats_in_chp }
+								add_to_variable = { mai_chp_dep_oppose = ffp_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = tfk_seats_in_chp }
+							}
+							16 = {
+								set_variable = { mai_chp_dep_oppose = ccfrok_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = tfk_seats_in_chp }
+								add_to_variable = { mai_chp_dep_undecided = ffp_seats_in_chp }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = free_future_party_wins
+		}
+		set_variable = { mai_chp_dep_support = ffp_seats_in_chp }
+		if = {
+			limit = {
+				has_country_flag = ncp_in_the_coalition
+			}
+			add_to_variable = { mai_chp_dep_support = ncp_seats_in_chp }
+			random_list = {
+				50 = {
+					set_variable = { mai_chp_dep_oppose = tfk_seats_in_chp }
+					set_variable = { mai_chp_dep_undecided = ccfrok_seats_in_chp }
+				}
+				50 = {
+					set_variable = { mai_chp_dep_oppose = ccfrok_seats_in_chp }
+					set_variable = { mai_chp_dep_undecided = tfk_seats_in_chp }
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = tfk_in_the_coalition
+				}
+				add_to_variable = { mai_chp_dep_support = tfk_seats_in_chp }
+				random_list = {
+					50 = {
+						set_variable = { mai_chp_dep_oppose = ncp_seats_in_chp }
+						set_variable = { mai_chp_dep_undecided = ccfrok_seats_in_chp }
+					}
+					50 = {
+						set_variable = { mai_chp_dep_oppose = ccfrok_seats_in_chp }
+						set_variable = { mai_chp_dep_undecided = ncp_seats_in_chp }
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = ccfrok_in_the_coalition
+					}
+					add_to_variable = { mai_chp_dep_support = ccfrok_seats_in_chp }
+					random_list = {
+						50 = {
+							set_variable = { mai_chp_dep_oppose = ncp_seats_in_chp }
+							set_variable = { mai_chp_dep_undecided = tfk_seats_in_chp }
+						}
+						50 = {
+							set_variable = { mai_chp_dep_oppose = tfk_seats_in_chp }
+							set_variable = { mai_chp_dep_undecided = ncp_seats_in_chp }
+						}
+					}
+					else = {
+						random_list = {
+							17 = {
+								set_variable = { mai_chp_dep_oppose = tfk_seats_in_chp }
+								add_to_variable = { mai_chp_dep_oppose = ncp_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = ccfrok_seats_in_chp }
+							}
+							16 = {
+								set_variable = { mai_chp_dep_oppose = tfk_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = ccfrok_seats_in_chp }
+								add_to_variable = { mai_chp_dep_undecided = ncp_seats_in_chp }
+							}
+							16 = {
+								set_variable = { mai_chp_dep_oppose = ncp_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = ccfrok_seats_in_chp }
+								add_to_variable = { mai_chp_dep_undecided = tfk_seats_in_chp }
+							}
+							16 = {
+								set_variable = { mai_chp_dep_oppose = ccfrok_seats_in_chp }
+								add_to_variable = { mai_chp_dep_oppose = tfk_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = ncp_seats_in_chp }
+							}
+							16 = {
+								set_variable = { mai_chp_dep_oppose = ccfrok_seats_in_chp }
+								add_to_variable = { mai_chp_dep_oppose = ncp_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = tfk_seats_in_chp }
+							}
+							16 = {
+								set_variable = { mai_chp_dep_oppose = ccfrok_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = tfk_seats_in_chp }
+								add_to_variable = { mai_chp_dep_undecided = ncp_seats_in_chp }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = time_for_kids_wins
+		}
+		set_variable = { mai_chp_dep_support = tfk_seats_in_chp }
+		if = {
+			limit = {
+				has_country_flag = ncp_in_the_coalition
+			}
+			add_to_variable = { mai_chp_dep_support = ncp_seats_in_chp }
+			random_list = {
+				50 = {
+					set_variable = { mai_chp_dep_oppose = ffp_seats_in_chp }
+					set_variable = { mai_chp_dep_undecided = ccfrok_seats_in_chp }
+				}
+				50 = {
+					set_variable = { mai_chp_dep_oppose = ccfrok_seats_in_chp }
+					set_variable = { mai_chp_dep_undecided = ffp_seats_in_chp }
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = ffp_in_the_coalition
+				}
+				add_to_variable = { mai_chp_dep_support = ffp_seats_in_chp }
+				random_list = {
+					50 = {
+						set_variable = { mai_chp_dep_oppose = ncp_seats_in_chp }
+						set_variable = { mai_chp_dep_undecided = ccfrok_seats_in_chp }
+					}
+					50 = {
+						set_variable = { mai_chp_dep_oppose = ccfrok_seats_in_chp }
+						set_variable = { mai_chp_dep_undecided = ncp_seats_in_chp }
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = ccfrok_in_the_coalition
+					}
+					add_to_variable = { mai_chp_dep_support = ccfrok_seats_in_chp }
+					random_list = {
+						50 = {
+							set_variable = { mai_chp_dep_oppose = ncp_seats_in_chp }
+							set_variable = { mai_chp_dep_undecided = ffp_seats_in_chp }
+						}
+						50 = {
+							set_variable = { mai_chp_dep_oppose = ffp_seats_in_chp }
+							set_variable = { mai_chp_dep_undecided = ncp_seats_in_chp }
+						}
+					}
+					else = {
+						random_list = {
+							17 = {
+								set_variable = { mai_chp_dep_oppose = ffp_seats_in_chp }
+								add_to_variable = { mai_chp_dep_oppose = ncp_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = ccfrok_seats_in_chp }
+							}
+							16 = {
+								set_variable = { mai_chp_dep_oppose = ffp_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = ccfrok_seats_in_chp }
+								add_to_variable = { mai_chp_dep_undecided = ncp_seats_in_chp }
+							}
+							16 = {
+								set_variable = { mai_chp_dep_oppose = ncp_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = ccfrok_seats_in_chp }
+								add_to_variable = { mai_chp_dep_undecided = ffp_seats_in_chp }
+							}
+							16 = {
+								set_variable = { mai_chp_dep_oppose = ccfrok_seats_in_chp }
+								add_to_variable = { mai_chp_dep_oppose = ffp_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = ncp_seats_in_chp }
+							}
+							16 = {
+								set_variable = { mai_chp_dep_oppose = ccfrok_seats_in_chp }
+								add_to_variable = { mai_chp_dep_oppose = ncp_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = ffp_seats_in_chp }
+							}
+							16 = {
+								set_variable = { mai_chp_dep_oppose = ccfrok_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = ffp_seats_in_chp }
+								add_to_variable = { mai_chp_dep_undecided = ncp_seats_in_chp }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = children_coalition_for_the_renewal_of_the_kingdom_wins
+		}
+		set_variable = { mai_chp_dep_support = ccfrok_seats_in_chp }
+		#log = "if it works then wtf"
+		if = {
+			limit = {
+				has_country_flag = ncp_in_the_coalition
+			}
+			add_to_variable = { mai_chp_dep_support = ncp_seats_in_chp }
+			random_list = {
+				50 = {
+					set_variable = { mai_chp_dep_oppose = ffp_seats_in_chp }
+					set_variable = { mai_chp_dep_undecided = tfk_seats_in_chp }
+				}
+				50 = {
+					set_variable = { mai_chp_dep_oppose = tfk_seats_in_chp }
+					set_variable = { mai_chp_dep_undecided = ffp_seats_in_chp }
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = ffp_in_the_coalition
+				}
+				add_to_variable = { mai_chp_dep_support = ffp_seats_in_chp }
+				random_list = {
+					50 = {
+						set_variable = { mai_chp_dep_oppose = ncp_seats_in_chp }
+						set_variable = { mai_chp_dep_undecided = tfk_seats_in_chp }
+					}
+					50 = {
+						set_variable = { mai_chp_dep_oppose = tfk_seats_in_chp }
+						set_variable = { mai_chp_dep_undecided = ncp_seats_in_chp }
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = tfk_in_the_coalition
+					}
+					add_to_variable = { mai_chp_dep_support = tfk_seats_in_chp }
+					random_list = {
+						50 = {
+							set_variable = { mai_chp_dep_oppose = ncp_seats_in_chp }
+							set_variable = { mai_chp_dep_undecided = ffp_seats_in_chp }
+						}
+						50 = {
+							set_variable = { mai_chp_dep_oppose = ffp_seats_in_chp }
+							set_variable = { mai_chp_dep_undecided = ncp_seats_in_chp }
+						}
+					}
+					else = {
+						random_list = {
+							17 = {
+								set_variable = { mai_chp_dep_oppose = ffp_seats_in_chp }
+								add_to_variable = { mai_chp_dep_oppose = ncp_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = tfk_seats_in_chp }
+							}
+							16 = {
+								set_variable = { mai_chp_dep_oppose = ffp_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = tfk_seats_in_chp }
+								add_to_variable = { mai_chp_dep_undecided = ncp_seats_in_chp }
+							}
+							16 = {
+								set_variable = { mai_chp_dep_oppose = ncp_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = tfk_seats_in_chp }
+								add_to_variable = { mai_chp_dep_undecided = ffp_seats_in_chp }
+							}
+							16 = {
+								set_variable = { mai_chp_dep_oppose = tfk_seats_in_chp }
+								add_to_variable = { mai_chp_dep_oppose = ffp_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = ncp_seats_in_chp }
+							}
+							16 = {
+								set_variable = { mai_chp_dep_oppose = tfk_seats_in_chp }
+								add_to_variable = { mai_chp_dep_oppose = ncp_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = ffp_seats_in_chp }
+							}
+							16 = {
+								set_variable = { mai_chp_dep_oppose = tfk_seats_in_chp }
+								set_variable = { mai_chp_dep_undecided = ffp_seats_in_chp }
+								add_to_variable = { mai_chp_dep_undecided = ncp_seats_in_chp }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+update_polling_map = {
+	every_owned_state = {
+		if = {
+			limit = {
+				check_variable = { ncp_popularity_in_state > ffp_popularity_in_state }
+			}
+			if = {
+				limit = {
+					check_variable = { ncp_popularity_in_state > tfk_popularity_in_state }
+				}
+				if = {
+					limit = {
+						check_variable = { ncp_popularity_in_state > ccfrok_popularity_in_state }
+					}
+					set_variable = { frame_is_2 = 1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { ffp_popularity_in_state > ncp_popularity_in_state }
+			}
+			if = {
+				limit = {
+					check_variable = { ffp_popularity_in_state > tfk_popularity_in_state }
+				}
+				if = {
+					limit = {
+						check_variable = { ffp_popularity_in_state > ccfrok_popularity_in_state }
+					}
+					set_variable = { frame_is_3 = 1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { tfk_popularity_in_state > ncp_popularity_in_state }
+			}
+			if = {
+				limit = {
+					check_variable = { tfk_popularity_in_state > ffp_popularity_in_state }
+				}
+				if = {
+					limit = {
+						check_variable = { tfk_popularity_in_state > ccfrok_popularity_in_state }
+					}
+					set_variable = { frame_is_1 = 1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { ccfrok_popularity_in_state > ncp_popularity_in_state }
+			}
+			if = {
+				limit = {
+					check_variable = { ccfrok_popularity_in_state > ffp_popularity_in_state }
+				}
+				if = {
+					limit = {
+						check_variable = { ccfrok_popularity_in_state > tfk_popularity_in_state }
+					}
+					set_variable = { frame_is_4 = 1 }
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			736 = {
+				has_variable = frame_is_1
+				is_owned_by = MAI
+			}
+		}
+		set_variable = { 736_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				736 = {
+					has_variable = frame_is_2
+					is_owned_by = MAI
+				}
+			}
+			set_variable = { 736_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					736 = {
+						has_variable = frame_is_3
+						is_owned_by = MAI
+					}
+				}
+				set_variable = { 736_voting_icon_frame = 3 }
+				else_if = {
+					limit = {
+						736 = {
+							has_variable = frame_is_4
+							is_owned_by = MAI
+						}
+					}
+					set_variable = { 736_voting_icon_frame = 4 }
+					else_if = {
+						limit = {
+							736 = {
+								NOT = { is_owned_by = MAI }
+							}
+						}
+						set_variable = { 736_voting_icon_frame = 6 }
+						else = {
+
+						}
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			767 = {
+				has_variable = frame_is_1
+				is_owned_by = MAI
+			}
+		}
+		set_variable = { 767_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				767 = {
+					has_variable = frame_is_2
+					is_owned_by = MAI
+				}
+			}
+			set_variable = { 767_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					767 = {
+						has_variable = frame_is_3
+						is_owned_by = MAI
+					}
+				}
+				set_variable = { 767_voting_icon_frame = 3 }
+				else_if = {
+					limit = {
+						767 = {
+							has_variable = frame_is_4
+							is_owned_by = MAI
+						}
+					}
+					set_variable = { 767_voting_icon_frame = 4 }
+					else_if = {
+						limit = {
+							767 = {
+								NOT = { is_owned_by = MAI }
+							}
+						}
+						set_variable = { 767_voting_icon_frame = 6 }
+						else = {
+							
+						}
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			773 = {
+				has_variable = frame_is_1
+				is_owned_by = MAI
+			}
+		}
+		set_variable = { 773_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				773 = {
+					has_variable = frame_is_2
+					is_owned_by = MAI
+				}
+			}
+			set_variable = { 773_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					773 = {
+						has_variable = frame_is_3
+						is_owned_by = MAI
+					}
+				}
+				set_variable = { 773_voting_icon_frame = 3 }
+				else_if = {
+					limit = {
+						773 = {
+							has_variable = frame_is_4
+							is_owned_by = MAI
+						}
+					}
+					set_variable = { 773_voting_icon_frame = 4 }
+					else_if = {
+						limit = {
+							773 = {
+								NOT = { is_owned_by = MAI }
+							}
+						}
+						set_variable = { 773_voting_icon_frame = 6 }
+						else = {
+							
+						}
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			776 = {
+				has_variable = frame_is_1
+				is_owned_by = MAI
+			}
+		}
+		set_variable = { 776_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				776 = {
+					has_variable = frame_is_2
+					is_owned_by = MAI
+				}
+			}
+			set_variable = { 776_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					776 = {
+						has_variable = frame_is_3
+						is_owned_by = MAI
+					}
+				}
+				set_variable = { 776_voting_icon_frame = 3 }
+				else_if = {
+					limit = {
+						776 = {
+							has_variable = frame_is_4
+							is_owned_by = MAI
+						}
+					}
+					set_variable = { 776_voting_icon_frame = 4 }
+					else_if = {
+						limit = {
+							776 = {
+								NOT = { is_owned_by = MAI }
+							}
+						}
+						set_variable = { 776_voting_icon_frame = 6 }
+						else = {
+							
+						}
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			789 = {
+				has_variable = frame_is_1
+			}
+		}
+		set_variable = { 789_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				789 = {
+					has_variable = frame_is_2
+				}
+			}
+			set_variable = { 789_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					789 = {
+						has_variable = frame_is_3
+					}
+				}
+				set_variable = { 789_voting_icon_frame = 3 }
+				else = {
+					set_variable = { 789_voting_icon_frame = 4 }
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			792 = {
+				has_variable = frame_is_1
+			}
+		}
+		set_variable = { 792_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				792 = {
+					has_variable = frame_is_2
+				}
+			}
+			set_variable = { 792_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					792 = {
+						has_variable = frame_is_3
+					}
+				}
+				set_variable = { 792_voting_icon_frame = 3 }
+				else = {
+					set_variable = { 792_voting_icon_frame = 4 }
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			796 = {
+				has_variable = frame_is_1
+			}
+		}
+		set_variable = { 796_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				796 = {
+					has_variable = frame_is_2
+				}
+			}
+			set_variable = { 796_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					796 = {
+						has_variable = frame_is_3
+					}
+				}
+				set_variable = { 796_voting_icon_frame = 3 }
+				else = {
+					set_variable = { 796_voting_icon_frame = 4 }
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			798 = {
+				has_variable = frame_is_1
+			}
+		}
+		set_variable = { 798_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				798 = {
+					has_variable = frame_is_2
+				}
+			}
+			set_variable = { 798_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					798 = {
+						has_variable = frame_is_3
+					}
+				}
+				set_variable = { 798_voting_icon_frame = 3 }
+				else = {
+					set_variable = { 798_voting_icon_frame = 4 }
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			799 = {
+				has_variable = frame_is_1
+			}
+		}
+		set_variable = { 799_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				799 = {
+					has_variable = frame_is_2
+				}
+			}
+			set_variable = { 799_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					799 = {
+						has_variable = frame_is_3
+					}
+				}
+				set_variable = { 799_voting_icon_frame = 3 }
+				else = {
+					set_variable = { 799_voting_icon_frame = 4 }
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			803 = {
+				has_variable = frame_is_1
+			}
+		}
+		set_variable = { 803_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				803 = {
+					has_variable = frame_is_2
+				}
+			}
+			set_variable = { 803_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					803 = {
+						has_variable = frame_is_3
+					}
+				}
+				set_variable = { 803_voting_icon_frame = 3 }
+				else = {
+					set_variable = { 803_voting_icon_frame = 4 }
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			808 = {
+				has_variable = frame_is_1
+			}
+		}
+		set_variable = { 808_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				808 = {
+					has_variable = frame_is_2
+				}
+			}
+			set_variable = { 808_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					808 = {
+						has_variable = frame_is_3
+					}
+				}
+				set_variable = { 808_voting_icon_frame = 3 }
+				else = {
+					set_variable = { 808_voting_icon_frame = 4 }
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			812 = {
+				has_variable = frame_is_1
+			}
+		}
+		set_variable = { 812_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				812 = {
+					has_variable = frame_is_2
+				}
+			}
+			set_variable = { 812_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					812 = {
+						has_variable = frame_is_3
+					}
+				}
+				set_variable = { 812_voting_icon_frame = 3 }
+				else = {
+					set_variable = { 812_voting_icon_frame = 4 }
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			814 = {
+				has_variable = frame_is_1
+			}
+		}
+		set_variable = { 814_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				814 = {
+					has_variable = frame_is_2
+				}
+			}
+			set_variable = { 814_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					814 = {
+						has_variable = frame_is_3
+					}
+				}
+				set_variable = { 814_voting_icon_frame = 3 }
+				else = {
+					set_variable = { 814_voting_icon_frame = 4 }
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			817 = {
+				has_variable = frame_is_1
+			}
+		}
+		set_variable = { 817_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				817 = {
+					has_variable = frame_is_2
+				}
+			}
+			set_variable = { 817_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					817 = {
+						has_variable = frame_is_3
+					}
+				}
+				set_variable = { 817_voting_icon_frame = 3 }
+				else = {
+					set_variable = { 817_voting_icon_frame = 4 }
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			822 = {
+				has_variable = frame_is_1
+			}
+		}
+		set_variable = { 822_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				822 = {
+					has_variable = frame_is_2
+				}
+			}
+			set_variable = { 822_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					822 = {
+						has_variable = frame_is_3
+					}
+				}
+				set_variable = { 822_voting_icon_frame = 3 }
+				else = {
+					set_variable = { 822_voting_icon_frame = 4 }
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			824 = {
+				has_variable = frame_is_1
+			}
+		}
+		set_variable = { 824_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				824 = {
+					has_variable = frame_is_2
+				}
+			}
+			set_variable = { 824_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					824 = {
+						has_variable = frame_is_3
+					}
+				}
+				set_variable = { 824_voting_icon_frame = 3 }
+				else = {
+					set_variable = { 824_voting_icon_frame = 4 }
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			831 = {
+				has_variable = frame_is_1
+			}
+		}
+		set_variable = { 831_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				831 = {
+					has_variable = frame_is_2
+				}
+			}
+			set_variable = { 831_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					831 = {
+						has_variable = frame_is_3
+					}
+				}
+				set_variable = { 831_voting_icon_frame = 3 }
+				else = {
+					set_variable = { 831_voting_icon_frame = 4 }
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			835 = {
+				has_variable = frame_is_1
+				is_owned_by = MAI
+			}
+		}
+		set_variable = { 835_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				835 = {
+					has_variable = frame_is_2
+					is_owned_by = MAI
+				}
+			}
+			set_variable = { 835_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					835 = {
+						has_variable = frame_is_3
+						is_owned_by = MAI
+					}
+				}
+				set_variable = { 835_voting_icon_frame = 3 }
+				else_if = {
+					limit = {
+						835 = {
+							has_variable = frame_is_4
+							is_owned_by = MAI
+						}
+					}
+					set_variable = { 835_voting_icon_frame = 4 }
+					else_if = {
+						limit = {
+							835 = {
+								NOT = { is_owned_by = MAI }
+							}
+						}
+						set_variable = { 835_voting_icon_frame = 6 }
+						else = {
+							
+						}
+					}
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			843 = {
+				has_variable = frame_is_1
+			}
+		}
+		set_variable = { 843_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				843 = {
+					has_variable = frame_is_2
+				}
+			}
+			set_variable = { 843_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					843 = {
+						has_variable = frame_is_3
+					}
+				}
+				set_variable = { 843_voting_icon_frame = 3 }
+				else = {
+					set_variable = { 843_voting_icon_frame = 4 }
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			852 = {
+				has_variable = frame_is_1
+			}
+		}
+		set_variable = { 852_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				852 = {
+					has_variable = frame_is_2
+				}
+			}
+			set_variable = { 852_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					852 = {
+						has_variable = frame_is_3
+					}
+				}
+				set_variable = { 852_voting_icon_frame = 3 }
+				else = {
+					set_variable = { 852_voting_icon_frame = 4 }
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			853 = {
+				has_variable = frame_is_1
+				is_owned_by = MAI
+			}
+		}
+		set_variable = { 853_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				853 = {
+					has_variable = frame_is_2
+					is_owned_by = MAI
+				}
+			}
+			set_variable = { 853_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					853 = {
+						has_variable = frame_is_3
+						is_owned_by = MAI
+					}
+				}
+				set_variable = { 853_voting_icon_frame = 3 }
+				else_if = {
+					limit = {
+						853 = {
+							has_variable = frame_is_4
+							is_owned_by = MAI
+						}
+					}
+					set_variable = { 853_voting_icon_frame = 4 }
+					else_if = {
+						limit = {
+							853 = {
+								NOT = { is_owned_by = MAI }
+							}
+						}
+						set_variable = { 853_voting_icon_frame = 6 }
+						else = {
+							
+						}
+					}
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			858 = {
+				has_variable = frame_is_1
+			}
+		}
+		set_variable = { 858_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				858 = {
+					has_variable = frame_is_2
+				}
+			}
+			set_variable = { 858_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					858 = {
+						has_variable = frame_is_3
+					}
+				}
+				set_variable = { 858_voting_icon_frame = 3 }
+				else = {
+					set_variable = { 858_voting_icon_frame = 4 }
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			869 = {
+				has_variable = frame_is_1
+				is_owned_by = MAI
+			}
+		}
+		set_variable = { 869_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				869 = {
+					has_variable = frame_is_2
+					is_owned_by = MAI
+				}
+			}
+			set_variable = { 869_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					869 = {
+						has_variable = frame_is_3
+						is_owned_by = MAI
+					}
+				}
+				set_variable = { 869_voting_icon_frame = 3 }
+				else_if = {
+					limit = {
+						869 = {
+							has_variable = frame_is_4
+							is_owned_by = MAI
+						}
+					}
+					set_variable = { 869_voting_icon_frame = 4 }
+					else_if = {
+						limit = {
+							869 = {
+								NOT = { is_owned_by = MAI }
+							}
+						}
+						set_variable = { 869_voting_icon_frame = 6 }
+						else = {
+							
+						}
+					}
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			872 = {
+				has_variable = frame_is_1
+				is_owned_by = MAI
+			}
+		}
+		set_variable = { 872_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				872 = {
+					has_variable = frame_is_2
+					is_owned_by = MAI
+				}
+			}
+			set_variable = { 872_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					872 = {
+						has_variable = frame_is_3
+						is_owned_by = MAI
+					}
+				}
+				set_variable = { 872_voting_icon_frame = 3 }
+				else_if = {
+					limit = {
+						872 = {
+							has_variable = frame_is_4
+							is_owned_by = MAI
+						}
+					}
+					set_variable = { 872_voting_icon_frame = 4 }
+					else_if = {
+						limit = {
+							872 = {
+								NOT = { is_owned_by = MAI }
+							}
+						}
+						set_variable = { 872_voting_icon_frame = 6 }
+						else = {
+							
+						}
+					}
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			877 = {
+				has_variable = frame_is_1
+				is_owned_by = MAI
+			}
+		}
+		set_variable = { 877_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				877 = {
+					has_variable = frame_is_2
+					is_owned_by = MAI
+				}
+			}
+			set_variable = { 877_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					877 = {
+						has_variable = frame_is_3
+						is_owned_by = MAI
+					}
+				}
+				set_variable = { 877_voting_icon_frame = 3 }
+				else_if = {
+					limit = {
+						877 = {
+							has_variable = frame_is_4
+							is_owned_by = MAI
+						}
+					}
+					set_variable = { 877_voting_icon_frame = 4 }
+					else_if = {
+						limit = {
+							877 = {
+								NOT = { is_owned_by = MAI }
+							}
+						}
+						set_variable = { 877_voting_icon_frame = 6 }
+						else = {
+							
+						}
+					}
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			884 = {
+				has_variable = frame_is_1
+				is_owned_by = MAI
+			}
+		}
+		set_variable = { 884_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				884 = {
+					has_variable = frame_is_2
+					is_owned_by = MAI
+				}
+			}
+			set_variable = { 884_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					884 = {
+						has_variable = frame_is_3
+						is_owned_by = MAI
+					}
+				}
+				set_variable = { 884_voting_icon_frame = 3 }
+				else_if = {
+					limit = {
+						884 = {
+							has_variable = frame_is_4
+							is_owned_by = MAI
+						}
+					}
+					set_variable = { 884_voting_icon_frame = 4 }
+					else_if = {
+						limit = {
+							884 = {
+								NOT = { is_owned_by = MAI }
+							}
+						}
+						set_variable = { 884_voting_icon_frame = 6 }
+						else = {
+							
+						}
+					}
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			897 = {
+				has_variable = frame_is_1
+				is_owned_by = MAI
+			}
+		}
+		set_variable = { 897_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				897 = {
+					has_variable = frame_is_2
+					is_owned_by = MAI
+				}
+			}
+			set_variable = { 897_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					897 = {
+						has_variable = frame_is_3
+						is_owned_by = MAI
+					}
+				}
+				set_variable = { 897_voting_icon_frame = 3 }
+				else_if = {
+					limit = {
+						897 = {
+							has_variable = frame_is_4
+							is_owned_by = MAI
+						}
+					}
+					set_variable = { 897_voting_icon_frame = 4 }
+					else_if = {
+						limit = {
+							897 = {
+								NOT = { is_owned_by = MAI }
+							}
+						}
+						set_variable = { 897_voting_icon_frame = 6 }
+						else = {
+							
+						}
+					}
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			905 = {
+				has_variable = frame_is_1
+				is_owned_by = MAI
+			}
+		}
+		set_variable = { 905_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				905 = {
+					has_variable = frame_is_2
+					is_owned_by = MAI
+				}
+			}
+			set_variable = { 905_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					905 = {
+						has_variable = frame_is_3
+						is_owned_by = MAI
+					}
+				}
+				set_variable = { 905_voting_icon_frame = 3 }
+				else_if = {
+					limit = {
+						905 = {
+							has_variable = frame_is_4
+							is_owned_by = MAI
+						}
+					}
+					set_variable = { 905_voting_icon_frame = 4 }
+					else_if = {
+						limit = {
+							905 = {
+								NOT = { is_owned_by = MAI }
+							}
+						}
+						set_variable = { 905_voting_icon_frame = 6 }
+						else = {
+							
+						}
+					}
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			911 = {
+				has_variable = frame_is_1
+				is_owned_by = MAI
+			}
+		}
+		set_variable = { 911_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				911 = {
+					has_variable = frame_is_2
+					is_owned_by = MAI
+				}
+			}
+			set_variable = { 911_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					911 = {
+						has_variable = frame_is_3
+						is_owned_by = MAI
+					}
+				}
+				set_variable = { 911_voting_icon_frame = 3 }
+				else_if = {
+					limit = {
+						911 = {
+							has_variable = frame_is_4
+							is_owned_by = MAI
+						}
+					}
+					set_variable = { 911_voting_icon_frame = 4 }
+					else_if = {
+						limit = {
+							911 = {
+								NOT = { is_owned_by = MAI }
+							}
+						}
+						set_variable = { 911_voting_icon_frame = 6 }
+						else = {
+							
+						}
+					}
+				}
+			}
+		}
+	}
+    if = {
+		limit = {
+			1048 = {
+				has_variable = frame_is_1
+				is_owned_by = MAI
+			}
+		}
+		set_variable = { 1048_voting_icon_frame = 1 }
+		else_if = {
+			limit = {
+				1048 = {
+					has_variable = frame_is_2
+					is_owned_by = MAI
+				}
+			}
+			set_variable = { 1048_voting_icon_frame = 2 }
+			else_if = {
+				limit = {
+					1048 = {
+						has_variable = frame_is_3
+						is_owned_by = MAI
+					}
+				}
+				set_variable = { 1048_voting_icon_frame = 3 }
+				else_if = {
+					limit = {
+						1048 = {
+							has_variable = frame_is_4
+							is_owned_by = MAI
+						}
+					}
+					set_variable = { 1048_voting_icon_frame = 4 }
+					else_if = {
+						limit = {
+							1048 = {
+								NOT = { is_owned_by = MAI }
+							}
+						}
+						set_variable = { 1048_voting_icon_frame = 6 }
+						else = {
+							
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+another_elections_script = { #if you need to get separate calculation, ie. for the states just added to the country, get the snippet of the code between the {} of state scope
+	every_owned_state = {
+		if = {
+			limit = {
+				THIS = {
+					NOT = {
+						state = 736
+						state = 767
+						state = 776
+						state = 773
+						state = 869
+						state = 853
+						state = 835
+						state = 1048
+						state = 877
+						state = 897
+						state = 872
+						state = 911
+						state = 905
+						state = 884
+					}
+				}
+			}
+			random_list = {	
+				25 = {
+					ncp_tops_the_polls = yes
+				}
+				25 = {
+					ffp_tops_the_polls = yes
+				}
+				25 = {
+					tfk_tops_the_polls = yes
+				}
+				25 = {
+					ccfrok_tops_the_polls = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				THIS = {
+					OR = {
+						state = 736
+						state = 767
+						state = 776
+						state = 773
+					}
+				}
+			}
+			random_list = {	
+				25 = {
+					ncp_tops_the_polls = yes
+				}
+				25 = {
+					ffp_tops_the_polls = yes
+				}
+				25 = {
+					tfk_tops_the_polls = yes
+				}
+				25 = {
+					ccfrok_tops_the_polls = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				THIS = {
+					OR = {
+						state = 869
+						state = 853
+						state = 835
+						state = 1048
+					}
+				}
+			}
+			random_list = {	
+				7 = {
+					ncp_tops_the_polls = yes
+				}
+				8 = {
+					ffp_tops_the_polls = yes
+				}
+				70 = {
+					tfk_tops_the_polls_as_sp = yes
+				}
+				6 = {
+					ccfrok_tops_the_polls = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				THIS = {
+					OR = {
+						state = 877
+						state = 897
+					}
+				}
+			}
+			random_list = {	
+				7 = {
+					ncp_tops_the_polls = yes
+				}
+				8 = {
+					tfk_tops_the_polls = yes
+				}
+				70 = {
+					ffp_tops_the_polls_as_nco = yes
+				}
+				6 = {
+					ccfrok_tops_the_polls = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				THIS = {
+					state = 872
+				}
+			}
+			if = {
+				limit = {
+					MAI = {
+						has_country_flag = form_southernprogress
+					}
+				}
+				random_list = {	
+					18 = {
+						ncp_tops_the_polls = yes
+					}
+					14 = {
+						ffp_tops_the_polls = yes
+					}
+					54 = {
+						tfk_tops_the_polls_as_sp = yes
+					}
+					15 = {
+						ccfrok_tops_the_polls = yes
+					}
+				}
+				else = {
+					25 = {
+						ncp_tops_the_polls = yes
+					}
+					25 = {
+						ffp_tops_the_polls = yes
+					}
+					25 = {
+						tfk_tops_the_polls = yes
+					}
+					25 = {
+						ccfrok_tops_the_polls = yes
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				THIS = {
+					OR = {
+						state = 911
+						state = 905
+						state = 884
+					}
+				}
+			}
+			if = {
+				limit = {
+					MAI = {
+						has_country_flag = form_southernprogress
+						NOT = {
+							has_country_flag = form_newconfederation
+						}
+					}
+				}
+				random_list = {	
+					19 = {
+						ncp_tops_the_polls = yes
+					}
+					17 = {
+						ffp_tops_the_polls = yes
+					}
+					48 = {
+						tfk_tops_the_polls_as_sp = yes
+					}
+					16 = {
+						ccfrok_tops_the_polls = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					MAI = {
+						has_country_flag = form_southernprogress
+						has_country_flag = form_newconfederation
+					}
+				}
+				random_list = {	
+					17 = {
+						ncp_tops_the_polls = yes
+					}
+					34 = {
+						ffp_tops_the_polls_as_nco = yes
+					}
+					36 = {
+						tfk_tops_the_polls_as_sp = yes
+					}
+					14 = {
+						ccfrok_tops_the_polls = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					MAI = {
+						has_country_flag = form_newconfederation
+						NOT = {
+							has_country_flag = form_southernprogress
+						}
+					}
+				}
+				random_list = {	
+					19 = {
+						ncp_tops_the_polls = yes
+					}
+					19 = {
+						tfk_tops_the_polls = yes
+					}
+					43 = {
+						ffp_tops_the_polls_as_nco = yes
+					}
+					16 = {
+						ccfrok_tops_the_polls = yes
+					}
+				}
+			}
+			else = {
+				25 = {
+					ncp_tops_the_polls = yes
+				}
+				25 = {
+					ffp_tops_the_polls = yes
+				}
+				25 = {
+					tfk_tops_the_polls = yes
+				}
+				25 = {
+					ccfrok_tops_the_polls = yes
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			MAI = {
+				owns_state = 911
+				owns_state = 905
+				owns_state = 884
+			}
+		}
+		911 = {
+			set_variable = {
+				district_ncp_popularity_in_state = 0
+			}
+			set_variable = {
+				district_ffp_popularity_in_state = 0
+			}
+			set_variable = {
+				district_tfk_popularity_in_state = 0
+			}
+			set_variable = {
+				district_ccfrok_popularity_in_state = 0
+			}
+			add_to_variable = { district_ncp_popularity_in_state = ncp_popularity_in_state }
+			add_to_variable = { district_ncp_popularity_in_state = 905.ncp_popularity_in_state }
+			add_to_variable = { district_ncp_popularity_in_state = 884.ncp_popularity_in_state }
+			divide_variable = { district_ncp_popularity_in_state = 3 }
+			add_to_variable = { district_ffp_popularity_in_state = ffp_popularity_in_state }
+			add_to_variable = { district_ffp_popularity_in_state = 905.ffp_popularity_in_state }
+			add_to_variable = { district_ffp_popularity_in_state = 884.ffp_popularity_in_state }
+			divide_variable = { district_ffp_popularity_in_state = 3 }
+			add_to_variable = { district_tfk_popularity_in_state = tfk_popularity_in_state }
+			add_to_variable = { district_tfk_popularity_in_state = 905.tfk_popularity_in_state }
+			add_to_variable = { district_tfk_popularity_in_state = 884.tfk_popularity_in_state }
+			divide_variable = { district_tfk_popularity_in_state = 3 }
+			add_to_variable = { district_ccfrok_popularity_in_state = ccfrok_popularity_in_state }
+			add_to_variable = { district_ccfrok_popularity_in_state = 905.ccfrok_popularity_in_state }
+			add_to_variable = { district_ccfrok_popularity_in_state = 884.ccfrok_popularity_in_state }
+			divide_variable = { district_ccfrok_popularity_in_state = 3 }
+			set_variable = { ncp_popularity_in_state = district_ncp_popularity_in_state }
+			set_variable = { ffp_popularity_in_state = district_ffp_popularity_in_state }
+			set_variable = { tfk_popularity_in_state = district_tfk_popularity_in_state }
+			set_variable = { ccfrok_popularity_in_state = district_ccfrok_popularity_in_state }
+		}
+	}
+}
+
+execute_dhondt_method = {
+	THIS = {
+		set_temp_variable = { manpower_in_state = THIS:state_population_k } #PARADOX DONT KILL I DO THIS FOR D'HONDT NOT FOR MASS KILLINGS!
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_idea = disarmed_nation
+			}
+		}
+		THIS = {
+			divide_temp_variable = { manpower_in_state = 100 }
+			multiply_temp_variable = { manpower_in_state = 1 }
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_idea = volunteer_only
+			}
+		}
+		THIS = {
+			divide_temp_variable = { manpower_in_state = 100 }
+			multiply_temp_variable = { manpower_in_state = 1.50 }
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_idea = limited_conscription
+			}
+		}
+		THIS = {
+			divide_temp_variable = { manpower_in_state = 100 }
+			multiply_temp_variable = { manpower_in_state = 2.5 }
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_idea = extensive_conscription
+			}
+		}
+		THIS = {
+			divide_temp_variable = { manpower_in_state = 100 }
+			multiply_temp_variable = { manpower_in_state = 5 }
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_idea = service_by_requirement
+			}
+		}
+		THIS = {
+			divide_temp_variable = { manpower_in_state = 100 }
+			multiply_temp_variable = { manpower_in_state = 10 }
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_idea = all_adults_serve
+			}
+		}
+		THIS = {
+			divide_temp_variable = { manpower_in_state = 100 }
+			multiply_temp_variable = { manpower_in_state = 20 }
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_idea = scraping_the_barrel
+			}
+		}
+		THIS = {
+			divide_temp_variable = { manpower_in_state = 100 }
+			multiply_temp_variable = { manpower_in_state = 25 }
+		}
+	}
+	THIS = {
+		set_temp_variable = { civilians_in_state = THIS:state_population_k }
+		subtract_from_variable = { civilians_in_state = manpower_in_state }
+		set_temp_variable = { children_in_state = civilians_in_state }
+		divide_temp_variable = { children_in_state = 100 }
+		multiply_temp_variable = { children_in_state = 6 }
+		set_variable = { children_population = children_in_state }
+		#Before we start...
+		clear_variable = ncp_product_level
+		clear_variable = ffp_product_level
+		clear_variable = tfk_product_level
+		clear_variable = ccfrok_product_level
+		#Count the votes - step one
+		dhondt_count_and_divide_the_votes = yes
+		#Setting the list (who is 1st, 2nd, etc.) - step two
+		dhondt_compare_parties = yes
+		#Divide the seats - step three
+		dhondt_first_seat = yes
+	}
+}
+
+EN1_royalist_party_win = {
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_royalist_party_pop
+				value = 9
+   				compare = less_than_or_equals
+			}
+		}
+		add_to_variable = { EN1_royalist_party_pop = 50 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_royalist_party_pop
+					value = 10
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_royalist_party_pop
+					value = 19
+					compare = less_than_or_equals
+				}
+			}
+		}
+		add_to_variable = { EN1_royalist_party_pop = 40 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_royalist_party_pop
+					value = 20
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_royalist_party_pop
+					value = 29
+					compare = less_than_or_equals
+				}
+			}
+		}
+		add_to_variable = { EN1_royalist_party_pop = 30 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_royalist_party_pop
+					value = 30
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_royalist_party_pop
+					value = 39
+					compare = less_than_or_equals
+				}
+			}
+		}
+		add_to_variable = { EN1_royalist_party_pop = 20 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_royalist_party_pop
+					value = 40
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_royalist_party_pop
+					value = 49
+					compare = less_than_or_equals
+				}
+			}
+		}
+		add_to_variable = { EN1_royalist_party_pop = 10 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_royalist_party_pop
+					value = 50
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_royalist_party_pop
+					value = 59
+					compare = less_than_or_equals
+				}
+			}
+		}
+		add_to_variable = { EN1_royalist_party_pop = 0 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_royalist_party_pop
+					value = 60
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_royalist_party_pop
+					value = 69
+					compare = less_than_or_equals
+				}
+			}
+		}
+		subtract_from_variable = { EN1_royalist_party_pop = 10 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_royalist_party_pop
+					value = 70
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_royalist_party_pop
+					value = 79
+					compare = less_than_or_equals
+				}
+			}
+		}
+		subtract_from_variable = { EN1_royalist_party_pop = 20 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_royalist_party_pop
+					value = 80
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_royalist_party_pop
+					value = 89
+					compare = less_than_or_equals
+				}
+			}
+		}
+		subtract_from_variable = { EN1_royalist_party_pop = 30 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_royalist_party_pop
+					value = 90
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_royalist_party_pop
+					value = 99
+					compare = less_than_or_equals
+				}
+			}
+		}
+		subtract_from_variable = { EN1_royalist_party_pop = 40 }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = EN1_royalist_party_pop
+				value = 100
+				compare = equals
+			}
+		}
+		subtract_from_variable = { EN1_royalist_party_pop = 50 }
+	}
+	set_variable = { EN1_remaining_seats_to_distribute = 100 }
+	subtract_from_variable = { EN1_remaining_seats_to_distribute = EN1_royalist_party_pop }
+	set_variable = { EN1_which_opposing_party_gets_most_seats = random }
+	multiply_variable = { EN1_which_opposing_party_gets_most_seats = 100 }
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_which_opposing_party_gets_most_seats
+				value = 33
+   				compare = less_than_or_equals
+			}
+		}
+		set_variable = { EN1_opppsing_rural_gets_most_seats = 1 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_which_opposing_party_gets_most_seats
+					value = 34
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_which_opposing_party_gets_most_seats
+					value = 66
+					compare = less_than_or_equals
+				}
+			}
+		}
+		set_variable = { EN1_opppsing_justice_gets_most_seats = 1 }
+	}
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_which_opposing_party_gets_most_seats
+				value = 67
+   				compare = greater_than_or_equals
+			}
+		}
+		set_variable = { EN1_opppsing_future_gets_most_seats = 1 }
+	}
+	clear_variable = EN1_which_opposing_party_gets_most_seats
+	divide_variable = { EN1_remaining_seats_to_distribute = 4 }
+	set_variable = { EN1_dominating_opposing_party = 2 }
+	multiply_variable = { EN1_dominating_opposing_party = EN1_remaining_seats_to_distribute }
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_opppsing_rural_gets_most_seats
+				value = 1
+   				compare = equals
+			}
+		}
+		set_variable = { EN1_rural_party_pop = EN1_dominating_opposing_party }
+		set_variable = { EN1_justice_party_pop = EN1_remaining_seats_to_distribute }
+		set_variable = { EN1_future_party_pop = EN1_remaining_seats_to_distribute }
+	}
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_opppsing_justice_gets_most_seats
+				value = 1
+   				compare = equals
+			}
+		}
+		set_variable = { EN1_justice_party_pop = EN1_dominating_opposing_party }
+		set_variable = { EN1_rural_party_pop = EN1_remaining_seats_to_distribute }
+		set_variable = { EN1_future_party_pop = EN1_remaining_seats_to_distribute }
+	}
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_opppsing_future_gets_most_seats
+				value = 1
+   				compare = equals
+			}
+		}
+		set_variable = { EN1_future_party_pop = EN1_dominating_opposing_party }
+		set_variable = { EN1_justice_party_pop = EN1_remaining_seats_to_distribute }
+		set_variable = { EN1_rural_party_pop = EN1_remaining_seats_to_distribute }
+	}
+	clear_variable = EN1_remaining_seats_to_distribute
+	clear_variable = EN1_dominating_opposing_party
+	clear_variable = EN1_opppsing_rural_gets_most_seats
+	clear_variable = EN1_opppsing_justice_gets_most_seats
+	clear_variable = EN1_opppsing_future_gets_most_seats
+}
+
+EN1_rural_party_win = {
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_rural_party_pop
+				value = 9
+   				compare = less_than_or_equals
+			}
+		}
+		add_to_variable = { EN1_rural_party_pop = 50 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_rural_party_pop
+					value = 10
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_rural_party_pop
+					value = 19
+					compare = less_than_or_equals
+				}
+			}
+		}
+		add_to_variable = { EN1_rural_party_pop = 40 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_rural_party_pop
+					value = 20
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_rural_party_pop
+					value = 29
+					compare = less_than_or_equals
+				}
+			}
+		}
+		add_to_variable = { EN1_rural_party_pop = 30 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_rural_party_pop
+					value = 30
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_rural_party_pop
+					value = 39
+					compare = less_than_or_equals
+				}
+			}
+		}
+		add_to_variable = { EN1_rural_party_pop = 20 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_rural_party_pop
+					value = 40
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_rural_party_pop
+					value = 49
+					compare = less_than_or_equals
+				}
+			}
+		}
+		add_to_variable = { EN1_rural_party_pop = 10 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_rural_party_pop
+					value = 50
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_rural_party_pop
+					value = 59
+					compare = less_than_or_equals
+				}
+			}
+		}
+		add_to_variable = { EN1_rural_party_pop = 0 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_rural_party_pop
+					value = 60
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_rural_party_pop
+					value = 69
+					compare = less_than_or_equals
+				}
+			}
+		}
+		subtract_from_variable = { EN1_rural_party_pop = 10 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_rural_party_pop
+					value = 70
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_rural_party_pop
+					value = 79
+					compare = less_than_or_equals
+				}
+			}
+		}
+		subtract_from_variable = { EN1_rural_party_pop = 20 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_rural_party_pop
+					value = 80
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_rural_party_pop
+					value = 89
+					compare = less_than_or_equals
+				}
+			}
+		}
+		subtract_from_variable = { EN1_rural_party_pop = 30 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_rural_party_pop
+					value = 90
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_rural_party_pop
+					value = 99
+					compare = less_than_or_equals
+				}
+			}
+		}
+		subtract_from_variable = { EN1_rural_party_pop = 40 }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = EN1_rural_party_pop
+				value = 100
+				compare = equals
+			}
+		}
+		subtract_from_variable = { EN1_rural_party_pop = 50 }
+	}
+	set_variable = { EN1_remaining_seats_to_distribute = 100 }
+	subtract_from_variable = { EN1_remaining_seats_to_distribute = EN1_rural_party_pop }
+	set_variable = { EN1_which_opposing_party_gets_most_seats = random }
+	multiply_variable = { EN1_which_opposing_party_gets_most_seats = 100 }
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_which_opposing_party_gets_most_seats
+				value = 33
+   				compare = less_than_or_equals
+			}
+		}
+		set_variable = { EN1_opppsing_royalist_gets_most_seats = 1 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_which_opposing_party_gets_most_seats
+					value = 34
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_which_opposing_party_gets_most_seats
+					value = 66
+					compare = less_than_or_equals
+				}
+			}
+		}
+		set_variable = { EN1_opppsing_justice_gets_most_seats = 1 }
+	}
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_which_opposing_party_gets_most_seats
+				value = 67
+   				compare = greater_than_or_equals
+			}
+		}
+		set_variable = { EN1_opppsing_future_gets_most_seats = 1 }
+	}
+	clear_variable = EN1_which_opposing_party_gets_most_seats
+	divide_variable = { EN1_remaining_seats_to_distribute = 4 }
+	set_variable = { EN1_dominating_opposing_party = 2 }
+	multiply_variable = { EN1_dominating_opposing_party = EN1_remaining_seats_to_distribute }
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_opppsing_royalist_gets_most_seats
+				value = 1
+   				compare = equals
+			}
+		}
+		set_variable = { EN1_royalist_party_pop = EN1_dominating_opposing_party }
+		set_variable = { EN1_justice_party_pop = EN1_remaining_seats_to_distribute }
+		set_variable = { EN1_future_party_pop = EN1_remaining_seats_to_distribute }
+	}
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_opppsing_justice_gets_most_seats
+				value = 1
+   				compare = equals
+			}
+		}
+		set_variable = { EN1_justice_party_pop = EN1_dominating_opposing_party }
+		set_variable = { EN1_royalist_party_pop = EN1_remaining_seats_to_distribute }
+		set_variable = { EN1_future_party_pop = EN1_remaining_seats_to_distribute }
+	}
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_opppsing_future_gets_most_seats
+				value = 1
+   				compare = equals
+			}
+		}
+		set_variable = { EN1_future_party_pop = EN1_dominating_opposing_party }
+		set_variable = { EN1_justice_party_pop = EN1_remaining_seats_to_distribute }
+		set_variable = { EN1_royalist_party_pop = EN1_remaining_seats_to_distribute }
+	}
+	clear_variable = EN1_remaining_seats_to_distribute
+	clear_variable = EN1_dominating_opposing_party
+	clear_variable = EN1_opppsing_royalist_gets_most_seats
+	clear_variable = EN1_opppsing_justice_gets_most_seats
+	clear_variable = EN1_opppsing_future_gets_most_seats
+}
+
+EN1_justice_party_win = {
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_justice_party_pop
+				value = 9
+   				compare = less_than_or_equals
+			}
+		}
+		add_to_variable = { EN1_justice_party_pop = 50 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_justice_party_pop
+					value = 10
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_justice_party_pop
+					value = 19
+					compare = less_than_or_equals
+				}
+			}
+		}
+		add_to_variable = { EN1_justice_party_pop = 40 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_justice_party_pop
+					value = 20
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_justice_party_pop
+					value = 29
+					compare = less_than_or_equals
+				}
+			}
+		}
+		add_to_variable = { EN1_justice_party_pop = 30 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_justice_party_pop
+					value = 30
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_justice_party_pop
+					value = 39
+					compare = less_than_or_equals
+				}
+			}
+		}
+		add_to_variable = { EN1_justice_party_pop = 20 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_justice_party_pop
+					value = 40
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_justice_party_pop
+					value = 49
+					compare = less_than_or_equals
+				}
+			}
+		}
+		add_to_variable = { EN1_justice_party_pop = 10 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_justice_party_pop
+					value = 50
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_justice_party_pop
+					value = 59
+					compare = less_than_or_equals
+				}
+			}
+		}
+		add_to_variable = { EN1_justice_party_pop = 0 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_justice_party_pop
+					value = 60
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_justice_party_pop
+					value = 69
+					compare = less_than_or_equals
+				}
+			}
+		}
+		subtract_from_variable = { EN1_justice_party_pop = 10 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_justice_party_pop
+					value = 70
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_justice_party_pop
+					value = 79
+					compare = less_than_or_equals
+				}
+			}
+		}
+		subtract_from_variable = { EN1_justice_party_pop = 20 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_justice_party_pop
+					value = 80
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_justice_party_pop
+					value = 89
+					compare = less_than_or_equals
+				}
+			}
+		}
+		subtract_from_variable = { EN1_justice_party_pop = 30 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_justice_party_pop
+					value = 90
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_justice_party_pop
+					value = 99
+					compare = less_than_or_equals
+				}
+			}
+		}
+		subtract_from_variable = { EN1_justice_party_pop = 40 }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = EN1_justice_party_pop
+				value = 100
+				compare = equals
+			}
+		}
+		subtract_from_variable = { EN1_justice_party_pop = 50 }
+	}
+
+	set_variable = { EN1_remaining_seats_to_distribute = 100 }
+	subtract_from_variable = { EN1_remaining_seats_to_distribute = EN1_justice_party_pop }
+	set_variable = { EN1_which_opposing_party_gets_most_seats = random }
+	multiply_variable = { EN1_which_opposing_party_gets_most_seats = 100 }
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_which_opposing_party_gets_most_seats
+				value = 33
+   				compare = less_than_or_equals
+			}
+		}
+		set_variable = { EN1_opppsing_royalist_gets_most_seats = 1 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_which_opposing_party_gets_most_seats
+					value = 34
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_which_opposing_party_gets_most_seats
+					value = 66
+					compare = less_than_or_equals
+				}
+			}
+		}
+		set_variable = { EN1_opppsing_rural_gets_most_seats = 1 }
+	}
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_which_opposing_party_gets_most_seats
+				value = 67
+   				compare = greater_than_or_equals
+			}
+		}
+		set_variable = { EN1_opppsing_future_gets_most_seats = 1 }
+	}
+	clear_variable = EN1_which_opposing_party_gets_most_seats
+	divide_variable = { EN1_remaining_seats_to_distribute = 4 }
+	set_variable = { EN1_dominating_opposing_party = 2 }
+	multiply_variable = { EN1_dominating_opposing_party = EN1_remaining_seats_to_distribute }
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_opppsing_royalist_gets_most_seats
+				value = 1
+   				compare = equals
+			}
+		}
+		set_variable = { EN1_royalist_party_pop = EN1_dominating_opposing_party }
+		set_variable = { EN1_rural_party_pop = EN1_remaining_seats_to_distribute }
+		set_variable = { EN1_future_party_pop = EN1_remaining_seats_to_distribute }
+	}
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_opppsing_rural_gets_most_seats
+				value = 1
+   				compare = equals
+			}
+		}
+		set_variable = { EN1_rural_party_pop = EN1_dominating_opposing_party }
+		set_variable = { EN1_royalist_party_pop = EN1_remaining_seats_to_distribute }
+		set_variable = { EN1_future_party_pop = EN1_remaining_seats_to_distribute }
+	}
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_opppsing_future_gets_most_seats
+				value = 1
+   				compare = equals
+			}
+		}
+		set_variable = { EN1_future_party_pop = EN1_dominating_opposing_party }
+		set_variable = { EN1_rural_party_pop = EN1_remaining_seats_to_distribute }
+		set_variable = { EN1_royalist_party_pop = EN1_remaining_seats_to_distribute }
+	}
+	clear_variable = EN1_remaining_seats_to_distribute
+	clear_variable = EN1_dominating_opposing_party
+	clear_variable = EN1_opppsing_royalist_gets_most_seats
+	clear_variable = EN1_opppsing_rural_gets_most_seats
+	clear_variable = EN1_opppsing_future_gets_most_seats
+}
+
+EN1_future_party_win = {
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_future_party_pop
+				value = 9
+   				compare = less_than_or_equals
+			}
+		}
+		add_to_variable = { EN1_future_party_pop = 50 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_future_party_pop
+					value = 10
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_future_party_pop
+					value = 19
+					compare = less_than_or_equals
+				}
+			}
+		}
+		add_to_variable = { EN1_future_party_pop = 40 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_future_party_pop
+					value = 20
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_future_party_pop
+					value = 29
+					compare = less_than_or_equals
+				}
+			}
+		}
+		add_to_variable = { EN1_future_party_pop = 30 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_future_party_pop
+					value = 30
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_future_party_pop
+					value = 39
+					compare = less_than_or_equals
+				}
+			}
+		}
+		add_to_variable = { EN1_future_party_pop = 20 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_future_party_pop
+					value = 40
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_future_party_pop
+					value = 49
+					compare = less_than_or_equals
+				}
+			}
+		}
+		add_to_variable = { EN1_future_party_pop = 10 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_future_party_pop
+					value = 50
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_future_party_pop
+					value = 59
+					compare = less_than_or_equals
+				}
+			}
+		}
+		add_to_variable = { EN1_future_party_pop = 0 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_future_party_pop
+					value = 60
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_future_party_pop
+					value = 69
+					compare = less_than_or_equals
+				}
+			}
+		}
+		subtract_from_variable = { EN1_future_party_pop = 10 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_future_party_pop
+					value = 70
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_future_party_pop
+					value = 79
+					compare = less_than_or_equals
+				}
+			}
+		}
+		subtract_from_variable = { EN1_future_party_pop = 20 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_future_party_pop
+					value = 80
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_future_party_pop
+					value = 89
+					compare = less_than_or_equals
+				}
+			}
+		}
+		subtract_from_variable = { EN1_future_party_pop = 30 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_future_party_pop
+					value = 90
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_future_party_pop
+					value = 99
+					compare = less_than_or_equals
+				}
+			}
+		}
+		subtract_from_variable = { EN1_future_party_pop = 40 }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = EN1_future_party_pop
+				value = 100
+				compare = equals
+			}
+		}
+		subtract_from_variable = { EN1_future_party_pop = 50 }
+	}
+
+	set_variable = { EN1_remaining_seats_to_distribute = 100 }
+	subtract_from_variable = { EN1_remaining_seats_to_distribute = EN1_future_party_pop }
+	set_variable = { EN1_which_opposing_party_gets_most_seats = random }
+	multiply_variable = { EN1_which_opposing_party_gets_most_seats = 100 }
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_which_opposing_party_gets_most_seats
+				value = 33
+   				compare = less_than_or_equals
+			}
+		}
+		set_variable = { EN1_opppsing_royalist_gets_most_seats = 1 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					var = EN1_which_opposing_party_gets_most_seats
+					value = 34
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = EN1_which_opposing_party_gets_most_seats
+					value = 66
+					compare = less_than_or_equals
+				}
+			}
+		}
+		set_variable = { EN1_opppsing_rural_gets_most_seats = 1 }
+	}
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_which_opposing_party_gets_most_seats
+				value = 67
+   				compare = greater_than_or_equals
+			}
+		}
+		set_variable = { EN1_opppsing_justice_gets_most_seats = 1 }
+	}
+	clear_variable = EN1_which_opposing_party_gets_most_seats
+	divide_variable = { EN1_remaining_seats_to_distribute = 4 }
+	set_variable = { EN1_dominating_opposing_party = 2 }
+	multiply_variable = { EN1_dominating_opposing_party = EN1_remaining_seats_to_distribute }
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_opppsing_royalist_gets_most_seats
+				value = 1
+   				compare = equals
+			}
+		}
+		set_variable = { EN1_royalist_party_pop = EN1_dominating_opposing_party }
+		set_variable = { EN1_rural_party_pop = EN1_remaining_seats_to_distribute }
+		set_variable = { EN1_justice_party_pop = EN1_remaining_seats_to_distribute }
+	}
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_opppsing_rural_gets_most_seats
+				value = 1
+   				compare = equals
+			}
+		}
+		set_variable = { EN1_rural_party_pop = EN1_dominating_opposing_party }
+		set_variable = { EN1_royalist_party_pop = EN1_remaining_seats_to_distribute }
+		set_variable = { EN1_justice_party_pop = EN1_remaining_seats_to_distribute }
+	}
+	if = {
+		limit = {
+			check_variable = {
+   				var = EN1_opppsing_justice_gets_most_seats
+				value = 1
+   				compare = equals
+			}
+		}
+		set_variable = { EN1_justice_party_pop = EN1_dominating_opposing_party }
+		set_variable = { EN1_rural_party_pop = EN1_remaining_seats_to_distribute }
+		set_variable = { EN1_royalist_party_pop = EN1_remaining_seats_to_distribute }
+	}
+	clear_variable = EN1_remaining_seats_to_distribute
+	clear_variable = EN1_dominating_opposing_party
+	clear_variable = EN1_opppsing_royalist_gets_most_seats
+	clear_variable = EN1_opppsing_rural_gets_most_seats
+	clear_variable = EN1_opppsing_justice_gets_most_seats
+}

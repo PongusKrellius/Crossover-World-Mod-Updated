@@ -1,0 +1,36 @@
+
+state={
+	id=733
+	name="STATE_733"
+
+	history={
+		owner = FLE
+		add_core_of = FLE
+		buildings = {
+			infrastructure = 2
+			9635 = {
+				naval_base = 2
+
+			}
+
+		}
+		victory_points = {
+			9635 10 
+		}
+
+		
+
+	}
+
+	resources = {
+			steel = 7
+			oil = 4
+		}
+
+	provinces={
+		1219 9580 9622 9635 9684 
+	}
+	manpower=120000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

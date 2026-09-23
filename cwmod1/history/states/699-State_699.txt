@@ -1,0 +1,22 @@
+
+state={
+	id=699
+	name="STATE_699"
+
+	history={
+		owner = FLE
+		add_core_of = FLE
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		57 1111 3394 9549 
+	}
+	manpower=120000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

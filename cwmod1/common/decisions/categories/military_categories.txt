@@ -1,0 +1,82 @@
+tiger_leader_switching_dec_category = {
+	icon = generic_political_actions
+	
+	priority = 49
+}
+
+kayo_missions_dec_category = {
+	icon = generic_political_actions
+
+	allowed = {
+		tag = DES
+	}
+
+	visible = {
+		has_completed_focus = DES_release_kayo
+	}
+	
+	priority = 49
+}
+
+dividing_greenland_dec_category = {
+	icon = generic_political_actions
+
+	picture = GFX_decision_cat_divide_greenland
+	
+	priority = 50
+}
+
+fall_of_desert_hegemony_dec_category = {
+	icon = generic_political_actions
+	
+	priority = 50
+}
+
+conflict_for_influence_dec_category = {
+	icon = generic_political_actions
+	visible_when_empty = yes
+
+	picture = GFX_decision_cat_conflict_for_influence
+
+	allowed = {
+		tag = MAI
+	}
+
+	visible = {
+		has_global_flag = stephen_is_dead
+		has_country_leader = {
+			name = "Macius I"
+			ruling_only = yes
+		}
+		NOT = {
+			has_country_flag = general_moved_to_second_stage
+			has_country_flag = macius_reached_adulthood
+			has_country_flag = general_rebelled
+			has_completed_focus = MAI_betrayal_in_my_country
+			has_completed_focus = MAI_abdication
+		}
+	}
+	
+	priority = 100
+}
+
+road_to_central_civil_war_dec_category = {
+	icon = generic_political_actions
+	visible_when_empty = yes
+
+	picture = GFX_decision_cat_conflict_for_influence
+
+	allowed = {
+		tag = MAI
+		NOT = {
+			has_country_flag = general_rebelled
+		}
+	}
+
+	visible = {
+		has_global_flag = stephen_is_dead
+		has_country_flag = general_moved_to_second_stage
+	}
+	
+	priority = 100
+}

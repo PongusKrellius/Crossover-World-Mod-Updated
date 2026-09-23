@@ -1,0 +1,713 @@
+﻿###########################
+# Neu Flensburg Events
+###########################
+
+add_namespace = flensburg
+add_namespace = flensburg_christmas
+
+country_event = { #Landscape after Black Monday
+	id = flensburg.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.1"}
+	title = flensburg.1.t
+	desc = flensburg.1.d
+	picture = GFX_report_event_iww_demonstration
+
+	is_triggered_only = yes
+
+	option = { #The colonial council starts the debate
+		name = flensburg.1.a
+		country_event = {
+			id = flensburg.2
+			days = 5
+		}
+	}
+}
+
+country_event = { #The End of Endless Debate
+	id = flensburg.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.2"}
+	title = flensburg.2.t
+	desc = flensburg.2.d
+	picture = GFX_report_event_hitler_handshake
+
+	is_triggered_only = yes
+
+	option = { #Left side of tree
+		name = flensburg.2.a
+		hidden_effect = {
+			set_country_flag = FLE_left_side_bm
+		}
+	}
+
+	option = { #Right side of tree
+		name = flensburg.2.b
+		hidden_effect = {
+			set_country_flag = FLE_right_side_bm
+		}
+	}
+}
+
+country_event = { #First Governor Elections
+	id = flensburg.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.3"}
+	title = flensburg.3.t
+	desc = flensburg.3.d
+	picture = GFX_report_event_iww_demonstration
+
+	is_triggered_only = yes
+
+	option = { #Wissman stays
+		name = flensburg.3.a
+		hidden_effect = {
+			complete_national_focus = FLE_stick_with_wissmann
+		}
+	}
+
+	option = { #Time to make the colony great!
+		name = flensburg.3.b
+		set_politics = {
+			ruling_party = fascism
+		}
+		hidden_effect = {
+			complete_national_focus = FLE_sekai_ichi
+		}
+	}
+
+	option = { #The man from overseas will change our country
+		name = flensburg.3.c
+		trigger = {
+			has_country_flag = kramer_in_the_colony
+		}
+		create_country_leader = {
+			name = "Gustaw Kramer"
+			desc = "POLITICS_KRAMER_DESC"
+			picture = "kramer.dds"
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				#
+			}
+		}
+		set_politics = {
+			ruling_party = fascism
+		}
+		hidden_effect = {
+			complete_national_focus = FLE_a_shady_banker
+		}
+	}
+}
+
+country_event = { #Equipment from Neu Flensburg
+	id = flensburg.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.4"}
+	title = flensburg.4.t
+	desc = flensburg.4.d
+	picture = GFX_report_event_iww_demonstration
+
+	is_triggered_only = yes
+
+	option = { #What a surprise
+		name = flensburg.4.a
+		trigger = {
+			tag = JOJ
+		}
+		add_ideas = {
+			FLE_help_to_joestars
+		}
+	}
+
+	option = { #Uh... thanks, I guess?
+		name = flensburg.4.b
+		trigger = {
+			tag = DES
+		}
+		add_ideas = {
+			FLE_help_to_joestars
+		}
+	}
+}
+
+country_event = { #Neu Flensburg proposes us an economic deal
+	id = flensburg.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.5"}
+	title = flensburg.5.t
+	desc = flensburg.5.d
+	picture = GFX_report_event_iww_demonstration
+
+	is_triggered_only = yes
+
+	option = { #Accept
+		name = flensburg.5.a
+		add_ideas = {
+			FLE_GRN_flensburg_greenland_deal
+		}
+		FLE = {
+			country_event = {
+				id = flensburg.6
+				days = 1
+			}
+		}
+	}
+
+	option = { #Reject
+		name = flensburg.5.b
+		FLE = {
+			country_event = {
+				id = flensburg.7
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Greenland accepted our economic proposal
+	id = flensburg.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.6"}
+	title = flensburg.6.t
+	desc = flensburg.6.d
+	picture = GFX_report_event_iww_demonstration
+
+	is_triggered_only = yes
+
+	option = { #aw yiss
+		name = flensburg.6.a
+		add_ideas = {
+			FLE_flensburg_greenland_deal
+		}
+	}
+}
+
+country_event = { #Greenland rejected our economic proposal
+	id = flensburg.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.7"}
+	title = flensburg.7.t
+	desc = flensburg.7.d
+	picture = GFX_report_event_iww_demonstration
+
+	is_triggered_only = yes
+
+	option = { #damn
+		name = flensburg.7.a
+		add_political_power = -20
+	}
+}
+
+country_event = { #Colony of Neu Flensburg sends us equipment
+	id = flensburg.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.8"}
+	title = flensburg.8.t
+	desc = flensburg.8.d
+	picture = GFX_report_event_tur_military_affair
+
+	is_triggered_only = yes
+
+	option = { #Thank you very much indeed!
+		name = flensburg.8.a
+		FLE = {
+			add_manpower = 3000
+			send_equipment = {
+    			equipment = infantry_equipment
+    			amount = 3000
+    			target = ROOT
+			}
+		}
+	}
+}
+
+country_event = { #Attracting investors
+	id = flensburg.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.9"}
+	title = flensburg.9.t
+	desc = flensburg.9.d
+	picture = GFX_report_event_tur_military_affair
+
+	is_triggered_only = yes
+
+	option = { #From Danville
+		name = flensburg.9.a
+		hidden_effect = {
+			set_country_flag = investors_from_danville
+			mark_focus_tree_layout_dirty = yes
+		}
+		complete_national_focus = FLE_from_danville
+	}
+
+	option = { #From Flower Hill
+		name = flensburg.9.b
+		hidden_effect = {
+			set_country_flag = investors_from_flower_hill
+			mark_focus_tree_layout_dirty = yes
+		}
+		complete_national_focus = FLE_from_flower_hill
+	}
+
+	option = { #From Dio Brando
+		name = flensburg.9.c
+		hidden_effect = {
+			set_country_flag = investors_from_dio
+			mark_focus_tree_layout_dirty = yes
+		}
+		complete_national_focus = FLE_from_dio
+	}
+}
+
+country_event = { #Neu Flensburgian Declaration of Independence
+	id = flensburg.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.10"}
+	title = flensburg.10.t
+	desc = flensburg.10.d
+	picture = GFX_report_event_gre_political_upheaval
+
+	is_triggered_only = yes
+
+	option = { #At last we're free!
+		name = flensburg.10.a
+		add_political_power = 100
+		hidden_effect = {
+			FRI = {  #has to be commented out, because any relation between FRI and FLE crashes the game
+				end_puppet = FLE
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_government = monarchism
+					}
+					create_country_leader = {
+						name = "Herman von Wismann"
+						desc="POLITICS_WISMANN_DESC"
+						picture="gfx/leaders/FLE/wissman.dds"
+						ideology=centrism
+						expire="1965.1.1.1"
+						traits = {
+							#
+						}
+					}
+					set_politics = {
+						ruling_party = democratic
+					}
+					if = {
+						limit = {
+							has_completed_focus = FLE_we_are_on_our_own
+							NOT = {
+								has_completed_focus = FLE_attracting_investors
+							}
+						}
+						add_popularity = {
+							ideology = monarchism
+							popularity = -0.4
+						}
+					}
+				}
+			}
+			set_cosmetic_tag = FLE_independent
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+}
+
+country_event = { #Neu Flensburg breaks free
+	id = flensburg.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.11"}
+	title = flensburg.11.t
+	desc = flensburg.11.d
+	picture = GFX_report_event_gre_political_upheaval
+
+	is_triggered_only = yes
+
+	option = { #Issue official demand to cease this
+		name = flensburg.11.a
+		FLE = {
+			country_event = {
+				id = flensburg.12
+				days = 2
+			}
+		}
+	}
+
+	option = { #Acknowledge their independence
+		name = flensburg.11.b
+		add_political_power = -50
+		add_stability = -0.05
+		hidden_effect = {
+			news_event = {
+				id = worldnews.105
+				hours = 6
+			}
+		}
+	}
+
+	option = { #Call von Wismann! He will save the colony!
+		name = flensburg.11.c
+		trigger = {
+			FLE = {
+				NOT = {
+					has_country_leader = {
+						name = "Herman von Wismann"
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		FLE = {
+			country_event = {
+				id = flensburg.13
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { #Pantmawr demands immediate nullification of declaration of independence
+	id = flensburg.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.12"}
+	title = flensburg.12.t
+	desc = flensburg.12.d
+	picture = GFX_report_event_gre_political_upheaval
+
+	is_triggered_only = yes
+
+	option = { #In your dreams!
+		name = flensburg.12.a
+		FRI = {
+			declare_war_on = {
+				target = FLE
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = { #von Wismann rebels against the independence!
+	id = flensburg.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.13"}
+	title = flensburg.13.t
+	desc = flensburg.13.d
+	picture = GFX_report_event_gre_political_upheaval
+
+	is_triggered_only = yes
+
+	option = { #He's working on orders from Pantmawr! To arms!
+		name = flensburg.13.a
+		start_civil_war = {
+    		ideology = monarchism
+    		size = 0.4
+    		capital = 782
+    		states = { 
+     		   782 791 788 1034 769 1032 802 1018 733 1038 35 40 30
+    		}
+    		keep_unit_leaders = {
+    		    9952 9954 9955
+    		}
+    		keep_political_leader = no
+		}		
+		hidden_effect = {
+			every_country = {
+				limit = {
+					original_tag = FLE
+					has_government = monarchism
+				}
+				set_cosmetic_tag = FLE
+				load_oob = FLE_wismann_uprising
+			}
+			country_event = {
+				id = flensburg.14
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { #Natives rise up!
+	id = flensburg.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.14"}
+	title = flensburg.14.t
+	desc = flensburg.14.d
+	picture = GFX_report_event_gre_political_upheaval
+
+	is_triggered_only = yes
+
+	option = { #This is unacceptable!
+		name = flensburg.14.a
+		every_owned_state = {
+			add_claim_by = TUG
+		}
+		TUG = {
+			hidden_effect = {
+				add_manpower = 250000
+				transfer_state = 797
+				transfer_state = 1027
+				transfer_state = 1026
+				transfer_state = 745
+				transfer_state = 699
+				transfer_state = 1040
+				transfer_state = 1031
+				transfer_state = 1022
+				transfer_state = 1024
+				load_oob = FLE_native_uprising
+			}
+			add_ideas = {
+				TUG_native_uprising_in_neu_flensburg
+			}
+			declare_war_on = {
+				target = FLE
+				type = annex_everything
+			}
+		}
+		every_country = {
+			limit = {
+				original_tag = FLE
+				has_government = monarchism
+			}
+			declare_war_on = {
+				target = TUG
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = { #War with Neu Flensburg has been a failure so far
+	id = flensburg.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.15"}
+	title = flensburg.15.t
+	desc = flensburg.15.d
+	picture = GFX_report_event_gre_political_upheaval
+
+	is_triggered_only = yes
+
+	option = { #Offer them an ante bellum peace with recognition
+		name = flensburg.15.a
+		FLE = {
+			country_event = {
+				id = flensburg.16
+				days = 1
+			}
+		}
+	}
+
+	option = { #Offer them peace with recognition but we take all their territories we're holding
+		name = flensburg.15.b
+		FLE = {
+			country_event = {
+				id = flensburg.17
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Pantmawr proposes status quo ante bellum peace
+	id = flensburg.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.16"}
+	title = flensburg.16.t
+	desc = flensburg.16.d
+	picture = GFX_report_event_gre_political_upheaval
+
+	is_triggered_only = yes
+
+	option = { #Why couldn't they do this in the first place?
+		name = flensburg.16.a
+		FRI = {
+			white_peace = {
+    			tag = FLE
+    			message = TREATY_OF_REITZE
+			}
+		}
+	}
+}
+
+country_event = { #Pantmawr proposes peace but they will take all territories they are holding
+	id = flensburg.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.17"}
+	title = flensburg.16.t
+	desc = flensburg.17.d
+	picture = GFX_report_event_gre_political_upheaval
+
+	is_triggered_only = yes
+
+	option = { #A price we have to pay.
+		name = flensburg.17.a
+		FRI = {
+			every_controlled_state = {
+				limit = {
+					is_core_of = FLE
+				}
+				add_core_of = FRI
+				FRI = {
+					transfer_state = PREV
+				}
+			}
+			white_peace = {
+    			tag = FLE
+    			message = TREATY_OF_HARTH
+			}
+		}
+	}
+
+	option = { #No! Only ante bellum!
+		name = flensburg.17.b
+		custom_effect_tooltip = FLE_if_pantmawr_refuses
+		FRI = {
+			country_event = {
+				id = flensburg.18
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Flensburg refuses the terms and demands ante bellum peace
+	id = flensburg.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.18"}
+	title = flensburg.18.t
+	desc = flensburg.18.d
+	picture = GFX_report_event_gre_political_upheaval
+
+	is_triggered_only = yes
+
+	option = { #Agree to their demands
+		name = flensburg.18.a
+		white_peace = {
+    		tag = FLE
+    		message = TREATY_OF_REITZE
+		}
+	}
+
+	option = { #Then we will conquer them.
+		name = flensburg.18.b
+		hidden_effect = {
+			set_variable = { FRI_start_the_countdown = 1 }
+		}
+	}
+}
+
+country_event = { #Our kingdom did not manage to pacify Neu Flensburg
+	id = flensburg.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.19"}
+	title = flensburg.19.t
+	desc = flensburg.19.d
+	picture = GFX_report_event_gre_political_upheaval
+
+	is_triggered_only = yes
+
+	option = { #Accept their ante bellum proposal
+		name = flensburg.19.a
+		FLE = {
+			country_event = {
+				id = flensburg.20
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Pantmawr proposes status quo ante bellum peace
+	id = flensburg.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.20"}
+	title = flensburg.20.t
+	desc = flensburg.20.d
+	picture = GFX_report_event_gre_political_upheaval
+
+	is_triggered_only = yes
+
+	option = { #Why couldn't they do this in the first place?
+		name = flensburg.16.a
+		FRI = {
+			white_peace = {
+    			tag = FLE
+    			message = TREATY_OF_REITZE
+			}
+		}
+	}
+}
+
+country_event = { #Kramer starting event
+	id = flensburg.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg.21"}
+	title = flensburg.21.t
+	desc = flensburg.21.d
+	picture = GFX_report_event_gre_political_upheaval
+
+	is_triggered_only = yes
+
+	option = {
+		name = flensburg.21.a
+		hidden_effect = {
+			set_country_flag = kramer_in_the_colony
+		}
+	}
+}
+
+country_event = { #Flensburg invasion of Santa's Workshop
+	id = flensburg_christmas.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg_christmas.1"}
+	title = flensburg_christmas.1.t
+	desc = flensburg_christmas.1.d
+	picture = GFX_report_event_gre_political_upheaval
+
+	is_triggered_only = yes
+
+	option = {
+		name = flensburg_christmas.1.a
+		declare_war_on = {
+			target = CLA
+			type = annex_everything
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						has_government = democratic
+						has_government = monarchism
+					}
+					NOT = {
+						tag = FRI
+						tag = FLE
+					}
+				}
+				country_event = {
+					id = flensburg_christmas.2
+					days = 1
+				}
+			}
+			add_named_threat = {
+				threat = 5
+				name = attack_on_santa
+			}
+		}
+	}
+}
+
+country_event = { #Santa Needs Our Help
+	id = flensburg_christmas.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event flensburg_christmas.2"}
+	title = flensburg_christmas.2.t
+	desc = flensburg_christmas.2.d
+	picture = GFX_report_event_gre_political_upheaval
+
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = {
+			base = 25
+		}
+		name = flensburg_christmas.2.a
+		hidden_effect = {
+			set_country_flag = helped_santa
+		}
+
+	}
+
+	option = {
+		ai_chance = {
+			base = 75
+		}
+		name = flensburg_christmas.2.b
+		if = {
+			limit = {
+				is_ai = no
+			}
+			add_political_power = -100
+		}
+	}
+}

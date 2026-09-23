@@ -1,0 +1,35 @@
+domestic_politics_dec_category = {
+	icon = GFX_decision_category_generic_economy
+	
+	priority = 50
+}
+
+flensburgian_road_to_independence = {
+	icon = generic_political_actions
+	
+	priority = 50
+}
+
+flensburgian_war_of_independence = {
+	icon = generic_political_actions
+	
+	priority = 50
+}
+
+luvland_investment_projects = {
+	icon = generic_political_actions
+	
+	priority = 50
+}
+
+king_to_be_dec_category = {
+	icon = generic_political_actions
+	
+	priority = 49
+}
+
+SWA_coring_the_duloc = {
+	icon = generic_political_actions
+	
+	priority = 49
+}

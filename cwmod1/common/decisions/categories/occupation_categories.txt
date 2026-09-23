@@ -1,0 +1,12 @@
+occupation_dec_category = {
+	icon = military_operation
+	
+	priority = 50
+
+	allowed = {
+		NOT = {
+			tag = APS
+			tag = UNC
+		}
+	}
+}

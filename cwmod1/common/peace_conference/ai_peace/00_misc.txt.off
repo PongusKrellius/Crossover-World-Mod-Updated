@@ -1,0 +1,31 @@
+# Scripted AI desire for peace actions.
+# See documentation.info file for more detailed scripting information.
+
+peace_ai_desires = {
+	
+	taking_the_states = {
+        peace_action_type = { take_states }
+        enable = {
+            always = yes
+        }
+        ai_desire = 100
+    }
+	
+    other_modes = {
+        peace_action_type = { puppet force_government liberate }
+        enable = {
+            always = yes
+        }
+        ai_desire = -100
+    }
+
+    prioritize_cores_and_claims = {
+        peace_action_type = { take_states }
+        enable = {
+            ROOT = { tag = ROOT.FROM } #We are negotiating for ourselves
+            ROOT.FROM.FROM.FROM = { OR = { is_claimed_by = ROOT.FROM is_core_of = ROOT.FROM } } #It is ours
+        }
+        ai_desire = 1000
+    }
+
+}

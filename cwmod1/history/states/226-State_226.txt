@@ -1,0 +1,17 @@
+state={
+	id=226
+	name="STATE_226"
+	provinces={
+		650 2222 2671 2896 3318 3599 5470 6539 6601 6641 6676 6713 
+	}
+	manpower=275000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	history = {
+		owner = ARE
+		add_core_of = ARE
+		buildings = {
+			infrastructure = 2
+		}
+	}
+}

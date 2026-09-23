@@ -1,0 +1,275 @@
+leader_traits = {
+	
+	cannons_fanatic = {
+		random = no
+		political_power_factor = -0.1
+		stability_factor = -0.05
+		army_artillery_attack_factor = 0.1
+		army_artillery_defence_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	friend_of_the_king = {
+		random = no
+		stability_factor = -0.05
+		political_power_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	leader_of_spies = {
+		random = no
+		decryption_factor = 0.05
+		encryption_factor = 0.05
+		political_power_factor = -0.01
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	the_engineer = {
+		random = no
+		production_speed_buildings_factor = 0.05
+		production_factory_max_efficiency_factor = 0.05
+		stability_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	greenlander_from_iceworld = {
+		random = no
+		army_speed_factor = 0.05
+		targeted_modifier = { tag = ICW attack_bonus_against = 0.1 }
+		targeted_modifier = { tag = ICW defense_bonus_against = 0.1 }
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	the_thinker = {
+		random = no
+		research_speed_factor = 0.05
+		political_power_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	human_greenlander = {
+		random = no
+		research_speed_factor = 0.15
+		stability_factor = -0.15
+		political_power_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	member_of_avalor_royal_family = {
+		random = no
+		political_power_gain = 0.1
+		stability_factor = 0.025
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	representative_of_commoners = {
+		random = no
+		consumer_goods_factor = -0.05
+		war_support_factor = 0.05
+		industrial_capacity_dockyard = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	member_of_royal_guard_of_avalor = {
+		random = no
+		training_time_factor = -0.05
+		recon_factor = 0.05
+		land_reinforce_rate = 0.05
+		attrition = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	member_of_grand_council_of_avalor = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	royal_wizard_of_avalor = {
+		random = no
+		foreign_subversive_activites = -0.25
+		opinion_gain_monthly_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	royal_sorcerer_of_enchancia = {
+		random = no
+		foreign_subversive_activites = -0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	chancellor_of_avalor = {
+		random = no
+		military_leader_cost_factor = -0.1
+		opinion_gain_monthly_same_ideology_factor = 0.15
+		production_speed_buildings_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	youregoingtohaveabadtime = {
+		random = no
+		offence = 100000
+		defence = 100000
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	thats_my_role_to_know = {
+		random = no
+		sprite = 15
+		decryption_factor = 0.1
+		political_power_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	the_reformer = {
+		random = no
+		consumer_goods_factor = -0.05
+		political_power_factor = 0.05
+		stability_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	pucci_faster = { # its pucci's trait
+		sprite = 5
+		army_speed_factor = 0.3
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	caring_leader = {
+        random = no
+        political_power_factor = 0.1
+        stability_factor = 0.1
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+	sentient_ai = {
+		random = no
+		offence = 1000
+		defence = 1000
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	the_ogre = {
+        random = no
+        political_power_factor = -0.05
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+	the_elvish_engineer = {
+        random = no
+        political_power_factor = -0.05
+		request_lease_tension = -0.25
+		production_factory_max_efficiency_factor = 0.2
+		production_factory_efficiency_gain_factor = 0.15
+		equipment_bonus = {
+			infantry_equipment = {
+				reliability = 0.2
+			}
+		}
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+	MAI_foreign_minister = {
+		random = no
+		sprite = 13
+		improve_relations_maintain_cost_factor = -0.2
+		opinion_gain_monthly_factor = 0.1
+		trade_opinion_factor = 0.05
+	}
+
+	MAI_minister_of_agriculture = {
+		random = no
+		sprite = 13
+		paidocracy_drift = 0.05
+		consumer_goods_factor = -0.05
+		economy_cost_factor = -0.05
+	}
+
+	MAI_minister_of_war = {
+		random = no
+		sprite = 5
+		production_speed_arms_factory_factor = 0.05
+		production_speed_dockyard_factor = 0.05
+		production_speed_air_base_factor = 0.05
+		production_speed_naval_base_factor = 0.05
+	}
+
+	MAI_minister_of_education_and_technology = {
+		random = no
+		sprite = 13
+		research_speed_factor = 0.1
+	}
+
+	MAI_minister_of_finance = {
+		random = no
+		sprite = 13
+		consumer_goods_factor = -0.1
+		economy_cost_factor = -0.1
+		stability_factor = 0.05
+	}
+}

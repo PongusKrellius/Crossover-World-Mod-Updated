@@ -1,0 +1,15 @@
+state={
+	id=60
+	name="STATE_60"
+	history = {
+		owner = AVA
+		add_core_of = AVA
+	}
+	provinces={
+		10742 
+	}
+	manpower=1
+	state_category = rural
+	buildings_max_level_factor=1.000
+	
+}

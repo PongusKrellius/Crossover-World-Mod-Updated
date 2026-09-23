@@ -1,0 +1,31 @@
+state={
+	id=454
+	name="STATE_454"
+	provinces={
+		1000 2292 2372 2457 3468 3788 4359 5086 5859 5874 7809 7876 7896 7926 7971 8036 8063 8073 8088 8142 8151 8165 8212 8280 
+	}
+	state_category = town
+	manpower=550000
+	buildings_max_level_factor=1.000
+	history = {
+		owner = PIL
+		add_core_of = PIL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 4
+			air_base = 2
+			8280 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			8280 20
+		}
+}
+		resources = {
+			steel = 15
+			aluminium = 8
+		}
+	}
+

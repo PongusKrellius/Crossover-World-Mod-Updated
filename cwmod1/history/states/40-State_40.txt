@@ -1,0 +1,23 @@
+state={
+	id=40
+	name="STATE_40"
+	provinces={
+		5800 10274 
+	}
+	state_category = rural
+	manpower=120000
+	buildings_max_level_factor=1.000
+	history = {
+		owner = FLE
+		add_core_of = FLE
+		buildings = {
+			infrastructure = 2
+			10274 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			10274 5
+		}
+	}
+}

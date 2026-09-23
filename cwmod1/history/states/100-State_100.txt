@@ -1,0 +1,25 @@
+state={
+	id=100
+	name="STATE_100"
+	provinces={
+		321 4998 6001 6003 6007 
+	}
+	manpower=650000
+	state_category = city
+	buildings_max_level_factor=1.000
+	history = {
+		owner = VIC
+		add_core_of = VIC
+		buildings = {
+			infrastructure = 2
+			arms_factory = 4
+			industrial_complex = 4
+			6001 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			6001 15
+		}
+	}
+}

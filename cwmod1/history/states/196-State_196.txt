@@ -1,0 +1,20 @@
+
+state={
+	id=196
+	name="STATE_196"
+
+	history={
+		owner = ARE
+		add_core_of = ARE
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		333 364 852 1002 2643 3530 4827 6354 6381 6386 6399 
+	}
+	manpower=248691
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

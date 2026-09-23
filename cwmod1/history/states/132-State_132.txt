@@ -1,0 +1,31 @@
+state={
+	id=132
+	name="STATE_132"
+	provinces={
+		519 1824 6145 488 6149 6121 3235 5190 
+	}
+	manpower=750000
+	state_category = city
+	buildings_max_level_factor=1.000
+	history = {
+		owner = ELW
+		add_core_of = ELW
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 3
+			dockyard = 2
+			6121 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			6121 10
+		}
+	}
+	resources = {
+		steel = 10
+		aluminium = 5
+		chromium = 5
+	}
+}

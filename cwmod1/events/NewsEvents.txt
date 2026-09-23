@@ -1,0 +1,4470 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = worldnews
+
+news_event = {
+	id = worldnews.1
+	title = worldnews.1.t
+	desc = worldnews.1.d
+	picture = GFX_news_MAC_coronation
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.1.a
+		trigger = {
+			NOT = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.1.b
+		trigger = {
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+}
+
+news_event = {
+	id = worldnews.2
+	title = worldnews.2.t
+	desc = worldnews.2.d
+	picture = GFX_news_ENC_palace
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.2.a
+		trigger = {
+			NOT = {
+				tag = ENC
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+	option = {
+		name = worldnews.2.b
+		trigger = {
+			tag = ENC
+		}
+	}
+	option = {
+		name = worldnews.2.c
+		trigger = {
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+}
+
+news_event = {
+	id = worldnews.3
+	title = worldnews.3.t
+	desc = worldnews.3.d
+	picture = GFX_news_ENC_palace
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.3.a
+		trigger = {
+			NOT = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.3.b
+		trigger = {
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+}
+
+news_event = {
+	id = worldnews.4
+	title = worldnews.4.t
+	desc = worldnews.4.d
+	picture = GFX_news_ENC_palace
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.4.a
+		trigger = {
+			NOT = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.4.b
+		trigger = {
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+}
+
+news_event = {
+	id = worldnews.5
+	title = worldnews.5.t
+	desc = worldnews.5.d
+	picture = GFX_news_ENC_palace
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.5.a
+		trigger = {
+			NOT = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.5.b
+		trigger = {
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+}
+
+news_event = {
+	id = worldnews.6
+	title = worldnews.6.t
+	desc = worldnews.6.d
+	picture = GFX_news_ENC_palace
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.6.a
+		trigger = {
+			NOT = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.6.b
+		trigger = {
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+}
+
+news_event = {
+	id = worldnews.7
+	title = worldnews.7.t
+	desc = worldnews.7.d
+	picture = GFX_news_ENC_palace
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.7.a
+	}
+}
+
+news_event = {
+	id = worldnews.8
+	title = worldnews.8.t
+	desc = worldnews.8.d
+	picture = GFX_news_MAC_coronation
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.8.a
+		trigger = {
+			tag = MAI
+		}
+	}
+
+	option = {
+		name = worldnews.8.b
+		trigger = {
+			OR = {
+				tag = FRI
+				tag = WEK
+				tag = SLD
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.8.c
+		trigger = {
+			NOT = {
+				tag = FRI
+				tag = WEK
+				tag = SLD
+				tag = MAI
+			}
+		}
+	}
+}
+
+news_event = {
+	id = worldnews.9
+	title = worldnews.9.t
+	desc = worldnews.9.d
+	picture = GFX_news_GRN_greenland
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.9.a
+	}
+}
+
+news_event = {
+	id = worldnews.10
+	title = worldnews.10.t
+	desc = worldnews.10.d
+	picture = GFX_news_MAC_coronation
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.10.a
+	}
+}
+
+news_event = {
+	id = worldnews.11
+	title = worldnews.11.t
+	desc = worldnews.11.d
+	picture = GFX_news_MAC_coronation
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.11.a
+	}
+}
+
+news_event = {
+	id = worldnews.12
+	title = worldnews.12.t
+	desc = worldnews.12.d
+	picture = GFX_news_ENC_palace
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.12.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = EN3
+					tag = EN4
+				}
+			}
+		}
+	}
+	option = {
+		name = worldnews.12.b
+		trigger = {
+			tag = EN3
+			tag = EN4
+		}
+	}
+}
+
+news_event = {
+	id = worldnews.13
+	title = worldnews.13.t
+	desc = worldnews.13.d
+	picture = GFX_news_ENC_palace
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.13.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = EN3
+					tag = EN4
+				}
+			}
+		}
+	}
+	option = {
+		name = worldnews.13.b
+		trigger = {
+			tag = EN3
+			tag = EN4
+		}
+	}
+}
+
+news_event = {
+	id = worldnews.14
+	title = worldnews.14.t
+	desc = worldnews.14.d
+	picture = GFX_news_ENC_palace
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.14.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = EN3
+					tag = EN4
+				}
+			}
+		}
+	}
+	option = {
+		name = worldnews.14.b
+		trigger = {
+			has_country_flag = winslow_on_exile
+		}
+	}
+	option = {
+		name = worldnews.14.c
+		trigger = {
+			tag = EN3
+			tag = EN4
+		}
+	}
+}
+
+news_event = {
+	id = worldnews.15
+	title = worldnews.15.t
+	desc = worldnews.15.d
+	picture = GFX_news_children_parliament
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.15.a
+		trigger = {
+			NOT = {
+				tag = MAI
+			}
+		}
+	}
+	option = {
+		name = worldnews.15.b
+		trigger = {
+			tag = MAI
+		}
+	}
+}
+
+news_event = {
+	id = worldnews.16
+	title = worldnews.16.t
+	desc = worldnews.16.d
+	picture = GFX_news_children_parliament
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.16.a
+		trigger = {
+			NOT = {
+				tag = MAI
+			}
+		}
+	}
+	option = {
+		name = worldnews.16.b
+		trigger = {
+			tag = MAI
+		}
+	}
+}
+
+news_event = {
+	id = worldnews.17
+	title = worldnews.17.t
+	desc = worldnews.17.d
+	picture = GFX_news_MAC_coronation
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.17.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ICW
+					tag = DES
+					any_country = {
+						has_war_with = GRN
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = worldnews.17.b
+		trigger = {
+			OR = {
+				tag = ICW
+				tag = DES
+				any_country = {
+					has_war_with = GRN
+				}
+			}
+		}
+	}
+}
+
+news_event = {
+	id = worldnews.18
+	title = worldnews.18.t
+	desc = worldnews.18.d
+	picture = GFX_news_GRN_tabaluga_frozen
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.18.a
+		trigger = {
+			NOT = {
+				any_country = {
+					OR = {
+						tag = ICW
+						tag = DES
+						has_country_flag = GRN_dragon_frozen
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = worldnews.18.b
+		trigger = {
+			any_country = {
+				OR = {
+					tag = ICW
+					tag = DES
+					has_country_flag = GRN_dragon_frozen
+				}
+			}
+		}
+	}
+}
+
+news_event = {
+	id = worldnews.19
+	title = worldnews.19.t
+	desc = worldnews.19.d
+	picture = GFX_news_GRN_greenland
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.19.a
+		trigger = {
+			NOT = {
+				any_country = {
+					OR = {
+						tag = ICW
+						tag = DES
+						has_country_flag = GRN_dragon_executed
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = worldnews.19.b
+		trigger = {
+			any_country = {
+				OR = {
+					tag = ICW
+					tag = DES
+					has_country_flag = GRN_dragon_executed
+				}
+			}
+		}
+	}
+}
+
+news_event = {
+	id = worldnews.20
+	title = worldnews.20.t
+	desc = worldnews.20.d
+	picture = GFX_news_ENC_palace
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.20.a
+	}
+}
+
+news_event = { #Arktos and Humsin forge alliance
+	id = worldnews.21
+	title = worldnews.21.t
+	desc = worldnews.21.d
+	picture = GFX_news_GRN_greenland
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.21.a
+		trigger = {
+			OR = {
+				tag = DES
+				tag = ICW
+			}
+		}
+	}
+	option = {
+		name = worldnews.21.b
+		trigger = {
+			NOT = {
+				tag = DES
+				tag = ICW
+			}
+		}
+	}
+}
+
+news_event = { #Humsin invades Sioux
+	id = worldnews.22
+	title = worldnews.22.t
+	desc = worldnews.22.d
+	picture = GFX_news_sioux
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.22.a
+		trigger = {
+			NOT = {
+				tag = SIO
+				tag = DES
+				tag = GRN
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.22.b
+		trigger = {
+			tag = SIO
+		}
+	}
+
+	option = {
+		name = worldnews.22.c
+		trigger = {
+			tag = DES
+		}
+	}
+
+	option = {
+		name = worldnews.22.e
+		trigger = {
+			tag = GRN
+		}
+	}
+}
+
+news_event = { #Humsin demands Reclaimed Fields
+	id = worldnews.23
+	title = worldnews.23.t
+	desc = worldnews.23.d
+	picture = GFX_news_GRN_greenland
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.23.a
+	}
+}
+
+news_event = { #Hartmut takes the crown
+	id = worldnews.24
+	title = worldnews.24.t
+	desc = worldnews.24.d
+	picture = GFX_news_pantmawr
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.24.a
+	}
+}
+
+news_event = { #Hartmut issues ultimatum to Macius
+	id = worldnews.25
+	title = worldnews.25.t
+	desc = worldnews.25.d
+	picture = GFX_news_pantmawr
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.25.a
+	}
+}
+
+news_event = { #Macius rejects ultimatum
+	id = worldnews.26
+	title = worldnews.26.t
+	desc = worldnews.26.d
+	picture = GFX_news_macius_castle
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.26.a
+	}
+}
+
+news_event = { #Macius accepts ultimatum
+	id = worldnews.27
+	title = worldnews.27.t
+	desc = worldnews.27.d
+	picture = GFX_news_macius_castle
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.27.a
+	}
+}
+
+news_event = { #Civil war in Corinthia
+	id = worldnews.28
+	title = worldnews.28.t
+	desc = worldnews.28.d
+	picture = GFX_news_ENC_palace #to be changed
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.28.a
+		trigger = {
+			NOT = {
+				tag = ENC
+				tag = KHA
+				tag = COR
+				tag = ISL
+				tag = AVA
+				tag = MAR
+				tag = WEI
+				tag = RUD
+				tag = ZUM
+				tag = TRU
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.28.b
+		trigger = {
+			OR = {
+				tag = ENC
+				tag = KHA
+				tag = COR
+				tag = ISL
+				tag = AVA
+				tag = MAR
+				tag = WEI
+				tag = RUD
+				tag = ZUM
+				tag = TRU
+			}
+		}
+	}
+}
+
+news_event = { #EverRealm engulfed by civil wars
+	id = worldnews.29
+	title = worldnews.29.t
+	desc = worldnews.29.d
+	picture = GFX_news_ENC_palace #to be changed
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.29.a
+	}
+}
+
+news_event = { #Geumsaegi wins elections in Flower Hill
+	id = worldnews.30
+	title = worldnews.30.t
+	desc = worldnews.30.d
+	picture = GFX_news_flower_hill #to be changed, urgent af
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.30.a
+		trigger = {
+			NOT = {
+				tag = FLO
+				tag = SQU
+				tag = TRL
+				tag = EAP
+				tag = DUC
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.30.b
+		trigger = {
+			tag = FLO
+		}
+	}
+
+	option = {
+		name = worldnews.30.b
+		trigger = {
+			OR = {
+				tag = SQU
+				tag = TRL
+				tag = EAP
+				tag = DUC
+			}
+		}
+	}
+}
+
+news_event = { #Not Geumsaegi wins elections in Flower Hill
+	id = worldnews.31
+	title = {
+		text = worldnews.31.goseumdochi.t
+		trigger = {
+			FLO = {
+				has_country_leader = {
+    				name = "Goseumdochi"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	title = {
+		text = worldnews.31.darami.t
+		trigger = {
+			FLO = {
+				has_country_leader = {
+    				name = "Darami"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	desc = {
+		text = worldnews.31.goseumdochi.d
+		trigger = {
+			FLO = {
+				has_country_leader = {
+    				name = "Goseumdochi"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	desc = {
+		text = worldnews.31.darami.d
+		trigger = {
+			FLO = {
+				has_country_leader = {
+    				name = "Darami"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	picture = GFX_news_flower_hill #to be changed, urgent af
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.31.a
+		trigger = {
+			NOT = {
+				tag = FLO
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.31.b
+		trigger = {
+			tag = FLO
+		}
+	}
+}
+
+news_event = { #Roger wins elections in Danville
+	id = worldnews.32
+	title = worldnews.32.t
+	desc = worldnews.32.d
+	picture = GFX_news_danville
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.32.a
+	}
+}
+
+news_event = { #Heinz wins elections in Danville
+	id = worldnews.33
+	title = worldnews.33.t
+	desc = worldnews.33.d
+	picture = GFX_news_doof_1st_dim
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.33.b
+		trigger = {
+			NOT = {
+				tag = TSA
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.33.a
+		trigger = {
+			tag = TSA
+		}
+	}
+}
+
+news_event = { #Dragons begin to show up
+	id = worldnews.34
+	title = worldnews.34.t
+	desc = worldnews.34.d
+	picture = GFX_news_GRN_greenland
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.34.a
+		trigger = {
+			NOT = {
+				tag = ICW
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.34.b
+		trigger = {
+			tag = ICW
+		}
+	}
+}
+
+news_event = { #Duloc receives EverRealm Gate (not-ECW)
+	id = worldnews.35
+	title = worldnews.35.t
+	desc = worldnews.35.d
+	picture = GFX_news_duloc
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.35.a
+		trigger = {
+			NOT = {
+				tag = DUL
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.35.b
+		trigger = {
+			tag = DUL
+		}
+	}
+}
+
+news_event = { #Duloc receives EverRealm Gate (ECW)
+	id = worldnews.36
+	title = worldnews.36.t
+	desc = worldnews.36.d
+	picture = GFX_news_duloc_2
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.36.a
+		trigger = {
+			NOT = {
+				tag = DUL
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.36.b
+		trigger = {
+			tag = DUL
+		}
+	}
+}
+
+news_event = { #Second Flower Hill War
+	id = worldnews.37
+	title = worldnews.37.t
+	desc = worldnews.37.d 
+	picture = GFX_news_flower_hill #to be changed
+
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		FLO = {
+			has_war_with = WOL
+		}
+		NOT = {
+			has_global_flag = news_second_flower_hill_war
+		}
+	}
+
+	immediate = {
+		set_global_flag = news_second_flower_hill_war
+	}
+	
+	option = {
+		name = worldnews.37.a
+		trigger = {
+			NOT = {
+				tag = FLO
+				tag = WOL
+				tag = WEA
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.37.b
+		trigger = {
+			tag = FLO
+		}
+	}
+
+	option = {
+		name = worldnews.37.c
+		trigger = {
+			OR = {
+				tag = WOL
+				tag = WEA
+			}
+		}
+	}
+}
+
+news_event = { #World War breaks out
+	id = worldnews.38
+	title = worldnews.38.t
+	desc = worldnews.38.d 
+	picture = GFX_news_event_032
+	
+	fire_only_once = yes
+
+	major = yes
+	
+	trigger = {
+		FLO = {
+			has_war_with = MAI
+		}
+		MAI = {
+			is_in_faction_with = GRN
+		}
+		NOT = {
+			has_global_flag = news_world_war
+		}
+	}
+
+	immediate = {
+		set_global_flag = news_world_war
+	}
+	
+	option = {
+		name = worldnews.38.a
+	}
+}
+
+news_event = { #Fall of Dunwiddie
+	id = worldnews.39
+	title = worldnews.39.t
+	desc = {
+		text = worldnews.39.en3.d 
+		trigger = {
+			187 = {
+				is_controlled_by = EN3
+			}
+		}
+	}
+	desc = {
+		text = worldnews.39.en2.d 
+		trigger = {
+			187 = {
+				is_controlled_by = EN2
+			}
+		}
+	}
+	desc = {
+		text = worldnews.39.en1.d 
+		trigger = {
+			187 = {
+				is_controlled_by = EN1
+			}
+		}
+	}
+	desc = {
+		text = worldnews.39.en4.d 
+		trigger = {
+			187 = {
+				is_controlled_by = EN4
+			}
+		}
+	}
+	picture = GFX_news_dunwiddie
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		NOT = {
+			187 = {
+				is_controlled_by = ENC
+			}
+		}
+		187 = {
+			is_owned_by = ENC
+		}
+		NOT = {
+            has_global_flag = enchancian_civil_war_over
+        }
+		NOT = {
+			has_global_flag = dunwiddie_fallen_ecw
+		}
+	}
+
+	immediate = {
+		set_global_flag = dunwiddie_fallen_ecw
+	}
+	
+	option = {
+		name = worldnews.39.en3.a
+		trigger = {
+			187 = {
+				is_controlled_by = EN3
+			}
+		}
+	}
+	option = {
+		name = worldnews.39.en2.a
+		trigger = {
+			187 = {
+				is_controlled_by = EN2
+			}
+		}
+	}
+	option = {
+		name = worldnews.39.en1.a
+		trigger = {
+			187 = {
+				is_controlled_by = EN1
+			}
+		}
+	}
+	option = {
+		name = worldnews.39.en4.a
+		trigger = {
+			187 = {
+				is_controlled_by = EN4
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Slaton City
+	id = worldnews.40
+	title = worldnews.40.t
+	picture = GFX_news_ENC_palace
+	
+	fire_only_once = yes
+
+	desc = {
+		text = worldnews.40.d.enc
+		trigger = {
+			242 = {
+				is_controlled_by = ENC
+			}
+		}
+	}
+
+	desc = {
+		text = worldnews.40.d.en2
+		trigger = {
+			242 = {
+				is_controlled_by = EN2
+			}
+		}
+	}
+
+	desc = {
+		text = worldnews.40.d.en3
+		trigger = {
+			242 = {
+				is_controlled_by = EN3
+			}
+		}
+	}
+
+	desc = {
+		text = worldnews.40.d.en4
+		trigger = {
+			242 = {
+				is_controlled_by = EN4
+			}
+		}
+	}
+	
+	major = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		NOT = {
+			242 = {
+				is_controlled_by = EN1
+			}
+		}
+		242 = {
+			is_owned_by = EN1
+		}
+		NOT = {
+            has_global_flag = enchancian_civil_war_over
+        }
+		NOT = {
+			has_global_flag = slaton_fallen_ecw
+		}
+	}
+
+	immediate = {
+		set_global_flag = slaton_fallen_ecw
+	}
+	
+	option = {
+		name = worldnews.40.a
+	}
+}
+
+news_event = { #Landing in Tippecanoe
+	id = worldnews.41
+	title = worldnews.41.t
+	desc = worldnews.41.d 
+	picture = GFX_news_sioux #to be changed
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.41.a
+		trigger = {
+			NOT = {
+				ROOT = {
+					is_in_faction_with = SIO
+					is_in_faction_with = DES
+				}
+				tag = DES
+				tag = SIO
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.41.b
+		trigger = {
+			OR = {
+				tag = DES
+				is_in_faction_with = DES
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.41.c
+		trigger = {
+			OR = {
+				tag = SIO
+				is_in_faction_with = SIO
+			}
+		}
+	}
+}
+
+news_event = { #Election results in Spalding
+	id = worldnews.42
+	title = {
+		text = worldnews.42.t.pope
+		trigger = {
+			SLD = {
+				has_country_leader = {
+    				name = "Jan Paweł II"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	title = {
+		text = worldnews.42.t.tracz
+		trigger = {
+			SLD = {
+				has_country_leader = {
+    				name = "Janusz Tracz"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	title = {
+		text = worldnews.42.t.kiepski
+		trigger = {
+			SLD = {
+				has_country_leader = {
+    				name = "Ferdynand Kiepski"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	title = {
+		text = worldnews.42.t.pazdzioch
+		trigger = {
+			SLD = {
+				has_country_leader = {
+    				name = "Marian Paździoch"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	desc = {
+		text = worldnews.42.d.pope
+		trigger = {
+			SLD = {
+				has_country_leader = {
+    				name = "Jan Paweł II"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	desc = {
+		text = worldnews.42.d.tracz
+		trigger = {
+			SLD = {
+				has_country_leader = {
+    				name = "Janusz Tracz"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	desc = {
+		text = worldnews.42.d.kiepski
+		trigger = {
+			SLD = {
+				has_country_leader = {
+    				name = "Ferdynand Kiepski"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	desc = {
+		text = worldnews.42.d.pazdzioch
+		trigger = {
+			SLD = {
+				has_country_leader = {
+    				name = "Marian Paździoch"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	picture = GFX_news_event_election_vote
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.42.pope
+		trigger = {
+			SLD = {
+				has_country_leader = {
+    				name = "Jan Paweł II"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = worldnews.42.tracz
+		trigger = {
+			SLD = {
+				has_country_leader = {
+    				name = "Janusz Tracz"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = worldnews.42.kiepski
+		trigger = {
+			SLD = {
+				has_country_leader = {
+    				name = "Ferdynand Kiepski"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = worldnews.42.pazdzioch
+		trigger = {
+			SLD = {
+				has_country_leader = {
+    				name = "Marian Paździoch"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+}
+
+news_event = { #Wright wins elections in Japanifornia
+	id = worldnews.43
+	title = worldnews.43.t
+	desc = worldnews.43.d
+	picture = GFX_news_event_election_vote
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.43.a
+		trigger = {
+			tag = JPN
+		}
+	}
+
+	option = {
+		name = worldnews.43.b
+		trigger = {
+			NOT = {
+				tag = JPN
+			}
+		}
+	}
+}
+
+news_event = { #Edgeworth wins elections in Japanifornia
+	id = worldnews.44
+	title = worldnews.44.t
+	desc = worldnews.44.d
+	picture = GFX_news_event_election_vote
+	
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.44.a
+		trigger = {
+			tag = JPN
+		}
+	}
+
+	option = {
+		name = worldnews.44.b
+		trigger = {
+			NOT = {
+				tag = JPN
+			}
+		}
+	}
+}
+
+news_event = { #von Karma takes over Japanifornia
+	id = worldnews.45
+	title = worldnews.45.t
+	desc = worldnews.45.d
+	picture = GFX_news_japanifornia
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.45.a
+		trigger = {
+			tag = JPN
+		}
+	}
+
+	option = {
+		name = worldnews.45.b
+		trigger = {
+			NOT = {
+				tag = JPN
+			}
+		}
+	}
+}
+
+news_event = { #Southern Border Incident - cooled down
+	id = worldnews.46
+	title = worldnews.46.t
+	desc = worldnews.46.d
+	picture = GFX_news_japanifornia
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.46.a
+	}
+}
+
+news_event = { #Southern Border Incident - not cooled down
+	id = worldnews.47
+	title = worldnews.47.t
+	desc = worldnews.47.d
+	picture = GFX_news_japanifornia
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.47.a
+		trigger = {
+			tag = LEC
+		}
+	}
+
+	option = {
+		name = worldnews.47.b
+		trigger = {
+			tag = JPN
+		}
+	}
+
+	option = {
+		name = worldnews.47.c
+		trigger = {
+			NOT = {
+				tag = JPN
+				tag = LEC
+			}
+		}
+	}
+}
+
+news_event = { #Manouvers in Southern Lechina Empire
+	id = worldnews.48
+	title = worldnews.48.t
+	desc = worldnews.48.d
+	picture = GFX_news_event_polish_army
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.48.a
+		trigger = {
+			tag = LEC
+		}
+	}
+
+	option = {
+		name = worldnews.48.b
+		trigger = {
+			NOT = {
+				tag = LEC
+			}
+		}
+	}
+}
+
+news_event = { #Lechinian Constitution passed
+	id = worldnews.49
+	title = worldnews.49.t
+	desc = worldnews.49.d
+	picture = GFX_news_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.49.a
+	}
+}
+
+news_event = { #Karlino Axis founded
+	id = worldnews.50
+	title = worldnews.50.t
+	desc = worldnews.50.d
+	picture = GFX_news_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.50.a
+		trigger = {
+			tag = LEC
+		}
+	}
+
+	option = {
+		name = worldnews.50.b
+		trigger = {
+			OR = {
+				tag = JPN
+				tag = PAT
+				tag = SMU
+				tag = ICK
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.50.c
+		trigger = {
+			NOT = {
+				tag = JPN
+				tag = PAT
+				tag = SMU
+				tag = ICK
+				tag = LEC
+			}
+		}
+	}
+}
+
+news_event = { #Lechina demands southern lands from Japanifornia
+	id = worldnews.51
+	title = worldnews.51.t
+	desc = worldnews.51.d
+	picture = GFX_news_japanifornia
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.51.a
+		trigger = {
+			tag = LEC
+		}
+	}
+
+	option = {
+		name = worldnews.51.b
+		trigger = {
+			tag = JPN
+		}
+	}
+
+	option = {
+		name = worldnews.51.c
+		trigger = {
+			NOT = {
+				tag = JPN
+				tag = LEC
+			}
+		}
+	}
+}
+
+news_event = { #Neland declares independence
+	id = worldnews.52
+	title = worldnews.52.t
+	desc = {
+		text = worldnews.52.d.communist
+		trigger = {
+			NRL = {
+				has_government = communism
+			}
+		}
+	}
+	desc = {
+		text = worldnews.52.d.democratic
+		trigger = {
+			NRL = {
+				has_government = democratic
+			}
+		}
+	}
+	picture = GFX_news_event_057
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.52.a
+		trigger = {
+			tag = SLD
+		}
+	}
+
+	option = {
+		name = worldnews.52.b
+		trigger = {
+			tag = NRL
+		}
+	}
+
+	option = {
+		name = worldnews.52.c
+		trigger = {
+			NOT = {
+				tag = SLD
+				tag = NRL
+			}
+		}
+	}
+}
+
+news_event = { #Neland declares independence, Spalding intervenes
+	id = worldnews.53
+	title = worldnews.53.t
+	desc = {
+		text = worldnews.53.d.communist
+		trigger = {
+			NRL = {
+				has_government = communism
+			}
+		}
+	}
+	desc = {
+		text = worldnews.53.d.democratic
+		trigger = {
+			NRL = {
+				has_government = democratic
+			}
+		}
+	}
+	picture = GFX_news_event_057
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.53.a
+		trigger = {
+			tag = SLD
+		}
+	}
+
+	option = {
+		name = worldnews.53.b
+		trigger = {
+			tag = NRL
+		}
+	}
+
+	option = {
+		name = worldnews.53.c
+		trigger = {
+			NOT = {
+				tag = SLD
+				tag = NRL
+			}
+		}
+	}
+}
+
+news_event = { #Elections in Starfleet
+	id = worldnews.54
+	title = {
+		text = worldnews.54.t.domino
+		trigger = {
+			KPT = {
+				has_country_leader = {
+    				name = "Dominik Jachaś"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	title = {
+		text = worldnews.54.t.kuj
+		trigger = {
+			KPT = {
+				has_country_leader = {
+    				name = "Generał Kuj"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	title = {
+		text = worldnews.54.t.brother
+		trigger = {
+			KPT = {
+				has_country_leader = {
+    				name = "Admirał Gwiezdnej Floty"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	desc = {
+		text = worldnews.54.d.domino
+		trigger = {
+			KPT = {
+				has_country_leader = {
+    				name = "Dominik Jachaś"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	desc = {
+		text = worldnews.54.d.kuj
+		trigger = {
+			KPT = {
+				has_country_leader = {
+    				name = "Generał Kuj"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	desc = {
+		text = worldnews.54.d.brother
+		trigger = {
+			KPT = {
+				has_country_leader = {
+    				name = "Admirał Gwiezdnej Floty"
+    				ruling_only = yes
+				}
+			}
+		}
+	}
+	picture = GFX_news_event_journalists_speech
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.54.a
+		trigger = {
+			NOT = {
+				tag = SKO
+				tag = KPT
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.54.b
+		trigger = {
+			tag = SKO
+		}
+	}
+
+	option = {
+		name = worldnews.54.c
+		trigger = {
+			tag = KPT
+		}
+	}
+}
+
+news_event = { #Avalor signs Peace With Honor
+	id = worldnews.55
+	title = worldnews.55.t
+	desc = worldnews.55.d
+	picture = GFX_news_avalor
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.55.a
+		trigger = {
+			tag = AVA
+		}
+	}
+
+	option = {
+		name = worldnews.55.b
+		trigger = {
+			has_country_flag = signed_peace_with_honor
+		}
+	}
+
+	option = {
+		name = worldnews.55.c
+		trigger = {
+			has_country_flag = avalor_signed_peace_with_honor
+		}
+	}
+
+	option = {
+		name = worldnews.55.e
+		trigger = {
+			NOT = {
+				tag = AVA
+				has_country_flag = avalor_signed_peace_with_honor
+				has_country_flag = signed_peace_with_honor
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Lubniewice
+	id = worldnews.56
+	title = worldnews.56.t
+	desc = worldnews.56.d
+	picture = GFX_news_lubniewice
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		812 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.56.a
+		trigger = {
+			NOT = {
+				tag = MAI
+				is_in_faction_with = MAI
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.56.b
+		trigger = {
+			OR = {
+				tag = MAI
+				is_in_faction_with = MAI
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Pantmawr
+	id = worldnews.57
+	title = worldnews.57.t
+	desc = worldnews.57.d
+	picture = GFX_news_pantmawr
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		811 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.57.a
+		trigger = {
+			NOT = {
+				tag = FRI
+				is_in_faction_with = FRI
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.57.b
+		trigger = {
+			OR = {
+				tag = FRI
+				is_in_faction_with = FRI
+			}
+		}
+	}
+}
+
+news_event = { #Black Monday
+	id = worldnews.58
+	title = worldnews.58.t
+	desc = worldnews.58.d
+	picture = GFX_news_event_generic_rally2
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.58.a
+		trigger = {
+			tag = FRI
+		}
+	}
+
+	option = {
+		name = worldnews.58.b
+		trigger = {
+			NOT = {
+				tag = FRI
+			}
+			OR = {
+				tag = SAN
+				AND = {
+					NOT = {
+						tag = SAN
+						has_government = fascism
+						has_government = communism
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.58.c
+		trigger = {
+			NOT = {
+				tag = SAN
+			}
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Loso-Angoleso
+	id = worldnews.59
+	title = worldnews.59.t
+	desc = worldnews.59.d
+	picture = GFX_news_japanifornia
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		859 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.59.a
+		trigger = {
+			NOT = {
+				tag = JPN
+				is_in_faction_with = JPN
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.59.b
+		trigger = {
+			OR = {
+				tag = JPN
+				is_in_faction_with = JPN
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Nunohira
+	id = worldnews.60
+	title = worldnews.60.t
+	desc = worldnews.60.d
+	picture = GFX_news_japanifornia
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		825 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.60.a
+		trigger = {
+			NOT = {
+				tag = JPN
+				is_in_faction_with = JPN
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.60.b
+		trigger = {
+			OR = {
+				tag = JPN
+				is_in_faction_with = JPN
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Karlino
+	id = worldnews.61
+	title = worldnews.61.t
+	desc = worldnews.61.d
+	picture = GFX_news_event_german_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		655 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.61.a
+		trigger = {
+			NOT = {
+				tag = LEC
+				is_in_faction_with = LEC
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.61.b
+		trigger = {
+			OR = {
+				tag = LEC
+				is_in_faction_with = LEC
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Wadowice
+	id = worldnews.62
+	title = worldnews.62.t
+	desc = worldnews.62.d
+	picture = GFX_news_event_german_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		746 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.62.a
+		trigger = {
+			NOT = {
+				tag = LEC
+				is_in_faction_with = LEC
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.62.b
+		trigger = {
+			OR = {
+				tag = LEC
+				is_in_faction_with = LEC
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Lubomirov-Benesov
+	id = worldnews.621
+	title = worldnews.621.t
+	desc = worldnews.621.d
+	picture = GFX_news_event_french_parade
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		740 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.621.a
+		trigger = {
+			NOT = {
+				tag = PAT
+				is_in_faction_with = PAT
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.621.b
+		trigger = {
+			OR = {
+				tag = PAT
+				is_in_faction_with = PAT
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Dumbarton
+	id = worldnews.63
+	title = worldnews.63.t
+	desc = worldnews.63.d
+	picture = GFX_news_event_chinese_soldiers_march
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		845 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.63.a
+		trigger = {
+			NOT = {
+				tag = WEK
+				is_in_faction_with = WEK
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.63.b
+		trigger = {
+			OR = {
+				tag = WEK
+				is_in_faction_with = WEK
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Southern Canal
+	id = worldnews.64
+	title = worldnews.64.t
+	desc = worldnews.64.d
+	picture = GFX_news_event_french_parade
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		911 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.64.a
+		trigger = {
+			NOT = {
+				tag = FRI
+				is_in_faction_with = FRI
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.64.b
+		trigger = {
+			OR = {
+				tag = FRI
+				is_in_faction_with = FRI
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Pyrzyce
+	id = worldnews.65
+	title = worldnews.65.t
+	desc = worldnews.65.d
+	picture = GFX_news_lubniewice
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		858 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.65.a
+		trigger = {
+			NOT = {
+				tag = MAI
+				is_in_faction_with = MAI
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.65.b
+		trigger = {
+			OR = {
+				tag = MAI
+				is_in_faction_with = MAI
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Spalding
+	id = worldnews.66
+	title = worldnews.66.t
+	desc = worldnews.66.d
+	picture = GFX_news_event_046
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		770 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.66.a
+		trigger = {
+			NOT = {
+				tag = SLD
+				is_in_faction_with = SLD
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.66.b
+		trigger = {
+			OR = {
+				tag = SLD
+				is_in_faction_with = SLD
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Arundel
+	id = worldnews.67
+	title = worldnews.67.t
+	desc = worldnews.67.d
+	picture = GFX_news_event_003
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		689 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.67.a
+		trigger = {
+			NOT = {
+				tag = SLD
+				is_in_faction_with = SLD
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.67.b
+		trigger = {
+			OR = {
+				tag = SLD
+				is_in_faction_with = SLD
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Santo Subito
+	id = worldnews.68
+	title = worldnews.68.t
+	desc = worldnews.68.d
+	picture = GFX_news_event_056
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		614 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.68.a
+		trigger = {
+			NOT = {
+				tag = SAN
+				is_in_faction_with = SAN
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.68.b
+		trigger = {
+			OR = {
+				tag = SAN
+				is_in_faction_with = SAN
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Senderos
+	id = worldnews.69 #nice
+	title = worldnews.69.t
+	desc = worldnews.69.d
+	picture = GFX_news_event_056
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		621 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.69.a
+		trigger = {
+			NOT = {
+				tag = SAN
+				is_in_faction_with = SAN
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.69.b
+		trigger = {
+			OR = {
+				tag = SAN
+				is_in_faction_with = SAN
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Danville
+	id = worldnews.70
+	title = worldnews.70.t
+	desc = worldnews.70.d
+	picture = GFX_news_danville
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		698 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.70.a
+		trigger = {
+			NOT = {
+				tag = TSA
+				is_in_faction_with = TSA
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.70.b
+		trigger = {
+			OR = {
+				tag = TSA
+				is_in_faction_with = TSA
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Duckburg
+	id = worldnews.71
+	title = worldnews.71.t
+	desc = worldnews.71.d
+	picture = GFX_news_event_french_parade
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		647 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.71.a
+		trigger = {
+			NOT = {
+				tag = DCB
+				is_in_faction_with = DCB
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.71.b
+		trigger = {
+			OR = {
+				tag = DCB
+				is_in_faction_with = DCB
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Roaniemi
+	id = worldnews.72
+	title = worldnews.72.t
+	desc = worldnews.72.d
+	picture = GFX_news_event_french_parade
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		747 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.72.a
+		trigger = {
+			NOT = {
+				tag = MOO
+				is_in_faction_with = MOO
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.72.b
+		trigger = {
+			OR = {
+				tag = MOO
+				is_in_faction_with = MOO
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Alien Capitol
+	id = worldnews.73
+	title = worldnews.73.t
+	desc = worldnews.73.d
+	picture = GFX_news_event_french_parade
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		936 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.73.a
+		trigger = {
+			NOT = {
+				tag = SKO
+				is_in_faction_with = SKO
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.73.b
+		trigger = {
+			OR = {
+				tag = SKO
+				is_in_faction_with = SKO
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Starfleet Colony HQ
+	id = worldnews.74
+	title = worldnews.74.t
+	desc = worldnews.74.d
+	picture = GFX_news_event_german_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		874 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.74.a
+		trigger = {
+			NOT = {
+				tag = KPT
+				is_in_faction_with = KPT
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.74.b
+		trigger = {
+			OR = {
+				tag = KPT
+				is_in_faction_with = KPT
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Sand Castle
+	id = worldnews.75
+	title = worldnews.75.t
+	desc = worldnews.75.d
+	picture = GFX_news_GRN_greenland
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		550 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.75.a
+		trigger = {
+			NOT = {
+				tag = DES
+				is_in_faction_with = DES
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.75.b
+		trigger = {
+			OR = {
+				tag = DES
+				is_in_faction_with = DES
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Tippecanoe
+	id = worldnews.76
+	title = worldnews.76.t
+	desc = worldnews.76.d
+	picture = GFX_news_sioux
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		705 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.76.a
+		trigger = {
+			NOT = {
+				tag = SIO
+				is_in_faction_with = SIO
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.76.b
+		trigger = {
+			OR = {
+				tag = SIO
+				is_in_faction_with = SIO
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Neu Flensburg
+	id = worldnews.77
+	title = worldnews.77.t
+	desc = worldnews.77.d
+	picture = GFX_news_event_kenya_army
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		632 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.77.a
+		trigger = {
+			NOT = {
+				tag = FRI
+				is_in_faction_with = FRI
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.77.b
+		trigger = {
+			OR = {
+				tag = FRI
+				is_in_faction_with = FRI
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Greenland
+	id = worldnews.78
+	title = worldnews.78.t
+	desc = worldnews.78.d
+	picture = GFX_news_GRN_greenland
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		439 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.78.a
+		trigger = {
+			NOT = {
+				tag = GRN
+				is_in_faction_with = GRN
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.78.b
+		trigger = {
+			OR = {
+				tag = GRN
+				is_in_faction_with = GRN
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Glasstown
+	id = worldnews.79
+	title = worldnews.79.t
+	desc = worldnews.79.d
+	picture = GFX_news_GRN_greenland
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		21 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.79.a
+		trigger = {
+			NOT = {
+				tag = ICW
+				is_in_faction_with = ICW
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.79.b
+		trigger = {
+			OR = {
+				tag = ICW
+				is_in_faction_with = ICW
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Gongmen City
+	id = worldnews.80
+	title = worldnews.80.t
+	desc = worldnews.80.d
+	picture = GFX_news_event_spr_spanish_civil_war3
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		177 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.80.a
+		trigger = {
+			NOT = {
+				tag = GON
+				is_in_faction_with = GON
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.80.b
+		trigger = {
+			OR = {
+				tag = GON
+				is_in_faction_with = GON
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Flower Hill
+	id = worldnews.81
+	title = worldnews.81.t
+	desc = worldnews.81.d
+	picture = GFX_news_flower_hill
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		325 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.81.a
+		trigger = {
+			NOT = {
+				tag = FLO
+				is_in_faction_with = FLO
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.81.b
+		trigger = {
+			OR = {
+				tag = FLO
+				is_in_faction_with = FLO
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Wolves Den
+	id = worldnews.82
+	title = worldnews.82.t
+	desc = worldnews.82.d
+	picture = GFX_news_flower_hill
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		257 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.82.a
+		trigger = {
+			NOT = {
+				tag = WOL
+				is_in_faction_with = WOL
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.82.b
+		trigger = {
+			OR = {
+				tag = WOL
+				is_in_faction_with = WOL
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Wharton
+	id = worldnews.83
+	title = worldnews.83.t
+	desc = worldnews.83.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		259 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.83.a
+		trigger = {
+			tag = EN3
+		}
+	}
+	option = {
+		name = worldnews.83.b
+		trigger = {
+			NOT = {
+				tag = EN3
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Glenwood Landing
+	id = worldnews.84
+	title = worldnews.84.t
+	desc = worldnews.84.d
+	picture = GFX_news_event_spr_spanish_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		182 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.84.a
+		trigger = {
+			tag = EN3
+		}
+	}
+	option = {
+		name = worldnews.84.b
+		trigger = {
+			NOT = {
+				tag = EN3
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Port Ludlow
+	id = worldnews.85
+	title = worldnews.85.t
+	desc = worldnews.85.d
+	picture = GFX_news_ENC_palace
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		166 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.85.a
+		trigger = {
+			tag = ENC
+		}
+	}
+	option = {
+		name = worldnews.85.b
+		trigger = {
+			NOT = {
+				tag = ENC
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Sardinnoza
+	id = worldnews.86
+	title = worldnews.86.t
+	desc = worldnews.86.d
+	picture = GFX_news_event_ANZAC_day
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		114 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.86.a
+		trigger = {
+			tag = EN2
+		}
+	}
+	option = {
+		name = worldnews.86.b
+		trigger = {
+			NOT = {
+				tag = EN2
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Ridott
+	id = worldnews.87
+	title = worldnews.87.t
+	desc = worldnews.87.d
+	picture = GFX_news_event_056
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		156 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.87.a
+		trigger = {
+			tag = EN4
+		}
+	}
+	option = {
+		name = worldnews.87.b
+		trigger = {
+			NOT = {
+				tag = EN4
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Palmhurst
+	id = worldnews.88
+	title = worldnews.88.t
+	desc = worldnews.88.d
+	picture = GFX_news_event_034
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		124 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.88.a
+		trigger = {
+			tag = EN4
+		}
+	}
+	option = {
+		name = worldnews.88.b
+		trigger = {
+			NOT = {
+				tag = EN4
+			}
+		}
+	}
+}
+
+news_event = { #Fall of Duloc
+	id = worldnews.89
+	title = worldnews.89.t
+	desc = worldnews.89.d
+	picture = GFX_news_event_073
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		286 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.89.b
+		trigger = {
+			OR = {
+				tag = DUL
+				is_in_faction_with = DUL
+			}
+		}
+	}
+	option = {
+		name = worldnews.89.a
+		trigger = {
+			NOT = {
+				tag = DUL
+				is_in_faction_with = DUL
+			}
+		}
+	}
+}
+
+news_event = { #Liberation of Dunwiddie
+	id = worldnews.90
+	title = worldnews.90.t
+	desc = worldnews.90.d
+	picture = GFX_news_dunwiddie
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		187 = {
+			set_state_flag = state_has_fallen
+		}
+        FROM.FROM = {
+			save_event_target_as = old_controller
+		}
+		ROOT = {
+			save_event_target_as = new_controller
+		}
+	}
+	
+	option = {
+		name = worldnews.90.b
+		trigger = {
+			OR = {
+				tag = EN3
+                tag = EN4
+				is_in_faction_with = EN3
+                is_in_faction_with = EN4
+			}
+		}
+	}
+	option = {
+		name = worldnews.90.a
+		trigger = {
+			NOT = {
+				tag = EN3
+                tag = EN4
+				is_in_faction_with = EN3
+                is_in_faction_with = EN4
+			}
+		}
+	}
+}
+
+news_event = { #Tadeusz Sznuk elected in San Escobar
+	id = worldnews.91
+	title = worldnews.91.t
+	desc = worldnews.91.d
+	picture = GFX_news_sznuk
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.91.a
+		trigger = {
+			NOT = {
+				tag = SLD
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.91.b
+		trigger = {
+			tag = SLD
+		}
+	}
+}
+
+news_event = { #Escobarian Honesty Party elected in San Escobar
+	id = worldnews.92
+	title = worldnews.92.t
+	desc = worldnews.92.d
+	picture = GFX_news_ehp
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.92.a
+		trigger = {
+			NOT = {
+				tag = SLD
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.92.b
+		trigger = {
+			tag = SLD
+		}
+	}
+}
+
+news_event = { #Kurakao Treaty Signed!
+	id = worldnews.93
+	title = worldnews.93.t
+	desc = worldnews.93.d
+	picture = GFX_news_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.93.a
+		trigger = {
+			NOT = {
+				has_government = communism
+				has_government = fascism
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.93.b
+		trigger = {
+			OR = {
+				has_government = communism
+				has_government = fascism
+			}
+		}
+	}
+}
+
+news_event = { #Hartmut - GAoK Peace Treaty
+	id = worldnews.94
+	title = worldnews.94.t
+	desc = worldnews.94.d
+	picture = GFX_news_lubniewice
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.94.a
+		trigger = {
+			tag = FRI
+		}
+	}
+
+	option = {
+		name = worldnews.94.b
+		trigger = {
+			tag = MAI
+		}
+	}
+
+	option = {
+		name = worldnews.94.c
+		trigger = {
+			has_country_flag = was_allied_with_MAI
+		}
+	}
+
+	option = {
+		name = worldnews.94.e
+		trigger = {
+			NOT = {
+				tag = FRI
+				tag = MAI
+				has_country_flag = was_allied_with_MAI
+			}
+		}
+	}
+}
+
+news_event = { #Tensions in Enchancia
+	id = worldnews.95
+	title = worldnews.95.t
+	desc = worldnews.95.d
+	picture = GFX_news_dunwiddie
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.95.a
+	}
+}
+
+news_event = { #Enchancian Children Parliament established
+	id = worldnews.96
+	title = worldnews.96.t
+	desc = worldnews.96.d
+	picture = GFX_news_ENC_palace
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.96.a
+		trigger = {
+			tag = EN1
+		}
+	}
+
+	option = {
+		name = worldnews.96.b
+		trigger = {
+			tag = MAI
+		}
+	}
+
+	option = {
+		name = worldnews.96.c
+		trigger = {
+			NOT = {
+				tag = EN1
+				tag = MAI
+				has_government = communism
+				has_government = fascism
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.96.e
+		trigger = {
+			OR = {
+				has_government = communism
+				has_government = fascism
+			}
+		}
+	}
+}
+
+news_event = { #Winslows executed
+	id = worldnews.97
+	title = worldnews.97.t
+	desc = worldnews.97.d
+	picture = GFX_news_dunwiddie
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.97.a
+		trigger = {
+			OR = {
+				tag = EN4
+				tag = EN3
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.97.b
+		trigger = {
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+			NOT = {
+				tag = EN4
+				tag = EN3
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.97.c
+		trigger = {
+			NOT = {
+				has_government = fascism
+				has_government = communism
+				tag = EN4
+				tag = EN3
+			}
+		}
+	}
+}
+
+news_event = { #Shen-FH Pact
+	id = worldnews.98
+	title = worldnews.98.t
+	desc = worldnews.98.d
+	picture = GFX_news_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.98.a
+		trigger = {
+			OR = {
+				tag = GON
+				tag = FLO
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.98.b
+		trigger = {
+			NOT = {
+				tag = GON
+				tag = FLO
+			}
+		}
+	}
+}
+
+news_event = { #Gongmen Empire invades Greenland
+	id = worldnews.99
+	title = worldnews.99.t
+	desc = worldnews.99.d
+	picture = GFX_news_event_chinese_soldiers_march
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.99.a
+		trigger = {
+			tag = GON
+		}
+	}
+
+	option = {
+		name = worldnews.99.b
+		trigger = {
+			tag = GRN
+		}
+	}
+
+	option = {
+		name = worldnews.99.c
+		trigger = {
+			NOT = {
+				tag = GRN
+				tag = GON
+			}
+		}
+	}
+}
+
+news_event = { #Tabaluga crowned King of Greenland
+	id = worldnews.100
+	title = worldnews.100.t
+	desc = worldnews.100.d
+	picture = GFX_news_tabaluga_coronation
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.100.a
+		trigger = {
+			tag = GRN
+		}
+	}
+
+	option = {
+		name = worldnews.100.iceworld
+		trigger = {
+			tag = ICW
+		}
+	}
+
+	option = {
+		name = worldnews.100.b
+		trigger = {
+			NOT = {
+				tag = GRN
+				tag = ICW
+			}
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.100.c
+		trigger = {
+			NOT = {
+				tag = GRN
+				tag = ICW
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+}
+
+news_event = { #Gongmen Treaty signed
+	id = worldnews.101
+	title = worldnews.101.t
+	desc = worldnews.101.d
+	picture = GFX_news_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.101.a
+		trigger = {
+			OR = {
+				tag = GRN
+				tag = FLO
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.101.b
+		trigger = {
+			NOT = {
+				tag = GRN
+				tag = FLO
+			}
+		}
+	}
+}
+
+news_event = { #The Central Wedding (Sofia variant)
+	id = worldnews.102
+	title = worldnews.102.t
+	desc = worldnews.102.d
+	picture = GFX_news_macius_palace
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.102.a
+		trigger = {
+			OR = {
+				tag = MAI
+				tag = ENC
+				tag = EN1
+				tag = EN2
+				has_country_flag = winslow_on_exile
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.102.b
+		trigger = {
+			NOT = {
+				tag = MAI
+				tag = ENC
+				tag = EN1
+				tag = EN2
+				has_country_flag = winslow_on_exile
+			}
+			has_government = monarchism
+		}
+	}
+
+	option = {
+		name = worldnews.102.c
+		trigger = {
+			has_government = democratic
+		}
+	}
+
+	option = {
+		name = worldnews.102.e
+		trigger = {
+			OR = {
+				has_government = communism
+				has_government = fascism
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.102.f
+		trigger = {
+			OR = {
+				tag = EN3
+				tag = EN4
+			}
+		}
+	}
+}
+
+news_event = { #The Central Wedding (Isabel variant)
+	id = worldnews.103
+	title = worldnews.102.t
+	desc = worldnews.103.d
+	picture = GFX_news_macius_palace
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.102.a
+		trigger = {
+			OR = {
+				tag = MAI
+				tag = AVA
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.102.b
+		trigger = {
+			NOT = {
+				tag = MAI
+				tag = AVA
+			}
+			has_government = monarchism
+		}
+	}
+
+	option = {
+		name = worldnews.102.c
+		trigger = {
+			has_government = democratic
+		}
+	}
+
+	option = {
+		name = worldnews.102.e
+		trigger = {
+			OR = {
+				has_government = communism
+				has_government = fascism
+			}
+		}
+	}
+}
+
+news_event = { #The Central Wedding (Klu-Klu variant)
+	id = worldnews.104
+	title = worldnews.102.t
+	desc = worldnews.104.d
+	picture = GFX_news_macius_palace
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.102.a
+		trigger = {
+			OR = {
+				tag = MAI
+				tag = TUG
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.102.b
+		trigger = {
+			NOT = {
+				tag = MAI
+				tag = TUG
+			}
+			has_government = monarchism
+		}
+	}
+
+	option = {
+		name = worldnews.102.c
+		trigger = {
+			has_government = democratic
+		}
+	}
+
+	option = {
+		name = worldnews.102.e
+		trigger = {
+			OR = {
+				has_government = communism
+				has_government = fascism
+			}
+		}
+	}
+}
+
+news_event = { #Republic of Luvland becomes independent
+	id = worldnews.105
+	title = worldnews.105.t
+	desc = worldnews.105.d
+	picture = GFX_news_event_south_africa_patrol
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.105.a
+		trigger = {
+			tag = FLE
+		}
+	}
+
+	option = {
+		name = worldnews.105.b
+		trigger = {
+			tag = FRI
+		}
+	}
+
+	option = {
+		name = worldnews.105.c
+		trigger = {
+			NOT = {
+				tag = FLE
+				tag = FRI
+			}
+		}
+	}
+}
+
+news_event = { #Farquaad proclaims Kingdom of Duloc (variant: successful marriage with Fiona)
+	id = worldnews.106
+	title = worldnews.106.t
+	desc = worldnews.106.d
+	picture = GFX_news_duloc_2
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.106.a
+		trigger = {
+			tag = DUL
+		}
+	}
+
+	option = {
+		name = worldnews.106.b
+		trigger = {
+			tag = FFA
+		}
+	}
+
+	option = {
+		name = worldnews.106.c
+		trigger = {
+			NOT = {
+				tag = DUL
+				tag = FFA
+			}
+		}
+	}
+}
+
+news_event = { #Farquaad proclaims Kingdom of Duloc (variant: unsuccessful marriage with Fiona, war with Swamp)
+	id = worldnews.107
+	title = worldnews.106.t
+	desc = worldnews.107.d
+	picture = GFX_news_duloc_2
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.107.a
+		trigger = {
+			tag = DUL
+		}
+	}
+
+	option = {
+		name = worldnews.107.b
+		trigger = {
+			NOT = {
+				tag = DUL
+			}
+		}
+	}
+}
+
+news_event = { #Farquaad proclaims Kingdom of Duloc (variant: marriage with Elena)
+	id = worldnews.108
+	title = worldnews.106.t
+	desc = worldnews.108.d
+	picture = GFX_news_duloc_2
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.108.a
+		trigger = {
+			tag = DUL
+		}
+	}
+
+	option = {
+		name = worldnews.108.b
+		trigger = {
+			NOT = {
+				tag = DUL
+			}
+		}
+	}
+}
+
+news_event = { #Farquaad proclaims Kingdom of Duloc (variant: Fiona and Shrek detained)
+	id = worldnews.109
+	title = worldnews.106.t
+	desc = worldnews.109.d
+	picture = GFX_news_duloc_2
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.109.a
+		trigger = {
+			tag = DUL
+		}
+	}
+
+	option = {
+		name = worldnews.109.b
+		trigger = {
+			NOT = {
+				tag = DUL
+			}
+		}
+	}
+}
+
+news_event = { #Death of Farquaad
+	id = worldnews.110
+	title = worldnews.110.t
+	desc = worldnews.110.d
+	picture = GFX_news_duloc
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.110.a
+	}
+}
+
+news_event = { #Farquaad proclaims Kingdom of Duloc (variant: marriage with Elena)
+	id = worldnews.111
+	title = worldnews.106.t
+	desc = worldnews.111.d
+	picture = GFX_news_duloc_2
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.111.a
+		trigger = {
+			tag = DUL
+		}
+	}
+
+	option = {
+		name = worldnews.111.b
+		trigger = {
+			NOT = {
+				tag = DUL
+			}
+		}
+	}
+}
+
+news_event = { #War for Fiona
+	id = worldnews.112
+	title = worldnews.112.t
+	desc = worldnews.112.d
+	picture = GFX_news_farfaraway
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.112.a
+		trigger = {
+			tag = FFA
+		}
+	}
+
+	option = {
+		name = worldnews.112.b
+		trigger = {
+			tag = DUL
+		}
+	}
+
+	option = {
+		name = worldnews.112.c
+		trigger = {
+			NOT = {
+				tag = DUL
+				tag = FFA
+			}
+		}
+	}
+}
+
+news_event = { #Fairy Godmother's Rebellion
+	id = worldnews.113
+	title = worldnews.113.t
+	desc = worldnews.113.d
+	picture = GFX_news_farfaraway
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.113.a
+		trigger = {
+			tag = FFA
+			NOT = {
+				has_country_leader = {
+					name = "Fairy Godmother"
+					ruling_only = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.113.b
+		trigger = {
+			has_country_leader = {
+				name = "Fairy Godmother"
+				ruling_only = yes
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.113.c
+		trigger = {
+			NOT = {
+				tag = FFA
+				has_country_leader = {
+					name = "Fairy Godmother"
+					ruling_only = yes
+				}
+			}
+		}
+	}
+}
+
+news_event = { #The War of King Charming
+	id = worldnews.114
+	title = worldnews.114.t
+	desc = worldnews.114.d
+	picture = GFX_news_farfaraway
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.114.a
+		trigger = {
+			tag = FFA
+			NOT = {
+				has_country_leader = {
+					name = "King Charming"
+					ruling_only = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.114.b
+		trigger = {
+			has_country_leader = {
+				name = "King Charming"
+				ruling_only = yes
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.114.c
+		trigger = {
+			NOT = {
+				tag = FFA
+				has_country_leader = {
+					name = "King Charming"
+					ruling_only = yes
+				}
+			}
+		}
+	}
+}
+
+news_event = { #King Harold's Death
+	id = worldnews.115
+	title = worldnews.115.t
+	desc = worldnews.115.d
+	picture = GFX_news_farfaraway
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.115.a
+		trigger = {
+			tag = FFA
+		}
+	}
+	
+	option = {
+		name = worldnews.115.b
+		trigger = {
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.115.c
+		trigger = {
+			NOT = {
+				tag = FFA
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+}
+
+news_event = { #King Harold's Death v2
+	id = worldnews.116
+	title = worldnews.116.t
+	desc = worldnews.116.d
+	picture = GFX_news_farfaraway
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.116.a
+		trigger = {
+			tag = FFA
+		}
+	}
+	
+	option = {
+		name = worldnews.116.b
+		trigger = {
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.116.c
+		trigger = {
+			NOT = {
+				tag = FFA
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+}
+
+news_event = { #The War of King Charming
+	id = worldnews.117
+	title = worldnews.117.t
+	desc = worldnews.117.d
+	picture = GFX_news_farfaraway
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = worldnews.117.a
+		trigger = {
+			tag = FFA
+			NOT = {
+				has_country_leader = {
+					name = "King Charming"
+					ruling_only = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.117.b
+		trigger = {
+			has_country_leader = {
+				name = "King Charming"
+				ruling_only = yes
+			}
+		}
+	}
+
+	option = {
+		name = worldnews.117.c
+		trigger = {
+			NOT = {
+				tag = FFA
+				has_country_leader = {
+					name = "King Charming"
+					ruling_only = yes
+				}
+			}
+		}
+	}
+}

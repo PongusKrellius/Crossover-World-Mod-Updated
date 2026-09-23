@@ -1,0 +1,42 @@
+﻿capital = 440
+
+oob = "TIG_1936"
+
+# Starting tech
+set_technology = {
+	horse_drawn_carriage = 1
+	infantry_weapons_med = 1
+}
+
+add_ideas = {
+	middleage_tech
+	TIG_limited_staff
+}
+
+set_convoys = 50
+
+set_popularities = {
+	democratic = 65
+
+	fascism = 35
+		
+	communism = 0
+		
+	monarchism = 0
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1930.7.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+set_stability = 0.85
+
+recruit_character = TIG_NAK
+recruit_character = TIG_TOM
+recruit_character = TIG_obsolete_technology
+recruit_character = TIG_aron
+recruit_character = TIG_tib
+recruit_character = TIG_krum

@@ -1,0 +1,391 @@
+scripted_gui = {
+
+    colonization_button_grey = {
+        context_type = selected_state_context
+		parent_window_name = "countrystateview"
+		window_name = "colonization_button_grey_container"
+ 
+        visible = {
+            AND = {
+                THIS = {
+                    AND = {
+                        is_owned_by = UNC
+            	        OR = {
+                            is_coastal = yes
+                            any_neighbor_state = { 
+                                is_owned_by = ROOT 
+                                NOT = {
+                                    has_state_flag = state_is_being_colonized
+                                }
+                            }
+                        }
+                    }
+                }
+                ROOT = {
+                    NOT = {
+                        tag = UNC
+                    }
+                }
+                OR = {
+                    ROOT = {
+                        NOT = {
+                            has_country_flag = limited_colonies_enabled
+                            has_country_flag = colonies_enabled
+                        }
+                    }
+                    AND = {
+                        ROOT = {
+                            has_country_flag = colonies_enabled
+                            has_political_power < 50
+                        }
+                    }
+                    AND = {
+                        ROOT = {
+                            tag = GON
+                            has_country_flag = limited_colonies_enabled
+                        }
+                        OR = {
+                            THIS = {
+                                NOT = {
+                                    state = 206
+                                    state = 173
+                                    state = 237
+                                    state = 196
+                                    state = 137
+                                    state = 120
+                                    state = 110
+                                    state = 117
+                                    state = 123
+                                    state = 130
+                                    state = 157
+                                    state = 121
+                                    state = 108
+                                    state = 101
+                                    state = 105
+                                }
+                            }
+                            ROOT = {
+                                has_political_power < 50
+                            }
+                        }
+                    }
+                    AND = {
+                        ROOT = {
+                            tag = GRN
+                            has_country_flag = limited_colonies_enabled
+                        }
+                        OR = {
+                            THIS = {
+                                NOT = {
+                                    state = 283
+                                    state = 237
+                                    state = 206
+                                    state = 273
+                                    state = 241
+                                    state = 196
+                                    state = 173
+                                    state = 285
+                                    state = 254
+                                    state = 276
+                                }
+                            }
+                            ROOT = {
+                                has_political_power < 50
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        triggers = {
+            colonization_button_grey_click_enabled = {
+                ROOT = {
+                    has_political_power > 50
+                }
+            }
+        }
+
+        effects = {
+            colonization_button_grey_click = {
+
+            }
+        }
+
+        ai_enabled = {
+            always = yes
+        }
+    }
+
+    colonization_button = {
+        context_type = selected_state_context
+		parent_window_name = "countrystateview"
+		window_name = "colonization_button_container"
+ 
+        visible = {
+            AND = {
+                THIS = {
+                    AND = {
+                        is_owned_by = UNC
+            	        OR = {
+                            is_coastal = yes
+                            any_neighbor_state = { 
+                            is_owned_by = ROOT 
+                                NOT = {
+                                    has_state_flag = state_is_being_colonized
+                                }
+                            }
+                        }
+                    }
+                }
+                ROOT = {
+                    NOT = {
+                        tag = UNC
+                    }
+                    has_political_power > 50
+                }
+                OR = {
+                    ROOT = {
+                        has_country_flag = colonies_enabled
+                    }
+                    AND = {
+                        ROOT = {
+                            tag = GON
+                            has_country_flag = limited_colonies_enabled
+                        }
+                        THIS = {
+                            is_owned_by = UNC
+                            OR = {
+                                state = 206
+                                state = 173
+                                state = 237
+                                state = 196
+                                state = 137
+                                state = 120
+                                state = 110
+                                state = 117
+                                state = 123
+                                state = 130
+                                state = 157
+                                state = 121
+                                state = 108
+                                state = 101
+                                state = 105
+                            }
+                        }
+                    }
+                    AND = {
+                        ROOT = {
+                            tag = GRN
+                            has_country_flag = limited_colonies_enabled
+                        }
+                        THIS = {
+                            is_owned_by = UNC
+                            OR = {
+                                state = 283
+                                state = 237
+                                state = 206
+                                state = 273
+                                state = 241
+                                state = 196
+                                state = 173
+                                state = 285
+                                state = 254
+                                state = 276
+                            }
+                        }
+                    }
+                    AND = {
+                        ROOT = {
+                            tag = MAI
+                            has_country_flag = limited_colonies_enabled
+                        }
+                        THIS = {
+                            is_owned_by = UNC
+                            OR = {
+                                state = 945
+                                state = 68
+                                state = 940
+                                state = 928
+                                state = 72
+                                state = 71
+                                state = 52
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        triggers = {
+            colonization_button_visible = {
+                ROOT = {
+                    OR = {
+                        has_country_flag = limited_colonies_enabled
+                        has_country_flag = colonies_enabled
+                    }
+                    has_political_power > 50
+                }
+            }
+        }
+
+        effects = {
+            colonization_button_click = {
+                THIS = {
+                    set_variable = { colonization_enabled_for_state = 1 }
+                }
+                every_state = {
+                    limit = {
+                        has_variable = colonization_enabled_for_state
+                    }
+                    ROOT = {
+                        transfer_state = PREV
+                    }
+                #    transfer_state = var:colonization_enabled_for_state
+                }
+                THIS = {
+                    clear_variable = colonization_enabled_for_state
+                    set_state_flag = state_is_being_colonized
+                    if = {
+                        limit = {
+                            ROOT = {
+                                OR = {
+                                    tag = FRI
+                                    tag = GRN
+                                    tag = FLE
+                                    tag = ICW
+                              }
+                            }
+                        }
+                        rename_colonized_state_german = yes
+                    }
+                    if = {
+                        limit = {
+                            ROOT = {
+                                OR = {
+                                    tag = MAI
+                                    tag = SLD
+                                    tag = LEC
+                                    tag = KPT
+                                    tag = SKO
+                                }
+                            }
+                        }
+                        rename_colonized_state_polish = yes
+                    }
+                    if = {
+                        limit = {
+                            tag = GON
+                        }
+                        rename_colonized_state_chinese = yes
+                    }
+                    if = {
+                        limit = {
+                            ROOT = {
+                                NOT = {
+                                    tag = GON
+                                    tag = FRI
+                                    tag = GRN
+                                    tag = FLE
+                                    tag = MAI
+                                    tag = SLD
+                                    tag = LEC
+                                }
+                            }
+                        }
+                        rename_colonized_state_english = yes
+                    }
+                    add_manpower = 100
+                    if = {
+                        limit = {
+                            is_coastal = yes
+                            any_neighbor_state = {
+                                is_owned_by = ROOT
+                                OR = {
+                                    check_variable = { distance_from_colony_port > 2 }
+                                    NOT = {
+                                        has_variable = distance_from_colony_port
+                                    }
+                                }
+                            }
+                        }
+                        set_variable = {
+                            var = distance_from_colony_port
+                            value = 0
+                        }
+                    }
+                    if = {
+                        limit = {
+                            is_coastal = yes
+                            any_neighbor_state = {
+                                is_owned_by = ROOT
+                                check_variable = { distance_from_colony_port = 0 }
+                            }
+                        }
+                        set_variable = {
+                            var = distance_from_colony_port
+                            value = 1
+                        }
+                    }
+                    if = {
+                        limit = {
+                            is_coastal = yes
+                            any_neighbor_state = {
+                                is_owned_by = ROOT
+                                check_variable = { distance_from_colony_port = 1 }
+                            }
+                        }
+                        set_variable = {
+                            var = distance_from_colony_port
+                            value = 2
+                        }
+                    }
+                }
+                ROOT = {
+                    add_political_power = -50
+                }
+            }
+        }
+
+        ai_enabled = {
+            always = yes
+        }
+
+        ai_test_interval = 168
+        ai_test_variance = 0.000000001
+ 
+        ai_check = {
+            OR = {
+                has_country_flag = limited_colonies_enabled
+                AND = {
+                    has_country_flag = colonies_enabled
+                    OR = {
+                        AND = {
+                            tag = FRI
+                            has_completed_focus = FRI_colonize_southern_luvland
+                        }
+                        tag = ICW
+                        tag = KPT
+                        tag = DUL
+                        tag = MAI
+                    }
+                }
+            }
+            has_political_power > 50
+        }
+
+        ai_test_scopes = test_neighbouring_states
+
+        ai_check_scope = {
+            is_owned_by = UNC
+        }
+
+        ai_weights = {
+            colonization_button_click = {
+                ai_will_do = {
+                    factor = 1
+                }
+            }
+        }
+    }
+}

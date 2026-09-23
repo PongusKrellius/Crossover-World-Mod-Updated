@@ -1,0 +1,6 @@
+fate_of_tabaluga_dec_category = {
+	icon = military_operation
+	picture = GFX_decision_cat_grn_fate_of_tabaluga
+	
+	priority = 50
+}

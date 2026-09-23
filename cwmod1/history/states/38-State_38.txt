@@ -1,0 +1,28 @@
+state={
+	id=38
+	name="STATE_38"
+	provinces={
+		987 1949 2034 2613 5823 10305 10314 10340 
+	}
+	state_category = rural
+	manpower=120000
+	buildings_max_level_factor=1.000
+	history = {
+		owner = FLE
+		add_core_of = FLE
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+			1949 = {
+				naval_base = 3
+			}
+		}
+		
+		victory_points = {
+			1949 10
+		}
+	}
+	resources = {
+			steel = 4
+		}
+}

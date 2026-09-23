@@ -1,0 +1,106 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = chamomilenews
+
+news_event = {
+	id = chamomilenews.1
+	title = chamomilenews.1.t
+	desc = chamomilenews.1.d
+	picture = GFX_news_CVA_krosh
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chamomilenews.1.a
+		trigger = {
+			NOT = {
+				tag = CVA
+			}
+		}
+	}
+	option = {
+		name = chamomilenews.1.b
+		trigger = {
+				tag = CVA
+		}
+	}
+}
+news_event = {
+	id = chamomilenews.2
+	title = chamomilenews.2.t
+	desc = chamomilenews.2.d
+	picture = GFX_news_CVA_barash
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chamomilenews.2.a
+		trigger = {
+			NOT = {
+				tag = CVA
+			}
+		}
+	}
+	option = {
+		name = chamomilenews.2.b
+		trigger = {
+				tag = CVA
+		}
+	}
+}
+news_event = {
+	id = chamomilenews.3
+	title = chamomilenews.3.t
+	desc = chamomilenews.3.d
+	picture = GFX_news_CVA_losyash
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chamomilenews.3.a
+		trigger = {
+			NOT = {
+				tag = CVA
+			}
+		}
+	}
+	option = {
+		name = chamomilenews.3.b
+		trigger = {
+				tag = CVA
+		}
+	}
+}
+news_event = {
+	id = chamomilenews.4
+	title = chamomilenews.4.t
+	desc = chamomilenews.4.d
+	picture = GFX_news_CVA_princess_nyusha
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chamomilenews.4.a
+		trigger = {
+			NOT = {
+				tag = CVA
+			}
+		}
+	}
+	option = {
+		name = chamomilenews.4.b
+		trigger = {
+				tag = CVA
+		}
+	}
+}

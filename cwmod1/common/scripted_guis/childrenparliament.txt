@@ -1,0 +1,1871 @@
+scripted_gui = {
+  children_parliament_seats_window_ui = {
+    context_type = decision_category
+     	
+    window_name = "children_parliament_seats_window"
+        
+    visible = {
+      tag = MAI
+      AND = {
+        has_country_flag = parliament_reformed
+        has_country_flag = children_parliament
+      }
+      always = no
+    }
+  }
+
+  children_parliament_window_noreform_ui = {
+    context_type = player_context
+     	
+    window_name = "central_kingdom_chp_window_noreform_container"
+        
+    visible = {
+      tag = MAI
+      NOT = {
+        has_country_flag = parliament_reformed
+      }
+      has_variable = MAI_chp_is_visible
+    }
+
+    properties = {
+      children_parliament_current_leader_icon = {
+				frame = current_children_parliament_leader_icon_frame
+      }
+		}
+    effects = {
+			mai_chp_exit_click = {
+				clear_variable = MAI_chp_is_visible
+			}
+		}
+  }
+
+	children_parliament_window_ui = {
+    context_type = player_context
+     	
+    window_name = "central_kingdom_chp_window_container"
+        
+    visible = {
+      tag = MAI
+      OR = {
+        has_country_flag = parliament_reformed
+        has_cosmetic_tag = CLD
+      }
+      NOT = {
+        has_country_flag = chp_work_suspended
+      }
+      has_variable = MAI_chp_is_visible
+    }
+
+    properties = {
+      children_parliament_current_leader_icon = {
+				frame = current_children_parliament_leader_icon_frame
+      }
+		}
+    effects = {
+			mai_chp_exit_click = {
+				clear_variable = MAI_chp_is_visible
+			}
+		}
+  }
+
+  mai_chp_bill_support_visibility = {
+    context_type = player_context
+     	
+    window_name = "central_kingdom_chp_reform_support_status_container"
+    parent_window_token = central_kingdom_chp_window_container
+        
+    visible = {
+      AND = {
+        tag = MAI
+        has_variable = MAI_chp_is_visible
+        AND = {
+          has_country_flag = parliament_reformed
+          OR = {
+            has_country_flag = national_children_party_wins
+            has_country_flag = free_future_party_wins
+            has_country_flag = time_for_kids_wins
+            has_country_flag = children_coalition_for_the_renewal_of_the_kingdom_wins
+            has_country_flag = we_have_a_tie
+          }
+        }
+      }
+    }
+  }
+
+  mai_chp_motion_visibility_noreform = {
+    context_type = player_context
+     	
+    window_name = "central_kingdom_chp_current_motion_noreform_container"
+    parent_window_token = central_kingdom_chp_window_noreform_container
+        
+    visible = {
+      AND = {
+        tag = MAI
+        has_variable = MAI_chp_is_visible
+        NOT = {
+          has_country_flag = parliament_reformed
+          has_country_flag = chp_work_suspended
+          has_cosmetic_tag = CLD
+        }
+      }
+    }
+  }
+
+  mai_chp_motion_visibility = {
+    context_type = player_context
+     	
+    window_name = "central_kingdom_chp_current_motion_container"
+    parent_window_token = central_kingdom_chp_window_container
+        
+    visible = {
+      AND = {
+        tag = MAI
+        has_variable = MAI_chp_is_visible
+        AND = {
+          has_country_flag = parliament_reformed
+          OR = {
+            has_country_flag = national_children_party_wins
+            has_country_flag = free_future_party_wins
+            has_country_flag = time_for_kids_wins
+            has_country_flag = children_coalition_for_the_renewal_of_the_kingdom_wins
+            has_country_flag = we_have_a_tie
+          }
+        }
+      }
+    }
+  }
+
+  mai_chp_suspended = {
+    context_type = player_context
+     	
+    window_name = "central_kingdom_chp_noreform_suspended_container"
+    parent_window_token = central_kingdom_chp_window_container
+        
+    visible = {
+      AND = {
+        tag = MAI
+        has_variable = MAI_chp_is_visible
+        has_country_flag = chp_work_suspended
+        NOT = {
+          has_country_flag = parliament_reformed
+        }
+      }
+    }
+  }
+
+  mai_chp_under_reform = {
+    context_type = player_context
+     	
+    window_name = "central_kingdom_chp_under_reforms_container"
+    parent_window_token = central_kingdom_chp_window_container
+        
+    visible = {
+      AND = {
+        tag = MAI
+        has_variable = MAI_chp_is_visible
+        AND = {
+          has_country_flag = parliament_reformed
+          NOT = {
+          has_country_flag = national_children_party_wins
+          has_country_flag = free_future_party_wins
+          has_country_flag = time_for_kids_wins
+          has_country_flag = children_coalition_for_the_renewal_of_the_kingdom_wins
+          has_country_flag = we_have_a_tie
+          }
+        }
+      }
+    }
+  }
+
+  mai_chp_noreform = {
+    context_type = player_context
+     	
+    window_name = "central_kingdom_chp_noreform_container"
+    parent_window_token = central_kingdom_chp_window_container
+        
+    visible = {
+      AND = {
+        tag = MAI
+        has_variable = MAI_chp_is_visible
+        NOT = {
+          has_country_flag = parliament_reformed
+          has_country_flag = chp_work_suspended
+          has_cosmetic_tag = CLD
+        }
+      }
+    }
+
+    properties = {
+      mai_chp_united_parliament_leader = {
+				frame = current_children_parliament_leader_icon_frame
+      }
+		}
+  }
+
+  mai_chp_childrenrepublic_mode = {
+    context_type = player_context
+     	
+    window_name = "central_kingdom_chp_childrenrepublic_container"
+    parent_window_token = central_kingdom_chp_window_container
+        
+    visible = {
+      AND = {
+        tag = MAI
+        has_variable = MAI_chp_is_visible
+        has_cosmetic_tag = CLD
+        NOT = {
+          has_country_flag = chp_work_suspended
+        }
+      }
+    }
+
+    properties = {
+      mai_chp_childrenrepublic_parliament_leader = {
+				frame = current_children_parliament_leader_icon_frame
+      }
+		}
+  }
+
+  mai_chp_chart = {
+    context_type = player_context
+     	
+    window_name = "central_kingdom_chp_chart_new"
+    parent_window_token = central_kingdom_chp_window_container
+        
+    visible = {
+      AND = {
+        tag = MAI
+        has_variable = MAI_chp_is_visible
+        has_country_flag = parliament_reformed
+        OR = {
+          has_country_flag = national_children_party_wins
+          has_country_flag = free_future_party_wins
+          has_country_flag = time_for_kids_wins
+          has_country_flag = children_coalition_for_the_renewal_of_the_kingdom_wins
+          has_country_flag = we_have_a_tie
+        }
+      }
+    }
+    
+    triggers = {
+      central_kingdom_chp_ccfrok_majority_visible = {
+        has_country_flag = children_coalition_for_the_renewal_of_the_kingdom_wins
+      }
+      central_kingdom_chp_ncp_majority_visible = {
+        has_country_flag = national_children_party_wins
+      }
+      central_kingdom_chp_tfk_majority_visible = {
+        has_country_flag = time_for_kids_wins
+      }
+      central_kingdom_chp_ffp_majority_visible = {
+        has_country_flag = free_future_party_wins
+      }
+    }
+
+    properties = {
+      cr_mai_chp_ccfrok = {
+				frame = cr_mai_chp_ccfrok_frame
+      }
+      cr_mai_chp_ffp = {
+				frame = cr_mai_chp_ffp_frame
+      }
+      cr_mai_chp_tfk = {
+				frame = cr_mai_chp_tfc_frame
+      }
+      cr_mai_chp_ncp = {
+				frame = cr_mai_chp_ncp_frame
+      }
+		}
+  }
+
+  mai_chp_reform_parties = {
+    context_type = player_context
+     	
+    window_name = "central_kingdom_chp_reform_parties_container"
+    parent_window_token = central_kingdom_chp_window_container
+        
+    visible = {
+      AND = {
+        tag = MAI
+        has_variable = MAI_chp_is_visible
+        has_country_flag = parliament_reformed
+        OR = {
+          has_country_flag = national_children_party_wins
+          has_country_flag = free_future_party_wins
+          has_country_flag = time_for_kids_wins
+          has_country_flag = children_coalition_for_the_renewal_of_the_kingdom_wins
+          has_country_flag = we_have_a_tie
+        }
+      }
+    }
+
+    properties = {
+      mai_chp_ncp_leader = {
+				frame = mai_chp_ncp_leader_frame
+      }
+      mai_chp_ffp_leader = {
+				frame = mai_chp_ffp_leader_frame
+      }
+      mai_chp_tfk_leader = {
+				frame = mai_chp_tfk_leader_frame
+      }
+      mai_chp_ccfrok_leader = {
+				frame = mai_chp_ccfrok_leader_frame
+      }
+		}
+  }
+
+  children_parliament_state_pop_ui = {
+    context_type = selected_state_context
+    parent_window_name = "countrystateview" 	
+    window_name = "central_kingdom_chp_state_parties_cont"
+        
+    visible = {
+      ROOT = {
+        tag = MAI
+        has_country_flag = parliament_reformed
+      }
+      THIS = {
+        is_owned_by = MAI
+      }
+    }
+
+    triggers = {
+      mai_chp_camp_ncp_icon_click_enabled = {
+        THIS = {
+          NOT = {
+            has_variable = days_since_campaign_started
+            check_variable = { ncp_popularity_in_state = 1 }
+          }
+        }
+        ROOT = {
+          has_political_power > 50
+        }
+      }
+      mai_chp_camp_ffp_icon_click_enabled = {
+        THIS = {
+          NOT = {
+            has_variable = days_since_campaign_started
+            check_variable = { ffp_popularity_in_state = 1 }
+          }
+        }
+        ROOT = {
+          has_political_power > 50
+        }
+      }
+      mai_chp_camp_tfk_icon_click_enabled = {
+        THIS = {
+          NOT = {
+            has_variable = days_since_campaign_started
+            check_variable = { tfk_popularity_in_state = 1 }
+          }
+        }
+        ROOT = {
+          has_political_power > 50
+        }
+      }
+      mai_chp_camp_ccfrok_icon_click_enabled = {
+        THIS = {
+          NOT = {
+            has_variable = days_since_campaign_started
+            check_variable = { ccfrok_popularity_in_state = 1 }
+          }
+        }
+        ROOT = {
+          has_political_power > 50
+        }
+      }
+    }
+
+    effects = {
+      mai_chp_camp_ncp_icon_click = {
+        ROOT = {
+          add_political_power = -50
+        }
+        THIS = {
+          add_to_variable = { ncp_popularity_in_state = 0.05 }
+          if = {
+            limit = {
+              check_variable = { ffp_popularity_in_state > 0 }
+              check_variable = { ccfrok_popularity_in_state > 0 }
+              check_variable = { tfk_popularity_in_state > 0 }
+            }
+          random_list = {
+            34 = {
+              if = {
+                limit = {
+                  check_variable = { ffp_popularity_in_state > 0.018 }
+                }
+                subtract_from_variable = { ffp_popularity_in_state = 0.018 }
+                else_if = {
+                  limit = {
+                    check_variable = { ffp_popularity_in_state < 0.018 }
+                    check_variable = { ffp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ffp = ffp_popularity_in_state }
+                subtract_from_variable = { ffp_popularity_in_state = temp_ffp }
+                  else = {
+
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { tfk_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { tfk_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { tfk_popularity_in_state < 0.0161 }
+                    check_variable = { tfk_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_tfk = tfk_popularity_in_state }
+                subtract_from_variable = { tfk_popularity_in_state = temp_tfk }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ccfrok_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { ccfrok_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { ccfrok_popularity_in_state < 0.0161 }
+                    check_variable = { ccfrok_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ccfrok = ccfrok_popularity_in_state }
+                subtract_from_variable = { ccfrok_popularity_in_state = temp_ccfrok }
+                  else = {
+                    
+                  }
+                }
+              }
+            }
+            33 = {
+              if = {
+                limit = {
+                  check_variable = { tfk_popularity_in_state > 0.018 }
+                }
+                subtract_from_variable = { tfk_popularity_in_state = 0.018 }
+                else_if = {
+                  limit = {
+                    check_variable = { tfk_popularity_in_state < 0.018 }
+                    check_variable = { tfk_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_tfk = tfk_popularity_in_state }
+                subtract_from_variable = { tfk_popularity_in_state = temp_tfk }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ffp_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { ffp_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { ffp_popularity_in_state < 0.0161 }
+                    check_variable = { ffp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ffp = ffp_popularity_in_state }
+                subtract_from_variable = { ffp_popularity_in_state = temp_ffp }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ccfrok_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { ccfrok_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { ccfrok_popularity_in_state < 0.0161 }
+                    check_variable = { ccfrok_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ccfrok = ccfrok_popularity_in_state }
+                subtract_from_variable = { ccfrok_popularity_in_state = temp_ccfrok }
+                  else = {
+                    
+                  }
+                }
+              }
+            }
+            33 = {
+              if = {
+                limit = {
+                  check_variable = { ccfrok_popularity_in_state > 0.018 }
+                }
+                subtract_from_variable = { ccfrok_popularity_in_state = 0.018 }
+                else_if = {
+                  limit = {
+                    check_variable = { ccfrok_popularity_in_state < 0.018 }
+                    check_variable = { ccfrok_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ccfrok = ccfrok_popularity_in_state }
+                subtract_from_variable = { ccfrok_popularity_in_state = temp_ccfrok }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { tfk_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { tfk_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { tfk_popularity_in_state < 0.0161 }
+                    check_variable = { tfk_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_tfk = tfk_popularity_in_state }
+                subtract_from_variable = { tfk_popularity_in_state = temp_tfk }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ffp_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { ffp_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { ffp_popularity_in_state < 0.0161 }
+                    check_variable = { ffp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ffp = ffp_popularity_in_state }
+                subtract_from_variable = { ffp_popularity_in_state = temp_ffp }
+                  else = {
+                    
+                  }
+                }
+              }
+            }
+          }
+          set_variable = { days_since_campaign_started = 1 }
+          else_if = {
+            limit = {
+              OR = {
+                AND = {
+                  check_variable = { tfk_popularity_in_state > 0 }
+                  check_variable = { ffp_popularity_in_state > 0 }
+                }
+                AND = {
+                  check_variable = { tfk_popularity_in_state > 0 }
+                  check_variable = { ccfrok_popularity_in_state > 0 }
+                }
+                AND = {
+                  check_variable = { ccfrok_popularity_in_state > 0 }
+                  check_variable = { ffp_popularity_in_state > 0 }
+                }
+              }
+            }
+            if = {
+              limit = {
+                AND = {
+                  check_variable = { tfk_popularity_in_state > 0.025 }
+                  check_variable = { ffp_popularity_in_state > 0.025 }
+                }
+              }
+              subtract_from_variable = { tfk_popularity_in_state = 0.025 }
+              subtract_from_variable = { ffp_popularity_in_state = 0.025 }
+              else_if = {
+                limit = {
+                  AND = {
+                    check_variable = { ffp_popularity_in_state < 0.025 }
+                    check_variable = { ffp_popularity_in_state > 0 }
+                    check_variable = { tfk_popularity_in_state < 0.025 }
+                    check_variable = { tfk_popularity_in_state > 0 }
+                  }
+                }
+                set_temp_variable = { temp_tfk = tfk_popularity_in_state }
+                subtract_from_variable = { tfk_popularity_in_state = temp_tfk }
+                set_temp_variable = { temp_ffp = ffp_popularity_in_state }
+                subtract_from_variable = { ffp_popularity_in_state = temp_ffp }
+                else = {
+                  
+                }
+              }
+            }
+            if = {
+              limit = {
+                AND = {
+                  check_variable = { tfk_popularity_in_state > 0.025 }
+                  check_variable = { ccfrok_popularity_in_state > 0.025 }
+                }
+              }
+              subtract_from_variable = { tfk_popularity_in_state = 0.025 }
+              subtract_from_variable = { ccfrok_popularity_in_state = 0.025 }
+              else_if = {
+                limit = {
+                  AND = {
+                    check_variable = { ccfrok_popularity_in_state < 0.025 }
+                    check_variable = { ccfrok_popularity_in_state > 0 }
+                    check_variable = { tfk_popularity_in_state < 0.025 }
+                    check_variable = { tfk_popularity_in_state > 0 }
+                  }
+                }
+                set_temp_variable = { temp_tfk = tfk_popularity_in_state }
+                subtract_from_variable = { tfk_popularity_in_state = temp_tfk }
+                set_temp_variable = { temp_ccfrok = ccfrok_popularity_in_state }
+                subtract_from_variable = { ccfrok_popularity_in_state = temp_ccfrok }
+                else = {
+                  
+                }
+              }
+            }
+            if = {
+              limit = {
+                AND = {
+                  check_variable = { ccfrok_popularity_in_state > 0.025 }
+                  check_variable = { ffp_popularity_in_state > 0.025 }
+                }
+              }
+              subtract_from_variable = { ccfrok_popularity_in_state = 0.025 }
+              subtract_from_variable = { ffp_popularity_in_state = 0.025 }
+              else_if = {
+                limit = {
+                  AND = {
+                    check_variable = { ccfrok_popularity_in_state < 0.025 }
+                    check_variable = { ccfrok_popularity_in_state > 0 }
+                    check_variable = { ffp_popularity_in_state < 0.025 }
+                    check_variable = { ffp_popularity_in_state > 0 }
+                  }
+                }
+                set_temp_variable = { temp_ccfrok = ccfrok_popularity_in_state }
+                subtract_from_variable = { ccfrok_popularity_in_state = temp_ccfrok }
+                set_temp_variable = { temp_ffp = ffp_popularity_in_state }
+                subtract_from_variable = { ffp_popularity_in_state = temp_ffp }
+                else = {
+                  
+                }
+              }
+            }
+            set_variable = { days_since_campaign_started = 1 }
+            else = {
+              if = {
+                limit = {
+                  check_variable = { ccfrok_popularity_in_state > 0.05 }
+                }
+                subtract_from_variable = { ccfrok_popularity_in_state = 0.05 }
+                else_if = {
+                  limit = {
+                    check_variable = { ccfrok_popularity_in_state < 0.05 }
+                    check_variable = { ccfrok_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ccfrok = ccfrok_popularity_in_state }
+                subtract_from_variable = { ccfrok_popularity_in_state = temp_ccfrok }
+                  else = {
+                  
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ffp_popularity_in_state > 0.05 }
+                }
+                subtract_from_variable = { ffp_popularity_in_state = 0.05 }
+                else_if = {
+                  limit = {
+                    check_variable = { ffp_popularity_in_state < 0.05 }
+                    check_variable = { ffp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ffp = ffp_popularity_in_state }
+                subtract_from_variable = { ffp_popularity_in_state = temp_ffp }
+                  else = {
+                  
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { tfk_popularity_in_state > 0.05 }
+                }
+                subtract_from_variable = { tfk_popularity_in_state = 0.05 }
+                else_if = {
+                  limit = {
+                    check_variable = { tfk_popularity_in_state < 0.05 }
+                    check_variable = { tfk_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_tfk = tfk_popularity_in_state }
+                subtract_from_variable = { tfk_popularity_in_state = temp_tfk }
+                  else = {
+                  
+                  }
+                }
+              }
+              set_variable = { days_since_campaign_started = 1 }
+            }
+          }
+        }
+      }
+      }
+      mai_chp_camp_ffp_icon_click = {
+        ROOT = {
+          add_political_power = -50
+        }
+        THIS = {
+          add_to_variable = { ffp_popularity_in_state = 0.05 }
+          if = {
+            limit = {
+              check_variable = { ccfrok_popularity_in_state > 0 }
+              check_variable = { ncp_popularity_in_state > 0 }
+              check_variable = { tfk_popularity_in_state > 0 }
+            }
+          random_list = {
+            34 = {
+              if = {
+                limit = {
+                  check_variable = { ncp_popularity_in_state > 0.018 }
+                }
+                subtract_from_variable = { ncp_popularity_in_state = 0.018 }
+                else_if = {
+                  limit = {
+                    check_variable = { ncp_popularity_in_state < 0.018 }
+                    check_variable = { ncp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ncp = ncp_popularity_in_state }
+                subtract_from_variable = { ncp_popularity_in_state= temp_ncp }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { tfk_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { tfk_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { tfk_popularity_in_state < 0.0161 }
+                    check_variable = { tfk_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_tfk = tfk_popularity_in_state }
+                subtract_from_variable = { tfk_popularity_in_state = temp_tfk }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ccfrok_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { ccfrok_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { ccfrok_popularity_in_state < 0.0161 }
+                    check_variable = { ccfrok_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ccfrok = ccfrok_popularity_in_state }
+                subtract_from_variable = { ccfrok_popularity_in_state = temp_ccfrok }
+                  else = {
+                    
+                  }
+                }
+              }
+            }
+            33 = {
+              if = {
+                limit = {
+                  check_variable = { tfk_popularity_in_state > 0.018 }
+                }
+                subtract_from_variable = { tfk_popularity_in_state = 0.018 }
+                else_if = {
+                  limit = {
+                    check_variable = { tfk_popularity_in_state < 0.018 }
+                    check_variable = { tfk_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_tfk = tfk_popularity_in_state }
+                subtract_from_variable = { tfk_popularity_in_state = temp_tfk }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ncp_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { ncp_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { ncp_popularity_in_state < 0.0161 }
+                    check_variable = { ncp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ncp = ncp_popularity_in_state }
+                subtract_from_variable = { ncp_popularity_in_state= temp_ncp }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ccfrok_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { ccfrok_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { ccfrok_popularity_in_state < 0.0161 }
+                    check_variable = { ccfrok_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ccfrok = ccfrok_popularity_in_state }
+                subtract_from_variable = { ccfrok_popularity_in_state = temp_ccfrok }
+                  else = {
+                    
+                  }
+                }
+              }
+            }
+            33 = {
+              if = {
+                limit = {
+                  check_variable = { ccfrok_popularity_in_state > 0.018 }
+                }
+                subtract_from_variable = { ccfrok_popularity_in_state = 0.018 }
+                else_if = {
+                  limit = {
+                    check_variable = { ccfrok_popularity_in_state < 0.018 }
+                    check_variable = { ccfrok_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ccfrok = ccfrok_popularity_in_state }
+                subtract_from_variable = { ccfrok_popularity_in_state = temp_ccfrok }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { tfk_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { tfk_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { tfk_popularity_in_state < 0.0161 }
+                    check_variable = { tfk_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_tfk = tfk_popularity_in_state }
+                subtract_from_variable = { tfk_popularity_in_state = temp_tfk }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ncp_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { ncp_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { ncp_popularity_in_state < 0.0161 }
+                    check_variable = { ncp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ncp = ncp_popularity_in_state }
+                subtract_from_variable = { ncp_popularity_in_state= temp_ncp }
+                  else = {
+                    
+                  }
+                }
+              }
+            }
+          }
+          set_variable = { days_since_campaign_started = 1 }
+          else_if = {
+            limit = {
+              OR = {
+                AND = {
+                  check_variable = { tfk_popularity_in_state > 0 }
+                  check_variable = { ncp_popularity_in_state > 0 }
+                }
+                AND = {
+                  check_variable = { tfk_popularity_in_state > 0 }
+                  check_variable = { ccfrok_popularity_in_state > 0 }
+                }
+                AND = {
+                  check_variable = { ccfrok_popularity_in_state > 0 }
+                  check_variable = { ncp_popularity_in_state > 0 }
+                }
+              }
+            }
+            if = {
+              limit = {
+                AND = {
+                  check_variable = { tfk_popularity_in_state > 0.025 }
+                  check_variable = { ncp_popularity_in_state > 0.025 }
+                }
+              }
+              subtract_from_variable = { tfk_popularity_in_state = 0.025 }
+              subtract_from_variable = { ncp_popularity_in_state = 0.025 }
+              else_if = {
+                limit = {
+                  AND = {
+                    check_variable = { ncp_popularity_in_state < 0.025 }
+                    check_variable = { ncp_popularity_in_state > 0 }
+                    check_variable = { tfk_popularity_in_state < 0.025 }
+                    check_variable = { tfk_popularity_in_state > 0 }
+                  }
+                }
+                set_temp_variable = { temp_tfk = tfk_popularity_in_state }
+                subtract_from_variable = { tfk_popularity_in_state = temp_tfk }
+                set_temp_variable = { temp_ncp = ncp_popularity_in_state }
+                subtract_from_variable = { ncp_popularity_in_state= temp_ncp }
+                else = {
+                  
+                }
+              }
+            }
+            if = {
+              limit = {
+                AND = {
+                  check_variable = { tfk_popularity_in_state > 0.025 }
+                  check_variable = { ccfrok_popularity_in_state > 0.025 }
+                }
+              }
+              subtract_from_variable = { tfk_popularity_in_state = 0.025 }
+              subtract_from_variable = { ccfrok_popularity_in_state = 0.025 }
+              else_if = {
+                limit = {
+                  AND = {
+                    check_variable = { ccfrok_popularity_in_state < 0.025 }
+                    check_variable = { ccfrok_popularity_in_state > 0 }
+                    check_variable = { tfk_popularity_in_state < 0.025 }
+                    check_variable = { tfk_popularity_in_state > 0 }
+                  }
+                }
+                set_temp_variable = { temp_tfk = tfk_popularity_in_state }
+                subtract_from_variable = { tfk_popularity_in_state = temp_tfk }
+                set_temp_variable = { temp_ccfrok = ccfrok_popularity_in_state }
+                subtract_from_variable = { ccfrok_popularity_in_state = temp_ccfrok }
+                else = {
+                  
+                }
+              }
+            }
+            if = {
+              limit = {
+                AND = {
+                  check_variable = { ccfrok_popularity_in_state > 0.025 }
+                  check_variable = { ncp_popularity_in_state > 0.025 }
+                }
+              }
+              subtract_from_variable = { ccfrok_popularity_in_state = 0.025 }
+              subtract_from_variable = { ncp_popularity_in_state = 0.025 }
+              else_if = {
+                limit = {
+                  AND = {
+                    check_variable = { ccfrok_popularity_in_state < 0.025 }
+                    check_variable = { ccfrok_popularity_in_state > 0 }
+                    check_variable = { ncp_popularity_in_state < 0.025 }
+                    check_variable = { ncp_popularity_in_state > 0 }
+                  }
+                }
+                set_temp_variable = { temp_ccfrok = ccfrok_popularity_in_state }
+                subtract_from_variable = { ccfrok_popularity_in_state = temp_ccfrok }
+                set_temp_variable = { temp_ncp = ncp_popularity_in_state }
+                subtract_from_variable = { ncp_popularity_in_state= temp_ncp }
+                else = {
+                  
+                }
+              }
+            }
+            set_variable = { days_since_campaign_started = 1 }
+            else = {
+              if = {
+                limit = {
+                  check_variable = { ccfrok_popularity_in_state > 0.05 }
+                }
+                subtract_from_variable = { ccfrok_popularity_in_state = 0.05 }
+                else_if = {
+                  limit = {
+                    check_variable = { ccfrok_popularity_in_state < 0.05 }
+                    check_variable = { ccfrok_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ccfrok = ccfrok_popularity_in_state }
+                subtract_from_variable = { ccfrok_popularity_in_state = temp_ccfrok }
+                  else = {
+                  
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ncp_popularity_in_state > 0.05 }
+                }
+                subtract_from_variable = { ncp_popularity_in_state = 0.05 }
+                else_if = {
+                  limit = {
+                    check_variable = { ncp_popularity_in_state < 0.05 }
+                    check_variable = { ncp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ncp = ncp_popularity_in_state }
+                subtract_from_variable = { ncp_popularity_in_state= temp_ncp }
+                  else = {
+                  
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { tfk_popularity_in_state > 0.05 }
+                }
+                subtract_from_variable = { tfk_popularity_in_state = 0.05 }
+                else_if = {
+                  limit = {
+                    check_variable = { tfk_popularity_in_state < 0.05 }
+                    check_variable = { tfk_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_tfk = tfk_popularity_in_state }
+                subtract_from_variable = { tfk_popularity_in_state = temp_tfk }
+                  else = {
+                  
+                  }
+                }
+              }
+              set_variable = { days_since_campaign_started = 1 }
+            }
+          }
+        }
+      }
+      }
+      mai_chp_camp_tfk_icon_click = {
+        ROOT = {
+          add_political_power = -50
+        }
+        THIS = {
+          add_to_variable = { tfk_popularity_in_state = 0.05 }
+          if = {
+            limit = {
+              check_variable = { ffp_popularity_in_state > 0 }
+              check_variable = { ncp_popularity_in_state > 0 }
+              check_variable = { ccfrok_popularity_in_state > 0 }
+            }
+          random_list = {
+            34 = {
+              if = {
+                limit = {
+                  check_variable = { ffp_popularity_in_state > 0.018 }
+                }
+                subtract_from_variable = { ffp_popularity_in_state = 0.018 }
+                else_if = {
+                  limit = {
+                    check_variable = { ffp_popularity_in_state < 0.018 }
+                    check_variable = { ffp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ffp = ffp_popularity_in_state }
+                subtract_from_variable = { ffp_popularity_in_state = temp_ffp }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ncp_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { ncp_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { ncp_popularity_in_state < 0.0161 }
+                    check_variable = { ncp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ncp = ncp_popularity_in_state }
+                subtract_from_variable = { ncp_popularity_in_state= temp_ncp }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ccfrok_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { ccfrok_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { ccfrok_popularity_in_state < 0.0161 }
+                    check_variable = { ccfrok_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ccfrok = ccfrok_popularity_in_state }
+                subtract_from_variable = { ccfrok_popularity_in_state = temp_ccfrok }
+                  else = {
+                    
+                  }
+                }
+              }
+            }
+            33 = {
+              if = {
+                limit = {
+                  check_variable = { ncp_popularity_in_state > 0.018 }
+                }
+                subtract_from_variable = { ncp_popularity_in_state = 0.018 }
+                else_if = {
+                  limit = {
+                    check_variable = { ncp_popularity_in_state < 0.018 }
+                    check_variable = { ncp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ncp = ncp_popularity_in_state }
+                subtract_from_variable = { ncp_popularity_in_state= temp_ncp }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ffp_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { ffp_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { ffp_popularity_in_state < 0.0161 }
+                    check_variable = { ffp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ffp = ffp_popularity_in_state }
+                subtract_from_variable = { ffp_popularity_in_state = temp_ffp }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ccfrok_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { ccfrok_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { ccfrok_popularity_in_state < 0.0161 }
+                    check_variable = { ccfrok_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ccfrok = ccfrok_popularity_in_state }
+                subtract_from_variable = { ccfrok_popularity_in_state = temp_ccfrok }
+                  else = {
+                    
+                  }
+                }
+              }
+            }
+            33 = {
+              if = {
+                limit = {
+                  check_variable = { ccfrok_popularity_in_state > 0.018 }
+                }
+                subtract_from_variable = { ccfrok_popularity_in_state = 0.018 }
+                else_if = {
+                  limit = {
+                    check_variable = { ccfrok_popularity_in_state < 0.018 }
+                    check_variable = { ccfrok_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ccfrok = ccfrok_popularity_in_state }
+                subtract_from_variable = { ccfrok_popularity_in_state = temp_ccfrok }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ncp_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { ncp_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { ncp_popularity_in_state < 0.0161 }
+                    check_variable = { ncp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ncp = ncp_popularity_in_state }
+                subtract_from_variable = { ncp_popularity_in_state= temp_ncp }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ffp_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { ffp_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { ffp_popularity_in_state < 0.0161 }
+                    check_variable = { ffp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ffp = ffp_popularity_in_state }
+                subtract_from_variable = { ffp_popularity_in_state = temp_ffp }
+                  else = {
+                    
+                  }
+                }
+              }
+            }
+          }
+          set_variable = { days_since_campaign_started = 1 }
+          else_if = {
+            limit = {
+              OR = {
+                AND = {
+                  check_variable = { ffp_popularity_in_state > 0 }
+                  check_variable = { ncp_popularity_in_state > 0 }
+                }
+                AND = {
+                  check_variable = { ffp_popularity_in_state > 0 }
+                  check_variable = { ccfrok_popularity_in_state > 0 }
+                }
+                AND = {
+                  check_variable = { ccfrok_popularity_in_state > 0 }
+                  check_variable = { ncp_popularity_in_state > 0 }
+                }
+              }
+            }
+            if = {
+              limit = {
+                AND = {
+                  check_variable = { ffp_popularity_in_state > 0.025 }
+                  check_variable = { ncp_popularity_in_state > 0.025 }
+                }
+              }
+              subtract_from_variable = { ffp_popularity_in_state = 0.025 }
+              subtract_from_variable = { ncp_popularity_in_state = 0.025 }
+              else_if = {
+                limit = {
+                  AND = {
+                    check_variable = { ncp_popularity_in_state < 0.025 }
+                    check_variable = { ncp_popularity_in_state > 0 }
+                    check_variable = { ffp_popularity_in_state < 0.025 }
+                    check_variable = { ffp_popularity_in_state > 0 }
+                  }
+                }
+                set_temp_variable = { temp_ffp = ffp_popularity_in_state }
+                subtract_from_variable = { ffp_popularity_in_state = temp_ffp }
+                set_temp_variable = { temp_ncp = ncp_popularity_in_state }
+                subtract_from_variable = { ncp_popularity_in_state= temp_ncp }
+                else = {
+                  
+                }
+              }
+            }
+            if = {
+              limit = {
+                AND = {
+                  check_variable = { ffp_popularity_in_state > 0.025 }
+                  check_variable = { ccfrok_popularity_in_state > 0.025 }
+                }
+              }
+              subtract_from_variable = { ffp_popularity_in_state = 0.025 }
+              subtract_from_variable = { ccfrok_popularity_in_state = 0.025 }
+              else_if = {
+                limit = {
+                  AND = {
+                    check_variable = { ccfrok_popularity_in_state < 0.025 }
+                    check_variable = { ccfrok_popularity_in_state > 0 }
+                    check_variable = { ffp_popularity_in_state < 0.025 }
+                    check_variable = { ffp_popularity_in_state > 0 }
+                  }
+                }
+                set_temp_variable = { temp_ffp = ffp_popularity_in_state }
+                subtract_from_variable = { ffp_popularity_in_state = temp_ffp }
+                set_temp_variable = { temp_ccfrok = ccfrok_popularity_in_state }
+                subtract_from_variable = { ccfrok_popularity_in_state = temp_ccfrok }
+                else = {
+                  
+                }
+              }
+            }
+            if = {
+              limit = {
+                AND = {
+                  check_variable = { ccfrok_popularity_in_state > 0.025 }
+                  check_variable = { ncp_popularity_in_state > 0.025 }
+                }
+              }
+              subtract_from_variable = { ccfrok_popularity_in_state = 0.025 }
+              subtract_from_variable = { ncp_popularity_in_state = 0.025 }
+              else_if = {
+                limit = {
+                  AND = {
+                    check_variable = { ccfrok_popularity_in_state < 0.025 }
+                    check_variable = { ccfrok_popularity_in_state > 0 }
+                    check_variable = { ncp_popularity_in_state < 0.025 }
+                    check_variable = { ncp_popularity_in_state > 0 }
+                  }
+                }
+                set_temp_variable = { temp_ccfrok = ccfrok_popularity_in_state }
+                subtract_from_variable = { ccfrok_popularity_in_state = temp_ccfrok }
+                set_temp_variable = { temp_ncp = ncp_popularity_in_state }
+                subtract_from_variable = { ncp_popularity_in_state= temp_ncp }
+                else = {
+                  
+                }
+              }
+            }
+            set_variable = { days_since_campaign_started = 1 }
+            else = {
+              if = {
+                limit = {
+                  check_variable = { ccfrok_popularity_in_state > 0.05 }
+                }
+                subtract_from_variable = { ccfrok_popularity_in_state = 0.05 }
+                else_if = {
+                  limit = {
+                    check_variable = { ccfrok_popularity_in_state < 0.05 }
+                    check_variable = { ccfrok_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ccfrok = ccfrok_popularity_in_state }
+                subtract_from_variable = { ccfrok_popularity_in_state = temp_ccfrok }
+                  else = {
+                  
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ncp_popularity_in_state > 0.05 }
+                }
+                subtract_from_variable = { ncp_popularity_in_state = 0.05 }
+                else_if = {
+                  limit = {
+                    check_variable = { ncp_popularity_in_state < 0.05 }
+                    check_variable = { ncp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ncp = ncp_popularity_in_state }
+                subtract_from_variable = { ncp_popularity_in_state= temp_ncp }
+                  else = {
+                  
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ffp_popularity_in_state > 0.05 }
+                }
+                subtract_from_variable = { ffp_popularity_in_state = 0.05 }
+                else_if = {
+                  limit = {
+                    check_variable = { ffp_popularity_in_state < 0.05 }
+                    check_variable = { ffp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ffp = ffp_popularity_in_state }
+                subtract_from_variable = { ffp_popularity_in_state = temp_ffp }
+                  else = {
+                  
+                  }
+                }
+              }
+              set_variable = { days_since_campaign_started = 1 }
+            }
+          }
+        }
+      }
+      }
+      mai_chp_camp_ccfrok_icon_click = {
+        ROOT = {
+          add_political_power = -50
+        }
+        THIS = {
+          add_to_variable = { ccfrok_popularity_in_state = 0.05 }
+          if = {
+            limit = {
+              check_variable = { ffp_popularity_in_state > 0 }
+              check_variable = { ncp_popularity_in_state > 0 }
+              check_variable = { tfk_popularity_in_state > 0 }
+            }
+            random_list = {
+              34 = {
+                if = {
+                  limit = {
+                    check_variable = { ffp_popularity_in_state > 0.018 }
+                  }
+                  subtract_from_variable = { ffp_popularity_in_state = 0.018 }
+                  else_if = {
+                    limit = {
+                      check_variable = { ffp_popularity_in_state < 0.018 }
+                      check_variable = { ffp_popularity_in_state > 0 }
+                    }
+                    set_temp_variable = { temp_ffp = ffp_popularity_in_state }
+                subtract_from_variable = { ffp_popularity_in_state = temp_ffp }
+                    else = {
+                      
+                    }
+                  }
+                }
+                if = {
+                  limit = {
+                    check_variable = { ncp_popularity_in_state > 0.016 }
+                  }
+                subtract_from_variable = { ncp_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { ncp_popularity_in_state < 0.0161 }
+                    check_variable = { ncp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ncp = ncp_popularity_in_state }
+                subtract_from_variable = { ncp_popularity_in_state= temp_ncp }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { tfk_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { tfk_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { tfk_popularity_in_state < 0.0161 }
+                    check_variable = { tfk_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_tfk = tfk_popularity_in_state }
+                subtract_from_variable = { tfk_popularity_in_state = temp_tfk }
+                  else = {
+                    
+                  }
+                }
+              }
+            }
+            33 = {
+              if = {
+                limit = {
+                  check_variable = { ncp_popularity_in_state > 0.018 }
+                }
+                subtract_from_variable = { ncp_popularity_in_state = 0.018 }
+                else_if = {
+                  limit = {
+                    check_variable = { ncp_popularity_in_state < 0.018 }
+                    check_variable = { ncp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ncp = ncp_popularity_in_state }
+                subtract_from_variable = { ncp_popularity_in_state= temp_ncp }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ffp_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { ffp_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { ffp_popularity_in_state < 0.0161 }
+                    check_variable = { ffp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ffp = ffp_popularity_in_state }
+                subtract_from_variable = { ffp_popularity_in_state = temp_ffp }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { tfk_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { tfk_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { tfk_popularity_in_state < 0.0161 }
+                    check_variable = { tfk_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_tfk = tfk_popularity_in_state }
+                subtract_from_variable = { tfk_popularity_in_state = temp_tfk }
+                  else = {
+                    
+                  }
+                }
+              }
+            }
+            33 = {
+              if = {
+                limit = {
+                  check_variable = { tfk_popularity_in_state > 0.018 }
+                }
+                subtract_from_variable = { tfk_popularity_in_state = 0.018 }
+                else_if = {
+                  limit = {
+                    check_variable = { tfk_popularity_in_state < 0.018 }
+                    check_variable = { tfk_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_tfk = tfk_popularity_in_state }
+                subtract_from_variable = { tfk_popularity_in_state = temp_tfk }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ncp_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { ncp_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { ncp_popularity_in_state < 0.0161 }
+                    check_variable = { ncp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ncp = ncp_popularity_in_state }
+                subtract_from_variable = { ncp_popularity_in_state= temp_ncp }
+                  else = {
+                    
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ffp_popularity_in_state > 0.016 }
+                }
+                subtract_from_variable = { ffp_popularity_in_state = 0.016 }
+                else_if = {
+                  limit = {
+                    check_variable = { ffp_popularity_in_state < 0.0161 }
+                    check_variable = { ffp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ffp = ffp_popularity_in_state }
+                subtract_from_variable = { ffp_popularity_in_state = temp_ffp }
+                  else = {
+                    
+                  }
+                }
+              }
+            }
+          }
+          set_variable = { days_since_campaign_started = 1 }
+          else_if = {
+            limit = {
+              OR = {
+                AND = {
+                  check_variable = { ffp_popularity_in_state > 0 }
+                  check_variable = { ncp_popularity_in_state > 0 }
+                }
+                AND = {
+                  check_variable = { ffp_popularity_in_state > 0 }
+                  check_variable = { tfk_popularity_in_state > 0 }
+                }
+                AND = {
+                  check_variable = { tfk_popularity_in_state > 0 }
+                  check_variable = { ncp_popularity_in_state > 0 }
+                }
+              }
+            }
+            if = {
+              limit = {
+                AND = {
+                  check_variable = { ffp_popularity_in_state > 0.025 }
+                  check_variable = { ncp_popularity_in_state > 0.025 }
+                }
+              }
+              subtract_from_variable = { ffp_popularity_in_state = 0.025 }
+              subtract_from_variable = { ncp_popularity_in_state = 0.025 }
+              else_if = {
+                limit = {
+                  AND = {
+                    check_variable = { ncp_popularity_in_state < 0.025 }
+                    check_variable = { ncp_popularity_in_state > 0 }
+                    check_variable = { ffp_popularity_in_state < 0.025 }
+                    check_variable = { ffp_popularity_in_state > 0 }
+                  }
+                }
+                set_temp_variable = { temp_ffp = ffp_popularity_in_state }
+                subtract_from_variable = { ffp_popularity_in_state = temp_ffp }
+                set_temp_variable = { temp_ncp = ncp_popularity_in_state }
+                subtract_from_variable = { ncp_popularity_in_state= temp_ncp }
+                else = {
+                  
+                }
+              }
+            }
+            if = {
+              limit = {
+                AND = {
+                  check_variable = { ffp_popularity_in_state > 0.025 }
+                  check_variable = { tfk_popularity_in_state > 0.025 }
+                }
+              }
+              subtract_from_variable = { ffp_popularity_in_state = 0.025 }
+              subtract_from_variable = { tfk_popularity_in_state = 0.025 }
+              else_if = {
+                limit = {
+                  AND = {
+                    check_variable = { tfk_popularity_in_state < 0.025 }
+                    check_variable = { tfk_popularity_in_state > 0 }
+                    check_variable = { ffp_popularity_in_state < 0.025 }
+                    check_variable = { ffp_popularity_in_state > 0 }
+                  }
+                }
+                set_temp_variable = { temp_ffp = ffp_popularity_in_state }
+                subtract_from_variable = { ffp_popularity_in_state = temp_ffp }
+                set_temp_variable = { temp_tfk = tfk_popularity_in_state }
+                subtract_from_variable = { tfk_popularity_in_state = temp_tfk }
+                else = {
+                  
+                }
+              }
+            }
+            if = {
+              limit = {
+                AND = {
+                  check_variable = { tfk_popularity_in_state > 0.025 }
+                  check_variable = { ncp_popularity_in_state > 0.025 }
+                }
+              }
+              subtract_from_variable = { tfk_popularity_in_state = 0.025 }
+              subtract_from_variable = { ncp_popularity_in_state = 0.025 }
+              else_if = {
+                limit = {
+                  AND = {
+                    check_variable = { tfk_popularity_in_state < 0.025 }
+                    check_variable = { tfk_popularity_in_state > 0 }
+                    check_variable = { ncp_popularity_in_state < 0.025 }
+                    check_variable = { ncp_popularity_in_state > 0 }
+                  }
+                }
+                set_temp_variable = { temp_tfk = tfk_popularity_in_state }
+                subtract_from_variable = { tfk_popularity_in_state = temp_tfk }
+                set_temp_variable = { temp_ncp = ncp_popularity_in_state }
+                subtract_from_variable = { ncp_popularity_in_state= temp_ncp }
+                else = {
+                  
+                }
+              }
+            }
+            set_variable = { days_since_campaign_started = 1 }
+            else = {
+              if = {
+                limit = {
+                  check_variable = { tfk_popularity_in_state > 0.05 }
+                }
+                subtract_from_variable = { tfk_popularity_in_state = 0.05 }
+                else_if = {
+                  limit = {
+                    check_variable = { tfk_popularity_in_state < 0.05 }
+                    check_variable = { tfk_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_tfk = tfk_popularity_in_state }
+                subtract_from_variable = { tfk_popularity_in_state = temp_tfk }
+                  else = {
+                  
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ncp_popularity_in_state > 0.05 }
+                }
+                subtract_from_variable = { ncp_popularity_in_state = 0.05 }
+                else_if = {
+                  limit = {
+                    check_variable = { ncp_popularity_in_state < 0.05 }
+                    check_variable = { ncp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ncp = ncp_popularity_in_state }
+                subtract_from_variable = { ncp_popularity_in_state= temp_ncp }
+                  else = {
+                  
+                  }
+                }
+              }
+              if = {
+                limit = {
+                  check_variable = { ffp_popularity_in_state > 0.05 }
+                }
+                subtract_from_variable = { ffp_popularity_in_state = 0.05 }
+                else_if = {
+                  limit = {
+                    check_variable = { ffp_popularity_in_state < 0.05 }
+                    check_variable = { ffp_popularity_in_state > 0 }
+                  }
+                  set_temp_variable = { temp_ffp = ffp_popularity_in_state }
+                subtract_from_variable = { ffp_popularity_in_state = temp_ffp }
+                  else = {
+                  
+                  }
+                }
+              }
+              set_variable = { days_since_campaign_started = 1 }
+            }
+          }
+          }
+        }
+      }
+    }
+  }
+
+  mai_chp_button = {
+    context_type = player_context
+		
+		window_name = "central_kingdom_chp_button_cont"
+		parent_window_token = politics_tab
+		visible = {
+      tag = MAI
+      has_country_flag = children_parliament
+		}
+		
+		effects = {
+			central_kingdom_chp_button_bg_click = {
+				set_variable = { MAI_chp_is_visible = 1 }
+			}
+		}
+  }
+
+	children_parliament_polling_window_ui = {
+    context_type = player_context
+     	
+    window_name = "central_kingdom_chp_polling_window_container"
+    parent_window_token = central_kingdom_chp_window_container
+        
+    visible = {
+      tag = MAI
+      AND = {
+        tag = MAI
+        has_variable = MAI_chp_is_visible
+        has_country_flag = parliament_reformed
+        OR = {
+          has_country_flag = national_children_party_wins
+          has_country_flag = free_future_party_wins
+          has_country_flag = time_for_kids_wins
+          has_country_flag = children_coalition_for_the_renewal_of_the_kingdom_wins
+          has_country_flag = we_have_a_tie
+        }
+      }
+    }
+
+    properties = {
+      736_voting_icon = {
+				frame = 736_voting_icon_frame
+      }
+      773_voting_icon = {
+				frame = 773_voting_icon_frame
+      }
+      767_voting_icon = {
+				frame = 767_voting_icon_frame
+      }
+      776_voting_icon = {
+				frame = 776_voting_icon_frame
+      }
+      803_voting_icon = {
+				frame = 803_voting_icon_frame
+      }
+      789_voting_icon = {
+				frame = 789_voting_icon_frame
+      }
+      798_voting_icon = {
+				frame = 798_voting_icon_frame
+      }
+      796_voting_icon = {
+				frame = 796_voting_icon_frame
+      }
+      792_voting_icon = {
+				frame = 792_voting_icon_frame
+      }
+      812_voting_icon = {
+				frame = 812_voting_icon_frame
+      }
+      814_voting_icon = {
+				frame = 814_voting_icon_frame
+      }
+      822_voting_icon = {
+				frame = 822_voting_icon_frame
+      }
+      824_voting_icon = {
+				frame = 824_voting_icon_frame
+      }
+      817_voting_icon = {
+				frame = 817_voting_icon_frame
+      }
+      799_voting_icon = {
+				frame = 799_voting_icon_frame
+      }
+      808_voting_icon = {
+				frame = 808_voting_icon_frame
+      }
+      831_voting_icon = {
+				frame = 831_voting_icon_frame
+      }
+      852_voting_icon = {
+				frame = 852_voting_icon_frame
+      }
+      858_voting_icon = {
+				frame = 858_voting_icon_frame
+      }
+      843_voting_icon = {
+				frame = 843_voting_icon_frame
+      }
+      835_voting_icon = {
+				frame = 835_voting_icon_frame
+      }
+      853_voting_icon = {
+				frame = 853_voting_icon_frame
+      }
+      869_voting_icon = {
+				frame = 869_voting_icon_frame
+      }
+      1048_voting_icon = {
+				frame = 1048_voting_icon_frame
+      }
+      872_voting_icon = {
+				frame = 872_voting_icon_frame
+      }
+      884_voting_icon = {
+				frame = 884_voting_icon_frame
+      }
+      905_voting_icon = {
+				frame = 905_voting_icon_frame
+      }
+      911_voting_icon = {
+				frame = 911_voting_icon_frame
+      }
+      877_voting_icon = {
+				frame = 877_voting_icon_frame
+      }
+      897_voting_icon = {
+				frame = 897_voting_icon_frame
+      }
+		}
+
+    effects = {
+			central_kingdom_chp_polling_button_bg_exit_click = {
+				clear_variable = MAI_chp_polls_visible
+			}
+		}
+  }
+
+  en1_children_parliament_decision_ui = {
+    context_type = decision_category
+      
+    window_name = "en1_children_parliament_decision_ui_window"
+        
+    visible = {
+      has_completed_focus = EN1_a_parliament_for_children
+    }
+
+    properties = {
+      en1_children_parliament_current_leader_icon_party_1 = {
+        frame = current_en1_children_parliament_leader_icon_party_1_frame
+      }
+      en1_children_parliament_current_leader_icon_party_2 = {
+        frame = current_en1_children_parliament_leader_icon_party_2_frame
+      }
+      en1_children_parliament_current_leader_icon_party_3 = {
+        frame = current_en1_children_parliament_leader_icon_party_3_frame
+      }
+      en1_children_parliament_current_leader_icon_party_4 = {
+        frame = current_en1_children_parliament_leader_icon_party_4_frame
+      }
+    }
+  }
+}

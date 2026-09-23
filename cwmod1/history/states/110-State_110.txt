@@ -1,0 +1,25 @@
+
+state={
+	id=110
+	name="STATE_110"
+
+	history={
+		owner = SOO
+		add_core_of = SOO
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 2
+		}
+		victory_points = {
+			865 10
+		}
+	}
+
+	provinces={
+		865 1378 1962 2205 2276 3234 3417 3685 
+	}
+	manpower=230448
+	buildings_max_level_factor=1.000
+	state_category = town
+}
