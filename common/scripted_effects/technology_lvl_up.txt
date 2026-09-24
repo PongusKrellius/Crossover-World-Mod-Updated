@@ -483,11 +483,6 @@ middleage_to_modern = {
 	add_tech_bonus = {
     	bonus = 1
     	uses = 1
-   		category = cl_tech
-	}
-	add_tech_bonus = {
-    	bonus = 1
-    	uses = 1
    		category = ca_tech
 	}
 	add_tech_bonus = {

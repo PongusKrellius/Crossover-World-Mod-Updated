@@ -706,10 +706,8 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = { 
-			swap_ideas = {
-				remove_idea = middleage_tech
-				add_idea = pre-industrial_tech
-			}
+		custom_effect_tooltip = tech_advance
+		tech_advance = yes
 		}		
 	}
 
@@ -1048,10 +1046,8 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = { 
-			swap_ideas = {
-				remove_idea = middleage_tech
-				add_idea = pre-industrial_tech
-			}
+		custom_effect_tooltip = tech_advance
+		tech_advance = yes
 		}
 	}
 

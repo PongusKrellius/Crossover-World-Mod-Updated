@@ -128,7 +128,7 @@ add_ideas = {
 	UND_limited_staff
 }
 
-create_faction = mount_ebott_treaty
+create_faction_from_template = mount_ebott_treaty
 
 
 set_convoys = 50

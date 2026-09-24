@@ -151,6 +151,24 @@ focus_tree = {
 			factor = 5
 		} 
 		completion_reward = {
+		if = {
+				limit = {
+					has_idea = TCWMod_black_monday
+				}
+				remove_ideas = TCWMod_black_monday
+			}
+			if = {
+				limit = {
+					has_idea = TCWMod_black_monday2
+				}
+				remove_ideas = TCWMod_black_monday2
+			}
+			if = {
+				limit = {
+					has_idea = TCWMod_black_monday3
+				}
+				remove_ideas = TCWMod_black_monday3
+			}
 			166 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -339,6 +357,12 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = {
 				ENC_rooting_out_radicals
+			}
+			if = {
+				limit = {
+					has_idea = ENC_bandits
+				}
+				remove_ideas = ENC_bandits
 			}
 		} 
 	}

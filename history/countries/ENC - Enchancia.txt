@@ -39,7 +39,7 @@ add_ideas = {
 	ENC_golden_age
 }
 
-create_faction = threekingdoms
+create_faction_from_template = threekingdoms
 add_to_faction = ENC
 add_to_faction = WEI
 add_to_faction = KHA

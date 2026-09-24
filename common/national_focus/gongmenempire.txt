@@ -1071,7 +1071,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 50
-			create_faction = gongmen_pact
+			create_faction_from_template = gongmen_pact
 		}		
 	}
 
@@ -1105,6 +1105,7 @@ focus_tree = {
 			}
 			remove_ideas = {
 				GON_closed_country_2
+				GON_monarchist_guerillas
 			}
 		}		
 	}

@@ -16,7 +16,7 @@ focus_tree = {
 	icon = GFX_goal_generic_production
 	x = 3
 	y = 0
-	cost = 5
+	cost = 7
 	available_if_capitulated = no
 	available = {
 		is_puppet = no
@@ -41,7 +41,7 @@ focus = {
 	prerequisite = { focus = AVA_economic_legacy_of_maru }
 	x = 5
 	y = 1
-	cost = 5
+	cost = 7
 
 	available_if_capitulated = no
 
@@ -92,7 +92,7 @@ focus = {
 	prerequisite = { focus = AVA_expansion_of_industry }
 	x = 5
 	y = 2
-	cost = 5
+	cost = 7
 
 	available_if_capitulated = no
 
@@ -137,7 +137,7 @@ focus = {
 	prerequisite = { focus = AVA_give_farmers_additional_materials }
 	x = 5
 	y = 3
-	cost = 5
+	cost = 7
 
 	available_if_capitulated = no
 
@@ -191,7 +191,7 @@ focus = {
 		prerequisite = { focus = AVA_roads_on_islands }
 		x = 3
 		y = 2
-		cost = 5
+		cost = 7
 
 		ai_will_do = { 
 			factor = 2
@@ -271,7 +271,7 @@ focus = {
 		prerequisite = { focus = AVA_expand_the_ferries }
 		x = 3
 		y = 3
-		cost = 5
+		cost = 7
 
 		ai_will_do = { 
 			factor = 2
@@ -314,6 +314,8 @@ focus = {
 
 		completion_reward = {
 			add_political_power = 50
+		custom_effect_tooltip = tech_advance
+		tech_advance = yes
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 0.5
@@ -344,7 +346,6 @@ focus = {
 				bonus = 1
 				uses = 3
 				category = dd_tech
-				category = cl_tech
 				category = ca_tech
 			}
 		}
@@ -366,6 +367,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		custom_effect_tooltip = tech_advance
+		tech_advance = yes
 			add_political_power = 50
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -383,7 +386,7 @@ focus = {
 		prerequisite = { focus = AVA_economic_legacy_of_maru }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 7
 
 		ai_will_do = { 
 			factor = 2
@@ -417,7 +420,7 @@ focus = {
 		prerequisite = { focus = AVA_southern_military_area }
 		x = 1
 		y = 2
-		cost = 5
+		cost = 7
 
 		ai_will_do = { 
 			factor = 2
@@ -451,7 +454,7 @@ focus = {
 		prerequisite = { focus = AVA_new_production_lines }
 		x = 1
 		y = 3
-		cost = 5
+		cost = 7
 
 		ai_will_do = { 
 			factor = 2
@@ -883,10 +886,8 @@ focus = {
 			factor = 1
 		} 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = middleage_tech
-				add_idea = modern_tech_idea
-			}
+		custom_effect_tooltip = tech_advance
+		tech_advance = yes
 			add_research_slot = 3
 			hidden_effect = {
 				set_technology = {
@@ -960,7 +961,7 @@ focus = {
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		x = 9
 		y = 6
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AVA_clear_the_remnants_of_shuriki_rule }
 		available_if_capitulated = yes
 		ai_will_do = { 
@@ -976,7 +977,7 @@ focus = {
 		icon = GFX_goal_generic_improve_relations
 		x = 5
 		y = 7
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AVA_our_international_image }
 		available_if_capitulated = yes
 		bypass = {
@@ -1002,7 +1003,7 @@ focus = {
 		icon = GFX_goal_generic_improve_relations
 		x = 5
 		y = 8
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AVA_befriend_corinthia }
 		available_if_capitulated = yes
 		bypass = {
@@ -1028,7 +1029,7 @@ focus = {
 		icon = GFX_goal_generic_fortify_city
 		x = 11
 		y = 7
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AVA_our_international_image }
 		mutually_exclusive = {
 			focus = AVA_get_closer_to_enchancia
@@ -1064,7 +1065,7 @@ focus = {
 		icon = GFX_goal_generic_defence
 		x = 11
 		y = 8
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AVA_prepare_for_the_worst }
 		available_if_capitulated = yes
 		ai_will_do = { 
@@ -1082,7 +1083,7 @@ focus = {
 		icon = GFX_goal_generic_improve_relations
 		x = 7
 		y = 7
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AVA_our_international_image }
 		mutually_exclusive = {
 			focus = AVA_prepare_for_the_worst
@@ -1166,7 +1167,7 @@ focus = {
 		icon = GFX_goal_generic_improve_relations
 		x = 7
 		y = 8
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AVA_get_closer_to_enchancia }
 		available_if_capitulated = yes
 		ai_will_do = { 
@@ -1187,7 +1188,7 @@ focus = {
 		icon = GFX_goal_generic_military_sphere
 		x = 6
 		y = 9
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AVA_befriend_khaldoun }
 		prerequisite = { focus = AVA_befriend_maarswik }
 		available_if_capitulated = yes
@@ -1266,7 +1267,7 @@ focus = {
 		icon = GFX_goal_generic_improve_relations
 		x = 14
 		y = 7
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AVA_our_international_image }
 		available_if_capitulated = yes
 		bypass = {
@@ -1292,7 +1293,7 @@ focus = {
 		icon = GFX_goal_generic_improve_relations
 		x = 14
 		y = 8
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AVA_get_closer_to_japanifornia }
 		available_if_capitulated = yes
 		ai_will_do = { 
@@ -1313,7 +1314,7 @@ focus = {
 		icon = GFX_goal_generic_major_alliance
 		x = 14
 		y = 9
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AVA_mount_the_defence focus = AVA_trade_deal_with_khurain }
 		available_if_capitulated = yes
 		available = {
@@ -1343,7 +1344,7 @@ focus = {
 		icon = GFX_goal_generic_major_alliance
 		x = 12
 		y = 9
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AVA_trade_deal_with_khurain focus = AVA_mount_the_defence }
 		available_if_capitulated = yes
 		available = {
@@ -1370,7 +1371,7 @@ focus = {
 		icon = GFX_goal_anschluss
 		x = 10
 		y = 9
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AVA_mount_the_defence }
 		available_if_capitulated = yes
 		available = {
@@ -1389,7 +1390,7 @@ focus = {
 		icon = GFX_goal_generic_more_territorial_claims
 		x = 7
 		y = 10
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AVA_liberate_everrealm_alone focus = AVA_help_from_the_east focus = AVA_apply_to_join_western_alliance focus = AVA_for_the_everrealm }
 		available_if_capitulated = yes
 		bypass = {
@@ -1420,7 +1421,7 @@ focus = {
 		icon = GFX_goal_generic_more_territorial_claims
 		x = 9
 		y = 10
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AVA_liberate_everrealm_alone focus = AVA_help_from_the_east focus = AVA_apply_to_join_western_alliance focus = AVA_for_the_everrealm }
 		available_if_capitulated = yes
 		bypass = {
@@ -1451,7 +1452,7 @@ focus = {
 		icon = GFX_goal_generic_more_territorial_claims
 		x = 9
 		y = 11
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AVA_operation_neptune }
 		prerequisite = { focus = AVA_operation_rosario }
 		prerequisite = { focus = AVA_operation_coronet }
@@ -1504,7 +1505,7 @@ focus = {
 		icon = GFX_goal_generic_more_territorial_claims
 		x = 11
 		y = 10
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AVA_liberate_everrealm_alone focus = AVA_help_from_the_east focus = AVA_apply_to_join_western_alliance focus = AVA_for_the_everrealm }
 		available_if_capitulated = yes
 		bypass = {
@@ -1535,7 +1536,7 @@ focus = {
 		icon = GFX_goal_generic_more_territorial_claims
 		x = 13
 		y = 10
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AVA_liberate_everrealm_alone focus = AVA_help_from_the_east focus = AVA_apply_to_join_western_alliance focus = AVA_for_the_everrealm }
 		available_if_capitulated = yes
 		available = {
@@ -1560,7 +1561,7 @@ focus = {
 		icon = GFX_goal_generic_more_territorial_claims
 		x = 15
 		y = 10
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AVA_liberate_everrealm_alone focus = AVA_help_from_the_east focus = AVA_apply_to_join_western_alliance }
 		available_if_capitulated = yes
 		bypass = {

@@ -1163,8 +1163,8 @@ ideas = {
 			modifier = {
 				war_support_factor = -0.15
 				stability_factor = -0.2
-				production_speed_buildings_factor = -0.15
-				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.10
+				industrial_capacity_factory = -0.10
 			}
 		}
 
@@ -1879,7 +1879,7 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				production_speed_buildings_factor = 0.15
+				production_speed_buildings_factor = 0.10
 				consumer_goods_factor = -0.05
 				political_power_gain = 0.20
 				training_time_army_factor = 0.25

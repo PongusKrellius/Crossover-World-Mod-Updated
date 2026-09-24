@@ -4,6 +4,9 @@ state={
 	provinces={
 		32 385 686 1521 1941 2211 2513 2755 3775 4074 5491 10644 10680 10688 
 	}
+	resources = {
+		chromium = 21
+	}
 	manpower=475035
 	state_category = rural
 	buildings_max_level_factor=1.000

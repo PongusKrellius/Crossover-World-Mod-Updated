@@ -2,6 +2,9 @@ state={
 	id=179
 	name="STATE_179"
 	state_category = town
+	resources = {
+		steel = 11
+	}
 	history = {
 		owner = ENC
 		add_core_of = ENC

@@ -122,7 +122,7 @@ add_ideas = {
 	modern_tech_idea
 }
 
-create_faction = antiflower
+create_faction_from_template = antiflower
 add_to_faction = WEA
 
 set_convoys = 50
