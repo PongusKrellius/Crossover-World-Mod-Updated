@@ -2,6 +2,9 @@ state={
 	id=220
 	name="STATE_220"
 	state_category = rural
+	resources = {
+		coal = 32
+	}
 	history = {
 		add_core_of = ISL
 		owner = ISL

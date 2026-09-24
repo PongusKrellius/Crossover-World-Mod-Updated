@@ -7,8 +7,8 @@ state={
 	manpower=356538
 	buildings_max_level_factor=1.000
 	resources = {
-		coal = 11
-		tungsten = 40
+		coal = 22
+		tungsten = 50
 	}
 	history = {
 		owner = KAN

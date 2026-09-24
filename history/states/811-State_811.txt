@@ -3,9 +3,9 @@ state={
 	name="STATE_811"
 	state_category = metropolis
 	resources={
-		steel = 120
+		steel = 30
 		chromium=24
-		aluminium=27
+		aluminium=47
 	}
 	history = {
 		add_core_of = FRI

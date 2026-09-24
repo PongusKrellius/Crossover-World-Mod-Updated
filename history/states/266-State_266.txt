@@ -9,6 +9,9 @@ state={
 			infrastructure = 2
 		}
 	}
+	resources = {
+		oil = 23
+	}
 	provinces={
 		1096 2340 2823 3037 6788 6836 6846 6911 6912 
 	}

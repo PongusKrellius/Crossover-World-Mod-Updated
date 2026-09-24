@@ -1,0 +1,14 @@
+tech_advance = {
+	if = {
+		limit = { has_idea = middleage_tech }
+		swap_ideas = { add_idea = pre-industrial_tech remove_idea = middleage_tech }
+	}
+	if = {
+			limit = { has_idea = pre-industrial_tech }
+			swap_ideas = { add_idea = pre-modern_tech remove_idea = pre-industrial_tech }
+		}
+	if = {
+			limit = { has_idea = pre-modern_tech }
+			swap_ideas = { add_idea = modern_tech_idea remove_idea = pre-modern_tech }
+		}
+}

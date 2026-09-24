@@ -13,7 +13,7 @@ state={
 		}
 	}
 	resources = {
-		coal = 21
+		coal = 41
 	}
 	provinces={
 		1074 4039 7160 7300 7368 

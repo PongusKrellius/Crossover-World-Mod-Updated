@@ -1,6 +1,10 @@
 state={
 	id=581
 	name="STATE_581"
+	resources = {
+		coal = 10
+		chromium = 32
+	}
 	provinces={
 		609 1794 3512 4208 4380 4646 8659 8677 8709 8713 8728 8750 8774 8790 8845 
 	}

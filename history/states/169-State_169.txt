@@ -16,5 +16,6 @@ state={
 	}
 	resources = {
 		wood = 27
+		coal = 23
 	}
 }

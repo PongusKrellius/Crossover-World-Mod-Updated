@@ -4,6 +4,7 @@ state={
 	state_category = rural
 	resources = {
 		oil = 3
+		aluminium = 32
 	}
 	provinces={
 		292 1971 3031 3878 5699 9256 9264 9287 9301 9320 9340 9408 

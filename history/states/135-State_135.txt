@@ -5,6 +5,9 @@ state={
 		203 2833 3459 3884 5302 5424 6116 
 	}
 	state_category = rural
+	resources = {
+		coal = 10
+	}
 	history = {
 		owner = FFA
 		add_core_of = FFA

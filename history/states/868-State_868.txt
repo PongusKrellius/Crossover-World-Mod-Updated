@@ -22,6 +22,7 @@ state={
 	}
 	manpower=215542
 	buildings_max_level_factor=1.000
-	resources = { wood = 27 }
+	resources = { wood = 27
+	coal = 47 }
 	
 }

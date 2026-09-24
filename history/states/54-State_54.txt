@@ -4,6 +4,9 @@ state={
 	provinces={
 		10738 
 	}
+	resources = {
+		coal = 10
+	}
 	manpower=1
 	state_category = rural
 	buildings_max_level_factor=1.000

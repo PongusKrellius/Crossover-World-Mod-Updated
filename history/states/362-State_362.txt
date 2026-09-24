@@ -5,7 +5,7 @@ state={
 		1023 1982 3296 4360 5379 7301 7332 7348 7363 7435 7481 
 	}
 		resources = {
-		coal = 9
+		coal = 19
 	}
 	manpower=250000
 	state_category = rural

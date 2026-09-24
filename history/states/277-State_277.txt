@@ -9,6 +9,9 @@ state={
 		infrastructure = 2
 		}
 	}
+	resources = {
+		chromium = 25
+	}
 	provinces={
 		285 332 601 839 2903 3022 3631 3924 5157 6722 6736 6796 6811 6814 6848 6907 
 	}

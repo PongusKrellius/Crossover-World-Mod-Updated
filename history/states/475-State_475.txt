@@ -4,7 +4,7 @@ state={
 	state_category = city
 	resources = {
 		aluminium = 3
-		chromium = 3
+		chromium = 13
 	}
 	history = {
 		add_core_of = KHA

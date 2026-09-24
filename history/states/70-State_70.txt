@@ -12,6 +12,9 @@ state={
 			}
 		}
 	}
+	resources = {
+		coal = 10
+	}
 	provinces={
 		2120 3068 3161 10660 
 	}

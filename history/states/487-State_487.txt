@@ -10,6 +10,9 @@ state={
 		add_core_of = OUT
 		add_core_of = GRN
 	}
+	resources = {
+		coal = 41
+	}
 	manpower=1200000
 	buildings_max_level_factor=1.000
 }

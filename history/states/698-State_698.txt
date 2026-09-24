@@ -5,7 +5,7 @@ state={
 	resources = {
 		tungsten = 10
 		steel = 45
-		aluminium = 20
+		aluminium = 40
 	}
 	provinces={
 		243 2243 2623 3130 9431 9439 9440 9486 

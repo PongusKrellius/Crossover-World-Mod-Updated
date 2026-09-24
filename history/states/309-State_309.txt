@@ -2,8 +2,9 @@ state={
 	id=309
 	name="STATE_309"
 	resources = {
-		aluminium = 4
-		steel = 6
+		aluminium = 15
+		steel = 12
+		coal = 8
 	}
 	state_category = city
 	history = {
@@ -22,10 +23,6 @@ state={
 		victory_points = {
 			7027 30
 		}
-	}
-	resources = {
-		coal = 3
-		aluminium = 9
 	}
 	provinces={
 		719 1707 3026 6962 7027 7074 7128 7142 7200 

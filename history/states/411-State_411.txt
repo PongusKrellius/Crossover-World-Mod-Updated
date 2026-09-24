@@ -3,7 +3,7 @@ state={
 	name="STATE_411"
 	state_category = rural
 	resources = {
-		chromium = 6
+		chromium = 36
 	}
 	history = {
 		add_core_of = KHA

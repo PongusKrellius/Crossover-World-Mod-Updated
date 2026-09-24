@@ -7,7 +7,7 @@ state={
 	}
 	resources={
 		rubber=15
-		chromium=13
+		chromium=26
 		tungsten=8
 		coal = 29
 	}

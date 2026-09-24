@@ -1176,8 +1176,6 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
@@ -1320,7 +1318,9 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
-
+		available = {
+			num_of_factories > 12
+		}
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
@@ -1345,8 +1345,10 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
+		
 		completion_reward = {
+		custom_effect_tooltip = tech_advance
+		tech_advance = yes
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1678,10 +1680,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = infrastructure_effort_2
 		cost = 10
+		available = {
+			num_of_factories > 40
+		}
 
 		available_if_capitulated = yes
 
 		completion_reward = {
+		custom_effect_tooltip = tech_advance
+			tech_advance = yes
 			add_research_slot = 1
 		}
 	}
@@ -1727,6 +1734,33 @@ focus_tree = {
 				category = nuclear
 				category = rocketry
 			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.25
+				always = yes
+			}
+		}
+	}
+	focus = {
+		id = into_modernity
+		icon = GFX_goal_tfv_generic_tech_sharing
+		prerequisite = { focus = extra_tech_slot_2 }
+		x = 0
+		y = 1
+		available = {
+			num_of_factories > 50
+		}
+		relative_position_id = extra_tech_slot_2
+		cost = 13
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = tech_advance
+			tech_advance = yes
 		}
 
 		ai_will_do = {

@@ -5,6 +5,9 @@ state={
 	provinces={
 		2803 5446 9150 9170 9203 9215 9258 
 	}
+	resources = {
+		aluminium = 19
+	}
 	manpower=227640
 	buildings_max_level_factor=1.000
 	history = {

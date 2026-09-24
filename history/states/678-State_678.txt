@@ -3,7 +3,7 @@ state={
 	name="STATE_678"
 	state_category = rural
 	resources = {
-		oil = 3
+		oil = 5
 		tungsten = 5
 	}
 	provinces={
