@@ -24,7 +24,7 @@ state={
 		}
 	}
 	resources = {
-			steel = 10
+			steel = 20
 			oil = 8
 		}
 }

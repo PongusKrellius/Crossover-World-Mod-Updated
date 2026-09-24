@@ -5,8 +5,8 @@ state={
 	resources = {
 		tungsten = 10
 		steel = 40
-		aluminium = 10
-		oil = 5
+		aluminium = 3
+		oil = 15
 	}
 	history = {
 		owner = AVA
@@ -29,5 +29,5 @@ state={
 	}
 	manpower=1557829
 	buildings_max_level_factor=1.000
-	resources = { wood = 10 }
+	resources = { wood = 27 }
 }

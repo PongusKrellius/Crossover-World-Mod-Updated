@@ -106,6 +106,7 @@ ideas = {
 			modifier = {
 				research_speed_factor = -1.5
 				operative_slot = 1
+				local_resources_factor = -0.80
 			#	production_speed_rail_way_factor = -100
 			}
 			removal_cost = -1
@@ -128,6 +129,7 @@ ideas = {
 			modifier = {
 				research_speed_factor = -1
 				operative_slot = 1
+				local_resources_factor = -0.5
 			#	production_speed_rail_way_factor = -100
 			}
 			removal_cost = -1
@@ -150,6 +152,7 @@ ideas = {
 			modifier = {
 				research_speed_factor = -0.7
 				operative_slot = 2
+				local_resources_factor = -0.25
 			#	production_speed_rail_way_factor = -100
 			}
 			removal_cost = -1
@@ -1878,8 +1881,9 @@ ideas = {
 			modifier = {
 				production_speed_buildings_factor = 0.15
 				consumer_goods_factor = -0.05
-				political_power_gain = 0.25
+				political_power_gain = 0.20
 				training_time_army_factor = 0.25
+				local_resources_factor = 0.05
 			}
 		}
 

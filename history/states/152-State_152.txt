@@ -4,6 +4,10 @@ state={
 	provinces={
 		670 1286 4625 5675 6209 6247 6265 
 	}
+	resources = {
+		wood = 27
+		steel = 21
+	}
 	history = {
 		owner = NTR
 		add_core_of = NTR

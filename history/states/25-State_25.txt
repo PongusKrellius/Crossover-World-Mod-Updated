@@ -3,7 +3,7 @@ state={
 	name="STATE_25"
 	state_category = rural
 	resources = {
-		chromium = 4
+		chromium = 24
 	}
 	history = {
 		owner = AVA

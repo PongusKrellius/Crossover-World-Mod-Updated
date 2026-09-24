@@ -20,5 +20,6 @@ state={
 	state_category = town
 	resources = {
 		oil = 15
+		coal = 16
 	}
 }

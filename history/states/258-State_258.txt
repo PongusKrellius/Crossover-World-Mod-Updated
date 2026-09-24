@@ -14,9 +14,10 @@ state={
 		}
 	}
 	resources = {
-		steel = 18
+		steel = 9
 		aluminium = 12
-		wood = 10
+		wood = 27
+		tungsten = 14
 	}
 	state_category = city
 }

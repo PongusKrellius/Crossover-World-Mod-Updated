@@ -3,7 +3,7 @@ state={
 	name="STATE_820"
 	state_category = rural
 	resources={
-		oil = 14
+		oil = 35
 	}
 	history = {
 		add_core_of = WEK
@@ -17,5 +17,5 @@ state={
 	}
 	manpower=500000
 	buildings_max_level_factor=1.000
-	resources = { wood = 10 }
+	resources = { wood = 27 }
 }

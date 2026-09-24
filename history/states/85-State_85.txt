@@ -6,6 +6,9 @@ state={
 	}
 	manpower=100000
 	state_category = rural
+	resources = {
+	coal = 5
+	 }
 	buildings_max_level_factor=1.000
 	history = {
 		owner = WOR

@@ -15,6 +15,7 @@ state={
 	}
 	resources = {
 		oil = 23
+		coal = 29
 	}
 	state_category = rural
 }

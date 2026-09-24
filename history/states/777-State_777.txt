@@ -10,6 +10,10 @@ state={
 			infrastructure = 2
 		}
 	}
+	resources = {
+		tungsten = 31
+		oil = 32
+	}
 	provinces={
 		821 1430 1541 2771 3357 5563 5727 9866 9904 9928 9972 9979 9986 10009 10027 
 	}

@@ -9,6 +9,7 @@ state={
 	provinces={
 		1247 1817 3900 4139 5222 5490 9236 9321 9354 9359 9364 2512 9341 9257 1881 
 	}
+	resources = { coal = 12 }
 	manpower=205250
 	buildings_max_level_factor=1.000
 	history = {

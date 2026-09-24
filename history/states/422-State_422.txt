@@ -2,6 +2,10 @@ state={
 	id=422
 	name="STATE_422"
 	state_category = rural
+	resources = {
+		coal = 10
+		oil = 14
+	}
 	history = {
 		add_core_of = KHA
 		owner = KHA

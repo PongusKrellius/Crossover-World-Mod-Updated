@@ -8,7 +8,7 @@ state={
 	resources = {
 		tungsten = 7
 		steel = 8
-		rubber = 3
+		chromium = 6 
 	}
 	manpower=150000
 	buildings_max_level_factor=1.000

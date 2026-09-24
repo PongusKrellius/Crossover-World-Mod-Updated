@@ -2,16 +2,16 @@ state={
 	id=98
 	name="STATE_98"
 	resources = {
-		steel = 6
-		aluminium = 2
-		oil = 8
+		steel = 10
+		aluminium = 33
+		chromium = 43
 	}
 	state_category = city
 	history = {
 		owner = ENC
 		add_core_of = ENC
 		buildings = {
-			arms_factory = 2
+			arms_factory = 1
 			industrial_complex = 2
 			infrastructure = 2
 		}

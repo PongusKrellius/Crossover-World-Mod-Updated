@@ -12,6 +12,9 @@ state={
 	provinces={
 		1932 4263 5703 10336 10422 10431 10437 10446 
 	}
+	resources = {
+		coal = 31
+	}
 	manpower=500000
 	buildings_max_level_factor=1.000
 }

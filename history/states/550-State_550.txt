@@ -2,8 +2,8 @@ state={
 	id=550
 	name="STATE_550"
 	resources = {
-		oil = 4
-		steel = 4
+		oil = 8
+		steel = 12
 	}
 	state_category = city
 	history = {

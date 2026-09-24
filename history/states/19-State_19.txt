@@ -15,6 +15,9 @@ state={
 	provinces={
 		1801 2224 6779 6810 6829 
 	}
+	resources = {
+		oil = 24
+	}
 	manpower=250000
 	buildings_max_level_factor=1.000
 }

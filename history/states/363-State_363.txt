@@ -2,6 +2,9 @@ state={
 	id=363
 	name="STATE_363"
 	state_category = rural
+	resources = {
+		coal = 15
+	}
 	history = {
 		add_core_of = WEI
 		owner = WEI
@@ -14,5 +17,5 @@ state={
 	}
 	manpower=250000
 	buildings_max_level_factor=1.000
-	resources = { wood = 10 }
+	resources = { wood = 27 }
 }

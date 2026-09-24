@@ -14,4 +14,7 @@ state={
 			infrastructure = 2
 		}
 	}
+	resources = {
+		wood = 27
+	}
 }

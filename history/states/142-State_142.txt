@@ -6,8 +6,9 @@ state={
 	}
 	state_category = city
 	resources = {
-		steel = 11
-		aluminium = 5
+		steel = 16
+		aluminium = 8
+		coal = 13
 	}
 	history = {
 		owner = FFA

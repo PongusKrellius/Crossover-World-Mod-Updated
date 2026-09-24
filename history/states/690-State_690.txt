@@ -3,9 +3,8 @@ state={
 	name="STATE_690"
 	state_category = city
 	resources = {
-		tungsten = 4
 		steel = 3
-		chromium = 4
+		chromium = 24
 	}
 	history = {
 		owner = AVA

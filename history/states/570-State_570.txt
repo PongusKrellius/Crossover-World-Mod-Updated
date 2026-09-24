@@ -4,6 +4,7 @@ state={
 	state_category = city
 	resources = {
 		steel = 6
+		coal = 13
 	}
 	history = {
 		add_core_of = COR

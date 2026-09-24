@@ -4,6 +4,9 @@ state={
 	provinces={
 		2006 5213 5464 10350 10360 
 	}
+	resources = {
+		oil = 54
+	}
 	state_category = rural
 	manpower=150000
 	buildings_max_level_factor=1.000

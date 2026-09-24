@@ -6,7 +6,9 @@ state={
 	}
 	manpower=250000
 	buildings_max_level_factor=1.000
-	resources = { wood = 10 }
+	resources = { wood = 41
+	coal = 32
+	 }
 	history = {
 		owner = LEC
 		add_core_of = LEC

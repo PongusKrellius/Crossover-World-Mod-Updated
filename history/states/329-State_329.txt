@@ -3,8 +3,9 @@ state={
 	name="STATE_329"
 	state_category = town
 	resources = {
-		tungsten = 2
-		chromium = 3
+		tungsten = 12
+		chromium = 6
+		coal = 12
 	}
 	history = {
 		add_core_of = WEI

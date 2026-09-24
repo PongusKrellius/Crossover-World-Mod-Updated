@@ -4,6 +4,9 @@ state={
 	provinces={
 		377 1064 1416 3713 4253 7089 7122 7188 7258 7298 7322 7391 
 	}
+	resources = {
+		wood = 27
+	}
 	state_category = rural
 	history = {
 		owner = DUL

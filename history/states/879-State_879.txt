@@ -3,7 +3,7 @@ state={
 	name="STATE_879"
 	state_category = rural
 	resources={
-		oil = 13
+		oil = 33
 	}
 	history = {
 		add_core_of = WEK
@@ -11,6 +11,9 @@ state={
 		buildings = {
 			infrastructure = 4
 		}
+	}
+	resources = {
+		coal = 21
 	}
 	provinces={
 		490 514 657 1107 1297 3410 3567 3981 5308 5632 10429 10438 10503 

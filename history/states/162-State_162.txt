@@ -2,6 +2,11 @@ state={
 	id=162
 	name="STATE_162"
 	state_category = rural
+	resources = {
+		tungsten = 14
+		chromium = 14
+		coal = 8
+	}
 	history = {
 		owner = ENC
 		add_core_of = ENC
@@ -14,5 +19,5 @@ state={
 	}
 	manpower=100000
 	buildings_max_level_factor=1.000
-	resources = { wood = 10 }
+	resources = { wood = 27 }
 }

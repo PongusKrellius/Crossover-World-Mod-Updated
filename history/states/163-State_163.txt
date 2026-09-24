@@ -19,8 +19,8 @@ state={
 	resources = {
 		steel = 10
 		aluminium = 15
-		rubber = 10
-		wood = 10
+		coal = 23
+		wood = 27
 	}
 	local_supplies=9.0 
 }

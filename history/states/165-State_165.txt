@@ -2,7 +2,7 @@ state={
 	id=165
 	name="STATE_165"
 	resources = {
-		oil = 4
+		oil = 12
 		rubber = 4
 	}
 	state_category = rural
@@ -18,5 +18,5 @@ state={
 	}
 	manpower=375820
 	buildings_max_level_factor=1.000
-	resources = { wood = 10 }
+	resources = { wood = 35 }
 }

@@ -6,6 +6,10 @@ state={
 	}
 	state_category = rural
 	manpower=450000
+	resources = {
+		wood = 34
+		tungsten = 32
+	}
 	buildings_max_level_factor=1.000
 	history = {
 		owner = MIC

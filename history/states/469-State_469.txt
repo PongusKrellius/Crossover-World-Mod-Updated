@@ -22,9 +22,10 @@ state={
 		}
 	}
 	resources = {
-		steel = 15
-		aluminium = 10
+		steel = 10
+		aluminium = 8
 		oil = 10
+		coal = 12
 	}
 	state_category = city
 }

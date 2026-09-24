@@ -4,7 +4,8 @@ state={
 	state_category = city
 	resources={
 		steel=26
-		chromium=13
+		chromium=33
+		coal = 48
 	}
 	history = {
 		add_core_of = MAI

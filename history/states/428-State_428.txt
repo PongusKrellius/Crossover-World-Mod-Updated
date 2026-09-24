@@ -10,6 +10,11 @@ state={
 		add_core_of = SWA
 		add_core_of = DUL
 	}
+	resources = {
+		steel = 2
+		wood = 26
+		coal = 3
+	}
 	manpower=1
 	buildings_max_level_factor=1.000
 }

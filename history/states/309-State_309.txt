@@ -23,6 +23,10 @@ state={
 			7027 30
 		}
 	}
+	resources = {
+		coal = 3
+		aluminium = 9
+	}
 	provinces={
 		719 1707 3026 6962 7027 7074 7128 7142 7200 
 	}

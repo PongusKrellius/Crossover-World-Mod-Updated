@@ -17,4 +17,8 @@ state={
 			7892 10
 		}
 	}
+	resources = {
+		wood = 27
+		steel = 10
+	}
 }

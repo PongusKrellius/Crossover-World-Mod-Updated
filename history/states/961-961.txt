@@ -22,7 +22,7 @@ state={
 		}
 	}
 	resources = {
-		wood = 5
+		wood = 10
 		oil = 5
 	}
 }

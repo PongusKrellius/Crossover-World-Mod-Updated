@@ -5,6 +5,9 @@ state={
 		906 2233 2257 2644 3164 3346 4454 4627 5885 8076 8147 8162 8179 8208 8234 8235 8262 8302 8358 8397 
 	}
 	manpower=340000
+	resources = { wood = 31
+	coal = 23
+	 }
 	buildings_max_level_factor=1.000
 	history = {
 		owner = NCA

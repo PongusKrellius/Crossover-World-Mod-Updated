@@ -27,6 +27,7 @@ state={
 		steel = 28
 		tungsten = 13
 		aluminium = 15
+		coal = 34
 	}
 	state_category = city
 }

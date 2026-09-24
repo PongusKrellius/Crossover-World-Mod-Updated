@@ -9,6 +9,10 @@ state={
 		infrastructure = 2
 		}
 	}
+	resources = {
+		steel = 2
+		chromium = 42
+	}
 	provinces={
 		156 363 1194 3127 3149 3538 5383 6802 6806 6893 6904 6930 6981 6997 
 	}

@@ -5,6 +5,10 @@ state={
 		4618 10204 
 	}
 	manpower=120000
+	resources = {
+			rubber = 
+			aluminium = 4
+		}
 	buildings_max_level_factor=1.000
 	state_category = rural
 	history={
@@ -22,8 +26,4 @@ state={
 		}
 		
 	}
-	resources = {
-			rubber = 15
-			aluminium = 4
-		}
 }

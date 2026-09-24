@@ -1,7 +1,8 @@
 equipments = {
 
-	wooden_plane_airframe = {
+wooden_plane_airframe = {
 		year = 1926
+
 
 		is_archetype = yes
 		is_convertable = no
@@ -35,7 +36,9 @@ equipments = {
 			rubber = 1
 		}
 
+
 		lend_lease_cost = 6
+
 
 		module_slots = {
 			fixed_main_weapon_slot = {
@@ -47,6 +50,7 @@ equipments = {
 				}
 			}
 
+
 			fixed_auxiliary_weapon_slot_1 = { 
 				required = no
 				allowed_module_categories = {
@@ -57,12 +61,14 @@ equipments = {
 				}
 			}
 
+
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
 					plane_engine_type
 				}
 			}
+
 
 			special_type_slot_1 = {
 				required = no
@@ -72,6 +78,7 @@ equipments = {
 					plane_special_module_radio_navigation
 				}
 			}
+
 
 			special_type_slot_2 = {
 				required = no
@@ -83,45 +90,54 @@ equipments = {
 			}
 		}
 
+
 		module_count_limit = {
 			module = non_strategic_materials_small
 			count < 2
 		}
+
 
 		module_count_limit = {
 			module = dive_brakes_small
 			count < 2
 		}
 
+
 		module_count_limit = {
 			module = small_bomb_bay
 			count < 3
 		}
+
 
 		module_count_limit = {
 			module = torpedo_mounting
 			count < 2
 		}
 
+
 		module_count_limit = {
 			module = recon_camera
 			count < 2
 		}
+
 
 		module_count_limit = {
 			category = nav_bomber_weapon
 			count < 2
 		}
 
+
 		module_count_limit = {
 			category = plane_special_module_bomb_sights
 			count < 2
 		}
 
+
 		module_count_limit = {
 			category = plane_special_module_radio_navigation
 			count < 2
 		}
+
 
 		default_modules = {
 			fixed_main_weapon_slot = light_mg_2x
@@ -132,14 +148,17 @@ equipments = {
 		}
 	}
 
+
 	wooden_plane_airframe_0 = { #Wooden one
 		abbreviation = "wafs0"
 		derived_variant_name = wooden_fighter_equipment_0
 		year = 1926
 
+
 		archetype = wooden_plane_airframe
 		module_slots = inherit
 		priority = 2
+
 
 		air_range = 400
 		maximum_speed = 455
@@ -150,8 +169,25 @@ equipments = {
 		naval_strike_targetting = 0.8
 	}
 
+	#to make sure that an airframe appears in the air designer make sure to add it in interface/equipmentdesigner/planes/plane_blueprints_generic.gui, otherwise it will not show up
 	small_plane_airframe = {
 		year = 1933
+
+		can_be_produced = {
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				NOT = {
+					has_idea = BUL_army_restrictions_aat
+				}
+			}
+			else = {
+				NOT = {
+					has_idea = BUL_army_restrictions
+				}
+			}
+		}
 
 		is_archetype = yes
 		is_convertable = yes
@@ -334,7 +370,7 @@ equipments = {
 		}
 
 		default_modules = {
-			fixed_main_weapon_slot = light_mg_2x
+			fixed_main_weapon_slot = empty
 			fixed_auxiliary_weapon_slot_1 = empty
 			engine_type_slot = engine_1_1x
 			special_type_slot_1 = empty
@@ -936,6 +972,22 @@ equipments = {
 
 	cv_small_plane_airframe = {
 		year = 1933
+
+		can_be_produced = {
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				NOT = {
+					has_idea = BUL_army_restrictions_aat
+				}
+			}
+			else = {
+				NOT = {
+					has_idea = BUL_army_restrictions
+				}
+			}
+		}
 
 		is_archetype = yes
 		is_convertable = yes
@@ -1551,6 +1603,22 @@ equipments = {
 	medium_plane_airframe = {
 		year = 1933
 
+		can_be_produced = {
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				NOT = {
+					has_idea = BUL_army_restrictions_aat
+				}
+			}
+			else = {
+				NOT = {
+					has_idea = BUL_army_restrictions
+				}
+			}
+		}
+
 		is_archetype = yes
 		is_convertable = yes
 		picture = archetype_strat_bomber_equipment
@@ -1778,10 +1846,10 @@ equipments = {
 		}
 
 		default_modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_main_weapon_slot = empty
 			fixed_auxiliary_weapon_slot_1 = empty
 			engine_type_slot = engine_1_2x
-			special_type_slot_1 = lmg_defense_turret_2x
+			special_type_slot_1 = empty
 			special_type_slot_2 = empty
 		}
 	}
@@ -2408,6 +2476,22 @@ equipments = {
 	large_plane_airframe = {
 		year = 1933
 
+		can_be_produced = {
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				NOT = {
+					has_idea = BUL_army_restrictions_aat
+				}
+			}
+			else = {
+				NOT = {
+					has_idea = BUL_army_restrictions
+				}
+			}
+		}
+
 		is_archetype = yes
 		is_convertable = yes
 		picture = archetype_strat_bomber_equipment
@@ -2633,11 +2717,11 @@ equipments = {
 		}
 
 		default_modules = {
-			fixed_main_weapon_slot = large_bomb_bay
+			fixed_main_weapon_slot = empty
 			fixed_auxiliary_weapon_slot_1 = empty
 			engine_type_slot = engine_1_4x
-			special_type_slot_1 = lmg_defense_turret
-			special_type_slot_2 = lmg_defense_turret
+			special_type_slot_1 = empty
+			special_type_slot_2 = empty
 		}
 	}
 

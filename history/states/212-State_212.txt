@@ -2,12 +2,20 @@ state={
 	id=212
 	name="STATE_212"
 	state_category = rural
+	resources = {
+		steel = 10
+		aluminium = 16
+		oil = 38
+	}
 	history = {
 		owner = ENC
 		add_core_of = ENC
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 		}
+		victory_points = {
+            2556 5
+        }
 	}
 	provinces={
 		2556 4191 6563 6582 6593 

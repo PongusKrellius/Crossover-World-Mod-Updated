@@ -3,8 +3,9 @@ state={
 	name="STATE_560"
 	state_category = city
 	resources = {
-		steel = 5
-		aluminium = 3
+		steel = 15
+		aluminium = 6
+		rubber = 10
 	}
 	history = {
 		add_core_of = COR

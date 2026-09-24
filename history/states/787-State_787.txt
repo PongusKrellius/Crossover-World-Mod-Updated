@@ -14,4 +14,7 @@ state={
 			infrastructure = 4
 		}
 	}
+	resources = {
+		oil = 39
+	}
 }

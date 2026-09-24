@@ -2,7 +2,9 @@
 state={
 	id=797
 	name="STATE_797"
-
+	resources = {
+			rubber = 40
+		}
 	history={
 		owner = FLE
 		add_core_of = FLE
@@ -24,9 +26,6 @@ state={
 		}
 
 	}
-	resources = {
-			rubber = 10
-		}
 
 	provinces={
 		10282 10307 10315 

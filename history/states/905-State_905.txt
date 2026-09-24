@@ -6,6 +6,7 @@ state={
 		steel=38
 		tungsten=18
 		aluminium = 20
+		coal = 56
 	}
 	history = {
 		add_core_of = FRI

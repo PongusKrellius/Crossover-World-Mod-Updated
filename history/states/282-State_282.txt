@@ -3,7 +3,8 @@ state={
 	id=282
 	name="STATE_282"
 	resources={
-		wood=10.000
+		coal = 22
+		oil = 12
 	}
 
 	history={

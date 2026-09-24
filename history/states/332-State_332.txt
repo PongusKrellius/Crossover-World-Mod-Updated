@@ -9,6 +9,9 @@ state={
 		infrastructure = 2
 		}
 	}
+	resources = {
+		coal = 21
+	}
 	provinces={
 		446 1968 2844 3133 3242 4118 7080 7126 7173 7199 
 	}

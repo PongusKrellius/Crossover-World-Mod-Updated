@@ -3,6 +3,9 @@ state={
 	id=235
 	name="STATE_235"
 
+	resources = {
+		chromium = 27
+	}
 	history={
 		owner = ARE
 		add_core_of = ARE

@@ -13,5 +13,8 @@ state={
 			infrastructure = 2
 		}
 	}
+	resources = {
+		wood = 35
+	}
 	state_category = rural
 }
