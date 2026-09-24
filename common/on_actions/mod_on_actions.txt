@@ -1,0 +1,11 @@
+on_actions = {
+
+	on_weekly = {
+	every_state = {
+	limit = {
+			compliance > 85
+			}
+		add_core_of = owner
+		}
+	}
+}
