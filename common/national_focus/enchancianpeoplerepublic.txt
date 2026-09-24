@@ -792,23 +792,11 @@ focus_tree = {
 			factor = 1
 		} 
 		completion_reward = {
-			if = {
+if = {
 				limit = {
-					has_idea = TCWMod_black_monday
+					has_idea = TCWMod_black_monday_nondev
 				}
-				remove_ideas = TCWMod_black_monday
-			}
-			if = {
-				limit = {
-					has_idea = TCWMod_black_monday2
-				}
-				remove_ideas = TCWMod_black_monday2
-			}
-			if = {
-				limit = {
-					has_idea = TCWMod_black_monday3
-				}
-				remove_ideas = TCWMod_black_monday3
+				remove_ideas = TCWMod_black_monday_nondev
 			}
 			add_political_power = 100
 			#unlocks decisions

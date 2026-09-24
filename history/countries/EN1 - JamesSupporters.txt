@@ -6,6 +6,7 @@ set_technology = {
 	infantry_weapons_med = 1
 
 }
+inherit_technology = ENC
 
 if = {
 	limit = {

@@ -134,6 +134,26 @@ if = {
 	set_naval_oob = FLO_1936_naval_mtg
 }
 
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = { 
+		name = "Blitz Tank"
+		type = light_tank_chassis_2
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_two_man_tank_turret
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 3
+			tank_nsb_armor_upgrade = 3
+		}
+	}
+}
+
 set_research_slots = 5
 
 add_ideas = {

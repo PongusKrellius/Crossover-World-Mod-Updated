@@ -173,6 +173,12 @@ focus_tree = {
 		} 
 		completion_reward = {
 			army_experience = 5
+			add_tech_bonus = {
+    	bonus = 3
+    	ahead_reduction = 2
+    	uses = 1
+    		category = infantry_weapons
+			}
 		} 
 	}
 
@@ -454,6 +460,8 @@ focus_tree = {
     				level = 1
     				instant_build = yes
 				}
+			custom_effect_tooltip = tech_advance
+			tech_advance = yes
 			}
 		} 
 	}
@@ -660,6 +668,7 @@ focus_tree = {
 			factor = 1
 		} 
 		completion_reward = {
+		add_research_slot = 1
 			add_stability = 0.1
 			add_political_power = 50
 		} 
@@ -700,21 +709,9 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = TCWMod_black_monday
+					has_idea = TCWMod_black_monday_nondev
 				}
-				remove_ideas = TCWMod_black_monday
-			}
-			if = {
-				limit = {
-					has_idea = TCWMod_black_monday2
-				}
-				remove_ideas = TCWMod_black_monday2
-			}
-			if = {
-				limit = {
-					has_idea = TCWMod_black_monday3
-				}
-				remove_ideas = TCWMod_black_monday3
+				remove_ideas = TCWMod_black_monday_nondev
 			}
 			every_owned_state = {
 				add_building_construction = {
@@ -778,6 +775,8 @@ focus_tree = {
 			factor = 1
 		} 
 		completion_reward = {
+		custom_effect_tooltip = tech_advance
+			tech_advance = yes
 			166 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -907,23 +906,11 @@ focus_tree = {
 			factor = 1
 		} 
 		completion_reward = {
-			if = {
+if = {
 				limit = {
-					has_idea = TCWMod_black_monday
+					has_idea = TCWMod_black_monday_nondev
 				}
-				remove_ideas = TCWMod_black_monday
-			}
-			if = {
-				limit = {
-					has_idea = TCWMod_black_monday2
-				}
-				remove_ideas = TCWMod_black_monday2
-			}
-			if = {
-				limit = {
-					has_idea = TCWMod_black_monday3
-				}
-				remove_ideas = TCWMod_black_monday3
+				remove_ideas = TCWMod_black_monday_nondev
 			}
 			every_owned_state = {
 				add_building_construction = {
@@ -987,6 +974,8 @@ focus_tree = {
 			factor = 1
 		} 
 		completion_reward = {
+		custom_effect_tooltip = tech_advance
+		tech_advance = yes
 		
 			166 = {
 				add_extra_state_shared_building_slots = 2
@@ -1256,11 +1245,8 @@ focus_tree = {
 			factor = 1
 		} 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = middleage_tech
-				add_idea = modern_tech_idea
-			}
-			add_research_slot = 3
+			tech_advance = yes
+			add_research_slot = 2
 			add_political_power = -500
 			add_stability = 0.05
 			hidden_effect = {

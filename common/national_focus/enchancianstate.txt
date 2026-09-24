@@ -144,23 +144,11 @@ focus_tree = {
 			factor = 5
 		} 
 		completion_reward = {
-			if = {
+		if = {
 				limit = {
-					has_idea = TCWMod_black_monday
+					has_idea = TCWMod_black_monday_nondev
 				}
-				remove_ideas = TCWMod_black_monday
-			}
-			if = {
-				limit = {
-					has_idea = TCWMod_black_monday2
-				}
-				remove_ideas = TCWMod_black_monday2
-			}
-			if = {
-				limit = {
-					has_idea = TCWMod_black_monday3
-				}
-				remove_ideas = TCWMod_black_monday3
+				remove_ideas = TCWMod_black_monday_nondev
 			}
 			166 = {
 				add_extra_state_shared_building_slots = 2
@@ -284,12 +272,12 @@ focus_tree = {
 				EN3_rooting_out_opposition
 			}
 			if = {
-			if = {
 				limit = {
 					has_idea = ENC_bandits
 				}
 				remove_ideas = ENC_bandits
 			}
+			if = {
 				limit = {
 					has_idea = ENC_monarchist_guerillas
 				}
