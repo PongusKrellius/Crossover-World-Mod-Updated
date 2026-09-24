@@ -54,6 +54,7 @@ equipments = {
 		
 		build_cost_ic = 0.2
 		resources = {
+			steel = -2
 			wood = 2
 		}
 	}
@@ -62,7 +63,7 @@ equipments = {
 		year = 1918
 	
 		archetype = infantry_equipment
-		parent = infantry_equipment_0
+		parent = infantry_equipment_old
 		priority = 5
 		visual_level = 1
 
