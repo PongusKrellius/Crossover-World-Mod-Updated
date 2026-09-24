@@ -23,13 +23,14 @@ characters={
 		}
 	}
 	FLE_rudolf_von_stroheim={
-		name="Rudolf von Stroheim"
+		name="Rudol von Stroheim"
 		portraits={
 			civilian={
 				large="gfx/leaders/FLE/stroheim.dds"
 			}
 		}
 		corps_commander={
+		traits={ infantry_officer }
 			skill=2
 			attack_skill=4
 			defense_skill=3

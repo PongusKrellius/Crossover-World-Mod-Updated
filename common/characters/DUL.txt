@@ -62,6 +62,7 @@ characters={
 			planning_skill=2
 			logistics_skill=3
 			legacy_id=-1
+			traits = { harsh_leader }
 		}
 	}
 	DUL_lucas_white={

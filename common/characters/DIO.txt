@@ -1,5 +1,6 @@
 characters={
 	DIO_enrico_pucci={
+		can_be_captured = no
 		name="Enrico Pucci"
 		portraits={
 			army={
@@ -32,6 +33,7 @@ characters={
 		}
 	}
 	DIO_dio_brando={
+		can_be_captured = no
 		name="Dio Brando"
 		portraits={
 			civilian={
@@ -39,7 +41,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ stand_user }
+			traits={ stand_user aggressive_assaulter }
 			skill=3
 			attack_skill=4
 			defense_skill=4
@@ -135,7 +137,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ stand_user }
+			traits={ stand_user commando trickster }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -145,6 +147,7 @@ characters={
 		}
 	}
 	DIO_telence_t._darby={
+		can_be_captured = no
 		name="Telence T. D'Arby"
 		portraits={
 			army={
@@ -167,7 +170,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ stand_user }
+			traits={ stand_user commando trickster }
 			skill=3
 			attack_skill=3
 			defense_skill=2

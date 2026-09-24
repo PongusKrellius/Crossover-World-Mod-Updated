@@ -184,6 +184,22 @@ characters={
 			legacy_id=-1
 		}
 	}
+	ENC_aunt_tilly={
+		name="Aunt Tilly"
+		portraits={
+			army={
+				large="gfx/leaders/ENC/aunttilly.tga"
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			traits = { brilliant_strategist }
+		}
+	}
 	ENC_leopold_murphy={
 		name="Leopold Murphy"
 		portraits={

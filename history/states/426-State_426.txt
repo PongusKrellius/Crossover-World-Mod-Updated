@@ -20,6 +20,7 @@ state={
 	}
 	resources = {
 		aluminium = 3
+		coal = 2
 	}
 	provinces={
 		175 2155 2220 2798 4509 5112 7661 7668 7810 

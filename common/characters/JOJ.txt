@@ -1,5 +1,6 @@
 characters={
 	JOJ_jonathan_joestar={
+	can_be_captured = no
 		name="Jonathan Joestar"
 		portraits={
 			army={
@@ -72,6 +73,7 @@ characters={
 		}
 	}
 	JOJ_joseph_joestar={
+	can_be_captured = no
 		name="Joseph Joestar"
 		portraits={
 			army={
@@ -106,7 +108,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ stand_user hamon_user }
+			traits={ stand_user hamon_user brilliant_strategist }
 			skill=3
 			attack_skill=2
 			defense_skill=3
@@ -124,7 +126,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ hamon_user }
+			traits={ hamon_user  }
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -134,6 +136,7 @@ characters={
 		}
 	}
 	JOJ_jotaro_kujo={
+	can_be_captured = no
 		name="Jotaro Kujo"
 		portraits={
 			army={
@@ -156,7 +159,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ stand_user }
+			traits={ stand_user brilliant_strategist }
 			skill=4
 			attack_skill=4
 			defense_skill=4
@@ -184,6 +187,7 @@ characters={
 		}
 	}
 	JOJ_jolyne_cujoh={
+	can_be_captured = no
 		name="Jolyne Cujoh"
 		portraits={
 			army={
@@ -234,6 +238,7 @@ characters={
 		}
 	}
 	JOJ_will_zeppeli={
+	can_be_captured = no
 		name="Will A. Zeppeli"
 		portraits={
 			army={
@@ -366,6 +371,7 @@ characters={
 		}
 	}
 	JOJ_robert_e.o._speedwagon={
+	can_be_captured = no
 		name="Robert E.O. Speedwagon"
 		portraits={
 			army={
@@ -439,6 +445,7 @@ characters={
 		}
 	}
 	JOJ_avdol={
+	can_be_captured = no
 		name="Muhammad Avdol"
 		portraits={
 			army={
