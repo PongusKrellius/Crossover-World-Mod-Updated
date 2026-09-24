@@ -144,7 +144,7 @@ add_ideas = {
 	GUP_pravda
 }
 
-create_faction = fh_pact
+create_faction_from_template = fh_pact
 
 set_convoys = 50
 

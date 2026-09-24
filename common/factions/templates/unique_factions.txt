@@ -94,13 +94,57 @@ mount_ebott_treaty = {
 	name = mount_ebott_treaty
 	manifest = faction_manifest_strength_in_unity
 	can_leader_join_other_factions = no
-	icon = GFX_faction_logo_generic_15
+	icon = GFX_faction_logo_generic_democratic
 	goals = {
 		 Short term
 		 faction_goal_growing_the_faction
 
 		Medium term
 		faction_goal_industrial_expansion
+	}
+
+	default_rules = {
+		joining_rule_same_continent_only
+		generate_wargoal_threat_reduction_20
+	}
+
+}
+fh_pact = {
+	name = fh_pact
+	manifest = faction_manifest_spread_of_communism
+	can_leader_join_other_factions = no
+	icon = GFX_faction_logo_generic_14
+	goals = {
+		 Short term
+		 faction_goal_growing_the_faction
+
+		Medium term
+		faction_goal_industrial_expansion
+		
+		Long term
+		faction_goal_the_atomic_race
+	}
+
+	default_rules = {
+		joining_rule_same_continent_only
+		generate_wargoal_threat_reduction_20
+	}
+
+}
+sand_pact = {
+	name = sand_pact
+	manifest = faction_manifest_conquest_of_territory
+	can_leader_join_other_factions = no
+	icon = GFX_faction_logo_generic_15
+	goals = {
+		 Short term
+		faction_goal_military_infrastructure
+
+		Medium term
+		faction_goal_industrial_expansion
+		
+		Long term
+		faction_goal_the_atomic_race
 	}
 
 	default_rules = {

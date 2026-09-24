@@ -136,7 +136,7 @@ set_autonomy = {
 	autonomous_state = cr_colonial_government
 }
 
-set_convoys = 50
+set_convoys = 180
 
 set_popularities = {
 	democratic = 0
