@@ -35,7 +35,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_academy
 		x = 0
 		y = 1
-		cost = 7
+		cost = 10
 		available_if_capitulated = yes 
 		prerequisite = {
 			focus = EN3_victory_in_civil_war
@@ -54,7 +54,7 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		x = 0
 		y = 2
-		cost = 7
+		cost = 10
 		available_if_capitulated = yes 
 		prerequisite = {
 			focus = EN3_educate_people
@@ -73,7 +73,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 0
 		y = 3
-		cost = 7
+		cost = 10
 		available_if_capitulated = yes 
 		prerequisite = {
 			focus = EN3_but_keep_their_mouths_shut
@@ -97,7 +97,7 @@ focus_tree = {
 		icon = GFX_goal_generic_defence
 		x = 2
 		y = 1
-		cost = 7
+		cost = 10
 		available_if_capitulated = yes 
 		prerequisite = {
 			focus = EN3_victory_in_civil_war
@@ -116,7 +116,7 @@ focus_tree = {
 		icon = GFX_goal_tfv_can_compromise_with_quebec
 		x = 2
 		y = 2
-		cost = 7
+		cost = 10
 		available_if_capitulated = yes 
 		prerequisite = {
 			focus = EN3_rally_support_for_cedric
@@ -135,7 +135,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction
 		x = 2
 		y = 3
-		cost = 7
+		cost = 10
 		available_if_capitulated = yes 
 		prerequisite = {
 			focus = EN3_promote_greater_enchancia
@@ -144,6 +144,24 @@ focus_tree = {
 			factor = 5
 		} 
 		completion_reward = {
+			if = {
+				limit = {
+					has_idea = TCWMod_black_monday
+				}
+				remove_ideas = TCWMod_black_monday
+			}
+			if = {
+				limit = {
+					has_idea = TCWMod_black_monday2
+				}
+				remove_ideas = TCWMod_black_monday2
+			}
+			if = {
+				limit = {
+					has_idea = TCWMod_black_monday3
+				}
+				remove_ideas = TCWMod_black_monday3
+			}
 			166 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -266,6 +284,12 @@ focus_tree = {
 				EN3_rooting_out_opposition
 			}
 			if = {
+			if = {
+				limit = {
+					has_idea = ENC_bandits
+				}
+				remove_ideas = ENC_bandits
+			}
 				limit = {
 					has_idea = ENC_monarchist_guerillas
 				}

@@ -4,6 +4,9 @@ state={
 	provinces={
 		455 727 875 2333 2781 4971 5472 8296 8407 8471 8527 8540 
 	}
+	resources = {
+		coal = 12
+	}
 	history = {
 		owner = SQU
 		add_core_of = SQU

@@ -358,12 +358,6 @@ focus_tree = {
 			add_ideas = {
 				ENC_rooting_out_radicals
 			}
-			if = {
-				limit = {
-					has_idea = ENC_bandits
-				}
-				remove_ideas = ENC_bandits
-			}
 		} 
 	}
 
