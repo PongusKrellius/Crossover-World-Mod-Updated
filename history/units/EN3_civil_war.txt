@@ -153,10 +153,4 @@ units = {
 		division_template = "Cedric's Militia"
 		start_experience_factor = 0.6
 	}
-	division = {
-		name = "23. Cedric's Militia"
-		location = 131
-		division_template = "Cedric's Militia"
-		start_experience_factor = 0.6
-	}
 }

@@ -756,7 +756,7 @@ ideas = {
 			}
 			modifier = {
 				fascism_drift = 0.01
-				monarchism_drift = -0.01
+				monarchism_drift = -0.02
 			}
 		}
 

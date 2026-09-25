@@ -249,3 +249,6 @@
  GON_generic_expand_bombing_command_desc:0 "The Bombing Command, which directs every single bomber squadron of Royal Air Force, needs to be expanded in order to deal with new threats and growing number of bombers."
  GON_generic_air_force_academy:0 "Air Force University"
  GON_generic_air_force_academy_desc:0 "We have to establish Air Force University in our capital in order to educate our pilots."
+ #scripted loc
+ GON_crush_them_all:0 "Monarchist popularity will steadily decrease.  Monarchist guerillas will cease to be an issue once monarchist popularity is at zero"
+ 

@@ -20,18 +20,16 @@ ability = {
 		cost = 0.25
 		duration = 240
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.35
-				combat_breakthrough = 0.3
+			unit_modifiers = {
+				offence = 0.35
+				breakthrough_factor = 0.3
 				str_damage_multiplier = 0.2
 				cannot_retreat_while_attacking = 1.0
+				 
+				}
 				
-				days = 10
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
-	}
 
 	star_platinum_za_warudo = {
 		name = ABILITY_SPZW
@@ -52,23 +50,19 @@ ability = {
 			factor = 1
 		}
 		
-		cost = 0.75
+		cost = 2
 		duration = 120
 
-		unit_modifiers = {
-			army_speed_factor = 10
-		}
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.5
-				combat_breakthrough = 0.5
+			unit_modifiers = {
+				army_speed_factor = 10
+				offence = 0.5
+				breakthrough_factor = 0.5
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 5
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
 	}
 
 	muda_muda_muda = {
@@ -92,17 +86,15 @@ ability = {
 		cost = 0.75
 		duration = 240
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.35
-				combat_breakthrough = 0.3
+			unit_modifiers = {
+				offence = 0.35
+				breakthrough_factor = 0.3
 				str_damage_multiplier = 0.2
 				cannot_retreat_while_attacking = 1.0 #so it's the same type of stand as Star Platinum
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
 	}
 
 	za_warudo = {
@@ -123,28 +115,24 @@ ability = {
 			factor = 1
 		}
 		
-		cost = 0.8
+		cost = 2.5
 		duration = 120
-
-		unit_modifiers = {
-			army_speed_factor = 10
-		}
-		
 		one_time_effect = {
 			DIO = {
 				add_to_variable = {
 					za_warudo_count = 1
 				}
 			}
-			add_temporary_buff_to_units = {
-				combat_offense = 0.75
-				combat_breakthrough = 0.75
+		}
+			unit_modifiers = {
+				army_speed_factor = 10
+				offence = 0.75
+				breakthrough_factor = 0.75
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 5
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
 	}
 
 	muda_muda_muda_giorno = {
@@ -172,17 +160,16 @@ ability = {
 		cost = 0.75
 		duration = 240
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.35
-				combat_breakthrough = 0.3
+			unit_modifiers = {
+				offence = 0.35
+				breakthrough_factor = 0.3
 				str_damage_multiplier = 0.2
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
+		
 	}
 
 	return_to_zero = {
@@ -210,19 +197,17 @@ ability = {
 		cost = 1.15
 		duration = 240
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.5
-				combat_defense = 5.0
-				combat_breakthrough = 0.5
+			unit_modifiers = {
+				offence = 0.5
+				defence = 5.0
+				breakthrough_factor = 0.5
 				org_damage_multiplier = -1
 				str_damage_multiplier = -1
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
 	}
 
 	healing = {
@@ -301,17 +286,15 @@ ability = {
 		cost = 0.25
 		duration = 240
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.30
-				combat_breakthrough = 0.25
+			unit_modifiers = {
+				offence = 0.30
+				breakthrough_factor = 0.25
 				str_damage_multiplier = 0.15
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
 	}
 
 	restoration = {
@@ -335,20 +318,16 @@ ability = {
 		cost = 0.9
 		duration = 240
 		
-		unit_modifiers = {
-			land_reinforce_rate = 0.8
-			army_morale_factor = 0.8
-		}
 
-		one_time_effect = {
-			add_temporary_buff_to_units = {
+			unit_modifiers = {
+				land_reinforce_rate = 0.8
+				army_morale_factor = 0.8
 				org_damage_multiplier = -1
 				str_damage_multiplier = -1
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
 	}
 
 	ora_ora_ora_stonefree = {
@@ -372,17 +351,15 @@ ability = {
 		cost = 0.25
 		duration = 240
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.3
-				combat_breakthrough = 0.3
+			unit_modifiers = {
+				offence = 0.3
+				breakthrough_factor = 0.3
 				str_damage_multiplier = 0.2
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
 	}
 
 	emerald_splash = {
@@ -406,17 +383,15 @@ ability = {
 		cost = 0.25
 		duration = 240
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.25
-				combat_breakthrough = 0.25
+			unit_modifiers = {
+				offence = 0.25
+				breakthrough_factor = 0.25
 				str_damage_multiplier = 0.25
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
 	}
 
 	3_freeze = {
@@ -440,18 +415,16 @@ ability = {
 		cost = 0.25
 		duration = 240
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.25
-				combat_defense = 0.75
-				combat_breakthrough = 0.25
+			unit_modifiers = {
+				offence = 0.25
+				defence = 0.75
+				breakthrough_factor = 0.25
 				str_damage_multiplier = 0.25
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
 	}
 
 	za_hando = {
@@ -475,17 +448,15 @@ ability = {
 		cost = 0.25
 		duration = 240
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.25
-				combat_breakthrough = 0.25
+			unit_modifiers = {
+				offence = 0.25
+				breakthrough_factor = 0.25
 				str_damage_multiplier = -0.25
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
 	}
 
 	sword_slash_barrage = {
@@ -508,17 +479,14 @@ ability = {
 		
 		cost = 0.25
 		duration = 240
-		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.25
-				combat_defense = 0.25
+			unit_modifiers = {
+				offence = 0.25
+				defence = 0.25
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
 	}
 
 	sword_launch = {
@@ -542,16 +510,14 @@ ability = {
 		cost = 0.75
 		duration = 240
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.5
+			unit_modifiers = {
+				offence = 0.5
 				str_damage_multiplier = 0.25
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
 	}
 
 	heavens_door = {
@@ -579,16 +545,14 @@ ability = {
 			recon_factor = 0.7
 		}
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.3
+			unit_modifiers = {
+				offence = 0.3
 				str_damage_multiplier = 0.3
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
 	}
 
 	create_illusion = {
@@ -612,20 +576,16 @@ ability = {
 		cost = 0.5
 		duration = 240
 
-		unit_modifiers = {
-			recon_factor = 0.5
-		}
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.25
+			unit_modifiers = {
+				offence = 0.25
+				recon_factor = 0.5
 				str_damage_multiplier = 0.5
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
 	}
 
 	unearth_their_memories = {
@@ -649,20 +609,17 @@ ability = {
 		cost = 0.5
 		duration = 240
 
-		unit_modifiers = {
-			recon_factor = 0.1
-		}
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.3
+		
+			unit_modifiers = {
+				recon_factor = 0.1
+				offence = 0.3
 				str_damage_multiplier = 0.3
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
 	}
 
 	redirect_the_pain = {
@@ -686,16 +643,14 @@ ability = {
 		cost = 0.5
 		duration = 240
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.25
+			unit_modifiers = {
+				offence = 0.25
 				str_damage_multiplier = -0.25
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
 	}
 
 	void_attack = {
@@ -719,17 +674,16 @@ ability = {
 		cost = 0.95
 		duration = 180
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 1
+			unit_modifiers = {
+				offence = 1
 				str_damage_multiplier = 1
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 5
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
 		}
-	}
+	
 
 	prepare_their_souls = {
 		name = ABILITY_PREPARE_THEIR_SOULS
@@ -756,16 +710,13 @@ ability = {
 			land_reinforce_rate = 0.25
 		}
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.25
+				offence = 0.25
 				str_damage_multiplier = -0.25
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
-			}
-		}
+			
 	}
 
 	weather_manipulation = {
@@ -789,13 +740,12 @@ ability = {
 		cost = 0.5
 		duration = 240
 
-		unit_modifiers = {
 			heat_attrition_factor = -1
 			winter_attrition_factor = -1
 			acclimatization_cold_climate_gain_factor = 0.5
 			acclimatization_hot_climate_gain_factor = 0.5
 			air_weather_penalty = -1
-		}
+		
 	}
 
 	attack_with_sticker_trick = {
@@ -823,15 +773,14 @@ ability = {
 			experience_gain_army = 0.05
 		}
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.1
+			unit_modifiers = {
+				offence = 0.1
 				str_damage_multiplier = 0.1
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
+		
 	}
 
 	ari_ari_ari = {
@@ -858,17 +807,16 @@ ability = {
 		cost = 0.25
 		duration = 240
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.25
-				combat_breakthrough = 0.2
+			unit_modifiers = {
+				offence = 0.25
+				breakthrough_factor = 0.2
 				str_damage_multiplier = 0.2
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
+		
 	}
 
 	aerosmith_attack = {
@@ -901,17 +849,15 @@ ability = {
 			air_night_penalty = -0.5
 		}
 
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.1
-				combat_breakthrough = 0.1
+			unit_modifiers = {
+				offence = 0.1
+				breakthrough_factor = 0.1
 				str_damage_multiplier = 0.1
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 5
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
 	}
 
 	bullet_control = {
@@ -938,17 +884,16 @@ ability = {
 		cost = 0.6
 		duration = 180
 
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.4
-				combat_breakthrough = 0.4
+			unit_modifiers = {
+				offence = 0.4
+				breakthrough_factor = 0.4
 				str_damage_multiplier = -0.2
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 5
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
+		
 	}
 
 	replay = {
@@ -1004,17 +949,17 @@ ability = {
 		cost = 0.3
 		duration = 240
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.4
-				combat_breakthrough = 0.4
+
+			unit_modifiers = {
+				offence = 0.4
+				breakthrough_factor = 0.4
 				str_damage_multiplier = 0.3
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
+		
 	}
 
 	sendowavekick = {
@@ -1045,17 +990,17 @@ ability = {
 		cost = 0.3
 		duration = 240
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.3
-				combat_breakthrough = 0.2
+
+			unit_modifiers = {
+				offence = 0.3
+				breakthrough_factor = 0.2
 				str_damage_multiplier = 0.2
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
+		
 	}
 
 	sunlight_yellow_overdrive = {
@@ -1079,17 +1024,17 @@ ability = {
 		cost = 0.4
 		duration = 240
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.5
-				combat_breakthrough = 0.5
+
+			unit_modifiers = {
+				offence = 0.5
+				breakthrough_factor = 0.5
 				str_damage_multiplier = 0.25
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
+		
 	}
 
 	youfellforitfool = {
@@ -1113,17 +1058,17 @@ ability = {
 		cost = 0.5
 		duration = 180
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.5
-				combat_breakthrough = 0.5
+
+			unit_modifiers = {
+				offence = 0.5
+				breakthrough_factor = 0.5
 				str_damage_multiplier = 0.5
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 5
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
+		
 	}
 
 	clackervolley = {
@@ -1146,18 +1091,16 @@ ability = {
 		
 		cost = 0.3
 		duration = 240
-		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.3
-				combat_breakthrough = 0.2
+
+			unit_modifiers = {
+				offence = 0.3
+				breakthrough_factor = 0.2
 				str_damage_multiplier = 0.2
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
 	}
 
 	bubble_launcher = {
@@ -1181,17 +1124,17 @@ ability = {
 		cost = 0.3
 		duration = 240
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.35
-				combat_breakthrough = 0.25
+
+			unit_modifiers = {
+				offence = 0.35
+				breakthrough_factor = 0.25
 				str_damage_multiplier = 0.25
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
+		
 	}
 
 	beetlescarf = {
@@ -1218,16 +1161,16 @@ ability = {
 		cost = 0.3
 		duration = 240
 		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				combat_offense = 0.35
-				combat_breakthrough = 0.25
+
+			unit_modifiers = {
+				offence = 0.35
+				breakthrough_factor = 0.25
 				str_damage_multiplier = 0.2
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 10
+				 
 				#tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
-		}
+		
 	}
 }

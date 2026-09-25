@@ -767,6 +767,7 @@ focus_tree = {
 		} 
 
 		completion_reward = {
+		custom_effect_tooltip = GON_crush_them_all
 			add_ideas = {
 				GON_decreasing_monarchists
 			}
@@ -1105,7 +1106,6 @@ focus_tree = {
 			}
 			remove_ideas = {
 				GON_closed_country_2
-				GON_monarchist_guerillas
 			}
 		}		
 	}
@@ -1869,7 +1869,7 @@ focus_tree = {
 				NOT = {
 					state = 632
 				}
-				is_owned_by = GON
+				is_controlled_by_ROOT_or_subject = yes				
 			}
 		}
 
