@@ -59,4 +59,16 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.6
 	}
+	division = {
+		name = "9. Infantry Division"
+		location = 2865
+		division_template = "Infantry Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "10. Infantry Division"
+		location = 2865
+		division_template = "Infantry Division"
+		start_experience_factor = 0.6
+	}
 }

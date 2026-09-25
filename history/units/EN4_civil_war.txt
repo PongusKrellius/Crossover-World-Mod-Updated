@@ -165,4 +165,34 @@ units = {
 		division_template = "Workers Militia"
 		start_experience_factor = 0.35
 	}
+	division = {
+		name = "25. Workers Militia"
+		location = 157
+		division_template = "Workers Militia"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "26. Workers Militia"
+		location = 157
+		division_template = "Workers Militia"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "27. Workers Militia"
+		location = 157
+		division_template = "Workers Militia"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "28. Workers Militia"
+		location = 157
+		division_template = "Workers Militia"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "29. Workers Militia"
+		location = 157
+		division_template = "Workers Militia"
+		start_experience_factor = 0.35
+	}
 }

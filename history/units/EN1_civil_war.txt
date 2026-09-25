@@ -153,4 +153,58 @@ units = {
 		division_template = "Eastern Militia"
 		start_experience_factor = 0.6
 	}
+	division = {
+		name = "23. Eastern Militia"
+		location = 1727
+		division_template = "Eastern Militia"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "24. Eastern Militia"
+		location = 1727
+		division_template = "Eastern Militia"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "25. Eastern Militia"
+		location = 1727
+		division_template = "Eastern Militia"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "26. Eastern Militia"
+		location = 1727
+		division_template = "Eastern Militia"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "27. Eastern Militia"
+		location = 1727
+		division_template = "Eastern Militia"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "28. Eastern Militia"
+		location = 1727
+		division_template = "Eastern Militia"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "1. Infantry Division"
+		location = 1727
+		division_template = "Infantry Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "2. Infantry Division"
+		location = 1727
+		division_template = "Infantry Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "3. Infantry Division"
+		location = 1727
+		division_template = "Infantry Division"
+		start_experience_factor = 0.6
+	}
 }

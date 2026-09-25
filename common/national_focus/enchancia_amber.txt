@@ -964,8 +964,11 @@ focus_tree = {
     				modifier = TCWmod_generic_relations
 				}
 			}
-			create_faction = everrealm_defence_alliance
-		} 
+			create_faction_from_template = {
+				template = faction_template_defensive_democratic
+				name =  everrealm_defence_alliance
+				icon = GFX_faction_logo_generic_12
+			}
 	}
 
 	focus = { 

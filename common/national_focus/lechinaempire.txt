@@ -1023,7 +1023,11 @@ focus_tree = {
 		} 
 
 		completion_reward = {
-			create_faction = karlino_axis
+			create_faction_from_template = {
+			template = faction_template_generic_dominance
+			name = karlino_axis
+			icon = GFX_faction_logo_generic_15
+			}
 			601 = {
 				add_claim_by = LEC
 			}

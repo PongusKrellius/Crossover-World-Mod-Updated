@@ -1381,7 +1381,10 @@ focus = {
 			factor = 1
 		} 
 		completion_reward = { 
-			create_faction = avalor_pact
+			create_faction_from_template = {
+			faction_template = regional_faction
+			faction_name = avalor_pact
+			icon = GFX_faction_logo_generic
 		}		
 	}
 

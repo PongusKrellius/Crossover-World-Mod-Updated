@@ -650,7 +650,11 @@ focus_tree = {
 			factor = 90
 		} 
 		completion_reward = {
-			create_faction = the_first_internationale
+			create_faction_from_template = {
+			template = faction_template_world_revolution
+			name = the_first_internationale
+			icon = GFX_faction_logo_generic_14
+			}
 		} 
 	}
 

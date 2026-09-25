@@ -1527,7 +1527,11 @@ if = {
 			factor = 1
 		} 
 		completion_reward = {
-			create_faction = everrealm_communes_pact
+				create_faction_from_template = {
+				template = faction_template_world_revolution
+				name = everrealm_communes_pact
+				icon = GFX_faction_logo_generic_14
+			}
 		} 
 	}
 
