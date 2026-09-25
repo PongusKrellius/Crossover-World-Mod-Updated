@@ -1480,10 +1480,8 @@ if = {
 			factor = 1
 		} 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = middleage_tech
-				add_idea = pre-industrial_tech
-			}
+			custom_effect_tooltip = tech_advance
+			tech_advance = yes
 			hidden_effect = {
 				if = {
 					limit = {
@@ -1532,10 +1530,8 @@ if = {
 			factor = 1
 		} 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = pre-industrial_tech
-				add_idea = pre-modern_tech
-			}
+			custom_effect_tooltip = tech_advance
+			tech_advance = yes
 			add_research_slot = 1
 		} 
 	}
