@@ -1,6 +1,7 @@
 ideas = {
 
 	economy = { 
+	use_list_view = yes
 		law = yes
 		undisturbed_isolation = {
 			
@@ -285,7 +286,8 @@ ideas = {
 		}
 	}
 	
-	trade_laws = { 
+	trade_laws = {
+	use_list_view = yes 
 		law = yes
 
 		free_trade = {

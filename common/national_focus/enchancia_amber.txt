@@ -969,6 +969,7 @@ focus_tree = {
 				name =  everrealm_defence_alliance
 				icon = GFX_faction_logo_generic_12
 			}
+		}
 	}
 
 	focus = { 

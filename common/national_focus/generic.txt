@@ -1348,7 +1348,10 @@ focus_tree = {
 		
 		completion_reward = {
 		custom_effect_tooltip = tech_advance
-		tech_advance = yes
+			if = {
+			limit = { has_idea = middleage_tech }
+			swap_ideas = { add_idea = pre-industrial_tech remove_idea = middleage_tech }
+		}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1688,7 +1691,8 @@ focus_tree = {
 
 		completion_reward = {
 		custom_effect_tooltip = tech_advance
-			tech_advance = yes
+			limit = { has_idea = pre-industrial_tech }
+			swap_ideas = { add_idea = pre-modern_tech remove_idea = pre-industrial_tech }
 			add_research_slot = 1
 		}
 	}
@@ -1760,7 +1764,8 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = tech_advance
-			tech_advance = yes
+			limit = { has_idea = pre-modern_tech }
+			swap_ideas = { add_idea = modern_tech_idea remove_idea = pre-modern_tech }
 		}
 
 		ai_will_do = {
