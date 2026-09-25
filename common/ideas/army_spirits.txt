@@ -89,7 +89,7 @@ ideas = {
 		}
 		mobile_warfare_academy_spirit = {
 			ledger = army
-			visible = { has_tech = mobile_warfare }
+			available = { has_tech = gwtank_chassis }
 			modifier = {
 				custom_modifier_tooltip = mobile_warfare_academy_spirit_tt
 				trait_panzer_leader_xp_gain_factor = 0.2
@@ -100,7 +100,7 @@ ideas = {
 		}
 		superior_firepower_academy_spirit = {
 			ledger = army
-			visible = { has_tech = superior_firepower }
+			available = { has_tech = interwar_artillery }
 			modifier = {
 				custom_modifier_tooltip = superior_firepower_academy_spirit_tt
 				trait_engineer_xp_gain_factor = 0.2
@@ -113,7 +113,7 @@ ideas = {
 		}
 		theatre_training_spirit = {
 			ledger = army
-			visible = { has_tech = trench_warfare }
+			available = { has_tech = tech_engineers }
 			modifier = {
 				custom_modifier_tooltip = theatre_training_academy_spirit_tt
 				terrain_trait_xp_gain_factor = 0.2
@@ -124,13 +124,45 @@ ideas = {
 		}
 		mass_assault_academy_spirit = {
 			ledger = army
-			visible = { has_tech = mass_assault }
+			available = { has_tech = infantry_weapons1 }
 			modifier = {
 				custom_modifier_tooltip = mass_assault_academy_spirit_tt
 				trait_infantry_leader_xp_gain_factor = 0.2
 			}
 			ai_will_do = {
 				factor = 1
+			}
+		}
+	cult_of_heroism_army_spirit = {
+			ledger = army
+			visible = { has_dlc = "No Compromise, No Surrender" }
+
+			modifier = {
+				automatic_grant_medal_chance = 0.50
+				unit_medal_effectiveness = -0.25    		  			    			    			 			    			 				
+			}
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Compromise, No Surrender" }
+				}
+			}
+		}
+		
+		professional_officer_corps_spirit = {
+			ledger = army
+			modifier = {
+				experience_gain_army_unit_factor = 0.15
+				max_command_power = 30
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
 			}
 		}
 	}
@@ -222,7 +254,15 @@ ideas = {
 		}
 
 		mobile_warfare_army_spirit = {
-			visible = { has_tech = mobile_warfare }
+			available = { OR = 
+			{ has_tech = basic_light_tank
+			has_tech = basic_medium_tank
+			has_tech = basic_heavy_tank
+			has_tech = basic_light_tank_chassis
+			has_tech = basic_medium_tank_chassis
+			has_tech = basic_heavy_tank_chassis
+				}
+			 }
 			ledger = army
 			modifier = {
 
@@ -245,7 +285,7 @@ ideas = {
 		}
 
 		superior_firepower_army_spirit = {
-			visible = { has_tech = superior_firepower  }
+			available = { has_tech = artillery1  }
 			ledger = army
 			modifier = {
 				experience_gain_artillery_combat_factor = 0.1
@@ -257,6 +297,7 @@ ideas = {
 				unit_medium_sp_artillery_brigade_design_cost_factor = -1
 				unit_heavy_sp_artillery_brigade_design_cost_factor = -1
 				unit_super_heavy_sp_artillery_brigade_design_cost_factor = -1
+				unit_bicycle_battalion_design_cost_factor = -1
 			}
 			ai_will_do = {
 				factor = 1
@@ -264,16 +305,16 @@ ideas = {
 		}
 
 		grand_battleplan_army_spirit = {
-			visible = { has_tech = trench_warfare }
+			available = { has_tech = tech_engineers }
 			ledger = army
 			modifier = {
-				unit_marine_design_cost_factor = -1
-				unit_mountaineers_design_cost_factor = -1
-				unit_paratrooper_design_cost_factor = -1
-				naval_invasion_capacity = 10
+				unit_marine_design_cost_factor = -0.5
+				unit_mountaineers_design_cost_factor = -0.5
+				unit_paratrooper_design_cost_factor = -0.5
+				unit_ranger_battalion_design_cost_factor = -0.5
+				special_forces_cap_flat = 24
 				extra_paratrooper_supply_grace = 24
 				extra_marine_supply_grace = 24
-				naval_invasion_planning_bonus_speed = 0.2
 			}
 			ai_will_do = {
 				factor = 1
@@ -282,15 +323,155 @@ ideas = {
 
 		mass_assault_army_spirit = {
 			ledger = army
-			visible = { has_tech = mass_assault }
+			available = { has_tech = infantry_weapons2 }
 			modifier = {
 				experience_gain_infantry_combat_factor = 0.1
 				unit_infantry_design_cost_factor = -1
 				unit_motorized_design_cost_factor = -1
 				unit_mechanized_design_cost_factor = -1
+				unit_bicycle_battalion_design_cost_factor = -1
 			}
 			ai_will_do = {
 				factor = 1
+			}
+		}
+		living_off_the_land_army_spirit = {
+			ledger = army
+			visible = { has_dlc = "No Compromise, No Surrender" }
+			available = { has_tech = tech_logistics_company }
+			modifier = {
+				out_of_supply_factor = -0.10
+				attrition = -0.10
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Compromise, No Surrender" }
+				}
+			}
+		}
+		subsidized_contracts_army_spirit = {
+			ledger = army
+			visible = { 
+				AND = {
+				has_dlc = "No Compromise, No Surrender"
+				has_dlc = "La Resistance" 
+				}
+			}
+			available = { 
+				has_war = yes
+			}
+				equipment_bonus = {
+  					armored_car_equipment = {
+  					instant = yes
+ 					build_cost_ic = -0.15
+ 					}
+ 				}
+				equipment_bonus = {
+  					light_tank_chassis = {
+  					instant = yes
+ 					build_cost_ic = -0.10
+ 					}
+ 				}  	
+ 				equipment_bonus = {
+  					armored_support_vehicle = {
+  					instant = yes
+ 					build_cost_ic = -0.10
+ 					}
+ 				}  					    		  			    			    			 			    			 				
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Compromise, No Surrender" }
+				}
+
+			}
+		}	
+		subsidized_contracts_no_lar_army_spirit = {
+			ledger = army
+			visible = { 
+				AND = {
+				has_dlc = "No Compromise, No Surrender"
+					NOT = {
+					has_dlc = "La Resistance"
+					}
+				} 
+			}
+			available = { 
+				has_war = yes
+			}
+			
+				equipment_bonus = {
+  					light_tank_chassis = {
+  					instant = yes
+ 					build_cost_ic = -0.10
+ 					}
+ 				}  	
+ 				equipment_bonus = {
+  					armored_support_vehicle = {
+  					instant = yes
+ 					build_cost_ic = -0.10
+ 					}
+ 				}  				    		  			    			    			 			    			 				
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Compromise, No Surrender" }
+				}
+			}
+		}	
+
+		spirit_of_defiance_army_spirit = {
+			ledger = army
+			visible = { has_dlc = "No Compromise, No Surrender" }
+			available = { 
+				OR = {
+				has_government = fascism
+				has_government = communism
+				has_defensive_war = yes
+				}
+			}
+			modifier = {
+				resistance_target_on_our_occupied_states = 0.25
+				resistance_growth_on_our_occupied_states = 0.5			    		  			    			    			 			    			 				
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Compromise, No Surrender" }
+				}
+				modifier = {
+					factor = 2
+				}
+			}
+		}
+
+		proxy_wars_army_spirit = {
+			ledger = army
+			visible = { has_dlc = "No Compromise, No Surrender" }
+			available = { 
+				OR = {
+					has_tech = marines
+					has_tech = paratroopers
+				}
+			}
+
+			modifier = {
+				army_experience_from_volunteers = 0.5    		  			    			    			 			    			 				
+			}
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Compromise, No Surrender" }
+				}
 			}
 		}
 		
@@ -374,7 +555,7 @@ ideas = {
 		}
 
 		maneuver_warfare_spirit = {
-			visible = { has_tech = mobile_warfare }
+			available = { has_tech = engineers }
 			modifier = {
 				tactic_unexpected_thrust_preferred_weight_factor = 1
 				army_speed_factor = 0.05
@@ -387,7 +568,7 @@ ideas = {
 
 		smoke_and_fire_spirit = {
 			ledger = army
-			visible = { has_tech = superior_firepower }
+			available = { has_tech = artillery1 }
 			modifier = {
 				tactic_barrage_preferred_weight_factor = 1
 				breakthrough_factor = 0.05
@@ -399,7 +580,7 @@ ideas = {
 
 		logistical_focus_spirit = {
 			ledger = army
-			visible = { has_tech = trench_warfare }
+			available = { has_tech = tech_logistics_company }
 			modifier = {
 				tactic_planned_attack_preferred_weight_factor = 1
 				supply_consumption_factor = -0.05
@@ -410,10 +591,152 @@ ideas = {
 				factor = 1
 			}
 		}
+rapid_emplacement_army_spirit = {
+			ledger = army
+			visible = { has_dlc = "No Compromise, No Surrender" }
+			available = { 
+				OR = {
+				has_tech = artillery1
+				has_tech = interwar_antitank
+				}
+			}
+				
+				modifier = {
+					tactic_breakthrough_preferred_weight_factor = 1
+				}
+				
+				equipment_bonus = {
+  					artillery_equipment = {
+						instant = yes
+						breakthrough = 0.10
+						defense = 0.10
+ 					}
+ 				}
 
+				equipment_bonus = {
+  					rocket_artillery_equipment = {
+						instant = yes
+						breakthrough = 0.10
+						defense = 0.10
+    				}
+    			}   
+
+				equipment_bonus = {
+  					motorized_rocket_equipment = {
+						instant = yes
+						breakthrough = 0.10
+						defense = 0.10
+    				}
+    			}   
+
+				equipment_bonus = {
+  					anti_tank_equipment = {
+						instant = yes
+						breakthrough = 0.10
+						defense = 0.10
+    				}
+    			}    			
+
+				equipment_bonus = {
+  					anti_air_equipment = {
+						instant = yes
+						breakthrough = 0.10
+						defense = 0.10
+    				}
+    			}
+    		  			    			    			 			    			 				
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Compromise, No Surrender" }
+				}
+			}
+		}
+		all_arms_at_defense_army_spirit = {
+			ledger = army
+			visible = { has_dlc = "No Compromise, No Surrender" }
+			available = { 
+				OR = { 
+					has_tech = interwar_antitank
+				}
+			}
+			
+			modifier = {
+				tactic_tactical_withdrawal_preferred_weight_factor = 1
+			}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					hard_attack = 0.25
+				}
+			}    			    			 			    			 				
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Compromise, No Surrender" }
+				}
+			}
+		}
+		
+		direct_fire_support_army_spirit = {
+			ledger = army
+			visible = { has_dlc = "No Compromise, No Surrender" }
+			available = {
+				OR = {
+					has_tech = interwar_artillery
+				}
+			}
+			
+			modifier = {
+				tactic_overwhelming_fire_preferred_weight_factor = 1
+			}
+			
+			equipment_bonus = {
+				light_tank_artillery_chassis = {
+				instant = yes
+					hard_attack = 0.50
+					ap_attack = 1
+				}
+			}
+			equipment_bonus = {
+				medium_tank_artillery_chassis = {
+				instant = yes
+					hard_attack = 0.50
+					ap_attack = 1
+				}
+			}
+			equipment_bonus = {
+				heavy_tank_artillery_chassis = {
+				instant = yes
+					hard_attack = 0.50
+					ap_attack = 1
+				}
+			} 				
+			equipment_bonus = {
+				modern_tank_artillery_chassis = {
+				instant = yes
+					hard_attack = 0.50
+					ap_attack = 1
+				}
+			}			    		  			    			    			 			    			 				
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Compromise, No Surrender" }
+				}
+			}
+		}
+		
 		operational_reserve_spirit = {
 			ledger = army
-			visible = { has_tech = mass_assault }
+			available = { has_tech = infantry_weapons1 }
 			modifier = {
 				tactic_relentless_assault_preferred_weight_factor = 1
 				army_strength_factor = 0.1
@@ -422,5 +745,14 @@ ideas = {
 				factor = 1
 			}
 		}
+		quick_improvisation_spirit = {
+			ledger = army
+			modifier = {
+				command_abilities_cost_factor = -0.20
+				command_power_gain = 0.2
+				planning_speed = 0.2
+			}
+		}
+
 	}
 }
