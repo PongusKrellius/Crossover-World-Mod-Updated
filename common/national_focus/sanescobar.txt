@@ -1295,7 +1295,11 @@ focus_tree = {
 		} 
 
 		completion_reward = {
-			create_faction = santo_subito_pact
+			create_faction_from_template = {
+			template = faction_template_generic_dominance
+			name = santo_subito_pact
+			icon = GFX_faction_logo_generic_15
+			}
 		} 
 	} 
 

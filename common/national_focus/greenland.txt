@@ -584,7 +584,11 @@ focus_tree = {
 			add_ideas = {
 				GRN_new_alliances_idea
 			}
-			create_faction = eastern_continent_treaty
+			create_faction_from_template ={
+				template = faction_template_defensive_democratic
+				name =  eastern_continent_treaty
+				icon = GFX_faction_logo_generic_12
+			}
 		} 
 	}
 

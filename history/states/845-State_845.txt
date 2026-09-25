@@ -5,7 +5,7 @@ state={
 	resources={
 		steel=37
 		tungsten=16
-		chromium=13
+		chromium=34
 	}
 	history = {
 		add_core_of = WEK

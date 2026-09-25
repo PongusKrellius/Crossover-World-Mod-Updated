@@ -31,7 +31,9 @@ sub_units = {
 		max_organisation = 50
 		default_morale = 0.5
 		manpower = 500
-
+		#Offensive Abilities
+		soft_attack = 0.1
+		
 		#Misc Abilities
 		training_time = 100
 		suppression = 2

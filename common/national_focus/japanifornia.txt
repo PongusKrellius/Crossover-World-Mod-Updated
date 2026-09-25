@@ -1653,7 +1653,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			create_faction = western_alliance
+			template = faction_template_defensive_democratic
+				name =  western_alliance
+				icon = GFX_faction_logo_generic_12
+			
 		} 
 	}
 

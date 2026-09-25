@@ -2,8 +2,8 @@ state={
 	id=613
 	name="STATE_613"
 	resources = {
-		oil = 4
-		steel = 4
+		oil = 8
+		steel = 8
 	}
 	state_category = town
 	history = {

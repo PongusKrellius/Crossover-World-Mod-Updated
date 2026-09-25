@@ -244,7 +244,11 @@ country_event = { #Enchancian State joins Sorcerers League
 			}
 		}
 		RUD = {
-			create_faction = sorcerers_league
+			create_faction_from_template = {
+			template = faction_template_generic_dominance
+			name = sorcerers_league
+			icon = GFX_faction_logo_generic_15
+			}
 			add_to_faction = EN3
 		}
 	}
