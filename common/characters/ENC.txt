@@ -182,13 +182,44 @@ characters={
 			planning_skill=2
 			logistics_skill=3
 			legacy_id=-1
+			traits = { old_guard }
 		}
 	}
+	ENC_admiral_hornpipe={
+		name="Admiral Hornpipe"
+		portraits={
+			army={
+				large="gfx/leaders/ENC/hornpipe.tga"
+				small="GFX_idea_ENC_hornpipe"
+			}
+		}
+		allowed = {
+				original_tag = ENC
+			}
+		navy_leader={
+			traits={ navy_career_officer fleet_protector}
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=2
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = hornpipe
+			cost = 100
+			traits = { navy_chief_decisive_battle_2 }
+			ai_will_do = {
+				factor = 0.5
+		}
+	}
+}
 	ENC_aunt_tilly={
 		name="Aunt Tilly"
 		portraits={
 			army={
 				large="gfx/leaders/ENC/aunttilly.tga"
+				small="GFX_idea_ENC_aunttilly"
 			}
 		}
 		corps_commander={
@@ -198,6 +229,23 @@ characters={
 			planning_skill=4
 			logistics_skill=3
 			traits = { brilliant_strategist }
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = tilly
+			cost = 50
+
+			available = {
+				original_tag = ENC
+				OR = {
+					has_completed_focus = ENC_defending_the_capital
+					has_completed_focus = ENC_factories_in_wharton
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		traits = { army_chief_offensive_1 }
 		}
 	}
 	ENC_leopold_murphy={

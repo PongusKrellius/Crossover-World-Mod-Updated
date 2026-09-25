@@ -1,5 +1,6 @@
 characters={
 	FLO_bamsaegi={
+	can_be_captured = no
 		name="Bamsaegi"
 		portraits={
 			army={
@@ -38,6 +39,7 @@ characters={
 		}
 	}
 	FLO_darami={
+	can_be_captured = no
 		name="Darami"
 		portraits={
 			army={
@@ -69,6 +71,8 @@ characters={
 		}
 	}
 	FLO_geumsaegi={
+	can_be_captured = no
+	can_be_captured = no
 		name="Geumsaegi"
 		portraits={
 			army={
@@ -112,6 +116,7 @@ characters={
 		}
 	}
 	FLO_goseumdochi={
+	can_be_captured = no
 		name="Goseumdochi"
 		portraits={
 			army={
@@ -145,6 +150,7 @@ characters={
 		}
 	}
 	FLO_juldarami={
+	can_be_captured = no
 		name="Juldarami"
 		portraits={
 			army={
@@ -177,6 +183,7 @@ characters={
 		}
 	}
 	FLO_murori={
+	can_be_captured = no
 		name="Murori"
 		portraits={
 			army={

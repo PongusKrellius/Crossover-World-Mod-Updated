@@ -1,5 +1,6 @@
 characters={
 	AVA_esteban={
+	can_be_captured = no
 		name="Esteban"
 		portraits={
 			army={
@@ -32,6 +33,7 @@ characters={
 			planning_skill=3
 			logistics_skill=3
 			legacy_id=-1
+			traits = { organizer politically_connected}
 		}
 	}
 	AVA_luisa={
@@ -184,6 +186,7 @@ characters={
 		}
 	}
 	AVA_gabriel_núñez={
+	can_be_captured = no
 		name="Gabriel Núñez"
 		portraits={
 			army={

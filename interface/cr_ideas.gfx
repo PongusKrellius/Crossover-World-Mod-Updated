@@ -328,6 +328,14 @@ spriteTypes = {
  		name = "GFX_idea_ENC_gwen"
  		texturefile = "gfx/interface/ideas/idea_ENC_gwen.dds"	
  	}
+ 	SpriteType = {
+ 		name = "GFX_idea_ENC_hornpipe"
+ 		texturefile = "gfx/interface/ideas/idea_ENC_hornpipe.tga"	
+ 	}
+ 	SpriteType = {
+ 		name = "GFX_idea_ENC_aunttilly"
+ 		texturefile = "gfx/interface/ideas/idea_ENC_tilly.tga"	
+ 	}
 
 	SpriteType = {
  		name = "GFX_idea_EN1_gwen"

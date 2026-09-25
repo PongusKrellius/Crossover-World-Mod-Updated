@@ -4,6 +4,9 @@ state={
 	provinces={
 		456 1154 1230 2365 2614 3005 3400 3529 3956 4548 4783 5701 5898 8324 8363 8477 8509 8573 
 	}
+	resources = {
+		chromium = 15
+	}
 	manpower=356538
 	buildings_max_level_factor=1.000
 	history = {

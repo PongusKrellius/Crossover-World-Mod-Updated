@@ -1,6 +1,7 @@
 characters={
 	UND_asgore_dreemurr={
 		name="Asgore Dreemurr"
+		can_be_captured = no
 		portraits={
 			civilian={
 				large="gfx/leaders/UND/asgore.dds"

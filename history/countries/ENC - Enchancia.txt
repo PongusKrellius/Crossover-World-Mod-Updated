@@ -45,7 +45,7 @@ add_to_faction = WEI
 add_to_faction = KHA
 
 
-set_convoys = 50
+set_convoys = 60
 
 set_popularities = {
 	democratic = 0
@@ -73,6 +73,7 @@ recruit_character = ENC_roland_ii
 recruit_character = ENC_council_of_artisans
 recruit_character = ENC_lord_gilbert
 recruit_character = ENC_aunt_tilly
+recruit_character = ENC_admiral_hornpipe
 recruit_character = ENC_leopold_murphy
 recruit_character = ENC_gwen
 recruit_character = ENC_miranda_character

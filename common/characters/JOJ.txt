@@ -122,11 +122,11 @@ characters={
 		portraits={
 			
 			army={
-				large="gfx/leaders/JOJ/lisalisa.dds"
+				large="gfx/leaders/JOJ/lisalisa.tga"
 			}
 		}
 		field_marshal={
-			traits={ hamon_user  }
+			traits={ hamon_user organizer }
 			skill=4
 			attack_skill=4
 			defense_skill=3
