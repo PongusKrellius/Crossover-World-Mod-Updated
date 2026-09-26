@@ -44,8 +44,9 @@ focus_tree = {
 			focus = DUL_a_long_way_to_modernity
 		}
 		completion_reward = { 
-			add_ideas = {
-				DUL_reforming_the_countryside
+		add_timed_idea = {
+				idea = DUL_reforming_the_countryside
+				days = 300
 			}
 		}		
 	}
@@ -379,8 +380,9 @@ focus_tree = {
 			focus = DUL_a_long_way_to_modernity
 		}
 		completion_reward = { 
-			add_ideas = {
-				DUL_reforming_the_economy
+				add_timed_idea = {
+				idea = DUL_reforming_the_economy
+				days = 300
 			}
 		}		
 	}
@@ -563,7 +565,7 @@ focus_tree = {
 		completion_reward = { 
 			add_timed_idea = {
 				idea = DUL_modernizing_the_countryside
-				days = 200
+				days = 300
 			}
 		}
 	}	
@@ -717,7 +719,7 @@ focus_tree = {
 		completion_reward = { 
 			add_timed_idea = {
 				idea = DUL_second_indu_plan
-				days = 200
+				days = 300
 			}
 		}		
 	}

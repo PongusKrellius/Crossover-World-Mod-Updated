@@ -311,7 +311,11 @@ country_event = { #Sorcerers League is officially created
 				is_in_faction = no
 			}
 		}
-		create_faction = sorcerers_league
+		create_faction_from_template = {
+			template = faction_template_generic_dominance
+			name = sorcerers_league
+			icon = GFX_faction_logo_generic_15
+			}
 		add_to_faction = KHA
 	}
 

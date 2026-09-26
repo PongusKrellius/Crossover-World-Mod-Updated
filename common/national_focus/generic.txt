@@ -1319,7 +1319,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		available = {
-			num_of_factories > 18
+			num_of_factories > 25
 		}
 		bypass = {
 			custom_trigger_tooltip = {
@@ -1684,7 +1684,7 @@ focus_tree = {
 		relative_position_id = infrastructure_effort_2
 		cost = 10
 		available = {
-			num_of_factories > 40
+			num_of_factories > 50
 		}
 
 		available_if_capitulated = yes
