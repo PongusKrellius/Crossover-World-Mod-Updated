@@ -11,7 +11,7 @@ state={
 		}
 	}
 	resources = {
-		tungsten = 31
+		tungsten = 15
 		oil = 32
 	}
 	provinces={

@@ -479,7 +479,6 @@ focus_tree = {
 			has_country_flag = FFA_charming_is_ready_to_leave
 		}
 		prerequisite = { focus = FFA_voice_concerns_to_fairy_godmother }
-		available_if_capitulated = yes
 		ai_will_do = { 
 			base = 50
 			modifier = {
@@ -513,7 +512,6 @@ focus_tree = {
 		relative_position_id = FFA_a_third_option
 		cost = 7.25
 		prerequisite = { focus = FFA_a_third_option }
-		available_if_capitulated = yes
 		ai_will_do = { 
 			factor = 10
 		}
@@ -563,7 +561,6 @@ focus_tree = {
 		relative_position_id = FFA_start_fortifying_against_duloc
 		cost = 7.25
 		prerequisite = { focus = FFA_start_fortifying_against_duloc }
-		available_if_capitulated = yes
 		ai_will_do = { 
 			factor = 10
 		}
@@ -580,7 +577,6 @@ focus_tree = {
 		relative_position_id = FFA_increase_funding_for_navy
 		cost = 7.25
 		prerequisite = { focus = FFA_increase_funding_for_navy }
-		available_if_capitulated = yes
 		ai_will_do = { 
 			factor = 10
 		}
@@ -597,7 +593,6 @@ focus_tree = {
 		relative_position_id = FFA_a_third_option
 		cost = 7.25
 		prerequisite = { focus = FFA_a_third_option }
-		available_if_capitulated = yes
 		ai_will_do = { 
 			factor = 10
 		}
@@ -614,7 +609,6 @@ focus_tree = {
 		relative_position_id = FFA_take_decisive_stance_against_fairy_godmother
 		cost = 7.25
 		prerequisite = { focus = FFA_take_decisive_stance_against_fairy_godmother }
-		available_if_capitulated = yes
 		ai_will_do = { 
 			factor = 10
 		}
@@ -2114,7 +2108,6 @@ focus_tree = {
 		x = 9
 		y = 0
 		cost = 7.25
-		available_if_capitulated = yes
 		ai_will_do = { 
 			factor = 100
 		}
@@ -2134,7 +2127,6 @@ focus_tree = {
 		cost = 7.25
 		relative_position_id = FFA_a_third_option_rumpel_tree
 		prerequisite = { focus = FFA_a_third_option_rumpel_tree }
-		available_if_capitulated = yes
 		ai_will_do = { 
 			factor = 100
 		}
@@ -2157,7 +2149,6 @@ focus_tree = {
 		cost = 7.25
 		relative_position_id = FFA_purge_the_opposition
 		prerequisite = { focus = FFA_purge_the_opposition }
-		available_if_capitulated = yes
 		ai_will_do = { 
 			factor = 100
 		}
@@ -2212,7 +2203,6 @@ focus_tree = {
 		cost = 7.25
 		relative_position_id = FFA_purge_the_opposition
 		prerequisite = { focus = FFA_purge_the_opposition }
-		available_if_capitulated = yes
 		ai_will_do = { 
 			factor = 100
 		}
@@ -2456,7 +2446,6 @@ focus_tree = {
 		cost = 7.25
 		relative_position_id = FFA_empower_the_witches
 		prerequisite = { focus = FFA_empower_the_witches }
-		available_if_capitulated = yes
 		ai_will_do = { 
 			factor = 100
 		}

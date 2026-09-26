@@ -3,7 +3,7 @@ state={
 	name="STATE_911"
 	state_category = large_city
 	resources={
-		steel=40
+		steel=20
 		oil = 18
 	}
 	history = {

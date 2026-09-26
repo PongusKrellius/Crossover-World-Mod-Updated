@@ -45,7 +45,6 @@ jojo_helps_sioux = {
 		value = 100
 	}
 }
-
 jojo_helps_greenland = {
 	enable = {
 		tag = JOJ
@@ -65,5 +64,26 @@ jojo_helps_greenland = {
 		type = support
 		id = "GRN"			
 		value = 100
+	}
+}
+jojo_army_build = {
+	enable = {
+	tag = JOJ
+	num_of_military_factories > 15
+}
+abort_when_not_enabled = yes
+ai_strategy = {
+    type = equipment_production_min_factories
+    id = infantry_equipment
+    value = 12
+}
+ai_strategy = {
+    type = role_ratio
+    id = infantry
+    value = 30
+	}
+ai_strategy = {
+    type = force_build_armies
+    value = 30
 	}
 }

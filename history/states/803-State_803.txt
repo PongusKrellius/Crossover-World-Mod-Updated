@@ -3,7 +3,6 @@ state={
 	name="STATE_803"
 	state_category = city
 	resources={
-		steel=25
 		tungsten=10
 		aluminium=9
 	}

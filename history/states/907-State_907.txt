@@ -3,8 +3,8 @@ state={
 	name="STATE_907"
 	state_category = city
 	resources={
-		steel=16
-		aluminium=10
+		steel=12
+		aluminium=4
 	}
 	history = {
 		add_core_of = WEK

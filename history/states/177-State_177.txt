@@ -20,7 +20,7 @@ state={
 		}
 	}
 	resources = {
-		steel = 30
-		tungsten = 30
+		steel = 20
+		tungsten = 20
 	}
 }
