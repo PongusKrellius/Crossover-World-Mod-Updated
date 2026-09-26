@@ -88,6 +88,7 @@ dio_attacks_joestars = {
 		id = "JOJ"			
 		value = 1000
 	}
+}
 dio_army_build_early = {
 	enable = {
 	tag = DIO
@@ -96,7 +97,7 @@ dio_army_build_early = {
 abort_when_not_enabled = yes
 ai_strategy = {
     type = equipment_production_min_factories
-    id = infantry_equipment
+    id = infantry
     value = 10
 }
 ai_strategy = {
@@ -123,12 +124,12 @@ dio_army_build_late = {
 abort_when_not_enabled = yes
 ai_strategy = {
     type = equipment_production_min_factories
-    id = light_armor
+    id = light_tank_chassis
     value = 8
 }
 ai_strategy = {
     type = equipment_production_min_factories
-    id = infantry_equipment
+    id = infantry
     value = 10
 }
 ai_strategy = {
