@@ -90,11 +90,6 @@ ai_strategy = {
 	}
 ai_strategy = {
     type = build_army
-    id = infantry
-    value = 20
-	}
-ai_strategy = {
-    type = build_army
     id = stand_users
     value = 5
 	}
