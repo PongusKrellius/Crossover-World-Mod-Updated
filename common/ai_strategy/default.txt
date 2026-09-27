@@ -268,31 +268,34 @@ default_force_minors_build_stuff = {
 	}
 	abort = {
 	OR = {
-	num_of_military_factories > 20
 	num_divisions > 16
 		}
 	}	
 	abort_when_not_enabled = yes
 	ai_strategy = {
-    type = force_build_armies
-    value = 5
+    type = build_army
+    id = infantry
+    value = 17
 	}
 }
 default_force_majors_build_stuff = {
 	enable = {
-	num_of_military_factories < 20
+	num_of_military_factories > 30
 	num_divisions < 40
 	}
 	abort = {
-	OR = {
-	num_of_military_factories > 20
 	num_divisions > 40
-		}
 	}	
 	abort_when_not_enabled = yes
 	ai_strategy = {
-    type = force_build_armies
-    value = 15
+    type = build_army
+    id = infantry
+    value = 30
+	}
+	ai_strategy = {
+    type = build_army
+    id = armor
+    value = 3
 	}
 }
 

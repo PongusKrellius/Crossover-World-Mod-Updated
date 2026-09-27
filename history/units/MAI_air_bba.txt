@@ -5,22 +5,26 @@ air_wings = {
 		small_plane_airframe_1 =  {
 			owner = MAI
 			amount = 50
+			version_name = "Fighter I"
 		}
 		small_plane_cas_airframe_1 =  {
 			owner = MAI
 			amount = 20
+			version_name = "Bomber I"
 		}
 	}
 	808 = {
 		small_plane_airframe_1 =  {
 			owner = MAI
 			amount = 50
+			version_name = "Fighter I"
 		}
 	}
 	858 = {
 		small_plane_airframe_1 =  {
 			owner = MAI
 			amount = 50
+			version_name = "Fighter I"
 		}
 	}
 }

@@ -1,0 +1,34 @@
+######################
+#	MOUNTAINEER ROLE
+######################
+
+stand_users_generic = {
+	role = stand_users
+
+	upgrade_prio = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = { has_tech = stands_are_allowed }
+		}
+	}
+
+	stand_users_template = {
+		reinforce_prio = 2
+
+		upgrade_prio = {
+			factor = 2
+		}
+
+		target_template = {
+			regiments = {
+				stand_users = 12
+			}
+
+			support = {
+				artillery = 1
+				engineer = 1
+			}
+		}
+	}
+}

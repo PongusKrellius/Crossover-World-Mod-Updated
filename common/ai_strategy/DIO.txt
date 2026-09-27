@@ -101,13 +101,14 @@ abort = {
 }
 abort_when_not_enabled = yes
 ai_strategy = {
-    type = role_ratio
+    type = build_army
     id = infantry
     value = 20
 	}
 ai_strategy = {
-    type = force_build_armies
-    value = 20
+    type = build_army
+    id = stand_users
+    value = 3
 	}
 }
 dio_army_build_late = {
@@ -143,6 +144,11 @@ ai_strategy = {
     type = role_ratio
     id = infantry
     value = 30
+	}
+ai_strategy = {
+    type = role_ratio
+    id = stand_users
+    value = 10
 	}
 ai_strategy = {
     type = role_ratio

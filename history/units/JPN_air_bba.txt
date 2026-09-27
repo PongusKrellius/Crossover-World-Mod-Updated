@@ -5,42 +5,51 @@ air_wings = {
 		small_plane_airframe_1 =  {
 			owner = JPN
 			amount = 50
+			version_name = "Fighter I"
 		}
 		small_plane_airframe_1 =  {
 			owner = JPN
 			amount = 50
+			version_name = "Fighter I"
 		}
 		small_plane_cas_airframe_1 =  {
 			owner = JPN
 			amount = 50
+			version_name = "Bomber I"
 		}
 		medium_plane_airframe_1 =  {
 			owner = JPN
 			amount = 50
+			version_name = "Bigger Bomber"
 		}
 	}
 	825 = {
 		small_plane_airframe_1 =  {
 			owner = JPN
 			amount = 50
+			version_name = "Fighter I"
 		}
 		small_plane_airframe_1 =  {
 			owner = JPN
 			amount = 50
+			version_name = "Fighter I"
 		}
 		small_plane_cas_airframe_1 =  {
 			owner = JPN
 			amount = 50
+			version_name = "Bomber I"
 		}
 	}
 	846 = {
 		small_plane_airframe_1 =  {
 			owner = JPN
 			amount = 50
+			version_name = "Fighter I"
 		}
 		small_plane_cas_airframe_1 =  {
 			owner = JPN
 			amount = 50
+			version_name = "Bomber I"
 		}
 	}
 }

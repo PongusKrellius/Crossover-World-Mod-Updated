@@ -5,18 +5,22 @@ air_wings = {
 		small_plane_airframe_1 =  {
 			owner = WOL
 			amount = 50
+			version_name = "TBA"
 		}
 		small_plane_airframe_1 =  {
 			owner = WOL
 			amount = 50
+			version_name = "TBA"
 		}
 		small_plane_cas_airframe_1 =  {
 			owner = WOL
 			amount = 20
+			version_name = "TBA"
 		}
 		small_plane_cas_airframe_1 =  {
 			owner = WOL
 			amount = 20
+			version_name = "TBA"
 		}
 		medium_plane_airframe_0 =  {
 			owner = WOL

@@ -5,38 +5,46 @@ air_wings = {
 		small_plane_airframe_1 =  {
 			owner = FRI
 			amount = 80
+			version_name = "Fighter I"
 		}
 		small_plane_airframe_1 =  {
 			owner = FRI
 			amount = 80
+			version_name = "Fighter I"
 		}
 		medium_plane_airframe_0 =  {
 			owner = FRI
 			amount = 50
+			name = "Bigger Bomber"
 		}
 	}
 	872 = {
 		small_plane_cas_airframe_1 =  {
 			owner = FRI
 			amount = 50
+			version_name = "Bomber I"
 		}
 		small_plane_airframe_1 =  {
 			owner = FRI
 			amount = 80
+			version_name = "Fighter I"
 		}
 		small_plane_airframe_1 =  {
 			owner = FRI
 			amount = 80
+			version_name = "Fighter I"
 		}
 	}
 	905 = {
 		small_plane_airframe_1 =  {
 			owner = FRI
 			amount = 80
+			version_name = "Fighter I"
 		}
 		small_plane_cas_airframe_1 =  {
 			owner = FRI
 			amount = 50
+			version_name = "Bomber I"
 		}
 	}
 }

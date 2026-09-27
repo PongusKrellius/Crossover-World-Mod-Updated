@@ -5,24 +5,28 @@ air_wings = {
 		small_plane_airframe_0 =  {
 			owner = DES
 			amount = 50
+			version_name = "Early Fighter"
 		}
 	}
 	562 = {
 		small_plane_airframe_0 =  {
 			owner = DES
 			amount = 50
+			version_name = "Early Fighter"
 		}
 	}
 	591 = {
 		small_plane_airframe_0 =  {
 			owner = DES
 			amount = 50
+			version_name = "Early Fighter"
 		}
 	}
 	637 = {
 		small_plane_airframe_0 =  {
 			owner = DES
 			amount = 50
+			version_name = "Early Fighter"
 		}
 	}
 }

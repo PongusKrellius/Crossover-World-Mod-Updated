@@ -5,6 +5,7 @@ air_wings = {
 		small_plane_airframe_0 =  {
 			owner = ICW
 			amount = 50
+			version_name = "Early Fighter"
 		}
 	}
 }

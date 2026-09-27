@@ -5,10 +5,12 @@ air_wings = {
 		small_plane_airframe_1 =  {
 			owner = WEA
 			amount = 50
+			version_name = "TBA"
 		}
 		small_plane_cas_airframe_1 =  {
 			owner = WEA
 			amount = 20
+			version_name = "TBA"
 		}
 	}
 }

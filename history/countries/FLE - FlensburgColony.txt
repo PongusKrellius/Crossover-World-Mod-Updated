@@ -43,6 +43,24 @@ if = {
 			basic_medium_airframe = 1
 			iw_large_airframe = 1
 		}
+		create_equipment_variant = {
+		name = "Fighter I"
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Bomber I"
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
 	else = {
 		set_air_oob = "FLE_air_legacy"
 		set_technology = {
@@ -130,11 +148,6 @@ add_ideas = {
 	FLE_medium_funding_from_pantmawr
 }
 
-country_event = {
-	id = flensburg.21
-	days = 140
-}
-
 set_convoys = 150
 
 set_popularities = {
@@ -168,18 +181,7 @@ recruit_character = FLE_karl_duttmann
 recruit_character = FLE_peter_hoffmann
 recruit_character = FLE_staffan_kirschner
 
-if = {
-	limit = {
-		has_dlc = "By Blood Alone"
-	}
-	create_equipment_variant = {
-	#	name = "TBA"
-		type = small_plane_cas_airframe_1
-		modules = {
-			fixed_main_weapon_slot = bomb_locks
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-		icon = "GFX_GER_CAS1_medium"
-	}
+country_event = {
+	id = flensburg.21
+	days = 140
 }

@@ -143,21 +143,6 @@ set_politics = {
 	elections_allowed = no
 }
 
-if = {
-	limit = {
-		has_dlc = "By Blood Alone"
-	}
-	create_equipment_variant = {
-	#	name = "TBA"
-		type = small_plane_cas_airframe_1
-		modules = {
-			fixed_main_weapon_slot = bomb_locks
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-		icon = "GFX_USA_CAS1_medium"
-	}
-}
 
 set_stability = 0.85
 
@@ -169,3 +154,37 @@ recruit_character = TSA_samuel_gregg
 recruit_character = TSA_ambrose_rosencrans
 recruit_character = TSA_john_barksdale
 recruit_character = APS_glados
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = {
+		name = "Fighter I"
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Bomber I"
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Bigger Bomber"
+		type = medium_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = medium_bomb_bay
+				engine_type_slot = engine_2_2x
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty	
+			}
+	}
+}
