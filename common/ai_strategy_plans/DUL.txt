@@ -22,7 +22,6 @@ abort = {
 		}
 	}
 }
-abort_when_not_enabled = yes
 
  	ai_national_focuses = {
     DUL_army_modernization

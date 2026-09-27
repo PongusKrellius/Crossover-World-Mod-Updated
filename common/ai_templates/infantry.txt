@@ -52,7 +52,7 @@ line_infantry = {
 
 		target_template = {
 			regiments = {
-				infantry = 6
+				infantry = 7
 			}
 		}
 	}

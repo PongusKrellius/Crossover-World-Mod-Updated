@@ -103,7 +103,7 @@ abort_when_not_enabled = yes
 ai_strategy = {
     type = role_ratio
     id = infantry
-    value = 80
+    value = 20
 	}
 ai_strategy = {
     type = force_build_armies
@@ -131,7 +131,7 @@ ai_strategy = {
 }
 ai_strategy = {
     type = equipment_production_min_factories
-    id = infantry
+    id = armor
     value = 10
 }
 ai_strategy = {
@@ -142,7 +142,7 @@ ai_strategy = {
 ai_strategy = {
     type = role_ratio
     id = infantry
-    value = 80
+    value = 30
 	}
 ai_strategy = {
     type = role_ratio

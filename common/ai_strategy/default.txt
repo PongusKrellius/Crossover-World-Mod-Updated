@@ -548,7 +548,7 @@ default_marines_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = marines
-		value = 2
+		value = 4
 	}
 }
 
