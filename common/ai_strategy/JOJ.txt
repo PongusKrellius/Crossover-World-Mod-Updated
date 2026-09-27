@@ -66,24 +66,58 @@ jojo_helps_greenland = {
 		value = 100
 	}
 }
-jojo_army_build = {
+jojo_army_build_early = {
+ 	allowed = {
+        original_tag = JOJ
+    }
 	enable = {
+	num_of_military_factories > 6
+	}
+	abort = {
 	tag = JOJ
-	num_of_military_factories > 15
+	num_of_military_factories > 20
+	}
+	abort_when_not_enabled = yes
+ai_strategy = {
+    type = equipment_production_min_factories
+    id = infantry
+    value = 5
+	}
+ai_strategy = {
+    type = role_ratio
+    id = infantry
+    value = 90
+	}
+ai_strategy = {
+    type = force_build_armies
+    value = 13
+	}
 }
+jojo_army_build_late = {
+	allowed = {
+        original_tag = JOJ
+    }
+	enable = {
+	num_of_military_factories > 20
+	}
 abort_when_not_enabled = yes
 ai_strategy = {
     type = equipment_production_min_factories
     id = infantry
-    value = 12
-}
+    value = 10
+	}
+ai_strategy = {
+    type = equipment_production_min_factories
+    id = artillery
+    value = 3
+	}
 ai_strategy = {
     type = role_ratio
     id = infantry
-    value = 30
+    value = 90
 	}
 ai_strategy = {
     type = force_build_armies
-    value = 30
+    value = 40
 	}
 }

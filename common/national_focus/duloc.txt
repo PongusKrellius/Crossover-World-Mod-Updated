@@ -2526,7 +2526,7 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 10
 		y = 0
-		cost = 5.75
+		cost = 4.25
 
 		available_if_capitulated = yes
 
@@ -2547,7 +2547,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = DUL_army_modernization
-		cost = 5.75
+		cost = 4.25
 
 		available_if_capitulated = yes
 
@@ -2570,7 +2570,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = DUL_army_modernization
-		cost = 5.75
+		cost = 4.25
 
 		available_if_capitulated = yes
 
@@ -2591,7 +2591,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = DUL_swords_to_rifles
-		cost = 5.75
+		cost = 4.25
 
 		available_if_capitulated = yes
 
@@ -2613,7 +2613,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = DUL_knights_to_cavalry
-		cost = 5.75
+		cost = 4.25
 
 		available_if_capitulated = yes
 
@@ -2636,7 +2636,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = DUL_army_modernization
-		cost = 5.75
+		cost = 4.25
 
 		available_if_capitulated = yes
 
@@ -2664,7 +2664,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = DUL_swords_to_rifles
-		cost = 5.75
+		cost = 4.25
 
 		available_if_capitulated = yes
 
@@ -2740,7 +2740,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = DUL_catapults_to_cannons
-		cost = 5.75
+		cost = 4.25
 
 		available_if_capitulated = yes
 

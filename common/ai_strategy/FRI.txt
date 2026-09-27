@@ -263,9 +263,10 @@ support_general_in_civil_war = {
 	}
 }
 FRI_smarter_build = {
+allowed = {
+	original_tag = FRI
+	}
 enable = {
-	tag = FRI
-	num_of_military_factories > 40
 	has_tech = interwar_antitank
 	has_tech = improved_infantry_weapons
 	OR = {
@@ -277,25 +278,26 @@ abort_when_not_enabled = yes
 ai_strategy = {
     type = equipment_production_min_factories
     id = light_tank_chassis
-    value = 8
-}
+    value = 3
+	}
 ai_strategy = {
     type = equipment_production_min_factories
     id = infantry
-    value = 10
-}
+    value = 8
+	}
 ai_strategy = {
     type = equipment_production_min_factories
     id = artillery
-    value = 6
-}
+    value = 4
+	}
 ai_strategy = {
-    type = force_build_armies
+    type = role_ratio
+    id = infantry
     value = 30
 	}
 ai_strategy = {
-    type = build_army
+    type = role_ratio
     id = armor
-    value = 6
+    value = 8
 	}
 }

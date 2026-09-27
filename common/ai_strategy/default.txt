@@ -172,7 +172,7 @@ default_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 75
+		value = 95
 	}
 
 	ai_strategy = {
@@ -251,13 +251,13 @@ default_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = infantry
-		value = 40
+		value = 50
 	}
 
 	ai_strategy = {
 		type = equipment_production_factor
 		id = artillery
-		value = 25
+		value = 30
 	}
 }
 

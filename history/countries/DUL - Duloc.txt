@@ -66,3 +66,4 @@ recruit_character = DUL_lord_farquaad
 recruit_character = DUL_placeholder
 recruit_character = DUL_thelonious
 recruit_character = DUL_lucas_white
+recruit_character = DUL_fallen_government

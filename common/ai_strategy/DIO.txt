@@ -90,20 +90,20 @@ dio_attacks_joestars = {
 	}
 }
 dio_army_build_early = {
+allowed = {
+        original_tag = DIO
+    }
 	enable = {
-	tag = DIO
-	num_of_military_factories > 12
+	num_of_military_factories > 6
+}
+abort = {
+	num_of_military_factories > 40
 }
 abort_when_not_enabled = yes
 ai_strategy = {
-    type = equipment_production_min_factories
-    id = infantry
-    value = 10
-}
-ai_strategy = {
     type = role_ratio
     id = infantry
-    value = 30
+    value = 80
 	}
 ai_strategy = {
     type = force_build_armies
@@ -111,8 +111,10 @@ ai_strategy = {
 	}
 }
 dio_army_build_late = {
+ 	allowed = {
+        original_tag = DIO
+    }
 	enable = {
-	tag = DIO
 	num_of_military_factories > 40
 	has_tech = interwar_antitank
 	has_tech = improved_infantry_weapons
@@ -140,11 +142,15 @@ ai_strategy = {
 ai_strategy = {
     type = role_ratio
     id = infantry
-    value = 40
+    value = 80
 	}
 ai_strategy = {
     type = role_ratio
     id = armor
     value = 3
+	}
+ai_strategy = {
+    type = force_build_armies
+    value = 40
 	}
 }

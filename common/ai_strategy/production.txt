@@ -212,12 +212,6 @@ extra_marine_production = {
 	}
 
 	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = role_ratio
-		id = infantry
-		value = -3
-	}
 	ai_strategy = {
 		type = role_ratio
 		id = mountaineer
@@ -270,16 +264,10 @@ make_more_militia = {
 	}
 
 	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = role_ratio
-		id = infantry
-		value = -10
-	}
 	ai_strategy = {
 		type = role_ratio
 		id = militia
-		value = 10
+		value = 20
 	}
 	ai_strategy = {
 		type = template_prio
@@ -462,12 +450,6 @@ heavy_armor_production = {
 	}
 
 	ai_strategy = {
-		type = role_ratio
-		id = infantry
-		value = -3
-	}
-
-	ai_strategy = {
 		type = template_prio
 		id = heavy_armor
 		value = 20
@@ -489,12 +471,6 @@ more_heavy_armor_production = {
 	}
 
 	ai_strategy = {
-		type = role_ratio
-		id = infantry
-		value = -3
-	}
-
-	ai_strategy = {
 		type = template_prio
 		id = heavy_armor
 		value = 20
@@ -511,12 +487,6 @@ higher_armored_production = {
 	}
 
 	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = role_ratio
-		id = infantry
-		value = -5
-	}
 	ai_strategy = {
 		type = role_ratio
 		id = armor

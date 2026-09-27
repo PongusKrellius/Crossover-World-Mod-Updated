@@ -1,0 +1,54 @@
+dul_dont_get_eaten = {
+allowed = {
+        original_tag = DUL
+    }
+enable = {
+	
+	OR = {
+		DUL = {
+		has_completed_focus = DUL_host_a_tournament
+		has_completed_focus = DUL_a_visit_to_the_south
+		has_completed_focus = DUL_exchange_embassies
+			}
+		}
+	}
+abort = {
+	OR = {
+		SWA = {
+		is_ai = no
+		}
+		FFA = {
+		is_ai = no
+		}
+	}
+}
+abort_when_not_enabled = yes
+
+ 	ai_national_focuses = {
+    DUL_army_modernization
+    DUL_modern_army_training
+    DUL_study_foreign_armies
+    DUL_swords_to_rifles
+    DUL_knights_to_cavalry
+    DUL_horseback_training
+    DUL_catapults_to_cannons
+    DUL_cannon_mastery
+    DUL_doctrine_effort
+    DUL_doctrine_effort_2
+    DUL_military_academy
+    }
+    focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	weight = {
+		base = 1000
+	}
+}

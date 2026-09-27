@@ -77,29 +77,31 @@ duloc_plays_alone_well_maybe_with_lechists = {
 	}
 }
 dul_army_build_early = {
-	enable = {
-	tag = DUL
-	num_of_military_factories > 12
+enable = {
+	original_tag = DUL
+}
+enable = {
+	num_of_military_factories > 6
+}
+abort = {
+	num_of_military_factories > 40
 }
 abort_when_not_enabled = yes
 ai_strategy = {
-    type = equipment_production_min_factories
-    id = infantry
-    value = 10
-}
-ai_strategy = {
     type = role_ratio
     id = infantry
-    value = 30
+    value = 85
 	}
 ai_strategy = {
     type = force_build_armies
-    value = 20
+    value = 10
 	}
 }
 dul_army_build_late = {
+allowed = {
+        original_tag = DUL
+    }
 enable = {
-	tag = DUL
 	num_of_military_factories > 40
 	has_tech = interwar_antitank
 	has_tech = improved_infantry_weapons
@@ -111,7 +113,7 @@ enable = {
 abort_when_not_enabled = yes
 ai_strategy = {
     type = equipment_production_min_factories
-    id = light_tank_chassis
+    id = armor
     value = 8
 }
 ai_strategy = {
@@ -127,11 +129,15 @@ ai_strategy = {
 ai_strategy = {
     type = role_ratio
     id = infantry
-    value = 40
+    value = 80
 	}
 ai_strategy = {
     type = role_ratio
     id = armor
-    value = 3
+    value = 9
+	}
+ai_strategy = {
+    type = force_build_armies
+    value = 50
 	}
 }
