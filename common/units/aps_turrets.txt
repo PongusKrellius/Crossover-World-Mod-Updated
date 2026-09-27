@@ -29,13 +29,11 @@ sub_units = {
 		build_cost_ic = 0.6
 		
 		#Size Definitions
-		max_strength = 70
 		max_organisation = 70
 		default_morale = 1
 		manpower = 1
 
 		# Offensive
-		attack = 1                    # Firepower - Amount of damage done per attack
 		soft_attack = 1.5              # Soft Attack - How many attacks the unit can make versus enemies with low hardness. (In this example here, this would mean that the unit would get 10% less Soft Attack than they would usually get from its equipment
 		hard_attack = 3.5              # Hard Attack - How many attacks the unit can make versus enemies with high hardness
 		air_attack = 1                  # Air Attack - How much damage we can do against airplanes. High Air Attack also helps to counter enemy Air Superiority effects
@@ -44,7 +42,7 @@ sub_units = {
 
 		# Defensive
 		defense = 0.01                  # Defense - How many enemy attacks a unit can avoid whilst on the defensive, effectively allowing it to stay on the defensive longer.
-		max_strength = 7                # HP - Strength represents how much damage this unit can suffer before it is destroyed
+		max_strength = 70                # HP - Strength represents how much damage this unit can suffer before it is destroyed
 		armor_value = 5                 # Armor - Armor that is higher than the opponents Piercing value reduces damage taken and allows more attacks to occur
 		hardness = 0.5                  # Hardness - Represents how much of your divsion is made up of armoured vehicles. High Hardness = High Hard Attacks, Low Soft Attack
 		entrenchment = 1                # Entrenchment - The ability to make proper defensive entrenchments before a hostile attack
