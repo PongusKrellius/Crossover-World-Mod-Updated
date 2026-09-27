@@ -189,22 +189,4 @@ units = {
 		division_template = "Eastern Militia"
 		start_experience_factor = 0.6
 	}
-	division = {
-		name = "1. Infantry Division"
-		location = 1727
-		division_template = "Infantry Division"
-		start_experience_factor = 0.6
-	}
-	division = {
-		name = "2. Infantry Division"
-		location = 1727
-		division_template = "Infantry Division"
-		start_experience_factor = 0.6
-	}
-	division = {
-		name = "3. Infantry Division"
-		location = 1727
-		division_template = "Infantry Division"
-		start_experience_factor = 0.6
-	}
 }

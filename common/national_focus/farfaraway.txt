@@ -3871,7 +3871,7 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 31
 		y = 0
-		cost = 7.25
+		cost = 4.25
 
 		available_if_capitulated = yes
 
@@ -3881,7 +3881,7 @@ focus_tree = {
 				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
-}
+			}
 		}
 	}
 
@@ -3906,7 +3906,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_bonus
-				bonus = 1.0
+				bonus = 3.0
 				uses = 1
 				category = infantry_weapons
 			}

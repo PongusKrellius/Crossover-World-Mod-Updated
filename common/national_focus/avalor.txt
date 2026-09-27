@@ -1385,7 +1385,8 @@ focus = {
 			faction_template = regional_faction
 			faction_name = avalor_pact
 			icon = GFX_faction_logo_generic
-		}		
+			}		
+		}
 	}
 
 	focus = { 

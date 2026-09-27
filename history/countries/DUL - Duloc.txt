@@ -52,6 +52,12 @@ set_popularities = {
 		
 	monarchism = 100
 }
+add_tech_bonus = {
+    	bonus = 3
+    	ahead_reduction = 2
+    	uses = 1
+    	category = infantry_weapons
+	}
 
 set_politics = {
 	ruling_party = monarchism

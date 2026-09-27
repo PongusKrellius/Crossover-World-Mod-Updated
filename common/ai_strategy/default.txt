@@ -268,14 +268,14 @@ default_force_minors_build_stuff = {
 	}
 	abort = {
 	OR = {
-	num_divisions > 16
+	num_divisions > 15
 		}
 	}	
 	abort_when_not_enabled = yes
 	ai_strategy = {
     type = build_army
     id = infantry
-    value = 17
+    value = 7
 	}
 }
 default_force_majors_build_stuff = {
@@ -290,7 +290,7 @@ default_force_majors_build_stuff = {
 	ai_strategy = {
     type = build_army
     id = infantry
-    value = 30
+    value = 20
 	}
 	ai_strategy = {
     type = build_army

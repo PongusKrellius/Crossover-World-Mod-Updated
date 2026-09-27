@@ -153,10 +153,4 @@ units = {
 		division_template = "Northern Militia"
 		start_experience_factor = 0.6
 	}
-	division = {
-		name = "23. Northern Militia"
-		location = 2130
-		division_template = "Northern Militia"
-		start_experience_factor = 0.6
-	}
 }
