@@ -1,0 +1,110 @@
+spg_GON = {
+
+	available_for = {
+		GON
+	}
+	
+	role = light_armor
+	
+	upgrade_prio = {
+		base = 10
+
+		modifier = {
+			factor = 100
+			OR = {
+				has_tech = basic_light_tank
+				has_tech = basic_light_tank_chassis
+			}
+			has_tech = artillery1
+			has_tech = motorised_infantry 
+		}
+	}
+
+	spg_early_GON = {
+		upgrade_prio = {
+			base = 100
+
+			modifier = {
+				factor = 200
+			}
+		}
+		
+		target_template = {
+		regiments = {
+				light_sp_artillery_brigade = 3
+				motorized = 3
+			}
+		}
+
+		replace_at_match = 1.5 # I.e, no
+		replace_with = spg_late_GON
+		target_min_match = 0.75
+	}
+
+	spg_late_GON = {
+		upgrade_prio = {
+			base = 300
+
+			modifier = {
+				factor = 200
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				mot_recon = 1
+			}
+			
+			regiments = {
+				light_sp_artillery_brigade = 4
+				motorized = 4
+			}
+		}
+	}	
+}
+
+# Non-complete list of sub-units
+
+# REGIMENTS:
+# - infantry
+# - light_armor
+# - medium_armor
+# - heavy_armor
+# - super_heavy_armor
+# - modern_armor
+# - cavalry
+# - motorized
+# - mechanized
+# - marine
+# - mountaineers
+# - paratrooper
+# - artillery_brigade
+# - anti_air_brigade
+# - anti_tank_brigade
+# - light_tank_destroyer_brigade
+# - medium_tank_destroyer_brigade
+# - heavy_tank_destroyer_brigade
+# - super_heavy_tank_destroyer_brigade
+# - modern_tank_destroyer_brigade
+# - light_sp_anti_air_brigade
+# - light_sp_artillery_brigade
+
+# SUPPORT:
+# - engineer
+# - recon
+# - signal_company
+# - maintenance_company
+# - artillery
+# - field_hospital
+# - logistics_company
+# - military_police
+# - rocket_artillery
+
+# SUPPORT (REGIMENTAL):
+# - anti_air
+# - anti_tank
+# - field_guns
+# - fire_support
+# - mot_fire_support
+# - rocket_battery

@@ -143,3 +143,27 @@ ai_strategy = {
     value = 3
 	}
 }
+dul_research_guns = {
+	allowed = {
+        original_tag = DUL
+    }
+	enable = {
+		always = yes
+		}
+	abort = {
+		SWA = {
+		is_ai = no
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = research_tech
+		id = infantry_weapons
+		value = 10000
+	}
+	ai_strategy = {
+		type = research_tech
+		id = basic_machine_tools
+		value = 10000
+	}
+}

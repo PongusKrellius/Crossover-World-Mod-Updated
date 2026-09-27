@@ -46,29 +46,3 @@ abort = {
 		base = 1000
 	}
 }
-
-dul_research_guns = {
-allowed = {
-        original_tag = DUL
-    }
-enable = {
-		always = yes
-		}
-abort = {
-		SWA = {
-		is_ai = no
-		}
-	}
-abort_when_not_enabled = yes
-
-	research = {
-	infantry_weapons
-	}
-
-	ideas = {
-
-	}
-	weight = {
-		base = 1000
-	}
-}

@@ -1,0 +1,30 @@
+gon_research = {
+allowed = {
+        original_tag = GON
+    }
+enable = {
+		always = yes
+		}
+abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = research_weight_factor
+		id = basic_machine_tools
+		value = 100
+	}
+	ai_strategy = {
+		type = research_weight_factor
+		id = basic_light_tank_chassis
+		value = 100
+	}
+	ai_strategy = {
+		type = research_weight_factor
+		id = artillery1
+		value = 100
+	}
+	ai_strategy = {
+		type = research_weight_factor
+		id = radio
+		value = 100
+	}
+}

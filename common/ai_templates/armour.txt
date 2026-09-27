@@ -13,6 +13,10 @@ armour_generic = {
 		}
 		modifier = {
 			factor = 0
+			tag = GON
+		}
+		modifier = {
+			factor = 0
 			NOT = { has_tech = motorised_infantry }
 		}
 		modifier = {

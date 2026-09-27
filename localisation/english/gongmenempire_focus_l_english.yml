@@ -251,4 +251,7 @@
  GON_generic_air_force_academy_desc:0 "We have to establish Air Force University in our capital in order to educate our pilots."
  #scripted loc
  GON_crush_them_all:0 "Monarchist popularity will steadily decrease.  Monarchist guerillas will cease to be an issue once monarchist popularity is at zero"
+ #equipment
+ shen_cannon:0 "Shen Cannon"
+ shen_cannon_2:0 "Super Shen Cannon"
  
