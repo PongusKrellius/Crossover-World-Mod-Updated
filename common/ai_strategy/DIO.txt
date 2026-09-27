@@ -126,7 +126,7 @@ dio_army_build_late = {
 abort_when_not_enabled = yes
 ai_strategy = {
     type = equipment_production_min_factories
-    id = light_tank_chassis
+    id = armor
     value = 8
 }
 ai_strategy = {

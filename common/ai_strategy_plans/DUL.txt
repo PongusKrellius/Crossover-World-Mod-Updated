@@ -3,15 +3,10 @@ allowed = {
         original_tag = DUL
     }
 enable = {
-	
-	OR = {
 		DUL = {
-		has_completed_focus = DUL_host_a_tournament
-		has_completed_focus = DUL_a_visit_to_the_south
-		has_completed_focus = DUL_exchange_embassies
+		has_completed_focus = DUL_deport_fairytale_creatures
 			}
 		}
-	}
 abort = {
 	OR = {
 		SWA = {
