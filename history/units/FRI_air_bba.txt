@@ -1,6 +1,4 @@
-﻿
-
-air_wings = {
+﻿air_wings = {
 	811 = {
 		small_plane_airframe_1 =  {
 			owner = FRI
@@ -12,7 +10,7 @@ air_wings = {
 			amount = 80
 			version_name = "Fighter I"
 		}
-		medium_plane_airframe_0 =  {
+		medium_plane_airframe_1 =  {
 			owner = FRI
 			amount = 50
 			name = "Bigger Bomber"

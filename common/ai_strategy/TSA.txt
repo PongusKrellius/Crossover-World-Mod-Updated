@@ -17,3 +17,83 @@ if_flower_hill_declares_then_fight_tsa = {
 		value = 7000 # that low means not going for islands either
 	}
 }
+tsa_army_build_early = {
+enable = {
+	original_tag = TSA
+	num_of_military_factories > 9
+}
+abort = {
+	num_of_military_factories > 28
+}
+abort_when_not_enabled = yes
+ai_strategy = {
+	type = build_army
+	id = infantry
+	value = 22
+	}
+ai_strategy = {
+	type = build_army
+	id = armor
+	value = 7
+	}
+ai_strategy = {
+	type = equipment_production_min_factories_archetype
+	id = small_plane_airframe
+	value = 4
+	}
+ai_strategy = {
+	type = equipment_production_min_factories_archetype
+	id = small_plane_cas_airframe
+	value = 2
+	}
+ai_strategy = {
+    type = unit_ratio
+    id = fighter
+    value = 90
+	}
+ai_strategy = {
+    type = unit_ratio
+    id = cas
+    value = 60
+	}
+}
+tsa_army_build_midgame = {
+enable = {
+	original_tag = TSA
+	num_of_military_factories > 28
+}
+abort = {
+	num_of_military_factories > 50
+}
+abort_when_not_enabled = yes
+ai_strategy = {
+	type = build_army
+	id = infantry
+	value = 45
+	}
+ai_strategy = {
+	type = build_army
+	id = armor
+	value = 10
+	}
+ai_strategy = {
+	type = equipment_production_min_factories_archetype
+	id = small_plane_airframe
+	value = 8
+	}
+ai_strategy = {
+	type = equipment_production_min_factories_archetype
+	id = small_plane_cas_airframe
+	value = 4
+	}
+ai_strategy = {
+    type = unit_ratio
+    id = fighter
+    value = 90
+	}
+ai_strategy = {
+    type = unit_ratio
+    id = cas
+    value = 60
+	}
+}

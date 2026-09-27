@@ -59,9 +59,7 @@ abort = {
 		is_ai = no
 		}
 	}
-    focus_factors = {
-		
-	}
+abort_when_not_enabled = yes
 
 	research = {
 	infantry_weapons

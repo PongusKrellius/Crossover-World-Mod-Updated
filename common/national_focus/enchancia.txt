@@ -173,11 +173,8 @@ focus_tree = {
 		} 
 		completion_reward = {
 			army_experience = 5
-			add_tech_bonus = {
-    	bonus = 3
-    	ahead_reduction = 2
-    	uses = 1
-    		category = infantry_weapons
+			set_technology = {
+    		infantry_weapons = 1
 			}
 		} 
 	}

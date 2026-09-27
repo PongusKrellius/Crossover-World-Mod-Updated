@@ -43,3 +43,26 @@ DES_you_have_wargoal_against_sioux_go_to_the_border = {
 		value = 7000
 	}
 }
+
+DES_rush_SIO = {
+	enable = {
+		tag = DES
+		SIO = {
+			exists = yes
+		}
+		has_war_with = SIO
+		NOT = { has_war_with = GRN }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+		area = north_america
+		ratio = 0
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+	}
+}

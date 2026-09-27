@@ -2,34 +2,34 @@
 
 air_wings = {
 	698 = {
-		fighter_equipment_1 =  {
+		small_plane_airframe_1 =  {
 			owner = TSA
 			amount = 50
 			version_name = "Fighter I"
 		}
-		fighter_equipment_1 =  {
+		small_plane_airframe_1 =  {
 			owner = TSA
 			amount = 50
 			version_name = "Fighter I"
 		}
-		CAS_equipment_1 =  {
+		small_plane_cas_airframe_1 =  {
 			owner = TSA
 			amount = 50
 			version_name = "Bomber I"
 		}
-		tac_bomber_equipment_1 =  {
+		medium_plane_airframe_1 =  {
 			owner = TSA
 			amount = 50
-			version_name = "Bigger Bomber I"
+			version_name = "Bigger Bomber"
 		}
 	}
 	742 = {
-		fighter_equipment_1 =  {
+		small_plane_airframe_1 =  {
 			owner = TSA
 			amount = 50
 			version_name = "Fighter I"
 		}
-		CAS_equipment_1 =  {
+		small_plane_cas_airframe_1 =  {
 			owner = TSA
 			amount = 50
 			version_name = "Bomber I"

@@ -113,14 +113,24 @@ ai_strategy = {
     value = 3
 	}
 ai_strategy = {
-    type = role_ratio
-    id = infantry
-    value = 30
+    type = equipment_production_min_factories
+    id = armor
+    value = 15
 	}
 ai_strategy = {
-    type = role_ratio
+    type = build_army
+    id = infantry
+    value = 40
+	}
+ai_strategy = {
+    type = build_army
     id = stand_users
     value = 10
+	}
+ai_strategy = {
+    type = build_army
+    id = armor
+    value = 8
 	}
 ai_strategy = {
     type = force_build_armies

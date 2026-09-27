@@ -15,7 +15,7 @@ air_wings = {
 		small_plane_cas_airframe_1 =  {
 			owner = DCB
 			amount = 50
-			version_name = "Duck Plane"
+			version_name = "Duck Bomber"
 		}
 	}
 	711 = {
