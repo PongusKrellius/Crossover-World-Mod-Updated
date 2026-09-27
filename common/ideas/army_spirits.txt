@@ -555,7 +555,7 @@ ideas = {
 		}
 
 		maneuver_warfare_spirit = {
-			available = { has_tech = engineers }
+			available = { has_tech = tech_engineers }
 			modifier = {
 				tactic_unexpected_thrust_preferred_weight_factor = 1
 				army_speed_factor = 0.05

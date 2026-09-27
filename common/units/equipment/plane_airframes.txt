@@ -172,23 +172,6 @@ wooden_plane_airframe = {
 	#to make sure that an airframe appears in the air designer make sure to add it in interface/equipmentdesigner/planes/plane_blueprints_generic.gui, otherwise it will not show up
 	small_plane_airframe = {
 		year = 1933
-
-		can_be_produced = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				NOT = {
-					has_idea = BUL_army_restrictions_aat
-				}
-			}
-			else = {
-				NOT = {
-					has_idea = BUL_army_restrictions
-				}
-			}
-		}
-
 		is_archetype = yes
 		is_convertable = yes
 		picture = archetype_fighter_equipment
@@ -972,23 +955,6 @@ wooden_plane_airframe = {
 
 	cv_small_plane_airframe = {
 		year = 1933
-
-		can_be_produced = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				NOT = {
-					has_idea = BUL_army_restrictions_aat
-				}
-			}
-			else = {
-				NOT = {
-					has_idea = BUL_army_restrictions
-				}
-			}
-		}
-
 		is_archetype = yes
 		is_convertable = yes
 		carrier_capable = yes
@@ -1602,23 +1568,6 @@ wooden_plane_airframe = {
 
 	medium_plane_airframe = {
 		year = 1933
-
-		can_be_produced = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				NOT = {
-					has_idea = BUL_army_restrictions_aat
-				}
-			}
-			else = {
-				NOT = {
-					has_idea = BUL_army_restrictions
-				}
-			}
-		}
-
 		is_archetype = yes
 		is_convertable = yes
 		picture = archetype_strat_bomber_equipment
@@ -2475,23 +2424,6 @@ wooden_plane_airframe = {
 
 	large_plane_airframe = {
 		year = 1933
-
-		can_be_produced = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				NOT = {
-					has_idea = BUL_army_restrictions_aat
-				}
-			}
-			else = {
-				NOT = {
-					has_idea = BUL_army_restrictions
-				}
-			}
-		}
-
 		is_archetype = yes
 		is_convertable = yes
 		picture = archetype_strat_bomber_equipment
