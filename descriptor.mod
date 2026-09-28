@@ -41,3 +41,5 @@ replace_path="tests"
 picture="thumbnail.png"
 version="1.16.*"
 supported_version="1.16.*"
+
+# Many of the revamped AI strategies code were taken from both vanilla and EAW as I tried to figure out how to make the AI train more divisions.  Here I do give credit to both these places as I did not come up with the functions myself.  
