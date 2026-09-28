@@ -210,6 +210,7 @@ GON_make_spgs = {
 			}
 			has_tech = artillery1
 			has_tech = motorised_infantry 
+			num_of_military_factories > 42
 	}
 	abort = {
 		num_of_military_factories > 100
