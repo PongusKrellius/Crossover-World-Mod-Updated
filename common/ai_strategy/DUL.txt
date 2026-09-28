@@ -106,6 +106,9 @@ enable = {
 	has_tech = basic_light_tank_chassis
 	}
 }
+	abort = {
+		num_of_military_factories > 80
+	}
 abort_when_not_enabled = yes
 ai_strategy = {
     type = equipment_production_min_factories
@@ -125,7 +128,7 @@ ai_strategy = {
 ai_strategy = {
     type = role_ratio
     id = infantry
-    value = 30
+    value = 50
 	}
 ai_strategy = {
     type = role_ratio

@@ -124,6 +124,9 @@ dio_army_build_late = {
 	has_tech = basic_light_tank_chassis
 	}
 }
+	abort = {
+		num_of_military_factories > 50
+	}
 abort_when_not_enabled = yes
 ai_strategy = {
     type = equipment_production_min_factories
