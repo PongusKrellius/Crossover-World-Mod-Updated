@@ -137,10 +137,10 @@ GON_spg_production = {
 		id = motorized
 		value = 5
 	}
-		ai_strategy = {
+	ai_strategy = {
 		type = equipment_variant_production_factor
 		id = light_tank_chassis
-		value = -50
+		value = -100
 	}
 	ai_strategy = {
 		type = equipment_variant_production_factor
@@ -148,14 +148,32 @@ GON_spg_production = {
 		value = 100
 	}
 	ai_strategy = {
-		type = equipment_production_min_factories
-		id = light_tank_chassis
-		value = 7
-	}
-	ai_strategy = {
-		type = equipment_production_min_factories
+		type = equipment_production_min_factories_archetype
 		id = motorized_equipment
 		value = 7
+	}
+}
+GON_make_divs = {
+	allowed = {
+		original_tag = GON
+	}
+	enable = {
+		num_of_military_factories > 32
+		num_of_military_factories < 60
+	}
+	abort = {
+		num_of_military_factories > 60
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+    type = build_army
+    id = infantry
+    value = 45
+	}
+	ai_strategy = {
+    type = build_army
+    id = light_armor
+    value = 12
 	}
 }
 GON_templates = {
@@ -195,7 +213,7 @@ GON_templates = {
 	ai_strategy = {
 		type = template_prio
 		id = motorized
-		value = 0
+		value = -100
 	}
 	
 	ai_strategy = {
@@ -216,3 +234,4 @@ GON_templates = {
 		value = 0
 	}
 }
+

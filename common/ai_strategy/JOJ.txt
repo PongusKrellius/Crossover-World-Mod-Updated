@@ -132,8 +132,4 @@ ai_strategy = {
     id = armor
     value = 8
 	}
-ai_strategy = {
-    type = force_build_armies
-    value = 40
-	}
 }

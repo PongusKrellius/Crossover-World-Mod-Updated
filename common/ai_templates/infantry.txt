@@ -86,7 +86,26 @@ line_infantry = {
 			}
 		}
 	}
+	# FOR APERTURE
+	APS_TURRETS_REGULAR = {
+		upgrade_prio = {
+			base = 0
+			modifier = {
+				add = 100 #in base four, i'm fine
+				tag = APS
+			}
+		}
 
+		target_template = {
+
+			regiments = {
+				aps_sentry_turret = 10
+			}
+		}
+	}
+}
+motorized_infantry = {
+role = motorized
 	infantry_motorised = {
 
 		upgrade_prio = {
@@ -171,21 +190,4 @@ line_infantry = {
 		}
 	}
 
-	# FOR APERTURE
-	APS_TURRETS_REGULAR = {
-		upgrade_prio = {
-			base = 0
-			modifier = {
-				add = 100 #in base four, i'm fine
-				tag = APS
-			}
-		}
-
-		target_template = {
-
-			regiments = {
-				aps_sentry_turret = 10
-			}
-		}
-	}
 }
