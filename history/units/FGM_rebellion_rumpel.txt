@@ -65,46 +65,4 @@ units = {
 		division_template = "Fairy Godmother's Unit"
 		start_experience_factor = 0.1
 	}
-	division = {
-		name = "10. Fairy Godmother's Unit"
-		location = 6552
-		division_template = "Fairy Godmother's Unit"
-		start_experience_factor = 0.1
-	}
-	division = {
-		name = "11. Fairy Godmother's Unit"
-		location = 2289
-		division_template = "Fairy Godmother's Unit"
-		start_experience_factor = 0.1
-	}
-	division = {
-		name = "12. Fairy Godmother's Unit"
-		location = 3634
-		division_template = "Fairy Godmother's Unit"
-		start_experience_factor = 0.1
-	}
-	division = {
-		name = "13. Fairy Godmother's Unit"
-		location = 1126
-		division_template = "Fairy Godmother's Unit"
-		start_experience_factor = 0.1
-	}
-	division = {
-		name = "14. Fairy Godmother's Unit"
-		location = 2651
-		division_template = "Fairy Godmother's Unit"
-		start_experience_factor = 0.1
-	}
-	division = {
-		name = "15. Fairy Godmother's Unit"
-		location = 2629
-		division_template = "Fairy Godmother's Unit"
-		start_experience_factor = 0.1
-	}
-	division = {
-		name = "16. Fairy Godmother's Unit"
-		location = 414
-		division_template = "Fairy Godmother's Unit"
-		start_experience_factor = 0.1
-	}
 }
