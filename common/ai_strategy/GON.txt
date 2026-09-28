@@ -168,7 +168,7 @@ GON_make_divs = {
 	ai_strategy = {
     type = build_army
     id = infantry
-    value = 45
+    value = 60
 	}
 	ai_strategy = {
     type = build_army
