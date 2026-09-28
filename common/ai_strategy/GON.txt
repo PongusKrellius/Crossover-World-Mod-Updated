@@ -153,7 +153,30 @@ GON_spg_production = {
 		value = 7
 	}
 }
-GON_make_divs = {
+GON_make_divs_early = {
+	allowed = {
+		original_tag = GON
+	}
+	enable = {
+		num_of_military_factories > 15
+		num_of_military_factories < 32
+	}
+	abort = {
+		num_of_military_factories > 32
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+    type = build_army
+    id = infantry
+    value = 35
+	}
+	ai_strategy = {
+    type = build_army
+    id = light_armor
+    value = 6
+	}
+}
+GON_make_divs_late = {
 	allowed = {
 		original_tag = GON
 	}
