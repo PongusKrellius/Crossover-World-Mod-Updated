@@ -40,7 +40,7 @@ GON_spg_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 95
+		value = 80
 	}
 
 	ai_strategy = {
