@@ -208,7 +208,7 @@ characters={
 			slot = navy_chief
 			idea_token = hornpipe
 			cost = 100
-			traits = { navy_chief_decisive_battle_2 }
+			traits = { navy_chief_decisive_battle_1 }
 			ai_will_do = {
 				factor = 0.5
 		}
@@ -245,7 +245,7 @@ characters={
 			ai_will_do = {
 				factor = 0
 			}
-		traits = { army_chief_offensive_1 }
+		traits = { army_chief_offensive_2 }
 		}
 	}
 	ENC_leopold_murphy={
