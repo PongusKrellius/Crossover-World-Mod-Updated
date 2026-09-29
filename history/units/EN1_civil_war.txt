@@ -177,16 +177,4 @@ units = {
 		division_template = "Eastern Militia"
 		start_experience_factor = 0.6
 	}
-	division = {
-		name = "27. Eastern Militia"
-		location = 1727
-		division_template = "Eastern Militia"
-		start_experience_factor = 0.6
-	}
-	division = {
-		name = "28. Eastern Militia"
-		location = 1727
-		division_template = "Eastern Militia"
-		start_experience_factor = 0.6
-	}
 }

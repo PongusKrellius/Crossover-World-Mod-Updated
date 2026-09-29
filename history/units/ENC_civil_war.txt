@@ -129,4 +129,28 @@ units = {
 		division_template = "Loyalist Militia"
 		start_experience_factor = 0.6
 	}
+	division = {
+		name = "21. Loyalist Militia"
+		location = 4025
+		division_template = "Loyalist Militia"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "22. Loyalist Militia"
+		location = 4025
+		division_template = "Loyalist Militia"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "23. Loyalist Militia"
+		location = 4025
+		division_template = "Loyalist Militia"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "24. Loyalist Militia"
+		location = 4025
+		division_template = "Loyalist Militia"
+		start_experience_factor = 0.6
+	}
 }
