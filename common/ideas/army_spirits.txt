@@ -204,19 +204,6 @@ ideas = {
 				factor = 1
 			}
 		}
-
-		quick_improvisation_spirit = {
-			ledger = army
-			modifier = {
-				command_abilities_cost_factor = -0.20
-				command_power_gain = 0.2
-				planning_speed = 0.2
-			}
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
 		relief_of_command_spirit = {
 			ledger = army
 			visible = { has_government = democratic }
