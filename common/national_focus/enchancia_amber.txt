@@ -26,7 +26,7 @@ focus_tree = {
 		} 
 		completion_reward = {
 			add_political_power = 100
-			add_stability = 0.05
+			add_stability = 0.10
 			hidden_effect = {
 				country_event = {
 					id = enchancia.64
@@ -162,7 +162,7 @@ focus_tree = {
 			factor = 5
 		} 
 		completion_reward = {
-			add_stability = 0.02
+			add_stability = 0.05
 			add_manpower = 7500
 		} 
 	}

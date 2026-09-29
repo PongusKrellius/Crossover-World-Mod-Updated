@@ -1047,7 +1047,7 @@ if = {
 			factor = 1
 		} 
 		completion_reward = {
-			add_stability = 0.02
+			add_stability = 0.05
 			country_event = {
 				id = enchancia.49
 				days = 1
@@ -1076,7 +1076,7 @@ if = {
 			factor = 1
 		} 
 		completion_reward = {
-			add_stability = 0.02
+			add_stability = 0.05
 			country_event = {
 				id = enchancia.50
 				days = 1

@@ -64,6 +64,7 @@ focus_tree = {
 		} 
 		completion_reward = {
 			add_stability = 0.02
+			add_stability = 0.05
 			add_political_power = 50
 		} 
 	}
@@ -245,7 +246,7 @@ focus_tree = {
 			factor = 5
 		} 
 		completion_reward = {
-			add_stability = 0.02
+			add_stability = 0.05
 			country_event = {
 				id = enchancia.50
 				days = 0
