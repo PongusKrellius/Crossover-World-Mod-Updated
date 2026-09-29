@@ -182,10 +182,10 @@ GON_make_divs_med = {
 	}
 	enable = {
 		num_of_military_factories > 42
-		num_of_military_factories < 100
+		num_of_military_factories < 70
 	}
 	abort = {
-		num_of_military_factories > 100
+		num_of_military_factories > 70
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
@@ -213,7 +213,7 @@ GON_make_spgs = {
 			num_of_military_factories > 42
 	}
 	abort = {
-		num_of_military_factories > 100
+		num_of_military_factories > 70
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {

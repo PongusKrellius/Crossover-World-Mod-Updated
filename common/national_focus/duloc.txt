@@ -2022,6 +2022,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = { 
 			base = 1
+			modifier = {
+				has_war = yes
+				add = -1
+			}
 		}
 		bypass = {
 			OR = {
@@ -2070,6 +2074,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = { 
 			factor = 1
+			modifier = {
+				has_war = yes
+				add = -1
+			}
 		}
 		prerequisite = {
 			focus = DUL_strike_at_far_far_away
@@ -2114,6 +2122,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = { 
 			factor = 1
+			modifier = {
+				has_war = yes
+				add = -1
+			}
 		}
 		bypass = {
 			WOR = {
@@ -2145,6 +2157,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = { 
 			factor = 1
+			modifier = {
+				has_war = yes
+				add = -1
+			}
 		}
 		bypass = {
 			FRK = {
@@ -2177,6 +2193,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = { 
 			factor = 1
+			modifier = {
+				has_war = yes
+				add = -1
+			}
 		}
 		bypass = {
 			OR = {
@@ -2210,6 +2230,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = { 
 			factor = 1
+			modifier = {
+				has_war = yes
+				add = -1
+			}
 		}
 		bypass = {
 			ICK = {
@@ -2364,6 +2388,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = { 
 			factor = 1
+			modifier = {
+				has_war = yes
+				add = -1
+			}
 		}
 		bypass = {
 			SMU = {
@@ -2398,6 +2426,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = { 
 			factor = 1
+			modifier = {
+				has_war = yes
+				add = -1
+			}
 		}
 		prerequisite = {
 			focus = DUL_secure_smurf_lands
@@ -2747,7 +2779,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = artillery_bonus
-				bonus = 0.05
+				bonus = 0.25
 				uses = 2
 				category = artillery
 			}
@@ -3388,14 +3420,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_doctrine_cost_reduction = {
-				name = sub_op_bonus
-				cost_reduction = 0.5
-				uses = 2
-				technology = convoy_interdiction_ti
-				technology = unrestricted_submarine_warfare
-				technology = wolfpacks
-				technology = advanced_submarine_warfare
-				technology = combined_operations_raiding
+			cost_reduction = 0.5
+			uses = 1
+			category = naval_doctrine
 			}
 		}
 	}
@@ -3523,10 +3550,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_doctrine_cost_reduction = {
-				name = fleet_in_being_bonus
-				cost_reduction = 0.25
-				uses = 2
-				category = fleet_in_being_tree
+			cost_reduction = 0.25
+			uses = 2
+			category = naval_doctrine
 			}
 		}
 	}

@@ -1348,7 +1348,11 @@ focus_tree = {
 			has_government = democratic
 		}
 		ai_will_do = { 
-			factor = 2
+			factor = 0
+			modifier = {
+				date > 1941.01.01
+				add = 1
+			}
 		} 
 
 		completion_reward = {
