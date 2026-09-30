@@ -67,16 +67,6 @@ abort = {
 }
 abort_when_not_enabled = yes
 ai_strategy = {
-	type = build_army
-	id = infantry
-	value = 45
-	}
-ai_strategy = {
-	type = build_army
-	id = armor
-	value = 10
-	}
-ai_strategy = {
 	type = equipment_production_min_factories_archetype
 	id = small_plane_airframe
 	value = 8

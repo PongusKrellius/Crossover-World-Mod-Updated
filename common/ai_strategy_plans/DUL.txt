@@ -65,10 +65,6 @@ abort = {
     DUL_farmer_subsidies
     DUL_land_reform
     DUL_modern_farming_tools
-    DUL_secretary_of_economy
-    DUL_economic_liberalization
-    DUL_attract_foreign_investment
-    DUL_tax_breaks
     }
     focus_factors = {
 		
@@ -103,6 +99,10 @@ abort = {
 }
 
  	ai_national_focuses = {
+ 	DUL_secretary_of_economy
+ 	DUL_economic_liberalization
+    DUL_attract_foreign_investment
+    DUL_tax_breaks
  	DUL_improve_productivity
  	DUL_bank_of_duloc
 	DUL_draft_industrialization_plan
