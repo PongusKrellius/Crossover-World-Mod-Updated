@@ -12,7 +12,7 @@ state={
 	}
 	resources = {
 		tungsten = 34
-		aluminium = 23
+		aluminium = 17
 		coal = 24
 	}
 	provinces={
