@@ -292,6 +292,7 @@ news_event = {
 		name = country_capitulated.0.b
 		trigger = {
 			OR = {
+				tag = ROOT
 				has_war_together_with = ROOT
 				is_in_faction_with = ROOT
 			}
@@ -304,6 +305,7 @@ news_event = {
 			NOT = { is_in_faction_with = ROOT }
 			NOT = { any_allied_country = { has_war_with = ROOT } }
 			NOT = { has_war_with = ROOT }
+			NOT = { tag = ROOT }
 		}
 	}
 }

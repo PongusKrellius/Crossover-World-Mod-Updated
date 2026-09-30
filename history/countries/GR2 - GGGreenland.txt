@@ -112,6 +112,14 @@ if = {
 		basic_cruiser_armor_scheme = 1
 	}
 }
+recruit_character = GR2_placeholder
+
+set_popularities = {
+    democratic = 25
+    communism = 25
+    fascism = 25
+    monarchism = 25
+}
 
 set_research_slots = 5
 

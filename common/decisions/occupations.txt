@@ -20,7 +20,7 @@ occupation_dec_category = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -244,7 +244,7 @@ occupation_dec_category = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -367,7 +367,7 @@ occupation_dec_category = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -554,7 +554,7 @@ occupation_dec_category = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -741,7 +741,7 @@ occupation_dec_category = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -937,7 +937,7 @@ occupation_dec_category = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -1137,7 +1137,7 @@ occupation_dec_category = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -1293,7 +1293,7 @@ occupation_dec_category = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -1515,7 +1515,7 @@ occupation_dec_category = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -1620,7 +1620,7 @@ occupation_dec_category = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -1685,7 +1685,7 @@ occupation_dec_category = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -1817,7 +1817,7 @@ occupation_dec_category = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -2014,7 +2014,7 @@ occupation_dec_category = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -2135,7 +2135,7 @@ occupation_dec_category = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -2261,7 +2261,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -2319,7 +2319,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -2375,7 +2375,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -2416,7 +2416,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -2474,7 +2474,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -2524,7 +2524,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -2564,7 +2564,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -2608,7 +2608,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -2739,7 +2739,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -2814,7 +2814,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -2861,7 +2861,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -2928,7 +2928,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -3007,7 +3007,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -3114,7 +3114,7 @@ occupation_dec_category = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -3214,7 +3214,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -3316,7 +3316,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -3421,7 +3421,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -3485,7 +3485,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -3541,7 +3541,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -3588,7 +3588,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -3638,7 +3638,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -3697,7 +3697,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -3746,14 +3746,14 @@ occupation_dec_category = {
 		}
 	}
 
-	establish_gg_of_greenland = {
+		establish_gg_of_greenland = {
 
 		icon = ger_mefo_bills
 
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -3846,7 +3846,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -3948,7 +3948,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -4047,7 +4047,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -4283,7 +4283,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -4350,7 +4350,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -4578,7 +4578,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -4663,7 +4663,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -4751,7 +4751,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -4839,7 +4839,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -4915,7 +4915,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -4997,7 +4997,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -5088,7 +5088,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -5181,7 +5181,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -5265,7 +5265,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -5388,7 +5388,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -5498,7 +5498,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -5612,7 +5612,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -5689,7 +5689,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -5749,7 +5749,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -5811,7 +5811,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -5867,7 +5867,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -5915,7 +5915,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -6071,7 +6071,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -6115,7 +6115,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -6158,7 +6158,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -6246,7 +6246,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -6284,7 +6284,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -6326,7 +6326,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -6364,7 +6364,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -6402,7 +6402,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -6439,7 +6439,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -6478,7 +6478,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -6590,7 +6590,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -6851,7 +6851,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -6890,7 +6890,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -6943,7 +6943,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -6984,7 +6984,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -7043,7 +7043,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -7130,7 +7130,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -7192,7 +7192,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -7244,7 +7244,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -7293,7 +7293,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -7375,7 +7375,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -7527,7 +7527,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -7573,7 +7573,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
@@ -7613,7 +7613,7 @@ occupation_dec_category = {
 		cost = 0
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 
 		visible = {
