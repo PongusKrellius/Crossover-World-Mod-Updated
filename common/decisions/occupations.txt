@@ -3802,40 +3802,89 @@ occupation_dec_category = {
 		}
 
 		complete_effect = {
-			every_owned_state = {
-				limit = {
-					NOT = {
-						is_core_of = ROOT
-						is_core_of = OUT
-						is_core_of = DES
-					}
-					state = 518
-					state = 474
-					state = 467
-					state = 432
-					state = 439
-					state = 22
-					state = 23
-				}
-				set_variable = {
-					greenland_gg_set = 1
-				}
-			}
-			every_state = {
-				limit = {
-					has_variable = greenland_gg_set
-				}
-				GR2 = {
-					transfer_state = PREV
-				}
-				add_core_of = GR2
-			}
 			GR2 = {
 				ROOT = {
 					puppet = PREV
 					set_autonomy = { target = PREV autonomy_state = occupation_government }
 				}
 			}
+			if = {
+					limit = {
+						ROOT = {
+							owns_state = 518
+						}
+					}
+					GR2 = {
+					transfer_state = 518
+					add_state_core = 518
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							owns_state = 474
+						}
+					}
+					GR2 = {
+					transfer_state = 474
+					add_state_core = 474
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							owns_state = 467
+						}
+					}
+					GR2 = {
+					transfer_state = 467
+					add_state_core = 467
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							owns_state = 432
+						}
+					}
+					GR2 = {
+					transfer_state = 432
+					add_state_core = 432
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							owns_state = 439
+						}
+					}
+					GR2 = {
+					transfer_state = 439
+					add_state_core = 439
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							owns_state = 22
+						}
+					}
+					GR2 = {
+					transfer_state = 22
+					add_state_core = 22
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							owns_state = 23
+						}
+					}
+					GR2 = {
+					transfer_state = 23
+					add_state_core = 23
+					}
+				}
 		}
 	}
 

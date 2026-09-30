@@ -1130,19 +1130,8 @@ if = {
 			factor = 1
 		} 
 		completion_reward = {
-			WEI = {
-				country_event = {
-					id = enchancia.51
-					days = 1
-				}
-			}
-			KHA = {
-				country_event = {
-					id = enchancia.51
-					days = 1
-				}
-			}
-		} 
+			create_faction_from_template = threekingdoms
+		}
 	}
 
 	focus = { 
