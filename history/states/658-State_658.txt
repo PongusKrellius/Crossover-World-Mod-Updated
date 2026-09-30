@@ -25,7 +25,7 @@ state={
 	}
 	state_category = metropolis
 	resources = {
-		steel = 47
+		steel = 42
 		tungsten = 58
 	}
 }
