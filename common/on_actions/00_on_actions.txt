@@ -140,7 +140,6 @@ on_actions = {
 					}
 				}
 			}
-			unit_limit_calculation_effect = yes
 			if = {
 				limit = {
 					tag = FFA
@@ -4320,25 +4319,6 @@ on_actions = {
 			100 = war_justification.301
 		}
 	}
-
-	on_weekly = {
-		effect = {
-			# unit limit calculations - of course from KR
-			if = {
-				limit = {
-					OR = {
-						tag = GON
-						tag = DIO
-						tag = FLO
-						tag = MOR
-					}
-					is_ai = yes
-				}
-				calculate_maximum_divisions = yes
-			}
-		}
-	}
-
 	on_nuke_drop = {
 
 		effect = {
