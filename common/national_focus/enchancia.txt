@@ -779,7 +779,10 @@ focus_tree = {
 		} 
 		completion_reward = {
 		custom_effect_tooltip = tech_advance
-			tech_advance = yes
+		tech_advance = yes
+			hidden_effect = {
+				middleage_to_preindustrial = yes
+			}
 			166 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -980,7 +983,9 @@ if = {
 		completion_reward = {
 		custom_effect_tooltip = tech_advance
 		tech_advance = yes
-		
+			hidden_effect = {
+				preindustrial_to_premodern = yes
+			}
 			166 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1251,63 +1256,14 @@ if = {
 		completion_reward = {
 			tech_advance = yes
 			add_research_slot = 2
-			add_political_power = -500
+			add_political_power = -350
 			add_stability = 0.05
+			custom_effect_tooltip = tech_advance
+			tech_advance = yes
 			hidden_effect = {
-				set_technology = {
-					gw_artillery = 1
-					early_fighter = 1
-				}
-				if = {
-					limit = {
-						not = { has_dlc = "Man the Guns" }
-					}
-					set_technology = {
-						early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		basic_destroyer = 1
-		early_light_cruiser = 1
-		basic_light_cruiser = 1
-		early_heavy_cruiser = 1
-		basic_heavy_cruiser = 1
-		early_battleship = 1
-		basic_battleship = 1
-		early_battlecruiser = 1
-		transport = 1
-					}
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					set_technology = {
-						basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		basic_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		basic_ship_hull_heavy = 1
-		panzerschiffe = 1
-		pre_dreadnoughts = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		mtg_transport = 1
-		basic_torpedo = 1
-		improved_ship_torpedo_launcher = 1
-		basic_battery = 1
-		basic_light_battery = 1
-		basic_medium_battery = 1
-		basic_heavy_battery = 1
-		basic_depth_charges = 1
-		sonar = 1
-		basic_cruiser_armor_scheme = 1
-					}	
-				}
+				premodern_to_modern = yes
 			}
-		} 
+		}
 	}
 
 	focus = { 

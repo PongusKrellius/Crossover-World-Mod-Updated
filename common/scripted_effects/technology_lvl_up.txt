@@ -1,6 +1,13 @@
 middleage_to_preindustrial = {
 	set_technology = {
-		gw_artillery = 1
+	gw_artillery = 1
+    infantry_weapons = 1
+	}
+}
+
+preindustrial_to_premodern = {
+	set_technology = {
+    infantry_weapons = 1
 	}
 	if = {
 		limit = {
@@ -77,10 +84,6 @@ middleage_to_preindustrial = {
 			basic_cruiser_armor_scheme = 1
 		}	
 	}
-}
-
-preindustrial_to_premodern = {
-
 }
 
 preindustrial_to_modern = {
@@ -230,9 +233,6 @@ preindustrial_to_modern = {
 }
 
 premodern_to_modern = {
-	set_technology = {
-		infantry_weapons = 1
-	}
 	if = {
 		limit = {
 			NOT = { has_dlc = "No Step Back" }
