@@ -16,7 +16,7 @@ focus_tree = {
 	icon = GFX_goal_generic_production
 	x = 3
 	y = 0
-	cost = 7
+	cost = 6
 	available_if_capitulated = no
 	available = {
 		is_puppet = no
@@ -41,7 +41,7 @@ focus = {
 	prerequisite = { focus = AVA_economic_legacy_of_maru }
 	x = 5
 	y = 1
-	cost = 7
+	cost = 6
 
 	available_if_capitulated = no
 
@@ -166,7 +166,7 @@ focus = {
 		prerequisite = { focus = AVA_economic_legacy_of_maru }
 		x = 3
 		y = 1
-		cost = 8
+		cost = 6
 
 		ai_will_do = { 
 			factor = 2
@@ -386,7 +386,7 @@ focus = {
 		prerequisite = { focus = AVA_economic_legacy_of_maru }
 		x = 1
 		y = 1
-		cost = 7
+		cost = 6
 
 		ai_will_do = { 
 			factor = 2
