@@ -3541,16 +3541,10 @@ country_event = { #Amber's 17th birthday
 	is_triggered_only = yes
 
 	option = { #Happy birthday!
-		trigger = {
-			OR = {
-				has_country_leader = {
-    				name = "Amber I"
-    				ruling_only = yes
-				}
+		trigger = { 
 				has_country_leader = {
     				name = "Miranda"
     				ruling_only = yes
-				}
 			}
 		}
 		name = enchancia.81.a
@@ -3581,6 +3575,7 @@ country_event = { #Amber's 17th birthday
 						}
 						add_corps_commander_role = {
 							character = ENC_james_adult_character
+							
 							skill = 3
 							attack_skill = 3
 							defense_skill = 3
@@ -3588,7 +3583,6 @@ country_event = { #Amber's 17th birthday
 							logistics_skill = 3
 						}
 					}
-				}
 				set_country_leader_portrait = {
 					ideology = monarchism
 					portrait = GFX_portrait_ENC_amber_older
@@ -3597,8 +3591,18 @@ country_event = { #Amber's 17th birthday
 					ideology = democratic
 					portrait = GFX_portrait_ENC_amber_older
 				}
-				ENC_amber_character = {
-					remove_country_leader_trait = underage_monarch
+				ENC_amber_older_character = {
+				remove_country_leader_trait = underage_monarch
+				add_country_leader_role = {
+				character = ENC_amber_older_character
+				promote_leader = yes
+				country_leader = {
+					ideology = administrative_monarchy
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}
+		}
 				}
 				else = {
 					set_country_leader_portrait = {
@@ -3609,9 +3613,19 @@ country_event = { #Amber's 17th birthday
 						ideology = democratic
 						portrait = GFX_portrait_ENC_amber_older
 					}
-					ENC_amber_character = {
-						remove_country_leader_trait = underage_monarch
-					}
+					ENC_amber_older_character = {
+				remove_country_leader_trait = underage_monarch
+				add_country_leader_role = {
+				character = ENC_amber_older_character
+				promote_leader = yes
+				country_leader = {
+					ideology = administrative_monarchy
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}
+		}  
+				}                             
 					if = {
 						limit = {
 							NOT = {
@@ -3633,12 +3647,10 @@ country_event = { #Amber's 17th birthday
 								defense_skill = 3
 								planning_skill = 3
 								logistics_skill = 3
+								}
 							}
-						}
 					}
 				}
-			}
-		}
 	}
 
 	option = { #Happy birthday!
@@ -3663,6 +3675,7 @@ country_event = { #Amber's 17th birthday
 					defense_skill = 3
 					planning_skill = 3
 					logistics_skill = 3
+					}
 				}
 			}
 		}

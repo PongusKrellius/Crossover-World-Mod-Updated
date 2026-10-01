@@ -27,9 +27,6 @@ state={
 	provinces={
 		719 1707 3026 6962 7027 7074 7128 7142 7200 
 	}
-	resources = {
-		steel = 15
-	}
 	manpower=1650000
 	buildings_max_level_factor=1.000
 }

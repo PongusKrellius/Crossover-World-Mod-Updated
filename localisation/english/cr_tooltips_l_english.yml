@@ -592,6 +592,6 @@
  ## CHARACTER NAMES
  ENC_james_adult_prince:0 "Prince James"
  ENC_james_adult_king:0 "James I"
- ENC_amber_older_queen:0 "Amber I"
- ENC_sofia_older_queen:0 "Sofia I"
+ ENC_amber_older_character:0 "Amber I"
+ ENC_sofia_older_character:0 "Sofia I"
  
