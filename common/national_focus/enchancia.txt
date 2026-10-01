@@ -2000,7 +2000,7 @@ if = {
 		} 
 		completion_reward = {
 			declare_war_on = {
-				target = WEI
+				target = WLC
 				type = topple_government
 			}
 		}
