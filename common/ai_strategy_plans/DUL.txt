@@ -89,10 +89,8 @@ enable = {
 		FFA = {
 		exists = no
 		}
-		OR = {
 		has_completed_focus = DUL_go_south
 		has_completed_focus = DUL_take_out_the_colony
-			}
 	}
 abort = {
 	has_war = yes

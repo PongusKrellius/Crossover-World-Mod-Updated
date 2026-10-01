@@ -2387,7 +2387,12 @@ focus_tree = {
 		}
 
 		completion_reward = { 
-			create_faction = westpakt
+			completion_reward = {
+			template = faction_template_generic_dominance
+				name =  westpakt
+				icon = GFX_faction_logo_generic_15
+			
+		} 
 		} 
 	}
 
