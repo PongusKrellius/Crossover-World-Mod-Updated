@@ -1309,7 +1309,11 @@ focus_tree = {
 		}
 
 		ai_will_do = { 
-			factor = 5
+			factor = 0
+			modifier = {
+				date > 1942.01.01
+				add = 5
+			}
 		} 
 
 		completion_reward = { 
