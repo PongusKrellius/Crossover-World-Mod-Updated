@@ -11,6 +11,7 @@ international_policy_dec_category = {
             }
             NOT = {
                 is_in_faction = yes
+                is_subject = yes
             }
             OR = {
                 tag = CDK
@@ -60,6 +61,7 @@ international_policy_dec_category = {
         visible = {
             NOT = {
                 is_in_faction = yes
+                is_subject = yes
             }
             AND = {
                 OR = {
@@ -112,6 +114,7 @@ international_policy_dec_category = {
             }
             NOT = {
                 is_in_faction = yes
+                is_subject = yes
             }
             AND = {
                 OR = {
@@ -160,6 +163,7 @@ international_policy_dec_category = {
             }
             NOT = {
                 is_in_faction = yes
+                is_subject = yes
             }
             OR = {
                 AND = {
@@ -245,6 +249,7 @@ international_policy_dec_category = {
             }
             NOT = {
                 is_in_faction = yes
+                is_subject = yes
             }
             OR = {
                 tag = PAT
@@ -337,6 +342,7 @@ international_policy_dec_category = {
             }
             NOT = {
                 is_in_faction = yes
+                is_subject = yes
             }
             NOT = {
                 has_country_flag = sent_request_to_join_faction
@@ -398,6 +404,7 @@ international_policy_dec_category = {
             }
             NOT = {
                 is_in_faction = yes
+                is_subject = yes
             }
             NOT = {
                 has_country_flag = sent_request_to_join_faction
@@ -458,6 +465,7 @@ international_policy_dec_category = {
             }
             NOT = {
                 is_in_faction = yes
+                is_subject = yes
             }
             NOT = {
                 has_country_flag = sent_request_to_join_faction
@@ -520,6 +528,7 @@ international_policy_dec_category = {
             }
             NOT = {
                 is_in_faction = yes
+                is_subject = yes
             }
             NOT = {
                 has_country_flag = sent_request_to_join_faction
