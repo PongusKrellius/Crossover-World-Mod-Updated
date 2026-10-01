@@ -535,7 +535,12 @@ focus = {
 		} 
 
 		completion_reward = { 
-			create_faction = sancti_magistri_alliance
+			create_faction_from_template = {
+			template = faction_template_generic_dominance
+				name = sancti_magistri_alliance
+				icon = GFX_faction_logo_generic_15
+			
+			}
 		}		
 	}
 
