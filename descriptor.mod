@@ -1,7 +1,8 @@
-name="Crossover Mod Updated"
+version="1.0"
 tags={
 	"Utilities"
 }
+name="cwmod1"
 replace_path="common/abilities"
 replace_path="common/ai_equipment"
 replace_path="common/ai_focuses"
@@ -39,7 +40,5 @@ replace_path="map/supplyareas"
 replace_path="history/general"
 replace_path="tests"
 picture="thumbnail.png"
-version="1.16.*"
-supported_version="1.16.*"
-
-# Many of the revamped AI strategies code were taken from both vanilla and EAW as I tried to figure out how to make the AI train more divisions.  Here I do give credit to both these places as I did not come up with the functions myself.  
+supported_version="1.19.3.0"
+remote_file_id="3812603962"
